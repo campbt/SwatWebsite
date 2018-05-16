@@ -1,0 +1,190 @@
+
+<html>
+<head>
+<title>SWAT: Aftermath</title>
+
+<script language="javascript" src="swat.js">
+</script>
+
+</head>
+<body bgcolor=000000 text=FFFFFF link=99E362 vlink=69B926 alink=00FF00>
+
+<script>
+WriteTopMenu('',true);
+WriteClassMenu();
+WriteSummonedMenu('');
+WriteClassHeaderBegin('Demolitions','demo','dem','Offense','The primary goal of the demolitions expert is to blow stuff up using rockets, MIRVs, C4, and even miniature nuclear warheads. His intelligence is above average.');
+WriteSkillLinks('M.I.R.V.','mirv','Place&nbsp;C4','c4','Advanced&nbsp;Generator','gen','Lock-Down','lockdown','Nanites','nanites');
+WriteSkillLinks('BioChemical&nbsp;Energy','biochem','Gear&nbsp;Mod.','gearmod','Mini-Nuke','nuke','S.M.A.','sma','Sprint','sprint','Frag.&nbsp;Locator','frag');
+WriteClassHeaderEnd('demo');
+</script>
+
+<br><br>
+<font color=ffcc00><b>Statistics</b></font>
+
+<table cellspacing=0 cellpadding=0 border=0 width=100%><tr valign=top>
+
+<td width=27%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsAttribs('22','0.60','12','0.60','105','0.42');
+</script></table>
+</td>
+
+<td width=23%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsWeapon(3);
+</script></table>
+</td>
+
+<td width=50%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsArmor();
+</script></table>
+</td>
+
+</tr></table>
+
+<br><br>
+<font color=ffcc00><b>Bonuses</b></font>
+
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteBonus('Levelup','none');
+WriteBonus('Epic','Rocket Launcher damage increased at each level from 51 to 55.');
+WriteBonus('Rank','Mini-Nuke ability enabled at rank 4 and improved at ranks 7 and 10.<br>BioChemical Energy ability improved at each rank from 2 to 11.');
+WriteBonus('Droid',InfoLinkS('Droid','unitinfo-lad.htm')+' overclocks when damaged while health is critical and damages nearby units when destroyed.');
+</script></table>
+
+<br><br>
+<font color=ffcc00><b>Trainable Abilities</b></font>
+
+<script>
+WriteSkill('M.I.R.V.', 'mirv', 'X', 'Uses energy to create a napalm-laced rocket which detonates multiple times in a line away from the point of impact, damaging units and leaving a persistent trail of burning napalm.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Detonations', 'Damage', 'Radius', 'Range', 'Napalm', 'Armor', 'Duration', 'Energy', 'Cooldown');
+WriteData('1','2','250, 150','144, 192','1000','5 dps','-4','2 s','125','6 s');
+WriteData('2','2','250, 150','144, 192','1000','10 dps','-4','3 s','125','6 s');
+WriteData('3','3','250, 150','144, 192','1000','10 dps','-4','3 s','180','6 s');
+WriteData('4','3','250, 150','144, 192','1000','15 dps','-4','4 s','180','6 s');
+WriteData('5','4','250, 150','144, 192','1000','15 dps','-4','4 s','230','6 s');
+WriteData('6','4','250, 150','144, 192','1000','20 dps','-4','5 s','230','6 s');
+WriteData('7','5','250, 150','144, 192','1000','20 dps','-4','5 s','275','6 s');
+WriteData('8','5','250, 150','144, 192','1000','30 dps','-4','7 s','275','6 s');
+WriteData('9','6','250, 150','144, 192','1000','30 dps','-4','7 s','315','6 s');
+WriteData('10','6','250, 150','144, 192','1000','45 dps','-4','9 s','315','6 s');
+WriteData('11','7','250, 150','144, 192','1000','45 dps','-4','9 s','350','6 s');
+WriteData('12','7','250, 150','144, 192','1000','60 dps','-4','11 s','350','6 s');
+WriteData('13','8','250, 150','144, 192','1000','60 dps','-4','11 s','380','6 s');
+WriteData('14','8','250, 150','144, 192','1000','80 dps','-4','14 s','380','6 s');
+WriteData('15','9','250, 150','144, 192','1000','80 dps','-4','14 s','400','6 s');
+WriteData('16','9','250, 150','144, 192','1000','100 dps','-4','18 s','400','6 s');
+WriteSkillEnd();
+</script>
+
+<br>
+<script>
+WriteSkill('Place&nbsp;C4', 'c4', 'C', 'Uses a small supply of nanites to rapidly construct a remote-triggered explosive. C4 can be concealed from enemies via a built-in cloaking device, and if smart mine automation is activated, the explosive\'s A.I. rouintes will automatically try to lure units and destroy them. C4 will not cause damage if it is destroyed; it must be manually detonated or detonated by its A.I.');
+WriteSkillBegin('60%');
+WriteHeader('Skill Level', 'Damage', 'Radius', 'Armor/<br>Absorp.', 'Dur.', 'Energy', 'C4 Energy', 'Placement<br>Range', 'Energy<br>Damage');
+WriteData('1','200, 100','96, 120','5/0','720 s','80','45', '50', '0%');
+WriteData('2','300, 150','112, 192','5/0','720 s','120','50', '50', '0%');
+WriteData('3','400, 200','128, 264','5/0','720 s','160','55', '50', '0%');
+WriteData('4','500, 250','144, 336','5/0','720 s','200','60', '50', '0%');
+WriteData('5','500, 250','144, 336','30/10','720 s','230','65', '50', '0%');
+WriteData('6','500, 250','144, 336','55/20','720 s','245','70', '50', '0%');
+WriteData('7','500, 250','144, 336','80/30','720 s','260','75', '50', '0%');
+WriteData('8','500, 250','144, 336','105/45','720 s','280','80', '50', '0%');
+WriteData('9','500, 250','144, 336','130/60','720 s','300','85', '50', '0%');
+WriteData('10','500, 250','144, 336','155/75','720 s','320','90', '50', '0%');
+WriteData('11','500, 250','144, 336','180/100','720 s','350','95', '50', '0%');
+WriteData('12','500, 250','144, 336','205/125','720 s','380','100', '50', '0%');
+WriteData('13','500, 250','144, 336','205/125','660 s','360','115', '100', '25%');
+WriteData('14','500, 250','144, 336','205/125','600 s','340','130', '150', '50%');
+WriteData('15','500, 250','144, 336','205/125','540 s','320','145', '200', '75%');
+WriteData('16','500, 250','144, 336','205/125','480 s','300','160', '250', '100%');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkillAdvGen();
+</script>
+
+<br>
+<script>
+WriteSkillLockdown();
+</script>
+
+<br>
+<script>
+WriteSkillNanites(1);
+</script>
+
+<br><br>
+<font color=ffcc00><b>Innate Abilities</b></font>
+
+<script>
+WriteSkill('BioChemical&nbsp;Energy', 'biochem', 'ZX', 'Rapid nano-combustion of organic material instantly converts up to 50% of target\'s health into energy. Bosses and power armored units are somewhat resistant. Efficiency doubled when used on self. Range increased by 40 per level of Adv. Generator. Base range quadrupled while locked down.<br><font size=-1><i>Energy gain is reduced on larger transfers.</i></font>');
+WriteSkillBegin();
+WriteHeader('Rank', 'Base Range', 'Efficiency', 'Cooldown');
+WriteData('1', '350', '35-66%', '20 s');
+WriteData('2', '350', '38-66%', '20 s');
+WriteData('3', '350', '41-66%', '20 s');
+WriteData('4', '350', '44-66%', '20 s');
+WriteData('5', '350', '47-66%', '20 s');
+WriteData('6', '350', '50-66%', '20 s');
+WriteSkillBegin2();
+WriteHeader('Rank', 'Base Range', 'Efficiency', 'Cooldown');
+WriteData('7', '350', '53-66%', '20 s');
+WriteData('8', '350', '56-66%', '20 s');
+WriteData('9', '350', '59-66%', '20 s');
+WriteData('10', '350', '62-66%', '20 s');
+WriteData('11', '350', '65-66%', '20 s');
+WriteSkillEnd();
+</script>
+
+<br>
+<script>
+WriteSkill('Gear&nbsp;Mod.', 'gearmod', 'ZC', 'Uses circuit boards to apply custom modifications to the targeted comrade\'s personal gear. A unit may be upgraded once per circuit board color.');
+WriteSkillBegin();
+WriteHeader('Circuit Board', 'Bonus', 'Cooldown');
+WriteData('Orange', '+1 armor', '20 s');
+WriteData('Green',  '+8% damage', '20 s');
+WriteData('Purple', '+125 energy', '20 s');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Mini-Nuke', 'nuke', 'ZG', 'Launches a small nuclear missile which explodes when it reaches the targeted location, inflicting massive damage in a huge radius. Frequent nuking may significantly increase radiation levels.');
+WriteSkillBegin();
+WriteHeader('Rank', 'Damage', 'Radius', 'Range', 'Energy');
+WriteData('4', '6000, 3000', '336, 1200', 'unlimited', '600');
+WriteData('7', '6000, 3000', '372, 1400', 'unlimited', '550');
+WriteData('10', '6000, 3000', '372, 1600', 'unlimited', '500');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('S.M.A.', 'sma', '+', 'Toggles which type of smart mine automation is automatically activated when placing C4. The choices are none, trickster, and screamer. Trickster prefers not to detonate until it has acquired and lured the most targets it can. Screamer won\'t waste time waiting for optimum conditions; instead it detonates when a reasonable number of targets have been acquired.');
+WriteSkillBegin();
+WriteHeader('Skill Level','&nbsp;');
+WriteData('--','&nbsp;');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<!--Sprint-->
+<script>
+WriteSkillSprint(1);
+</script>
+
+<br>
+<!--Frag. Locator-->
+<script>
+WriteSkillFrag();
+</script>
+
+<br>
+</body>
+</html>
