@@ -370,7 +370,7 @@ function SkillLinkDisplayUnit(SkillLinkClass, SkillLinkUnit) {
 }
 
 //skill header
-function WriteSkill(SkillName, SkillCode, SkillKey, SkillDescription, SkillLinkClass, SkillLinkUnit, SkillFileType) {
+function WriteSkill(SkillName, SkillCode, SkillKey, SkillDescription, SkillMore, SkillLinkClass, SkillLinkUnit, SkillFileType,) {
   var filetype = 'png';
   if (SkillFileType != null) {
     filetype = SkillFileType;
@@ -381,7 +381,17 @@ function WriteSkill(SkillName, SkillCode, SkillKey, SkillDescription, SkillLinkC
   document.writeln('<td width=4>&nbsp;</td>');
   document.writeln('<td align=left><font face=Arial><a name='+SkillCode+'><b>'+SkillName+'</a></b>'+HotkeyDisplay(SkillKey)+SkillLinkDisplayUnit(SkillLinkClass, SkillLinkUnit)+'<br>');
   document.writeln(SkillDescription);
-  document.writeln('</font></td></tr><tr height=5><td></td></tr></table>');
+  document.writeln('</font></td></tr>');
+  document.writeln('<tr height=5><td></td></tr></table>');
+}
+
+//Place to add more text for more complicated abilities
+function WriteSkillMore(text) {
+  document.writeln('</table></td>');
+  if (NoSecondBatch == true) {
+    document.writeln('<td align=right width=49%>&nbsp;</td>');
+  }
+  document.writeln('</tr></table>');
 }
 
 //skill table begin
@@ -942,21 +952,21 @@ function WriteSkillCritTech(showall) {
 }
 
 function WriteSkillLockdown(showall) {
-  WriteSkill('Lock-Down', 'lockdown', '+', 'Locks the officer in place for extra stability, allowing him to launch larger rockets with more booms.');
+  WriteSkill('Lock-Down', 'lockdown', 'E', 'Locks the officer in place for extra stability, giving him minor knockback and increased damage and attack speed but prevents movement. The officer will be unable to attack temporarily upon deactivating lockdown.');
   WriteSkillBegin();
-  WriteHeader('Skill Level','Primary Damage','Booms','Boom DoT','Delay','Cooldown');
-  WriteData('1','+4%','1','10','3 s','6 s');
-  WriteData('2','+9%','1','20','3 s','6 s');
-  WriteData('3','+14%','2','30','3 s','6 s');
-  WriteData('4','+20%','2','40','3 s','6 s');
-  WriteData('5','+26%','3','50','3 s','6 s');
-  WriteData('6','+33%','3','60','3 s','6 s');
-  WriteData('7','+40%','4','70','3 s','6 s');
-  WriteData('8','+48%','4','80','3 s','6 s');
+  WriteHeader('Skill Level','Primary Damage','Attack Speed','Knockback','Delay','Cooldown');
+  WriteData('1','+4%','+25%','0','3 s','6 s');
+  WriteData('2','+9%','+25%','25','3 s','6 s');
+  WriteData('3','+14%','+25%','50','3 s','6 s');
+  WriteData('4','+20%','+25%','75','3 s','6 s');
+  WriteData('5','+26%','+25%','100','3 s','6 s');
+  WriteData('6','+33%','+25%','125','3 s','6 s');
+  WriteData('7','+40%','+25%','150','3 s','6 s');
+  WriteData('8','+48%','+25%','175','3 s','6 s');
   if (showall) {
-  WriteData('9','+56%','5','90','3 s','6 s');
-  WriteData('10','+65%','5','100','3 s','6 s');
-  WriteData('11','+74%','6','110','3 s','6 s');
+  WriteData('9','+56%','+25%','200','3 s','6 s');
+  // WriteData('10','+65%','+25%','225','3 s','6 s');
+  // WriteData('11','+74%','+25%','250','3 s','6 s');
   }
   WriteSkillEnd(true);
 }
@@ -1188,7 +1198,7 @@ function WriteSkillAdvGen(unit) {
 function WriteSkillSprint(Type, hotkey, specialUnit) {
   var dodge = '';
   if (hotkey == null) {
-    hotkey = 'ZV';
+    hotkey = 'D';
     dodge = ' Direct attacks are dodged while sprinting.';
   } else if (specialUnit == 'clone') {
     dodge = ' Clone sprint type matches the parent unit but clone sprint does not have evasion.';
@@ -1222,19 +1232,19 @@ function WriteSkillSprint(Type, hotkey, specialUnit) {
 }
 
 function WriteSkillFrag() {
-  WriteSkill('Frag.&nbsp;Locator', 'frag', 'ZF', 'Uses a portable scanner to locate nearby radiation fragments.</font><br><font size=-1>Below left represents standard locator; below right represents advanced locator provided by Rad. Resistant trait.');
+  WriteSkill('Frag.&nbsp;Locator', 'frag', '', 'Uses a portable scanner to locate nearby radiation fragments.</font><br><font size=-1>Below left represents standard locator; below right represents advanced locator provided by Rad. Resistant trait.');
   WriteSkillBegin();
-  WriteHeader('Rank', 'Number', 'Radius', 'Energy', 'Cooldown');
-  WriteData('2', '7', '5500', '300', '75 s');
-  WriteData('4', '7', '5500', '200', '50 s');
-  WriteData('7', '7', '5500', '175', '40 s');
-  WriteData('10', '7', '5500', '150', '30 s');
+  WriteHeader('Renown', 'Number', 'Radius', 'Energy', 'Cooldown');
+  WriteData('5', '7', '5500', '300', '75 s');
+  WriteData('10', '7', '5500', '200', '50 s');
+  WriteData('15', '7', '5500', '175', '40 s');
+  WriteData('20', '7', '5500', '150', '30 s');
   WriteSkillBegin2();
-  WriteHeader('Rank', 'Number', 'Radius', 'Energy', 'Cooldown');
-  WriteData('2', '9', 'unlimited', '100', '60 s');
-  WriteData('4', '9', 'unlimited', '75', '30 s');
-  WriteData('7', '9', 'unlimited', '50', '12 s');
-  WriteData('10', '9', 'unlimited', '25', '6 s');
+  WriteHeader('Renown', 'Number', 'Radius', 'Energy', 'Cooldown');
+  WriteData('1', '9', 'unlimited', '100', '60 s');
+  WriteData('10', '9', 'unlimited', '75', '30 s');
+  WriteData('15', '9', 'unlimited', '50', '12 s');
+  WriteData('20', '9', 'unlimited', '25', '6 s');
   WriteSkillEnd();
 }
 
