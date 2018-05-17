@@ -1,0 +1,196 @@
+
+<html>
+<head>
+<title>SWAT: Aftermath</title>
+
+<script language="javascript" src="swat.js">
+</script>
+
+</head>
+<body bgcolor=000000 text=FFFFFF link=99E362 vlink=69B926 alink=00FF00>
+
+<script>
+WriteTopMenu('',true);
+WriteClassMenu();
+WriteSummonedMenu('');
+WriteClassHeaderBegin('Pyrotechnician','pyro','pyr','Offense, Debuffing','The pyro relies on his flamethrower and fire-based skills to burn the health off his enemies. He is an extreme class, good against everything while simultaneously vulnerable. His intelligence is only average.<br><font size=-1><i>This class must be unlocked before it can be selected.</i></font>'); 
+WriteSkillLinks('Molotov','molotov','Microwave','micro','Incendiary&nbsp;Rocket','incrocket','Advanced&nbsp;Fuel','fuel','Nanites','nanites');
+WriteSkillLinks('Firefly','fly','Combustion','combust','Turn&nbsp;Up&nbsp;the&nbsp;Heat','heat','Reinforced&nbsp;Plating','replate','Sprint','sprint','Frag.&nbsp;Locator','frag');
+WriteClassHeaderEnd('pyro');
+</script>
+
+<br><br>
+<font color=ffcc00><b>Statistics</b></font>
+
+<table cellspacing=0 cellpadding=0 border=0 width=100%><tr valign=top>
+
+<td width=27%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsAttribs('24','0.85','12','0.60','100','0.31');
+</script></table>
+</td>
+
+<td width=23%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsWeapon(4);
+</script></table>
+</td>
+
+<td width=50%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsArmor();
+</script></table>
+</td>
+
+</tr></table>
+
+<br><br>
+<font color=ffcc00><b>Bonuses</b></font>
+
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteBonus('Levelup','Combustion ability improved at levels 10, 20, 30, 40, and 50.');
+WriteBonus('Epic','Flamethrower bounces increased at each level from 51 to 55.');
+WriteBonus('Rank','Extra skill point awarded at ranks 4, 7, and 10.');
+WriteBonus('Droid',InfoLinkS('Droid','unitinfo-lad.htm')+' has an additional 5.8 damage absorption and an additional 75 vitality.');
+</script></table>
+
+<br><br>
+<font color=ffcc00><b>Trainable Abilities</b></font>
+
+<script>
+WriteSkill('Molotov', 'molotov', 'X', 'Covers an area with a sticky, slow-burning oil which causes minor damage and reduces the movement speed of all units which walk through the area.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Damage', 'Slow', 'Radius', 'Range', 'Duration','Energy', 'Cooldown');
+WriteData('1', '10 dps','40%','192','650','6 s','122','3 s');
+WriteData('2', '10 dps','40%','192','650','8 s','129','3 s');
+WriteData('3', '10 dps','40%','192','650','10 s','135','3 s');
+WriteData('4', '10 dps','40%','192','650','12 s','140','3 s');
+WriteData('5', '10 dps','40%','192','650','14 s','144','3 s');
+WriteData('6', '10 dps','40%','192','650','16 s','147','3 s');
+WriteData('7', '10 dps','40%','192','650','18 s','149','3 s');
+WriteData('8', '10 dps','40%','192','650','20 s','150','3 s');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Microwave', 'micro', 'C', 'Instantly super-heats the target with a microwave beam, damaging it severely. If a normal unit is killed by the beam, it explodes violently and damages nearby units; splash damage is determined by a percent of the exploding unit\'s health. Power armored units suffer 40% beam damage and will never explode. Mechanical units are unaffected. Beam is 100% effective up to 500 range but is less effective at longer ranges. Targeting self cumulates energy, increasing beam damage to next non-self target.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Damage','Splash', 'Radius', 'Range', 'Effective','Energy','Cool.');
+WriteData('1', '250','50%','96','1000','50%','75','1 s');
+WriteData('2', '300','55%','112','1000','52%','80','1 s');
+WriteData('3', '350','60%','128','1000','54%','85','1 s');
+WriteData('4', '400','65%','144','1000','56%','90','1 s');
+WriteData('5', '450','70%','160','1000','58%','95','1 s');
+WriteData('6', '500','75%','176','1000','60%','100','1 s');
+WriteData('7', '550','80%','192','1000','62%','105','1 s');
+WriteData('8', '600','85%','208','1000','64%','110','1 s');
+WriteSkillBegin2();
+WriteHeader('Skill Level', 'Damage','Splash', 'Radius', 'Range', 'Effective','Energy','Cool.');
+WriteData('9', '650','90%','224','1000','66%','115','1 s');
+WriteData('10', '700','95%','240','1000','68%','120','1 s');
+WriteData('11', '750','100%','256','1000','70%','125','1 s');
+WriteData('12', '800','105%','272','1000','72%','130','1 s');
+WriteData('13', '850','110%','288','1000','74%','135','1 s');
+WriteData('14', '900','115%','304','1000','76%','140','1 s');
+WriteData('15', '950','120%','320','1000','78%','145','1 s');
+WriteData('16', '1000','125%','336','1000','80%','150','1 s');
+WriteSkillEnd();
+</script>
+
+<br>
+<script>
+WriteSkill('Incendiary&nbsp;Rocket', 'incrocket', 'V', 'Sears the flesh of the target, making it more vulnerable and causing extreme damage over time. Incinerated targets suffer increased damage. Power armored units are unaffected. Bosses suffer an additional, permanent armor reduction.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Damage', 'Armor', 'Range', 'Duration', 'Energy', 'Cooldown');
+WriteData('1', '2076-2285','-1','1200','20 s','75','6 s');
+WriteData('2', '2192-2412','-2','1200','20 s','80','6 s');
+WriteData('3', '2313-2546','-3','1200','20 s','85','6 s');
+WriteData('4', '2440-2685','-4','1200','20 s','90','6 s');
+WriteData('5', '2572-2830','-5','1200','20 s','95','6 s');
+WriteData('6', '2710-2982','-6','1200','20 s','100','6 s');
+WriteData('7', '2854-3140','-7','1200','20 s','105','6 s');
+WriteData('8', '3004-3305','-8','1200','20 s','110','6 s');
+WriteSkillBegin2();
+WriteHeader('Skill Level', 'Damage', 'Armor', 'Range', 'Duration', 'Energy', 'Cooldown');
+WriteData('9', '3160-3477','-9','1200','20 s','115','6 s');
+WriteData('10', '3324-3657','-10','1200','20 s','120','6 s');
+WriteData('11', '3494-3844','-11','1200','20 s','125','6 s');
+WriteData('12', '3672-4040','-12','1200','20 s','130','6 s');
+WriteData('13', '3857-4244','-13','1200','20 s','135','6 s');
+WriteData('14', '4050-4456','-14','1200','20 s','140','6 s');
+WriteData('15', '4251-4677','-15','1200','20 s','145','6 s');
+WriteData('16', '4461-4908','-16','1200','20 s','150','6 s');
+WriteSkillEnd();
+</script>
+
+<br>
+<script>
+WriteSkillFuel();
+</script>
+
+<br>
+<script>
+WriteSkillNanites(2);
+</script>
+
+
+<br><br>
+<font color=ffcc00><b>Innate Abilities</b></font>
+
+<script>
+WriteSkill('Firefly', 'fly', 'ZX', 'Uses a small supply of nanites to rapidly construct a surveillance droid which immediately flies to the targeted location.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Duration', 'Energy', 'Cooldown');
+WriteData('--', '20+60 s', '100', '60 s');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Combustion', 'combust', 'ZC', 'Ignites fuel tanks to generate energy over a short duration, but the burning drains health from the officer.');
+WriteSkillBegin();
+WriteHeader('Hero Level', 'Duration', 'Health', 'Energy', 'Cooldown');
+WriteData('1', '12 s', '-4 hps', '+50 eps', '120 s');
+WriteData('10', '14 s', '-4 hps', '+50 eps', '120 s');
+WriteData('20', '16 s', '-4 hps', '+50 eps', '120 s');
+WriteData('30', '18 s', '-4 hps', '+50 eps', '120 s');
+WriteData('40', '20 s', '-4 hps', '+50 eps', '120 s');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Turn&nbsp;Up&nbsp;the&nbsp;Heat', 'heat', '+', 'Increases damage, but the overburn drains health from the officer and adjacent units.');
+WriteSkillBegin();
+WriteHeader('Level', 'Damage', 'Health', 'Cooldown');
+WriteData('off', '+0', '-0 hps', '6 s');
+WriteData('1', '+15', '-5 hps', '--');
+WriteData('2', '+25', '-9 hps', '--');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Reinforced&nbsp;Plating', 'replate', '.', 'Increases armor and damage absorption.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Armor', 'Absorption');
+WriteData('--', '+9', '+2.8');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkillSprint(2);
+</script>
+
+<br>
+<!--Frag. Locator-->
+<script>
+WriteSkillFrag();
+</script>
+
+
+<br>
+</body>
+</html>

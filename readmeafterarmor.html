@@ -1,0 +1,42 @@
+
+<html>
+<head>
+<title>SWAT: Aftermath, Power Armor</title>
+<script language="javascript" src="swat.js"></script>
+</head>
+<body bgcolor=000000 text=FFFFFF link=99E362 vlink=69B926 alink=00FF00>
+
+<script>
+WriteTopMenu('',true);
+WriteArmorMenu();
+WriteBr();
+WriteTitle('Armor');
+document.writeln(info_STIT_Armor);
+
+WriteSkill('Power&nbsp;Armor', 'armor', '.', 'Powered personal armor which enhances and protects the wearer. It also contains a micro-fusion generator and nanites replicator for powering the wearer\'s various systems. Four varieties are available for your hero, each focusing on a balance of defense versus mobility.');
+WriteClassHeaderEnd();
+WriteSkillBegin();
+WriteHeader('&nbsp;', 'Move Spd.', 'Absorption', 'Armor', 'Nanites');
+WriteData('Light',   '290', '1.4', '0', '<a href=#Compact>Compact</a>');
+WriteData('Medium',  '250', '2.1', '0', '<a href=#Standard>Standard</a>');
+WriteData('Heavy',   '220', '2.8', '0', '<a href=#Large>Large</a>');
+WriteData('Advanced','230', '2.8', '1', '<a href=#Large>Large</a>');
+WriteSkillEnd(true);
+WriteBr();
+WriteSkillSprint();
+WriteBr();
+WriteSkillNanites(0, true, 'unit');
+WriteBr();
+WriteSkillNanites(1, true, 'unit');
+WriteBr();
+WriteSkillNanites(2, true, 'unit');
+WriteBr();
+WriteSkillNanites(4, true, 'unit');
+WriteBr();
+WriteSkillNanites(5, true, 'unit');
+</script>
+
+
+<br>
+</body>
+</html>

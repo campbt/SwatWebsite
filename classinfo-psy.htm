@@ -1,0 +1,208 @@
+
+<html>
+<head>
+<title>SWAT: Aftermath</title>
+
+<script language="javascript" src="swat.js">
+</script>
+
+</head>
+<body bgcolor=000000 text=FFFFFF link=99E362 vlink=69B926 alink=00FF00>
+
+<script>
+WriteTopMenu('',true);
+WriteClassMenu();
+WriteSummonedMenu('');
+WriteClassHeaderBegin('Psychologist','psy','psy','Buffer, Priority','The psychologist mixes traditional techniques with advanced psionics to both assist allies and hurt enemies. He can only focus on one ally at a time, but the effect is incredible. His intelligence is very high.'); 
+WriteSkillLinks('Mental&nbsp;Clarity','clarity','Confidence','conf','Self-Motivation','motiv','Refined&nbsp;Rifle','refrif','Nanites','nanites');
+WriteSkillLinks('Mind&nbsp;Slay','mindslay','Mind&nbsp;Rot','mindrot','Re-specialize','respec','Awareness','aware','Sprint','sprint','Frag.&nbsp;Locator','frag');
+WriteClassHeaderEnd('psy');
+</script>
+
+<br><br>
+<font color=ffcc00><b>Statistics</b></font>
+
+<table cellspacing=0 cellpadding=0 border=0 width=100%><tr valign=top>
+
+<td width=27%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsAttribs('18','0.15','11','0.60','111','0.80');
+</script></table>
+</td>
+
+<td width=23%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsWeapon(0);
+</script></table>
+</td>
+
+<td width=50%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsArmor();
+</script></table>
+</td>
+
+</tr></table>
+
+<br><br>
+<font color=ffcc00><b>Bonuses</b></font>
+
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteBonus('Levelup','Mind Rot ability improved at levels 10 and 20.');
+WriteBonus('Epic','Mind Rot ability improved at each level from 51 to 55.');
+WriteBonus('Rank','Experience gain rate increased at each rank from 2 to 11.');
+WriteBonus('Droid',InfoLinkS('Droid','unitinfo-lad.htm')+' has 2 extra skill points.');
+</script></table>
+
+<br><br>
+<font color=ffcc00><b>Trainable Abilities</b></font>
+
+<script>
+WriteSkill('Mental&nbsp;Clarity', 'clarity', 'X', 'Clears the target\'s mind of distracting thoughts, allowing him to gain more experience. The psychologist may only have one focus active at a time; inactive focii will provide their synergy bonus. Focii are only 80% effective on self.<br>Passively bolsters the psychologist\'s intelligence regardless of which focus he is using or who he is using it on.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Exp. Gain', 'Synergy', 'Intelligence', 'Range', 'Cooldown');
+WriteData('1', '+25%','+5%','+1','unlimited','3 s');
+WriteData('2', '+30%','+6%','+2','unlimited','3 s');
+WriteData('3', '+35%','+7%','+3','unlimited','3 s');
+WriteData('4', '+40%','+8%','+4','unlimited','3 s');
+WriteData('5', '+45%','+9%','+5','unlimited','3 s');
+WriteData('6', '+50%','+10%','+6','unlimited','3 s');
+WriteData('7', '+55%','+11%','+7','unlimited','3 s');
+WriteData('8', '+60%','+12%','+8','unlimited','3 s');
+WriteSkillBegin2();
+WriteHeader('Skill Level', 'Exp. Gain', 'Synergy', 'Intelligence', 'Range', 'Cooldown');
+WriteData('9', '+65%','+13%','+9','unlimited','3 s');
+WriteData('10', '+70%','+14%','+10','unlimited','3 s');
+WriteData('11', '+75%','+15%','+11','unlimited','3 s');
+WriteData('12', '+80%','+16%','+12','unlimited','3 s');
+WriteData('13', '+85%','+17%','+14','unlimited','3 s');
+WriteData('14', '+90%','+18%','+16','unlimited','3 s');
+WriteData('15', '+95%','+19%','+18','unlimited','3 s');
+WriteData('16', '+100%','+20%','+20','unlimited','3 s');
+WriteSkillEnd();
+</script>
+
+<br>
+<script>
+WriteSkill('Confidence', 'conf', 'C', 'Boosts the target\'s confidence to act more decisively, increasing his agility. The psychologist may only have one focus active at a time; inactive focii will provide their synergy bonus. Focii are only 80% effective on self.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Agility', 'Synergy', 'Range', 'Cooldown');
+WriteData('1', '+5','+2','unlimited','3 s');
+WriteData('2', '+10','+4','unlimited','3 s');
+WriteData('3', '+15','+6','unlimited','3 s');
+WriteData('4', '+20','+8','unlimited','3 s');
+WriteData('5', '+25','+10','unlimited','3 s');
+WriteData('6', '+30','+12','unlimited','3 s');
+WriteData('7', '+35','+14','unlimited','3 s');
+WriteData('8', '+40','+16','unlimited','3 s');
+WriteSkillBegin2();
+WriteHeader('Skill Level', 'Agility', 'Synergy', 'Range', 'Cooldown');
+WriteData('9', '+45','+18','unlimited','3 s');
+WriteData('10', '+50','+20','unlimited','3 s');
+WriteData('11', '+55','+22','unlimited','3 s');
+WriteData('12', '+60','+24','unlimited','3 s');
+WriteData('13', '+65','+26','unlimited','3 s');
+WriteData('14', '+70','+28','unlimited','3 s');
+WriteData('15', '+75','+30','unlimited','3 s');
+WriteData('16', '+80','+32','unlimited','3 s');
+WriteSkillEnd();
+</script>
+
+<br>
+<script>
+WriteSkill('Self-Motivation', 'motiv', 'V', 'Helps the target find his inner drive, allowing him to move more quickly. The psychologist may only have one focus active at a time; inactive focii will provide their synergy bonus. Focii are only 80% effective on self.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Move Spd.', 'Synergy', 'Range', 'Cooldown');
+WriteData('1', '+16','+5','unlimited','3 s');
+WriteData('2', '+28','+9','unlimited','3 s');
+WriteData('3', '+40','+13','unlimited','3 s');
+WriteData('4', '+52','+17','unlimited','3 s');
+WriteData('5', '+64','+21','unlimited','3 s');
+WriteData('6', '+76','+25','unlimited','3 s');
+WriteData('7', '+88','+29','unlimited','3 s');
+WriteData('8', '+100','+33','unlimited','3 s');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkillRefRif();
+</script>
+
+<br>
+<script>
+WriteSkillNanites(1);
+</script>
+
+<br><br>
+<font color=ffcc00><b>Innate Abilities</b></font>
+
+<script>
+WriteSkill('Mind&nbsp;Slay', 'mindslay', 'ZX', 'Projects a powerful psionic wave towards the target, overwhelming its mind. Normal units are killed; a boss\'s health is divided. Mechanical units are unaffected. The cooldown is determined by the psychologist\'s intelligence and scaled by the target\'s current health and distance. Slain zombies will not reanimate.');
+WriteSkillBegin();
+WriteHeader('Unit Type', 'HP Damage', 'Range', 'Energy', 'Cooldown');
+WriteData('Normal Unit', '-100% hp', 'unlimited', '0', 'variable');
+WriteData('Mini-Boss', '-80% hp', 'unlimited', '0', 'variable');
+WriteData('Boss', '-50% hp', 'unlimited', '0', 'variable');
+WriteData('Godzilla', '-33% hp', 'unlimited', '0', 'variable');
+WriteData('Megazilla', '-25% hp', 'unlimited', '0', 'variable');
+WriteData('Nemesis', '-33% hp', 'unlimited', '0', 'variable');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Mind&nbsp;Rot', 'mindrot', 'ZC', 'Rots the minds of zombified targets, immediately removing all their essence, disabling special abilities, reducing armor, and temporarily slowing movement speed and disorienting them. The disorientation duration is determined by the psychologist\'s intelligence.');
+WriteSkillBegin();
+WriteHeader('Hero Level', 'Damage', 'Move Spd.', 'Armor', 'Radius', 'Range', 'Energy', 'Cooldown');
+WriteData('1',  '-2 hps', '-100', '-1', '300', 'unlimited', '0', '30 s');
+WriteData('10', '-2 hps', '-100', '-2', '300', 'unlimited', '0', '25 s');
+WriteData('20', '-2 hps', '-100', '-3', '300', 'unlimited', '0', '20 s');
+WriteData('51', '-2 hps', '-100', '-3', '312', 'unlimited', '0', '19 s');
+WriteData('52', '-2 hps', '-100', '-3', '324', 'unlimited', '0', '18 s');
+WriteData('53', '-2 hps', '-100', '-3', '336', 'unlimited', '0', '17 s');
+WriteData('54', '-2 hps', '-100', '-3', '348', 'unlimited', '0', '16 s');
+WriteData('55', '-2 hps', '-100', '-3', '360', 'unlimited', '0', '15 s');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Re-specialize', 'respec', 'ZG', 'Abandons the psychologist\'s current specializations, allowing him to study different mental skills. Skill points removed will be unavailable for a short time while the hero\'s mind adjusts. While only skill points spent on focii are reallocated, they don\'t have to be spent on focii again. The delay is dependent on the number of skill points which had been spent on focii.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Energy', 'Cooldown');
+WriteData('--', '0', '3-20 s');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Awareness', 'aware', '.', 'The psychologist is able to sense the minds of units in the area, making him aware of their presence, even if cloaked. Also increases sight range.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Radius', 'Range');
+WriteData('--', '1700', '+200');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Clairvoyance', 'aware', 'ZB', 'The psychologist is able to maintain clairvoyance of an area, making him aware of an enemy presence, even if cloaked. Can only maintain one area under clairvoyance at a time. Sight of the area is lost if the Psychologist receives a head injury or dies.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Radius');
+WriteData('--', '1700');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkillSprint(1);
+</script>
+
+<br>
+<script>
+WriteSkillFrag();
+</script>
+
+<br>
+</body>
+</html>

@@ -1,0 +1,73 @@
+
+<html>
+<head>
+<title>SWAT: Aftermath, Damage Multipliers</title>
+<meta charset="UTF-8">
+<script language="javascript" src="swat.js"></script>
+<Script language="javascript">
+function WriteDefType(Data1, Data2, Data3, Data4, Data5, Data6) {
+  document.writeln('<tr align=center valign=top bgcolor=202020>');
+  document.writeln('<td width=90>&nbsp;</td>');
+  document.writeln('<td><font size=-1><b>' + Data1 + '</b></font></td>');
+  document.writeln('<td><font size=-1><b>' + Data2 + '</b></font></td>');
+  document.writeln('<td><font size=-1><b>' + Data3 + '</b></font></td>');
+  document.writeln('<td><font size=-1><b>' + Data4 + '</b></font></td>');
+  document.writeln('<td><font size=-1><b>' + Data5 + '</b></font></td>');
+  document.writeln('<td><font size=-1><b>' + Data6 + '</b></font></td>');
+  document.writeln('</tr>');
+}
+function WriteAtkType(Level, Data1, Data2, Data3, Data4, Data5, Data6) {
+  if (Data2.length != 4) { Data2 = '<font color=202020>0</font>' + Data2; }
+  if (Data3.length != 4) { Data3 = '<font color=202020>0</font>' + Data3; }
+  if (Data4.length != 4) { Data4 = '<font color=202020>0</font>' + Data4; }
+  if (Data5.length != 4) { Data5 = '<font color=202020>0</font>' + Data5; }
+  if (Data6.length == 2) { Data6 = '<font color=202020>0</font>' + Data6; }
+                         Data6 = '<font color=202020>0</font>' + Data6;
+  document.writeln('<tr align=center valign=top bgcolor=202020>');
+  document.writeln('<td width=90><font size=-1><b>' + Level + '</b></font></td>');
+  document.writeln('<td><font size=-1 face=Arial color=ffe888>' + Data1 + '</font></td>');
+  document.writeln('<td><font size=-1 face=Arial color=ffe888>' + Data2 + '</font></td>');
+  document.writeln('<td><font size=-1 face=Arial color=ffe888>' + Data3 + '</font></td>');
+  document.writeln('<td><font size=-1 face=Arial color=ffe888>' + Data4 + '</font></td>');
+  document.writeln('<td><font size=-1 face=Arial color=ffe888>' + Data5 + '</font></td>');
+  document.writeln('<td><font size=-1 face=Arial color=ffe888>' + Data6 + '</font></td>');
+  document.writeln('</tr>');
+}
+</script>
+</head>
+<body bgcolor=000000 text=FFFFFF link=99E362 vlink=69B926 alink=00FF00>
+
+<script>
+WriteTopMenu('',true);
+WriteBr();
+WriteTitle('Damage Multipliers');
+</script>
+<br>
+Every form of damage in the game is linked to an attack type, and the damage a unit receives 
+is modified in accordance with its defense type. This chart illustrates the multiplier each 
+attack types uses against each defense type.
+<br>
+<Script>
+WriteSkillBegin('75%');
+WriteDefType(      'None', 'Thick Skin', 'Power Armor', 'MkII', 'Contraption', 'Vehicle');
+WriteAtkType('Bullets',   '100%', '100%',  '40%',  '32%',  '35%',  '10%');
+WriteAtkType('Rockets',   '100%', '140%',  '30%',  '24%',  '20%',  '40%');
+WriteAtkType('Flame',     '100%', '100%',  '15%',  '15%',  '10%',   '5%');
+WriteAtkType('Laser',     '100%', '100%', '100%',  '80%',  '10%',   '5%');
+WriteAtkType('Explosion', '100%', '150%',  '50%',  '40%',  '40%',  '99%');
+WriteAtkType('Melee¹',    '100%', '100%', '100%',  '66%',  '10%',  '90%');
+WriteAtkType('Melee²',    '100%',  '50%', '100%',  '66%', '100%',  '60%');
+WriteSkillEnd(true);
+</script>
+<br>
+Power armored units use either the Power Armor or Power Armor MkII defense type, although 
+<script>InfoLink('Nemesis','readmeafterobjectives.html#nemesis');</script> 
+uses the Thick Skin defense type like other bosses. Most enemies use the Melee¹ attack type. 
+Bosses, <script>InfoLink('robodogs','unitinfo-mav.htm#robodog');</script>, and 
+<script>InfoLink('CPUs','unitinfo-tech.htm#cpu');</script> 
+use the Melee² attack type. Weapon-skill damage uses the attack type of the 
+<script>InfoLink('gun','readmeafterweapons.html');</script>. 
+Damage from other sources usually uses either the Explosion or Melee¹ attack type.
+<br>
+</body>
+</html>

@@ -1,0 +1,236 @@
+
+<html>
+<head>
+<title>SWAT: Aftermath</title>
+
+<script language="javascript" src="swat.js">
+</script>
+
+</head>
+<body bgcolor=000000 text=FFFFFF link=99E362 vlink=69B926 alink=00FF00>
+
+<script>
+WriteTopMenu('',true);
+WriteClassMenu();
+WriteSummonedMenu('HVYORD');
+WriteClassHeaderBegin('Heavy&nbsp;Ordnance','hvyord','hvy','Defense, Offense','The heavy ord\'s abilities focus on maintaining a wall of firepower and massive energy levels. He can create droids to help Bravo team and activate a plasma shield to greatly increase his defense. His intelligence is only average.'); 
+WriteSkillLinks('Plasma&nbsp;Shield','plasshield','Storage&nbsp;Cells','cell','Droid&nbsp;Integrity','ars','Droid&nbsp;Ammo','droido','Droid&nbsp;Mobility','turbo','Power&nbsp;Grid','reactor','Plasma&nbsp;Rounds','plasrnd','Nanites','nanites');
+WriteSkillLinks('Construct&nbsp;Droid','droid','XLR8','xlr8','Recharge&nbsp;Battery','batt','Phased&nbsp;Droids','phase','Sprint','sprint','Frag.&nbsp;Locator','frag');
+WriteSummonedsLinks('hvyord','Mini-Droid','droid');
+WriteClassHeaderEnd('hvyord');
+</script>
+
+
+<br><br>
+<font color=ffcc00><b>Statistics</b></font>
+
+<table cellspacing=0 cellpadding=0 border=0 width=100%><tr valign=top>
+
+<td width=27%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsAttribs('25','1.00','11','0.30','100','0.31');
+</script></table>
+</td>
+
+<td width=23%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsWeapon(2);
+</script></table>
+</td>
+
+<td width=50%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsArmor();
+</script></table>
+</td>
+
+</tr></table>
+
+<br><br>
+<font color=ffcc00><b>Bonuses</b></font>
+
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteBonus('Levelup','none');
+WriteBonus('Epic','Mini-droid Nanites and Health increased at each level from 51 to 55.');
+WriteBonus('Rank','XLR8 ability improved at ranks 4, 7, and 10.');
+WriteBonus('Droid',InfoLinkS('Droid','unitinfo-lad.htm')+' has +16% energy regeneration and 250 extra energy storage.');
+</script></table>
+
+<br><br>
+<font color=ffcc00><b>Trainable Abilities</b></font>
+
+<script>
+WriteSkill('Plasma&nbsp;Shield', 'plasshield', '+', 'System which can be activated to over-excite the nanites in the hero\'s suit, making them leap away and deflect some attacks. They also cause damage to adjacent innards.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Chance','Damage','Energy');
+WriteData('1', '9%','50 dps','-1 eps');
+WriteData('2', '18%','75 dps','-2 eps');
+WriteData('3', '26%','100 dps','-3 eps');
+WriteData('4', '34%','125 dps','-4 eps');
+WriteData('5', '41%','150 dps','-5 eps');
+WriteData('6', '48%','175 dps','-6 eps');
+WriteData('7', '54%','200 dps','-7 eps');
+WriteData('8', '60%','225 dps','-8 eps');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Storage&nbsp;Cells', 'cell', '.', 'Increases the hero\'s maximum energy capacity, and increases energy regeneration while current energy is less than 1000. Also increases initial energy of constructed mini-droids.</font><br><font size=-1>This ability is part of the Cells & Droids ability.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Energy','Energy Regen.','Droid Energy');
+WriteData('1', '+250','+16%','+25');
+WriteData('2', '+500','+33%','+50');
+WriteData('3', '+750','+50%','+75');
+WriteData('4', '+1000','+66%','+100');
+WriteData('5', '+1250','+83%','+125');
+WriteData('6', '+1500','+99%','+150');
+WriteData('7', '+1750','+116%','+175');
+WriteData('8', '+2000','+133%','+200');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Droid&nbsp;Integrity', 'ars', '.', 'Improves mini-droid automated repair system and structural integrity.</font><br><font size=-1>This ability is part of the Cells & Droids ability.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Droid HP','Droid Armor','Damage Reduction');
+WriteData('1', '1.0 hps','+2','4%');
+WriteData('2', '2.0 hps','+4','8%');
+WriteData('3', '3.0 hps','+6','12%');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Droid&nbsp;Ammo', 'droido', '.', 'Upgrades droid ammunition level and attack range.</font><br><font size=-1>This ability is part of the Cells & Droids ability.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Droid Damage', 'Droid Range');
+WriteData('1', '+1-5', '+75');
+WriteData('2', '+2-10', '+150');
+WriteData('3', '+3-15', '+225');
+WriteData('4', '+4-20', '+300');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Droid&nbsp;Mobility', 'turbo', '.', 'Increases droid movement speed.</font><br><font size=-1>This ability is part of the Cells & Droids ability.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Droid Move Spd.');
+WriteData('1', '+30');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Power&nbsp;Grid', 'reactor', 'V', 'Allows the officer to siphon energy from the city\'s power grid. Energy regeneration bonus is halved until partial power is restored.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Duration','Energy','Cooldown');
+WriteData('1', '20 s','+40 eps','120 s');
+WriteData('2', '20 s','+45 eps','104 s');
+WriteData('3', '20 s','+50 eps','91 s');
+WriteData('4', '20 s','+55 eps','79 s');
+WriteData('5', '20 s','+60 eps','69 s');
+WriteData('6', '20 s','+65 eps','60 s');
+WriteData('7', '20 s','+69 eps','52 s');
+WriteData('8', '20 s','+73 eps','45 s');
+WriteSkillBegin2();
+WriteHeader('Skill Level', 'Duration','Energy','Cooldown');
+WriteData('9', '20 s','+77 eps','40 s');
+WriteData('10', '20 s','+81 eps','34 s');
+WriteData('11', '20 s','+85 eps','30 s');
+WriteData('12', '20 s','+88 eps','26 s');
+WriteData('13', '20 s','+91 eps','23 s');
+WriteData('14', '20 s','+94 eps','20 s');
+WriteData('15', '20 s','+97 eps','17 s');
+WriteData('16', '20 s','+100 eps','15 s');
+WriteSkillEnd();
+</script>
+
+<br>
+<script>
+WriteSkillPlasRnd();
+</script>
+
+<br>
+<script>
+WriteSkillNanites(2);
+</script>
+
+<br><br>
+<font color=ffcc00><b>Innate Abilities</b></font>
+
+<script>
+WriteSkill('Construct&nbsp;Droid', 'droid', 'ZX', 'Uses a large supply of nanites to rapidly construct a miniature assault droid. Each concurrent droid requires more energy to construct.','hvyord','droid');
+WriteSkillBegin();
+WriteHeader('Hero Level', 'Droid Nanites', 'Droid Health', 'Energy', 'Cooldown');
+WriteData('1', '+0', '+0', '350*', '20 s');
+WriteData('51', '+1', '+20', '350*', '20 s');
+WriteData('52', '+2', '+40', '350*', '20 s');
+WriteData('53', '+3', '+60', '350*', '20 s');
+WriteData('54', '+4', '+80', '350*', '20 s');
+WriteData('55', '+5', '+100', '350*', '20 s');
+WriteSkillBegin2();
+WriteHeader('Droids', 'Energy');
+WriteData('0', '250');
+WriteData('1', '500');
+WriteData('2', '750');
+WriteData('3', '1000');
+WriteData('4', '1250');
+WriteData('5', '9999');
+WriteSkillEnd();
+</script>
+
+<br>
+<script>
+WriteSkill('XLR8', 'xlr8', 'ZC', 'Incrementally increases attack speed by accelerating the main firing mechanism, but also generates excess heat. Accelerates hero\'s adjacent mini-droids, too. Moving cancels the effect. Cooldown is determined by duration and rank.');
+WriteSkillBegin();
+WriteHeader('Stage', 'Attack Spd.', 'Delay','Energy','Cooldown');
+WriteData('1', '+25%', '0.0 s', '0', 'variable');
+WriteData('2', '+50%', '5.0 s', '--', '--');
+WriteData('3', '+100%', '7.5 s', '--', '--');
+WriteData('4', '+200%', '7.5 s', '--', '--');
+WriteData('5', '+400%', '7.5 s', '--', '--');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Recharge&nbsp;Battery', 'batt', 'ZG', 'Adds an additional charge to an existing battery in the unit\'s inventory. Becomes corroded after recharging 20 batteries. If the Heavy Ord uses a battery it allows him to recharge one additional battery.');
+WriteSkillBegin();
+WriteHeader('Status', 'Energy','Cooldown');
+WriteData('normal', '500', '1 s');
+WriteData('corroded', '575', '60 s');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Phased&nbsp;Droids', 'phase', 'ZB', 'Activates a phase-shifter on the officer\'s nearby mini-droids which prevents them from being targeted or taking damage. Performing any action cancels the effect.');
+WriteSkillBegin();
+WriteHeader('Droids', 'Duration', 'Energy','Cooldown');
+WriteData('0', '--', '0', '--');
+WriteData('1', '20 s', '80', '6 s');
+WriteData('2', '20 s', '120', '6 s');
+WriteData('3', '20 s', '150', '6 s');
+WriteData('4', '20 s', '170', '6 s');
+WriteData('5', '20 s', '180', '6 s');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<!--Sprint-->
+<script>
+WriteSkillSprint(2);
+</script>
+
+<br>
+<!--Frag. Locator-->
+<script>
+WriteSkillFrag();
+</script>
+
+<br>
+</body>
+</html>

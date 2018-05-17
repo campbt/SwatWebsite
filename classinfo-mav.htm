@@ -1,0 +1,253 @@
+
+<html>
+<head>
+<title>SWAT: Aftermath</title>
+
+<script language="javascript" src="swat.js"></script>
+<script language="javascript">
+<!--
+function MavWeaponSelect(weapon) {
+  var s1 = "";
+  var s2 = "";
+  var s3 = "";
+  var s4 = "";
+  var s5 = "";
+  mavweapon0.style.display = "none";
+  mavweapon1.style.display = "none";
+  mavweapon2.style.display = "none";
+  mavweapon3.style.display = "none";
+  mavweapon4.style.display = "none";
+  mavgunskill0.style.display = "none";
+  mavgunskill1.style.display = "none";
+  mavgunskill2.style.display = "none";
+  mavgunskill3.style.display = "none";
+  mavgunskill4.style.display = "none";
+  switch (weapon) {
+    case 0 : s1 = "0.60"; s2 = "Refined&nbsp;Rifle"; s3 = "Target Ground"; s5 = "Target Ground"; s4 = ""; mavweapon0.style.display = "block"; mavgunskill0.style.display = "block"; break;
+    case 1 : s1 = "0.60"; s2 = "Critical&nbsp;Shot"; s3 = "Ricochet";      s5 = "Ricochet";      s4 = "The ricochet will hit up to two units adjacent to the targeted location."; mavweapon1.style.display = "block"; mavgunskill1.style.display = "block"; break;
+    case 2 : s1 = "0.30"; s2 = "Plasma&nbsp;Rounds"; s3 = "Target Ground"; s5 = "Target Ground"; s4 = ""; mavweapon2.style.display = "block"; mavgunskill2.style.display = "block"; break;
+    case 3 : s1 = "0.60"; s2 = "Lock-Down";          s3 = "Target Ground"; s5 = "Target Ground"; s4 = ""; mavweapon3.style.display = "block"; mavgunskill3.style.display = "block"; break;
+    case 4 : s1 = "0.60"; s2 = "Advanced&nbsp;Fuel"; s3 = "Target Ground"; s5 = "Target Ground"; s4 = ""; mavweapon4.style.display = "block"; mavgunskill4.style.display = "block"; break;
+  }
+  mavattribs.innerHTML      = s1;
+  mavgunskillname.innerHTML = s2;
+  mavatkgrdname.innerHTML   = s3;
+  mavatkgrd.innerHTML       = s4;
+  mavatkgrdtitle.innerHTML  = s5;
+}
+//-->
+</script>
+
+</head>
+<body bgcolor=000000 text=FFFFFF link=99E362 vlink=69B926 alink=00FF00>
+
+<script>
+WriteTopMenu('',true);
+WriteClassMenu();
+WriteSummonedMenu('MAV');
+WriteClassHeaderBegin('Maverick','mav','mav','Offense, Tank, Recon','The maverick has a varied selection of abilities such as grenades, a robodog companion, and fair healing. He also gets to choose which gun to equip, uses an improved version of each, and begins with one point in his gun skill. His intelligence is only average.'); 
+WriteSkillLinks('Plasma&nbsp;Grenade','gren','Robodog','robodog','Advanced&nbsp;Generator','gen','<span id=mavgunskillname>Advanced&nbsp;Fuel</span>','mavgunskill','Nanites','nanites');
+WriteSkillLinks('Nano-Inj.','nanoinj','Reprogram','reprog','<span id=mavatkgrdname>Target&nbsp;Ground</span>','atkgrd','Mutate','mutate','Sprint','sprint','Frag.&nbsp;Locator','frag');
+WriteSummonedsLinksDog('Chrome&nbsp;Retriever','chrome','Mecha&nbsp;Mutt','mecha','Kamikaze&nbsp;Canine','kami');
+WriteClassHeaderEnd('mav');
+</script>
+
+<br><font color=ffcc00>Select Gun:</font> 
+<img src=pics/tiny-refrif.gif onclick="MavWeaponSelect(0);" alt="Select Assault Rifle" title="Select Assualt Rifle"> 
+<img src=pics/tiny-crit.gif onclick="MavWeaponSelect(1);" alt="Select Sniper Rifle" title="Select Sniper Rifle"> 
+<img src=pics/tiny-plasrnd.gif onclick="MavWeaponSelect(2);" alt="Select Chaingun" title="Select Chaingun"> 
+<img src=pics/tiny-lockdown.gif onclick="MavWeaponSelect(3);" alt="Select Rocket Launcher" title="Select Rocket Launcher"> 
+<img src=pics/tiny-fuel.gif onclick="MavWeaponSelect(4);" alt="Select Flamethrower" title="Select Flamethrower">
+
+<br><br>
+<font color=ffcc00><b>Statistics</b></font> 
+
+<table cellspacing=0 cellpadding=0 border=0 width=100%><tr valign=top>
+
+<td width=27%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsAttribs('22','0.70','12','<span id=mavattribs>0.60</span>','100','0.31');
+</script></table>
+</td>
+
+<td width=23%>
+<span id=mavweapon0 style="display:none">
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsWeapon(0, true);
+</script></table>
+</span>
+<span id=mavweapon1 style="display:none">
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsWeapon(1, true);
+</script></table>
+</span>
+<span id=mavweapon2 style="display:none">
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsWeapon(2, true);
+</script></table>
+</span>
+<span id=mavweapon3 style="display:none">
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsWeapon(3, true);
+</script></table>
+</span>
+<span id=mavweapon4 style="display:block">
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsWeapon(4, true);
+</script></table>
+</span>
+</td>
+
+<td width=50%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsArmor();
+</script></table>
+</td>
+
+</tr></table>
+
+<br><br>
+<font color=ffcc00><b>Bonuses</b></font>
+
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteBonus('Levelup','Extra skill point awared to robodog at levels 3 to 18, 20, 22, 24, 26, 29, 32, 35, and 40.');
+WriteBonus('Epic','Extra skill point awarded at each level from 51 to 55.');
+WriteBonus('Rank','Extra skill point awarded to robodog at ranks 4, 7, 10, and 11.');
+WriteBonus('Droid',InfoLinkS('Droid','unitinfo-lad.htm')+' has 2 extra agility per mark and +20 damage.');
+</script></table>
+
+<br><br>
+<font color=ffcc00><b>Trainable Abilities</b></font>
+
+<script>
+WriteSkill('Plasma&nbsp;Grenade', 'gren', 'X', 'Uses energy to create a plasma grenade which can be thrown, dealing explosive damage to the target and units around it.</font><br><font size=-1>Below left represents standard ability; below right represents ability while Grenade Launcher item carried.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Damage', 'Radius', 'Range', 'Energy', 'Cooldown');
+WriteData('1','115, 85','224, 264','650','55','3 s');
+WriteData('2','130, 100','224, 264','650','60','3 s');
+WriteData('3','165, 120','224, 264','650','70','3 s');
+WriteData('4','200, 145','224, 264','650','80','3 s');
+WriteData('5','250, 175','224, 264','650','95','3 s');
+WriteData('6','310, 210','224, 264','650','110','3 s');
+WriteData('7','380, 250','224, 264','650','130','3 s');
+WriteData('8','460, 295','224, 264','650','150','3 s');
+WriteSkillBegin2();
+WriteHeader('Skill Level', 'Damage', 'Radius', 'Range', 'Energy', 'Cooldown');
+WriteData('1','165, 120','224, 264','866','55','3 s');
+WriteData('2','200, 145','224, 264','866','60','3 s');
+WriteData('3','250, 175','224, 264','866','70','3 s');
+WriteData('4','310, 210','224, 264','866','80','3 s');
+WriteData('5','380, 250','224, 264','866','95','3 s');
+WriteData('6','460, 295','224, 264','866','110','3 s');
+WriteData('7','550, 345','224, 264','866','130','3 s');
+WriteData('8','650, 400','224, 264','866','150','3 s');
+WriteSkillEnd();
+</script>
+
+<br>
+<script>
+WriteSkill('Robodog', 'robodog', 'C', 'Reconstructs the hero\'s robodog companion and passively increases its effectiveness. If the robodog is far away (more than 2900) when it dies, the hero will have to be near (within 900) its death location to reconstruct it.','mav','robodog');
+WriteSkillBegin('33%');
+WriteHeader('Skill Level', 'Energy', 'Dog Regen.', 'Cool.');
+WriteData('1','350','1 eps','1 s');
+WriteData('2','350','2 eps','1 s');
+WriteData('3','350','3 eps','1 s');
+WriteData('4','350','4 eps','1 s');
+WriteData('5','350','5 eps','1 s');
+WriteData('6','350','6 eps','1 s');
+WriteData('7','350','7 eps','1 s');
+WriteData('8','350','8 eps','1 s');
+WriteSkillBegin2('33%');
+WriteHeader('Skill Level', 'Energy', 'Dog Regen.', 'Cool.');
+WriteData('9','350','8 eps','1 s');
+WriteData('10','350','8 eps','1 s');
+WriteData('11','350','8 eps','1 s');
+WriteData('12','350','8 eps','1 s');
+WriteData('13','350','8 eps','1 s');
+WriteData('14','350','8 eps','1 s');
+WriteData('15','350','8 eps','1 s');
+WriteData('16','350','8 eps','1 s');
+WriteSkillBegin2('33%');
+WriteHeader('Skill Level', 'Energy', 'Dog Regen.', 'Cool.');
+WriteData('17','350','8 eps','1 s');
+WriteData('18','350','8 eps','1 s');
+WriteData('19','350','8 eps','1 s');
+WriteData('20','350','8 eps','1 s');
+WriteData('21','350','8 eps','1 s');
+WriteData('22','350','8 eps','1 s');
+WriteData('23','350','8 eps','1 s');
+WriteData('24','350','8 eps','1 s');
+WriteSkillEnd();
+</script>
+
+<br>
+<script>
+WriteSkillAdvGen('mav');
+</script>
+
+<br>
+<a name=mavgunskill></a>
+<span id=mavgunskill0 style="display:none"><script>WriteSkillRefRif("showall");</script></span>
+<span id=mavgunskill1 style="display:none"><script>WriteSkillCrit("showall");</script></span>
+<span id=mavgunskill2 style="display:none"><script>WriteSkillPlasRnd("showall");</script></span>
+<span id=mavgunskill3 style="display:none"><script>WriteSkillLockdown("showall");</script></span>
+<span id=mavgunskill4 style="display:block"><script>WriteSkillFuel("showall");</script></span>
+
+<br>
+<script>
+WriteSkillNanites(2);
+</script>
+
+<br><br>
+<font color=ffcc00><b>Innate Abilities</b></font>
+
+<script>
+WriteSkill('Nano-Injection', 'nanoinj', 'ZX', 'Uses a beamed injection of biomed nanites to restore health to a non-mechanical unit.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'HP Healed', 'Range', 'Energy', 'Cooldown');
+WriteData('--','100','175','250','20 s');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Reprogram', 'reprog', 'ZC', 'Resets the robodog\'s memory system, allowing the hero to reselect all of its abilities. Nanites are reset only if off when reprogrammed. Also removes custom health modification if nanites are off when reprogrammed.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Radius','Energy', 'Cooldown');
+WriteData('--','2900','0','20 s');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('<span id=mavatkgrdtitle>Target Ground</span>', 'atkgrd', 'ZG', 'Aims the hero\'s weapon at a visible location by overriding his suit\'s built-in targeting. <span id=mavatkgrd></span> This makes the officer a less threatening target to his enemies.');
+WriteSkillBegin();
+WriteHeader('Skill Level','&nbsp;');
+WriteData('--','&nbsp;');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Mutate', 'mutate', '.', 'Initially does nothing. Every time the hero increases in level, there is a chance this will mutate into a second trait. It will never turn into Skilled, Swift Learner, Reckless, or Packrat or duplicate the Mav\'s primary trait. Packrats will not mutate Engineer.');
+WriteSkillBegin();
+WriteHeader('Skill Level','&nbsp;');
+WriteData('--','&nbsp;');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<!--Sprint-->
+<script>
+WriteSkillSprint(2);
+</script>
+
+<br>
+<!--Frag. Locator-->
+<script>
+WriteSkillFrag();
+</script>
+
+<br>
+</body>
+</html>

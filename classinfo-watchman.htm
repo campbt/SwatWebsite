@@ -1,0 +1,485 @@
+a
+<html>
+<head>
+<title>SWAT: Aftermath</title>
+
+<script language="javascript" src="swat.js"></script>
+<script language="javascript">
+<!--
+function HeroWeaponSelect(weapon) {
+  var s1 = "";
+  var s2 = "";
+  heroweapon5.style.display = "none";
+  heroweapon6.style.display = "none";
+  herogunskill5.style.display = "none";
+  herogunskill6.style.display = "none";
+  herorngskill5.style.display = "none";
+  herorngskill6.style.display = "none";
+  switch (weapon) {
+    case 5 : s1 = "0.60"; s2 = "Focus&nbsp;Laser"; heroweapon5.style.display = "block"; herogunskill5.style.display = "block"; herorngskill5.style.display = "block"; break;
+    case 6 : s1 = "0.60"; s2 = "Focus&nbsp;Laser"; heroweapon6.style.display = "block"; herogunskill6.style.display = "block"; herorngskill6.style.display = "block"; break;
+  }
+  heroattribs.innerHTML      = s1;
+  herogunskillname.innerHTML = s2;
+}
+function ToggleDetails(hinttext, abilitydetails) {
+  if (abilitydetails.style.display == "none") {
+    hinttext.innerHTML = "Click this icon to hide customization details.";
+    abilitydetails.style.display = "block";
+  } else {
+    hinttext.innerHTML = "Click this icon to show customization details.";
+    abilitydetails.style.display = "none";
+  }
+}
+//-->
+</script>
+
+</head>
+<body bgcolor=000000 text=FFFFFF link=99E362 vlink=69B926 alink=00FF00>
+
+<script>
+WriteTopMenu('',true);
+WriteClassMenu();
+WriteSummonedMenu('');
+WriteClassHeaderBegin('Watchman','watchman','wat','Support, Versatility','The watchman hails from the future, equipped with laser weaponry and advanced abilities to aid the heroes of the present. He\'s highly customizable, allowing him to fill almost any role. His intelligence is only average.<br><font size=-1><i>This class must be unlocked before it can be selected.</i></font>'); 
+WriteSkillLinks('X-Grenade','gren','Paradox','paradox','Custom&nbsp;Loadout','loadout','<span id=herogunskillname>Focus&nbsp;Laser</span>','herogunskill','Nanites','nanites');
+WriteSkillLinks('Nano-Inf.','nanoinj','Power&nbsp;Surge','psurge','Advanced&nbsp;Generator','gen','Partner','recall','Frag.&nbsp;Locator','frag');
+WriteClassHeaderEnd('watchman');
+</script>
+
+<br><br>
+<font color=ffcc00><b>Statistics</b></font> 
+<img src=pics/tiny-laserrfl.gif onclick="HeroWeaponSelect(6);" alt="Select Laser Rifle" title="Select Laser Rifle"> 
+<img src=pics/tiny-gatling.gif onclick="HeroWeaponSelect(5);" alt="Select Gatling Laser" title="Select Gatling Laser"> 
+
+<table cellspacing=0 cellpadding=0 border=0 width=100%><tr valign=top>
+
+<td width=27%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsAttribs('22','0.60','12','<span id=heroattribs>0.60</span>','100','0.31');
+</script></table>
+</td>
+
+<td width=23%>
+<span id=heroweapon5 style="display:none">
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+      WriteStatsWeaponEx('Gatling&nbsp;Laser' + info_URL_Guns('gatling'),InfoAtkDef('Laser'),'0.62','70-70','+5-5','700','--');
+</script></table>
+</span>
+<span id=heroweapon6 style="display:block">
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+      WriteStatsWeaponEx('Laser&nbsp;Rifle' + info_URL_Guns('laserrfl'),InfoAtkDef('Laser'),'1.86','210-210','+15-15','900','--');
+</script></table>
+</span>
+</td>
+
+<td width=50%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsArmor('advanced');
+</script></table>
+</td>
+
+</tr></table>
+
+<br><br>
+<font color=ffcc00><b>Bonuses</b></font>
+
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteBonus('Levelup','Advanced Generator ability improved at levels 10, 20, 30, and 40.');
+WriteBonus('Epic','Extra skill point applied to Custom Loadout ability at each level from 51 to 55.');
+WriteBonus('Rank','Advanced Generator ability improved at ranks 4, 7, and 10.');
+WriteBonus('Droid',InfoLinkS('Droid','unitinfo-lad.htm')+' has the Temporal Avatar ability enabled.');
+</script></table>
+
+<br><br>
+<font color=ffcc00><b>Trainable Abilities</b></font>
+
+<script>
+WriteSkill('X-Grenade', 'gren', 'X', 'Uses energy to create a plasma grenade which can be thrown, dealing explosive damage to the target and units around it. Custom upgrades enhance the grenade with extra effects.</font><br><font size=-1>Duration is applicable only to the Napalm and Distortion upgrades.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Dmg.', 'Radius', 'Range', 'Dur.', 'Energy', 'Cool.');
+WriteData('1','100,&nbsp;75','224, 264','650','2 s','60','3 s');
+WriteData('2','115,&nbsp;85','224, 264','650','3 s','70','3 s');
+WriteData('3','130,&nbsp;100','224, 264','650','4 s','80','3 s');
+WriteData('4','165,&nbsp;120','224, 264','650','5 s','95','3 s');
+WriteData('5','200,&nbsp;145','224, 264','650','6 s','110','3 s');
+WriteData('6','250,&nbsp;175','224, 264','650','7 s','130','3 s');
+WriteData('7','310,&nbsp;210','224, 264','650','8 s','150','3 s');
+WriteData('8','380,&nbsp;250','224, 264','650','9 s','175','3 s');
+WriteSkillBegin2();
+WriteHeader('Skill Level', 'Dmg.', 'Radius', 'Range', 'Dur.', 'Energy', 'Cool.');
+WriteData('9','460,&nbsp;295','224, 264','650','10 s','200','3 s');
+WriteData('10','550,&nbsp;345','224, 264','650','11 s','230','3 s');
+WriteData('11','550,&nbsp;345','224, 264','866','11 s','250','3 s');
+WriteData('12','550,&nbsp;345','224, 264','866','11 s','250','3 s');
+WriteData('13','550,&nbsp;345','224, 264','866','11 s','250','3 s');
+WriteData('14','550,&nbsp;345','224, 264','866','11 s','250','3 s');
+WriteData('15','550,&nbsp;345','224, 264','866','11 s','250','3 s');
+WriteData('16','550,&nbsp;345','224, 264','866','11 s','250','3 s');
+WriteSkillEnd();
+</script>
+
+&nbsp;<img src=pics/tiny-zmenu.gif onclick="ToggleDetails(togglexgrenade, detailsxgrenade);" alt="Toggle Details" title="Toggle Details">
+<font size=-1><sup><span id=togglexgrenade>
+Click this icon to hide customization details.
+</span></sup></font><br>
+<span id=detailsxgrenade style="display:block">
+<script>
+WriteBr();
+WriteSkill('Replication', 'gren_rep', '.', 'Refunds a portion of the energy required to replicate the grenade and optimizes the hero\'s generator while using grenades.</font><br><font size=-1>This upgrade is part of the X-Grenade ability.');
+WriteSkillBegin();
+WriteHeader('Level', 'Duration', 'Energy');
+WriteData('1','20 s','-1%, +1 eps');
+WriteData('2','20 s','-2%, +2 eps');
+WriteData('3','20 s','-3%, +3 eps');
+WriteData('4','20 s','-4%, +4 eps');
+WriteSkillBegin2();
+WriteHeader('Level', 'Duration', 'Energy');
+WriteData('5','20 s','-5%, +5 eps');
+WriteData('6','20 s','-6%, +6 eps');
+WriteData('7','20 s','-7%, +7 eps');
+WriteData('8','20 s','-8%, +8 eps');
+WriteSkillEnd();
+WriteSkill('Lethality', 'gren_leth', '.', 'Increases the explosive damage of grenades at the point of impact. Half of the bonus damage ignores armor and nanites.</font><br><font size=-1>This upgrade is part of the X-Grenade ability.');
+WriteSkillBegin();
+WriteHeader('Level', 'Damage', 'Bonus Radius', 'Pierce Radius');
+WriteData('1','+22.5%', '96','69');
+WriteData('2','+45.0%', '96','69');
+WriteData('3','+67.5%', '96','69');
+WriteData('4','+90.0%', '96','69');
+WriteSkillBegin2();
+WriteHeader('Level', 'Damage', 'Bonus Radius', 'Pierce Radius');
+WriteData('5','+112.5%', '96','69');
+WriteData('6','+135.0%', '96','69');
+WriteData('7','+157.5%', '96','69');
+WriteData('8','+180.0%', '96','69');
+WriteSkillEnd();
+WriteSkill('Napalm', 'gren_nap', '.', 'Leaves a persistent patch of burning napalm at the point of impact. Duration is determined by the level of the X-Grenade ability.</font><br><font size=-1>This upgrade is part of the X-Grenade ability.');
+WriteSkillBegin();
+WriteHeader('Level', 'Damage', 'Armor', 'Radius', 'Max&nbsp;Dur.');
+WriteData('1','5 dps','-4','192','4 s');
+WriteData('2','10 dps','-4','192','5 s');
+WriteData('3','15 dps','-4','192','6 s');
+WriteData('4','20 dps','-4','192','7 s');
+WriteSkillBegin2();
+WriteHeader('Level', 'Damage', 'Armor', 'Radius', 'Max&nbsp;Dur.');
+WriteData('5','30 dps','-4','192','8 s');
+WriteData('6','45 dps','-4','192','9 s');
+WriteData('7','60 dps','-4','192','10 s');
+WriteData('8','80 dps','-4','192','11 s');
+WriteSkillEnd();
+WriteSkill('Distortion', 'gren_dist', '.', 'Creates a temporal rift at the point of impact, slowing all units which pass through. Power armored units, returners, and allied contraptions are shielded from the effect. Duration is determined by the level of the X-Grenade ability.</font><br><font size=-1>This upgrade is part of the X-Grenade ability.');
+WriteSkillBegin();
+WriteHeader('Level', 'Attack Spd.', 'Slow', 'Radius', 'Max&nbsp;Dur.');
+WriteData('1','-25%','25%','192','4 s');
+WriteData('2','-25%','25%','224','5 s');
+WriteData('3','-25%','25%','264','6 s');
+WriteData('4','-25%','25%','306','7 s');
+WriteSkillBegin2();
+WriteHeader('Level', 'Attack Spd.', 'Slow', 'Radius', 'Max&nbsp;Dur.');
+WriteData('5','-25%','25%','350','8 s');
+WriteData('6','-25%','25%','396','9 s');
+WriteData('7','-25%','25%','446','10 s');
+WriteData('8','-25%','25%','500','11 s');
+WriteSkillEnd();
+</script>
+</span>
+
+<br>
+<script>
+WriteSkill('Paradox', 'paradox', '+', 'Creates a time-capsule for future officials to find, requesting assistance from personnel of that time period. Stabilizing each returner\'s presence in the present drains energy from the watchman. Armor of the returners is increased by game difficulty.');
+WriteSkillBegin();
+WriteHeader('Returners','Energy','Cooldown');
+WriteData('1','250, -1 eps','6 s');
+WriteData('2','250, -2 eps','6 s');
+WriteData('3','250, -3 eps','6 s');
+WriteData('4','250, -4 eps','6 s');
+WriteSkillBegin2();
+WriteHeader('Difficulty', 'Armor Bonus');
+WriteData('Hard', '+2');
+WriteData('Insane', '+2');
+WriteData('Nightmare', '+6');
+WriteData('Extinction', '+6');
+WriteSkillEnd();
+</script>
+
+&nbsp;<img src=pics/tiny-zmenu.gif onclick="ToggleDetails(toggleparadox, detailsparadox);" alt="Toggle Details" title="Toggle Details">
+<font size=-1><sup><span id=toggleparadox>
+Click this icon to hide customization details.
+</span></sup></font><br>
+<span id=detailsparadox style="display:block">
+<script>
+WriteBr();
+WriteSkill('Field Nurse', 'paradox_rep', '.', 'This woman grew up fascinated by stories of the zombie epidemic and its heroes; she gladly accepted a chance to be part of that history. She can mend civilians, and her titillating charm increases the morale of closeby comrades, increasing their attack speed. If surged with energy, she will automatically Nano-Inject a closeby ally when his health becomes critical.</font><br><font size=-1>This upgrade is part of the Paradox ability.');
+WriteSkillBegin('30%');
+WriteHeader('&nbsp;', 'Statistics');
+WriteData('Health','500');
+WriteData('Vitality','20');
+WriteData('Energy','250');
+WriteData('Regen.','0.5 eps');
+WriteData('Move Spd.','268');
+WriteData('Armor','0');
+WriteData('Nanites','--');
+WriteData('Vest','variable');
+WriteSkillBegin2('70%');
+WriteHeader('Level', 'Attack Spd.', 'HP Healed', 'Radius', 'Energy Preserved');
+WriteData('1','+8%','12','625','0%');
+WriteData('2','+14%','17','625','15%');
+WriteData('3','+20%','23','625','30%');
+WriteData('4','+26%','28','625','45%');
+WriteData('5','+32%','34','625','60%');
+WriteData('6','+38%','39','625','75%');
+WriteData('7','+44%','45','625','90%');
+WriteData('8','+50%','50','625','100%');
+WriteSkillEnd();
+WriteSkill('Prodigy Strategian', 'paradox_prod', '.', 'This boy was born with a knack for weapon accuracy and telepathically assists adjacent comrades with their targeting, increasing their damage. Strategian also carries a riot shield, increasing armor of himself and adjacent comrades.</font><br><font size=-1>This upgrade is part of the Paradox ability.');
+WriteSkillBegin('30%');
+WriteHeader('&nbsp;', 'Statistics');
+WriteData('Health','500');
+WriteData('Vitality','20');
+WriteData('Energy','0');
+WriteData('Regen.','--');
+WriteData('Move Spd.','268');
+WriteData('Armor','0');
+WriteData('Nanites','--');
+WriteData('Vest','variable');
+WriteSkillBegin2('70%');
+WriteHeader('Level', 'Damage', 'Armor', 'Radius');
+WriteData('1','+7%','+10','144');
+WriteData('2','+11%','+10','144');
+WriteData('3','+15%','+10','144');
+WriteData('4','+19%','+10','144');
+WriteData('5','+23%','+10','144');
+WriteData('6','+27%','+10','144');
+WriteData('7','+31%','+10','144');
+WriteData('8','+35%','+10','144');
+WriteSkillEnd();
+WriteSkill('Military Android', 'paradox_droid', '.', 'This robot uses advanced defense-optimization algorithms to reduce the amount of melee damage received by nearby allies in its wireless network range. It also emits a jamming signal which slows nearby enemy power armored units. Its nanites level is determined by the level of the Paradox ability.</font><br><font size=-1>This upgrade is part of the Paradox ability.');
+WriteSkillBegin('30%');
+WriteHeader('&nbsp;', 'Statistics');
+WriteData('Health','1000');
+WriteData('Vitality','200');
+WriteData('Energy','500');
+WriteData('Regen.','2 eps');
+WriteData('Move Spd.','290');
+WriteData('Armor','1');
+WriteData('Nanites',InfoLinkS('Standard','readmeafterarmor.html#Standard', true));
+WriteData('Vest','variable');
+WriteSkillBegin2('70%');
+WriteHeader('Level', 'Vitality', 'Damage', 'Atk. Spd.', 'Radius');
+WriteData('1','+0','-7%','-6%','900');
+WriteData('2','+0','-10%','-8%','900');
+WriteData('3','+0','-13%','-10%','900');
+WriteData('4','+0','-16%','-12%','900');
+WriteData('5','+0','-19%','-14%','900');
+WriteData('6','+200','-21%','-16%','900');
+WriteData('7','+300','-23%','-18%','900');
+WriteData('8','+400','-25%','-20%','900');
+WriteSkillEnd();
+WriteSkill('Pharmacist', 'paradox_pharm', '.', 'This patriot volunteered his services to aid in this crisis. He can create drugs from his energy reserves and sells Revive kits. Also his knowledge of the arcane increases the regen of himself and other returners.</font><br><font size=-1>This upgrade is part of the Paradox ability.');
+WriteSkillBegin('30%');
+WriteHeader('&nbsp;', 'Statistics');
+WriteData('Health','500');
+WriteData('Vitality','20');
+WriteData('Energy','500');
+WriteData('Regen.','0.5 eps');
+WriteData('Move Spd.','268');
+WriteData('Armor','0');
+WriteData('Nanites', '--');
+WriteData('Vest','variable');
+WriteSkillBegin2('70%');
+WriteHeader('Level', 'Energy Regen. Aura', 'Energy Preserved','Buffout Energy', 'Speed Energy', 'Mentat Energy');
+WriteData('1', '+0.5 eps','0%', '50', '160', '250');
+WriteData('2', '+1.0 eps','15%', '49', '155', '240');
+WriteData('3', '+1.5 eps','30%', '48', '150', '230');
+WriteData('4', '+2.0 eps','45%', '47', '145', '220');
+WriteData('5', '+2.5 eps','60%', '46', '140', '210');
+WriteData('6', '+3.5 eps','75%', '44', '130', '195');
+WriteData('7', '+4.5 eps','90%', '42', '120', '180');
+WriteData('8', '+5.5 eps','100%', '40', '100', '165');
+WriteSkillEnd();
+</script>
+</span>
+
+<br>
+<script>
+WriteSkill('Custom Loadout', 'loadout', '.', 'Many aspects of the watchman\'s equipment can be customized to better suit his needs.');
+WriteSkillBegin();
+WriteHeader('Skill Level','&nbsp;');
+WriteData('--','&nbsp;');
+WriteSkillEnd(true);
+</script>
+
+&nbsp;<img src=pics/tiny-zmenu.gif onclick="ToggleDetails(toggleloadout, detailsloadout);" alt="Toggle Details" title="Toggle Details">
+<font size=-1><sup><span id=toggleloadout>
+Click this icon to hide customization details.
+</span></sup></font><br>
+<span id=detailsloadout style="display:block">
+<script>
+WriteBr();
+WriteSkillLeftHead();
+WriteSkill('Laser Dissipation <img src=pics/tiny-laserrfl.gif onclick="HeroWeaponSelect(6);" alt="Select Laser Rifle" title="Select Laser Rifle"> <img src=pics/tiny-gatling.gif onclick="HeroWeaponSelect(5);" alt="Select Gatling Laser" title="Select Gatling Laser"> ', 'loadout_laser', '.', 'Amplification mirrors allow the hero\'s weapon to shoot targets at a greater distance. Gatling laser damage is increased due to the intensified energy at a short distance. Also improves energy efficiency of focused lasers.</font><br><font size=-1>This upgrade is part of the Custom Loadout ability.');
+WriteSkillRightHead();
+WriteSkill('Ocular Enhancement', 'loadout_ocular', '.', 'Allows the hero to see objects at a greater distance and reveals hidden units in his area.</font><br><font size=-1>This upgrade is part of the Custom Loadout ability.');
+WriteSkillLeftStats();
+document.writeln('<span id=herorngskill5 style="display:none">');
+WriteSkillBegin();
+WriteHeader('Level', 'Gatling Laser Damage', 'Energy Degen.');
+WriteData('1','+5','-20%');
+WriteData('2','+10','-40%');
+WriteData('3','+15','-60%');
+WriteData('4','+20','-80%');
+WriteSkillEnd();
+document.writeln('</span><span id=herorngskill6 style="display:block">');
+WriteSkillBegin();
+WriteHeader('Level', 'Laser Rifle Range', 'Energy Degen.');
+WriteData('1','+100','-20%');
+WriteData('2','+200','-40%');
+WriteData('3','+300','-60%');
+WriteData('4','+400','-80%');
+WriteSkillEnd();
+document.writeln('</span>');
+WriteSkillRightStats();
+WriteSkillBegin();
+WriteHeader('Level', 'Radius', 'Range');
+WriteData('1','--','+200');
+WriteData('2','--','+400');
+WriteData('3','--','+600');
+WriteData('4','1300','+600');
+WriteSkillEnd();
+WriteSkillLeftRightEnd();
+WriteSkillLeftHead();
+WriteSkill('Overdrive', 'loadout_over', '.', 'Increases the hero\'s movement speed.</font><br><font size=-1>This upgrade is part of the Custom Loadout ability.');
+WriteSkillRightHead();
+WriteSkill('Deflective Armor', 'loadout_deflect', '.', 'Increases the chance that an attack is deflected without harming the hero.</font><br><font size=-1>This upgrade is part of the Custom Loadout ability.');
+WriteSkillLeftStats();
+WriteSkillBegin();
+WriteHeader('Level', 'Move Spd.');
+WriteData('1','+15');
+WriteData('2','+29');
+WriteData('3','+42');
+WriteData('4','+55');
+WriteSkillEnd();
+WriteSkillRightStats();
+WriteSkillBegin();
+WriteHeader('Level', 'Chance');
+WriteData('1','8%');
+WriteData('2','16%');
+WriteData('3','23%');
+WriteData('4','29%');
+WriteSkillEnd();
+WriteSkillLeftRightEnd();
+WriteSkillLeftHead();
+WriteSkill('Infusion Efficiency', 'loadout_inf', '.', 'Increases range and amount of health restored by the hero\'s Nano-Infusion ability. Also increases chance for the ability to recharge instantly.</font><br><font size=-1>This upgrade is part of the Custom Loadout ability.');
+WriteSkillRightHead();
+WriteSkill('Surge Capacitor', 'loadout_surge', '.', 'Increases range and decreases energy cost of the Power Surge ability. Also increases longevity of circuit board used during a power surge. Increases efficiency of battery usage.</font><br><font size=-1>This upgrade is part of the Custom Loadout ability.');
+WriteSkillLeftStats();
+WriteSkillBegin();
+WriteHeader('Level', 'Chance', 'Efficiency', 'Range');
+WriteData('1','20%','50%', '205');
+WriteData('2','33%','65%', '235');
+WriteData('3','66%','80%', '265');
+WriteData('4','100%','100%', '295');
+WriteSkillEnd();
+WriteSkillRightStats();
+WriteSkillBegin();
+WriteHeader('Level', 'Longevity', 'Range', 'Energy', 'Bat. Eff.','Cool.');
+WriteData('1','+33%','205','75','+5%','12 s');
+WriteData('2','+75%','235','50','+10%', '9 s');
+WriteData('3','+133%','265','25','+15%', '6 s');
+WriteData('4','+208%','295','0','+20%', '3 s');
+WriteSkillEnd();
+WriteSkillLeftRightEnd();
+WriteSkillLeftHead();
+WriteSkill('Neural Augmentation', 'loadout_neural', '.', 'Increases the hero\'s intelligence and reduces his susceptibility to concussions by reinforcing his cranium.</font><br><font size=-1>This upgrade is part of the Custom Loadout ability.');
+WriteSkillRightHead();
+WriteSkill('Auxiliary Generator', 'loadout_gen', '.', 'Increases the hero\'s rate of energy regeneration.</font><br><font size=-1>This upgrade is part of the Custom Loadout ability.');
+WriteSkillLeftStats();
+WriteSkillBegin();
+WriteHeader('Level', 'Intelligence','Chance');
+WriteData('1','+3','15%');
+WriteData('2','+6','30%');
+WriteData('3','+9','45%');
+WriteData('4','+12','60%');
+WriteSkillEnd();
+WriteSkillRightStats();
+WriteSkillBegin();
+WriteHeader('Level', 'Energy Regen.');
+WriteData('1','+16%');
+WriteData('2','+33%');
+WriteData('3','+50%');
+WriteData('4','+66%');
+WriteSkillEnd();
+WriteSkillLeftRightEnd();
+</script>
+</span>
+
+<br>
+ <img src=pics/tiny-laserrfl.gif onclick="HeroWeaponSelect(6);" alt="Select Laser Rifle" title="Select Laser Rifle"> <img src=pics/tiny-gatling.gif onclick="HeroWeaponSelect(5);" alt="Select Gatling Laser" title="Select Gatling Laser"> 
+<a name=herogunskill></a>
+<span id=herogunskill5 style="display:none"><script>WriteSkillFocusLaser(true);</script></span>
+<span id=herogunskill6 style="display:block"><script>WriteSkillFocusLaser(false);</script></span>
+
+<br>
+<script>
+WriteSkillNanites(3);
+</script>
+
+<br><br>
+<font color=ffcc00><b>Innate Abilities</b></font>
+
+<script>
+WriteSkill('Nano-Infusion', 'nanoinj', 'ZX', 'Converts up to 20% of the hero\'s energy into a beamed infusion of biomed nanites, restoring health to target non-mechanical unit.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Efficiency', 'Range', 'Energy', 'Cooldown');
+WriteData('--','40%','175','50 +20%','20 s');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Power&nbsp;Surge', 'psurge', 'ZC', 'Establishes a rapid transfer energy conduit with target in an attempt to fill its energy reserves from the hero\'s own storage.</font><br><font size=-1>Requires a circuit board to handle the transfer.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Range', 'Energy', 'Cooldown');
+WriteData('--', '175', '100 +100%','20 s');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Advanced&nbsp;Generator', 'gen', '.', 'Increases the hero\'s rate of energy regeneration. Bonus based on hero level is combined with bonus based on rank.');
+WriteSkillBegin();
+WriteHeader('Hero Level', 'Energy Regen.');
+WriteData('1','+33%');
+WriteData('10','+50%');
+WriteData('20','+66%');
+WriteData('30','+83%');
+WriteData('40','+99%');
+WriteSkillBegin2();
+WriteHeader('Rank', 'Energy Regen.');
+WriteData('4','+16%');
+WriteData('7','+33%');
+WriteData('10','+50%');
+WriteSkillEnd();
+</script>
+
+<br>
+<script>
+WriteSkill('Partner', 'recall', 'ZV', 'Used to designate a comrade as the hero\'s partner. Then, the hero can teleport to his partner\'s location from anywhere within the city. Partner cannot be changed unless that player leaves the game. Failing to finish location synchronization will damage your power armor during the transport.</font><br><font size=-1>If the hero has less than 500 energy, teleporting requires 0 energy but the cooldown is 150 seconds.');
+WriteSkillBegin();
+WriteHeader('Distance', 'Range', 'Delay', 'Energy', 'Cooldown');
+WriteData('<900&nbsp;&nbsp;', 'unlimited', '0.75 s', '250','6 s');
+WriteData('&nbsp;&nbsp;900+', 'unlimited', '1.50 s', '250','6 s');
+WriteData('1900+', 'unlimited', '3.00 s', '250','6 s');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<!--Frag. Locator-->
+<script>
+WriteSkillFrag();
+</script>
+
+<br>
+</body>
+</html>

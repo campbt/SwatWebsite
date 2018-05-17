@@ -1,0 +1,240 @@
+
+<html>
+<head>
+<title>SWAT: Aftermath</title>
+
+<script language="javascript" src="swat.js">
+</script>
+
+</head>
+<body bgcolor=000000 text=FFFFFF link=99E362 vlink=69B926 alink=00FF00>
+
+<script>
+WriteTopMenu('',true);
+WriteClassMenu();
+WriteSummonedMenu('MEDIC');
+WriteClassHeaderBegin('Field Medic','medic','med','Healer, Buffer','The medic\'s abilities focus on restoring health and fixing injuries. He can also administer adrenaline shots which greatly improve attack speed and uses an urban assault rifle loaded with antipersonnel rounds. His intelligence is superior, providing for optimal item usage.'); 
+WriteSkillLinks('Nano-Inj.','nanoinj','Mend&nbsp;Wounds','mend','Adrenaline&nbsp;Junkie','junkie','Refined&nbsp;Rifle','refrif','Nanites','nanites');
+WriteSkillLinks('Adrenaline','adren','Rapid&nbsp;Therapy','therapy','Mending&nbsp;Station','station','Revive','revive','Antipersonnel&nbsp;Rounds','aprounds','Sprint','sprint','Frag.&nbsp;Locator','frag');
+WriteSummonedsLinks('medic','Mending&nbsp;Station','station');
+WriteClassHeaderEnd('medic');
+</script>
+
+<br><br>
+<font color=ffcc00><b>Statistics</b></font>
+
+<table cellspacing=0 cellpadding=0 border=0 width=100%><tr valign=top>
+
+<td width=27%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsAttribs('18','0.20','11','0.45','111','1.00');
+</script></table>
+</td>
+
+<td width=23%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsWeapon(0, false, true);
+</script></table>
+</td>
+
+<td width=50%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsArmor();
+</script></table>
+</td>
+
+</tr></table>
+
+<br><br>
+<font color=ffcc00><b>Bonuses</b></font>
+
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteBonus('Levelup','Revive ability improved at levels 5, 10, 15, 20, 25, 30, and 35.');
+WriteBonus('Epic','Adrenaline ability improved at each level from 51 to 55.');
+WriteBonus('Rank','Rapid Therapy ability improved at each rank from 2 to 11.');
+WriteBonus('Droid',InfoLinkS('Droid','unitinfo-lad.htm')+' drops all fused Assault Droid Parts when it\'s destroyed.');
+</script></table>
+
+<br><br>
+<font color=ffcc00><b>Trainable Abilities</b></font>
+
+<!--Nano Injection-->
+<script>
+WriteSkill('Nano-Injection', 'nanoinj', 'X', 'Uses a beamed injection of biomed nanites to restore health to a non-mechanical unit. Also restores additional health and prevents injuries over a short period. Has a chance to remove injuries and resurrection sickness.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'HP', 'HoT', 'Inj.', 'Rez Sick.', 'Range', 'Dur.', 'Energy', 'Cool.');
+WriteData('1', '100','+0','0%','0%','175','0 s','250','20 s');
+WriteData('2', '120','+0','0%','0%','205','0 s','250','20 s');
+WriteData('3', '140','+0','0%','0%','235','0 s','250','20 s');
+WriteData('4', '170','+0','0%','0%','265','0 s','250','20 s');
+WriteData('5', '200','+0','10%','0%','295','0 s','250','20 s');
+WriteData('6', '240','+0','25%','0%','325','0 s','250','20 s');
+WriteData('7', '280','+0','40%','0%','355','0 s','250','20 s');
+WriteData('8', '330','+0','55%','0%','385','0 s','250','20 s');
+WriteSkillBegin2();
+WriteHeader('Skill Level', 'HP', 'HoT', 'Inj.', 'Rez Sick.', 'Range', 'Dur.', 'Energy', 'Cool.');
+WriteData('9', '380','+0','70%','0%','415','0 s','250','20 s');
+WriteData('10', '440','+0','85%','0%','445','0 s','250','20 s');
+WriteData('11', '500','+0','100%','0%','475','0 s','250','20 s');
+WriteData('12', '500','+60','100%','10%','505','6 s','250','20 s');
+WriteData('13', '500','+120','100%','20%','535','6 s','250','20 s');
+WriteData('14', '500','+180','100%','40%','565','6 s','250','20 s');
+WriteData('15', '500','+240','100%','70%','595','6 s','250','20 s');
+WriteData('16', '500','+300','100%','100%','625','6 s','250','20 s');
+WriteSkillEnd();
+</script>
+
+<br>
+<!--Mend Wounds-->
+<script>
+WriteSkill('Mend&nbsp;Wounds', 'mend', 'C', 'Uses standard medical techniques to restore health to a non-mechanical unit. Also improves effectiveness of bandages. The Mending Station is upgraded by this ability.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'HP Healed', 'Bandages', 'Energy', 'Cooldown');
+WriteData('1', '17','+17','0','1.5 s');
+WriteData('2', '23','+23','0','1.5 s');
+WriteData('3', '28','+28','0','1.5 s');
+WriteData('4', '34','+34','0','1.5 s');
+WriteData('5', '39','+39','0','1.5 s');
+WriteData('6', '45','+45','0','1.5 s');
+WriteData('7', '50','+50','0','1.5 s');
+WriteData('8', '56','+56','0','1.5 s');
+WriteSkillBegin2();
+WriteHeader('Skill Level', 'HP Healed', 'Bandages', 'Energy', 'Cooldown');
+WriteData('9', '61','+61','0','1.5 s');
+WriteData('10', '67','+67','0','1.5 s');
+WriteData('11', '72','+72','0','1.5 s');
+WriteData('12', '78','+78','0','1.5 s');
+WriteData('13', '83','+83','0','1.5 s');
+WriteData('14', '89','+89','0','1.5 s');
+WriteData('15', '94','+94','0','1.5 s');
+WriteData('16', '100','+100','0','1.5 s');
+WriteSkillEnd();
+</script>
+
+<br>
+<script>
+WriteSkill('Adrenaline&nbsp;Junkie', 'junkie', '.', 'Chance that the medic administers himself an adrenaline shot when using adrenaline on others. Also causes the medic to experience more and longer adrenaline rushes.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Chance');
+WriteData('1', '65%');
+WriteData('2', '70%');
+WriteData('3', '75%');
+WriteData('4', '80%');
+WriteData('5', '85%');
+WriteData('6', '90%');
+WriteData('7', '95%');
+WriteData('8', '100%');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<!--Refined Rifle-->
+<script>
+WriteSkillRefRif();
+</script>
+
+<br>
+<!--Nanites-->
+<script>
+WriteSkillNanites(1);
+</script>
+
+
+<br><br>
+<font color=ffcc00><b>Innate Abilities</b></font>
+
+<!--Adrenaline-->
+<script>
+WriteSkill('Adrenaline', 'adren', 'ZX', 'Quadruples the attack rate of the recipient. Cannot be used on robots. Excessive kills may cause an adrenaline rush, extending the duration.');
+WriteSkillBegin();
+WriteHeader('Hero Level', 'Attack Spd.', 'Duration', 'Energy', 'Cooldown');
+WriteData('1', '+300%', '20 s', '0', '60 s');
+WriteData('51', '+300%', '20 s', '0', '56 s');
+WriteData('52', '+300%', '20 s', '0', '52 s');
+WriteData('53', '+300%', '20 s', '0', '48 s');
+WriteData('54', '+300%', '20 s', '0', '44 s');
+WriteData('55', '+300%', '20 s', '0', '40 s');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<!--Rapid Therapy-->
+<script>
+WriteSkill('Rapid&nbsp;Therapy', 'therapy', 'ZC', 'Instantly removes sprained ankle, fractured arm, and mild concussion injuries from target unit. Also restores consciousness. Unit cannot be immediately re-injured.');
+WriteSkillBegin();
+WriteHeader('Rank', 'Duration', 'Energy', 'Cooldown');
+WriteData('1', '2 s', '0', '20 s');
+WriteData('2', '3 s', '0', '20 s');
+WriteData('3', '4 s', '0', '20 s');
+WriteData('4', '5 s', '0', '20 s');
+WriteData('5', '6 s', '0', '20 s');
+WriteData('6', '7 s', '0', '20 s');
+WriteSkillBegin2();
+WriteHeader('Rank', 'Duration', 'Energy', 'Cooldown');
+WriteData('7', '8 s', '0', '20 s');
+WriteData('8', '9 s', '0', '20 s');
+WriteData('9', '10 s', '0', '20 s');
+WriteData('10', '11 s', '0', '20 s');
+WriteData('11', '12 s', '0', '20 s');
+WriteSkillEnd();
+</script>
+
+<br>
+<!--Mending Station-->
+<script>
+WriteSkill('Mending&nbsp;Station', 'station', 'ZG', 'Uses a supply of nanites to rapidly construct a mending station which automatically heals nearby allies and provides a defense network.','medic','station');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Duration', 'Energy', 'Cooldown', 'Recharge');
+WriteData('--', '20 s', '250+', '20 s', '90 s');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<!--Revive-->
+<script>
+WriteSkill('Revive', 'revive', 'ZB', 'Injects nanites into a recently slain comrade, bringing him back to life. Comrade suffers from resurrection sickness dependent on his armor type. There is a chance that the ability will require half energy and recharge instantly.');
+WriteSkillBegin();
+WriteHeader('Hero Level', 'Chance', 'Energy', 'Cooldown');
+WriteData('1', '5.0%','500','20 s');
+WriteData('5', '10.0%','500','20 s');
+WriteData('10', '16.7%','500','20 s');
+WriteData('15', '25.0%','500','20 s');
+WriteData('20', '33.3%','500','20 s');
+WriteData('25', '50.0%','500','20 s');
+WriteData('30', '75.0%','500','20 s');
+WriteData('35', '100.0%','500','20 s');
+WriteSkillBegin2();
+WriteHeader('&nbsp;', 'Atk. Spd.', 'Slow', 'Exp. Gain', 'Dur.', 'Energy', 'Cadet Energy');
+WriteData('Light',   '-45%', '8%', '-75%', '20 s', '980', '500');
+WriteData('Medium',  '-65%', '10%', '-75%', '60 s', '672', '350');
+WriteData('Heavy',   '-85%', '13%', '-75%', '120 s', '448', '250');
+WriteData('Advanced','-90%', '16%', '-75%', '150 s', '448', '--');
+WriteData('Goliath','-90%', '16%', '-75%', '150 s', '308', '--');
+WriteSkillEnd();
+</script>
+
+<br>
+<script>
+WriteSkill('Antipersonnel&nbsp;Rounds', 'aprounds', '.', 'Increases base damage against enemy personnel.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Damage');
+WriteData('--', '+50%');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<!--Sprint-->
+<script>
+WriteSkillSprint(1);
+</script>
+
+<br>
+<!--Frag. Locator-->
+<script>
+WriteSkillFrag();
+</script>
+
+
+<br>
+</body>
+</html>

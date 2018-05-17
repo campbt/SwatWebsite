@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>SWAT: Aftermath, Mechs</title>
+<script language="javascript" src="swat.js"></script>
+<script language="javascript">
+var Col2 = false;
+var Name1 = '';
+var Code1 = '';
+var Abbrv1 = '';
+var Role1 = '';
+var Description1 = '';
+var filetype = 'jpg';
+var icontype = 'gif';
+var filetype1 = 'jpg';
+var icontype1 = 'gif';
+function IconStr(Code, Abbrv, Class, Icon) {
+  var classtype = Class;
+  var iconstype = Icon;
+  var abbrvtype = Abbrv;
+  if (Code != null) {
+    return '<a href=unitinfo-'+Code +'.htm><img src=pics/ability-'+abbrvtype +'.'+classtype+' width=31 height=31 border=0></a><br><img src=/pics/empty.gif width=1 height=1>';
+  } else {
+    return '<img src=/pics/empty.gif width=31 height=31>';
+  }
+}
+function DescStr(Code, Name, Role, Description) {
+  if (Code != null) {
+    return '<a href=unitinfo-'+Code +'.htm><b>'+Name +'</b></a><br><font color=ffe888 face=Arial size=-1>'+Role+'</font><br>'+Description;
+  } else {
+    return '';
+  }
+}
+function WriteClassSummary(Name, Code, Abbrv, Role, Description, ClassFileType, ClassIconType) {
+  if (ClassFileType != null) {
+    filetype = ClassFileType;
+  }
+  if (ClassIconType != null) {
+    icontype = ClassIconType;
+  }
+  if (!Col2) {
+    Name1 = Name;
+    Code1 = Code;
+    Abbrv1 = Abbrv;
+    Role1 = Role;
+    Description1 = Description;
+	filetype1 = filetype;
+	icontype1 = icontype;
+  } else {
+    WriteOldRow4(IconStr(Code1, Abbrv1, filetype1, icontype1), DescStr(Code1, Name1, Role1, Description1),
+                 IconStr(Code, Abbrv, filetype, icontype), DescStr(Code, Name, Role, Description));
+  }
+  Col2 = !Col2;
+}
+</script>
+</head>
+<body bgcolor=000000 text=FFFFFF link=99E362 vlink=69B926 alink=00FF00>
+
+<script>
+WriteTopMenu('',true);
+WriteMechsMenu();
+WriteTitle('Mechs');
+WriteOldHeader();
+WriteClassSummary('Assault&nbsp;Droid','lad','lad','Created via Item','The assault droid is a powerful support unit created when a hero uses the assault droid parts item. When the droid is created, it fuses with the other items in the hero\'s inventory, gaining the benefits of those items. The droid is also granted special benefits dependent on the class of the hero who constructed it.','gif');
+WriteClassSummary('Crime&nbsp;Prevention&nbsp;Unit','tech','cpu','Tech Ops Companion','This enormous robot is the '+InfoLinkS('tech\'s','classinfo-tech.htm')+' highly classified, custom creation and primary contribution to the team. It starts at level 1 and increases when the tech gains levels. It does not gain skill points from levels; it gains one skill point for each level of the tech\'s '+InfoLinkS('C.P.U.','classinfo-tech.htm#cpu')+' ability. Its movement speed is determined by the tech\'s armor type and '+InfoLinkS('Nanites','classinfo-tech.htm#nanites')+' level. If the robot is destroyed, it will be automatically reconstructed by the tech.','gif');
+WriteClassSummary('Mini-Droid','hvyord','droid','Created via Ability','Created by '+InfoLinkS('heavy ords','classinfo-hvyord.htm#droid')+', miniature assault droids are strong support units. They are initialized to half their creator\'s hero level and receive abilities from their creator.','gif');
+WriteClassSummary('Mini-Droid&nbsp;MkII','mini2','mini2','Created via Item','Second generation miniature assault droids are versatile support units. Created via the Droid Remote item, they are initialized based on their creator. They cannot gain levels after creation so they must be destroyed and recreated to benefit from their creator\'s advancement. Droids will deactivate if they stray too far from their owner\'s Droid Remote.','gif');
+WriteClassSummary('Robodog','mav','robodog','Maverick Companion','The robodog is the '+InfoLinkS('maverick\'s','classinfo-mav.htm')+' mechanical best friend. At the beginning of each game, the maverick must choose which of the three robodog types he\'ll be using that game. The robodog starts at level 1 and increases by one level for each level of the maverick\'s '+InfoLinkS('Robodog','classinfo-mav.htm#robodog')+' ability. The robodog does not gain skill points from levels; it gains skill points when the maverick reaches certain hero levels.','gif');
+WriteClassSummary('Robotics&nbsp;Pet&nbsp;Robots','robopet','robopet','Hero Specialization','Officer is accompanied by a pet robot which can employ a vulnerability scanner, zephyr field, or minor energy field.','jpg');
+WriteClassSummary('Working&nbsp;Repair&nbsp;Droid','repairdroid','repairdroid','Atme Crate','This little guy is by far the rarest thing to find in the game. It is extremely helpful to mechanical units, providing repairs and overclocking mechanicals granting them increased attack and movement speed.','jpg');
+WriteClassSummary();
+WriteOldFooter();
+</script>
+
+<br>
+
+</body>
+</html>

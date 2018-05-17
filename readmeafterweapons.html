@@ -1,0 +1,129 @@
+
+<html>
+<head>
+<title>SWAT: Aftermath, Weapons</title>
+<script language="javascript" src="swat.js"></script>
+</head>
+<body bgcolor=000000 text=FFFFFF link=99E362 vlink=69B926 alink=00FF00>
+
+<script>
+WriteTopMenu('',true);
+WriteWeaponMenu();
+WriteClassUnitHeaderBegin('Assault&nbsp;Rifle '+info_STIT_Guns,'wassault','Field Medic, Tactician, Psychologist, Maverick, <font size=-1>Cadet</font>','The assault rifle is fairly effective in all situations thanks to its well-rounded qualities. But of course it doesn\'t excel at anything either.</font><br><font size=-1>Cadet does not get the range bonus of Refined Rifle.'); 
+WriteClassHeaderEnd();
+WriteSkillBegin();
+WriteGunHeader('', 'Type', 'Cooldown', 'Damage', 'Ammo', 'Mod.', 'Range', 'Splash');
+WriteData('', '<font size=-2>&nbsp;</font><br>'+InfoAtkDef('Bullets'),'<font size=-2>average</font><br>1.86','<font size=-2>medium</font><br>90-124','<font size=-2>&nbsp;</font><br>+1-18','<font size=-2>&nbsp;</font><br>+10', '<font size=-2>long</font><br>900', '<font size=-2>medium</font><br>100% (24), 65% (96), 45% (155)');
+WriteData('', '<font size=-2>MkII</font><br>'+InfoAtkDef('Bullets'),'<font size=-2>average</font><br>1.69','<font size=-2>medium</font><br>90-124','<font size=-2>&nbsp;</font><br>+1-18','<font size=-2>&nbsp;</font><br>+10', '<font size=-2>long</font><br>900', '<font size=-2>medium</font><br>100% (24), 90% (96), 50% (155)');
+WriteData('', '<font size=-2>Urban</font><br>'+InfoAtkDef('Bullets'),'<font size=-2>average</font><br>1.86','<font size=-2>high</font><br>99-156','<font size=-2>&nbsp;</font><br>+1-20','<font size=-2>&nbsp;</font><br>+11', '<font size=-2>long</font><br>900', '<font size=-2>medium</font><br>100% (24), 45% (96), 25% (155)');
+WriteSkillEnd();
+WriteSkillRefRif(true);
+WriteBr();
+WriteBr();
+
+WriteClassUnitHeaderBegin('Sniper&nbsp;Rifle','wsniper','Covert Sniper, Maverick','The sniper rifle is designed to deliver high damage to a single unit from a safe range. It\'s great against high-hitpoint enemies, especially bosses. This gun is much less effective when confronted by many nearly-dead enemies.'); 
+WriteClassHeaderEnd();
+WriteSkillBegin();
+WriteGunHeader('', 'Type', 'Cooldown', 'Damage', 'Ammo', 'Mod.', 'Range', 'Splash');
+WriteData('', '<font size=-2>&nbsp;</font><br>'+InfoAtkDef('Bullets'),'<font size=-2>slow</font><br>2.57','<font size=-2>very high</font><br>200-300','<font size=-2>&nbsp;</font><br>+5-25','<font size=-2>&nbsp;</font><br>+15', '<font size=-2>extreme</font><br>1200', '<font size=-2>none</font><br>100% (0)');
+WriteData('', '<font size=-2>MkII</font><br>'+InfoAtkDef('Bullets'),'<font size=-2>slow</font><br>2.14','<font size=-2>very high</font><br>200-300','<font size=-2>&nbsp;</font><br>+5-25','<font size=-2>&nbsp;</font><br>+15', '<font size=-2>extreme</font><br>1200', '<font size=-2>none</font><br>100% (0)');
+WriteSkillEnd();
+WriteSkillCrit(true);
+WriteBr();
+WriteBr();
+
+WriteClassUnitHeaderBegin('Chaingun','wchain','Heavy Ordnance, Maverick, <font size=-1>Mini-Droid</font>','The chaingun is good for taking out single or tightly-packed units. Its rapid fire rate is very effective against masses of nearly-dead enemies, and combined with Plasma Rounds, it can deliver incredible damage which briefly hinders targets\' movement speed. Short range and Plasma\'s high energy cost offset this gun\'s power.</font><br><font size=-1>Droid does not get the slow bonus of Plasma Rounds.'); 
+WriteClassHeaderEnd();
+WriteSkillBegin();
+WriteGunHeader('', 'Type', 'Cooldown', 'Damage', 'Ammo', 'Mod.', 'Range', 'Splash');
+WriteData('', '<font size=-2>&nbsp;</font><br>'+InfoAtkDef('Bullets'),'<font size=-2>fast</font><br>0.62','<font size=-2>low</font><br>45-52','<font size=-2>&nbsp;</font><br>+1-8','<font size=-2>&nbsp;</font><br>+4', '<font size=-2>short</font><br>550', '<font size=-2>small</font><br>100% (24), 90% (96), 15% (120)');
+WriteData('', '<font size=-2>MkII</font><br>'+InfoAtkDef('Bullets'),'<font size=-2>fast</font><br>0.56','<font size=-2>low</font><br>45-52','<font size=-2>&nbsp;</font><br>+1-8','<font size=-2>&nbsp;</font><br>+4', '<font size=-2>short</font><br>625', '<font size=-2>small</font><br>100% (24), 90% (96), 15% (120)');
+WriteSkillEnd();
+WriteSkillPlasRnd(true);
+WriteBr();
+WriteBr();
+
+WriteClassUnitHeaderBegin('Vindicator','wvind','Cyborg','The vindicator is a redesigned chaingun that fires more slowly but causes more damage per burst, yielding the same overall damage. It uses Plasma-V Rounds that focus on energy-efficiency rather than slowing targets, and it can utilize an extra ammo upgrade.'); 
+WriteClassHeaderEnd();
+WriteSkillBegin();
+WriteGunHeader('', 'Type', 'Cooldown', 'Damage', 'Ammo', 'Mod.', 'Range', 'Splash');
+WriteData('', '<font size=-2>&nbsp;</font><br>'+InfoAtkDef('Bullets'),'<font size=-2>fast</font><br>0.76','<font size=-2>low</font><br>55-64','<font size=-2>&nbsp;</font><br>+1-10','<font size=-2>&nbsp;</font><br>+5', '<font size=-2>short</font><br>550', '<font size=-2>small</font><br>100% (24), 90% (96), 15% (120)');
+WriteSkillEnd();
+WriteSkillPlasvRnd(true);
+WriteBr();
+WriteBr();
+
+WriteClassUnitHeaderBegin('Rocket&nbsp;Launcher','wrocket','Demolitions, Maverick','The rocket launcher\'s range and large splash area make it ideal against hordes of incoming units. Its overall damage output, however, can be pretty low if its splash isn\'t fully taken advantage of. Rocket damage is reduced by 66% against nanites.'); 
+WriteClassHeaderEnd();
+WriteSkillBegin();
+WriteGunHeader('', 'Type', 'Cooldown', 'Damage', 'Ammo', 'Mod.', 'Range', 'Splash');
+WriteData('', '<font size=-2>&nbsp;</font><br>'+InfoAtkDef('Rockets'),'<font size=-2>slow</font><br>3.10','<font size=-2>high</font><br>94-157','<font size=-2>&nbsp;</font><br>+1-22','<font size=-2>&nbsp;</font><br>+12', '<font size=-2>extreme</font><br>1500', '<font size=-2>large</font><br>100% (96), 66% (192), 33% (264)');
+WriteData('', '<font size=-2>MkII</font><br>'+InfoAtkDef('Rockets'),'<font size=-2>slow</font><br>2.82','<font size=-2>high</font><br>94-157','<font size=-2>&nbsp;</font><br>+1-22','<font size=-2>&nbsp;</font><br>+12', '<font size=-2>extreme</font><br>1500', '<font size=-2>large</font><br>100% (96), 66% (192), 33% (264)');
+WriteSkillEnd();
+WriteSkillLockdown(true);
+WriteBr();
+WriteBr();
+
+WriteClassUnitHeaderBegin('Flamethrower','wflame','Pyrotechnician, Maverick','The flamethrower delivers superior damage to tightly-packed units, but it\'s fairly ineffective against a single unit or spread-out units.'); 
+WriteClassHeaderEnd();
+WriteSkillBegin();
+WriteGunHeader('', 'Type', 'Cooldown', 'Damage', 'Ammo', 'Mod.', 'Range', 'Splash');
+WriteData('', '<font size=-2>&nbsp;</font><br>'+InfoAtkDef('Flame'),'<font size=-2>very fast</font><br>0.26','<font size=-2>very low</font><br>9-11','<font size=-2>&nbsp;</font><br>+1-2','<font size=-2>&nbsp;</font><br>+1', '<font size=-2>medium</font><br>700', '<font size=-2>small</font><br>100% (144x9)');
+WriteData('', '<font size=-2>MkII</font><br>'+InfoAtkDef('Flame'),'<font size=-2>very fast</font><br>0.23','<font size=-2>very low</font><br>9-11','<font size=-2>&nbsp;</font><br>+1-2','<font size=-2>&nbsp;</font><br>+1', '<font size=-2>medium</font><br>700', '<font size=-2>small</font><br>100% (144x9)');
+WriteSkillEnd();
+WriteSkillFuel(true);
+WriteBr();
+WriteBr();
+
+WriteClassUnitHeaderBegin('Laser&nbsp;Rifle','wrifle','Watchman','The laser rifle is good for taking out priority targets at long range. It also does bonus damage to bosses, and it\'s good against Umbrellas because laser damage ignores evasion and is not reduced vs power armor.'); 
+WriteClassHeaderEnd();
+WriteSkillBegin();
+WriteGunHeader('', 'Type', 'Cooldown', 'Damage', 'Ammo', 'Mod.', 'Range', 'Splash');
+WriteData('', '<font size=-2>&nbsp;</font><br>'+InfoAtkDef('Laser'),'<font size=-2>average</font><br>1.86','<font size=-2>very high</font><br>210-210','<font size=-2>&nbsp;</font><br>+15-15','<font size=-2>&nbsp;</font><br>+30', '<font size=-2>long</font><br>900', '<font size=-2>none</font><br>100% (0)');
+WriteSkillEnd();
+WriteSkillFocusLaser(false, true);
+WriteBr();
+WriteBr();
+
+WriteClassUnitHeaderBegin('Gatling&nbsp;Laser','wgatling','Watchman, <font size=-1>Mini-Droid MkII</font>','The gatling laser is effective against streams of single units because of its rapid fire rate. It also does bonus damage to bosses, and it\'s good against Umbrellas because laser damage ignores evasion and is not reduced vs power armor.'); 
+WriteClassHeaderEnd();
+WriteSkillBegin();
+WriteGunHeader('', 'Type', 'Cooldown', 'Damage', 'Ammo', 'Mod.', 'Range', 'Splash');
+WriteData('', '<font size=-2>&nbsp;</font><br>'+InfoAtkDef('Laser'),'<font size=-2>fast</font><br>0.62','<font size=-2>low</font><br>70-70','<font size=-2>&nbsp;</font><br>+5-5','<font size=-2>&nbsp;</font><br>+10', '<font size=-2>medium</font><br>700', '<font size=-2>none</font><br>100% (0)');
+WriteSkillEnd();
+WriteSkillFocusLaser(true, true);
+WriteBr();
+WriteBr();
+
+WriteClassUnitHeaderBegin('Blast&nbsp;Gloves','wbgloves','Umbrella Clone','Blast Gloves are effective for devastating incoming mob and innards, but are weak against tnts, flying units, and reviving mob.',null,null,'jpg'); 
+WriteClassHeaderEnd();
+WriteSkillBegin();
+WriteGunHeader('', 'Type', 'Cooldown', 'Damage', 'Ammo', 'Mod.', 'Range', 'Splash');
+WriteData('', '<font size=-2>&nbsp;</font><br>'+InfoAtkDef('Melee'),'<font size=-2>fast</font><br>0.83','<font size=-2>high</font><br>150-195','<font size=-2>&nbsp;</font><br>+1-16','<font size=-2>&nbsp;</font><br>+8', '<font size=-2>melee</font><br>100', '<font size=-2>small-medium</font><br>100% (40), 40% (80), 25% (110)');
+WriteSkillEnd();
+WriteSkillBlastAmp(true);
+WriteBr();
+WriteBr();
+
+WriteClassUnitHeaderBegin('Pistols','wpistol','Umbrella Clone','Pistols offer two-target cover fire while the Umbrella Clone prepares for her next melee engagement.',null,null,'jpg'); 
+WriteClassHeaderEnd();
+WriteSkillBegin();
+WriteGunHeader('', 'Type', 'Cooldown', 'Damage', 'Ammo', 'Mod.', 'Range', 'Splash');
+WriteData('', '<font size=-2>&nbsp;</font><br>'+InfoAtkDef('Bullets'),'<font size=-2>fast</font><br>0.93','<font size=-2>low</font><br>48-74','<font size=-2>&nbsp;</font><br>+1-14','<font size=-2>&nbsp;</font><br>+15', '<font size=-2>medium</font><br>625', '<font size=-2>none</font><br>100% (0)');
+WriteSkillEnd();
+WriteSkillDual(true);
+WriteBr();
+WriteBr();
+
+WriteClassUnitHeaderBegin('Bozar','wbozar','<font size=-1>Assault Droid</font>','The Bozar is the ultimate gun. Its damage, range, and fire rate, combined with some splash damage, make it excellent in nearly every situation.</font><br><font size=-1>Ammo level is determined by Droid Mk, not fused ammos.'); 
+WriteClassHeaderEnd();
+WriteSkillBegin();
+WriteGunHeader('', 'Type', 'Cooldown', 'Damage', 'Ammo', 'Mod.', 'Range', 'Splash');
+WriteData('', '<font size=-2>&nbsp;</font><br>'+InfoAtkDef('Bullets'),'<font size=-2>average</font><br>1.86','<font size=-2>very high</font><br>200-300','<font size=-2>&nbsp;</font><br>+5-25','<font size=-2>&nbsp;</font><br>+15', '<font size=-2>extreme</font><br>1200', '<font size=-2>small</font><br>100% (24), 95% (60), 33% (105)');
+WriteSkillEnd();
+
+</script>
+
+<br>
+</body>
+</html>

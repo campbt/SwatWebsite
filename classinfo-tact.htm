@@ -1,0 +1,235 @@
+
+<html>
+<head>
+<title>SWAT: Aftermath</title>
+
+<script language="javascript" src="swat.js">
+</script>
+
+</head>
+<body bgcolor=000000 text=FFFFFF link=99E362 vlink=69B926 alink=00FF00>
+
+<script>
+WriteTopMenu('',true);
+WriteClassMenu();
+WriteSummonedMenu('TACT');
+WriteClassHeaderBegin('Tactician','tact','tac','Group Buffer','The tactician\'s abilities increase the effectiveness of nearby comrades. He can also train a cadet to assist him and utilize powerful satellite Ion Strikes. His intelligence is high.'); 
+WriteSkillLinks('Weakpoint','weak','Blitz','blitz','Endurance','endur','Refined&nbsp;Rifle','refrif','Nanites','nanites');
+WriteSkillLinks('Pep&nbsp;Talk','pep','Ion&nbsp;Strike','ion','Recruit','recruit','Rad&nbsp;Away','radaway','Sprint','sprint','Frag.&nbsp;Locator','frag');
+WriteSummonedsLinks('tact','Cadet','recruit','Woman','woman');
+WriteClassHeaderEnd('tact');
+</script>
+
+<br><br>
+<font color=ffcc00><b>Statistics</b></font>
+
+<table cellspacing=0 cellpadding=0 border=0 width=100%><tr valign=top>
+
+<td width=27%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsAttribs('20','0.60','12','0.60','110','0.72');
+</script></table>
+</td>
+
+<td width=23%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsWeapon(0);
+</script></table>
+</td>
+
+<td width=50%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsArmor();
+</script></table>
+</td>
+
+</tr></table>
+
+<br><br>
+<font color=ffcc00><b>Bonuses</b></font>
+
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteBonus('Levelup','Pep-Talk ability improved at levels 10, 20, 30, and 40.');
+WriteBonus('Epic','Pep-Talk ability improved at each level from 51 to 55.');
+WriteBonus('Rank','Ion Strike ability enabled at rank 4 and improved at ranks 7 and 10.<br>Extra skill point awarded to cadet at ranks 2, 5, 8, and 11.');
+WriteBonus('Droid',InfoLinkS('Droid','unitinfo-lad.htm')+' has 2 inventory slots per mark.');
+</script></table>
+
+<br><br>
+<font color=ffcc00><b>Trainable Abilities</b></font>
+
+<script>
+WriteSkill('Weakpoint', 'weak', '.', 'Identifies the weak points of closeby enemies, allowing allied attacks to inflict more damage. Mechanical units do not have weak points. Bosses are semi\-resistant to Weakpoint. A unit may suffer from only one instance of this tactic at a time.<br><font size=-1><i>This skill can be prioritized at the expense of levels in Blitz and Endurance.</i></font>');
+WriteSkillBegin();
+WriteHeader('Skill Level','Armor','Boss<br>Armor','Radius');
+WriteData('1','-1','-0.95','625');
+WriteData('2','-2','-1.85','625');
+WriteData('3','-3','-2.70','625');
+WriteData('4','-4','-3.50','625');
+WriteData('5','-5','-4.25','625');
+WriteData('6','-6','-4.95','625');
+WriteData('7','-7','-5.60','625');
+WriteData('8','-8','-6.20','625');
+WriteSkillBegin2();
+WriteHeader('Prioritized<br>Skill Level','Armor','Boss<br>Armor','Radius');
+WriteData('9','-9','-6.75','625');
+WriteData('10','-10','-7.25','625');
+WriteData('11','-11','-7.70','625');
+WriteData('12','-12','-8.10','625');
+WriteData('13','-13','-8.45','625');
+WriteData('14','-14','-8.75','625');
+WriteData('15','-15','-9.00','625');
+WriteData('16','-16','-9.20','625');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Blitz', 'blitz', '.', 'Increases the attack rate of nearby allies. Adjacent allies are triple-boosted. Does not affect the Tactician. A unit may have this tactic stacked up to three times.<br><font size=-1><i>This skill can be prioritized at the expense of levels in Weakpoint and Endurance.</i></font>');
+WriteSkillBegin('33%');
+WriteHeader('Skill Level', 'Attack<br>Spd.', 'Radius');
+WriteData('1', '+1%','900');
+WriteData('2', '+2%','900');
+WriteData('3', '+3%','900');
+WriteData('4', '+4%','900');
+WriteData('5', '+5%','900');
+WriteData('6', '+6%','900');
+WriteData('7', '+7%','900');
+WriteData('8', '+8%','900');
+WriteSkillBegin2('33%');
+WriteHeader('Skill Level', 'Attack<br>Spd.', 'Radius');
+WriteData('9', '+10%','900');
+WriteData('10', '+12%','900');
+WriteData('11', '+14%','900');
+WriteData('12', '+16%','900');
+WriteData('13', '+18%','900');
+WriteData('14', '+20%','900');
+WriteData('15', '+22%','900');
+WriteData('16', '+25%','900');
+WriteSkillBegin2('33%');
+WriteHeader('Prioritized<br>Skill Level', 'Attack<br>Spd.', 'Radius');
+WriteData('17','+28%','900');
+WriteData('18','+31%','900');
+WriteData('19','+34%','900');
+WriteData('20','+37%','900');
+WriteData('21','+40%','900');
+WriteData('22','+43%','900');
+WriteData('23','+46%','900');
+WriteData('24','+50%','900');
+WriteSkillEnd();
+</script>
+
+<br>
+<script>
+WriteSkill('Endurance', 'endur', '.', 'Increases the movement speed of nearby allies. Does not affect the Tactician at low levels. A unit may have this tactic stacked up to three times.<br><font size=-1><i>This skill can be prioritized at the expense of levels in Weakpoint and Blitz.</i></font>');
+WriteSkillBegin('33%');
+WriteHeader('Skill Level', 'Move Spd.', 'Move&nbsp;Spd.<br>(self)', 'Radius');
+WriteData('1', '+2%','+0%','900');
+WriteData('2', '+4%','+0%','900');
+WriteData('3', '+6%','+0%','900');
+WriteData('4', '+8%','+0%','900');
+WriteData('5', '+10%','+0%','900');
+WriteData('6', '+12%','+0%','900');
+WriteData('7', '+14%','+0%','900');
+WriteData('8', '+16%','+0%','900');
+WriteSkillBegin2('33%');
+WriteHeader('Skill Level', 'Move Spd.', 'Move&nbsp;Spd.<br>(self)', 'Radius');
+WriteData('9', '+16%','+2%','990');
+WriteData('10', '+16%','+4%','1090');
+WriteData('11', '+16%','+6%','1200');
+WriteData('12', '+16%','+8%','1320');
+WriteData('13', '+16%','+10%','1450');
+WriteData('14', '+16%','+12%','1590');
+WriteData('15', '+16%','+14%','1740');
+WriteData('16', '+16%','+16%','1900');
+WriteSkillBegin2('33%');
+WriteHeader('Prioritized<br>Skill Level', 'Move Spd.', 'Move&nbsp;Spd.<br>(self)', 'Radius');
+WriteData('17','+17%','+17%','1900');
+WriteData('18','+18%','+18%','1900');
+WriteData('19','+19%','+19%','1900');
+WriteData('20','+20%','+20%','1900');
+WriteData('21','+21%','+21%','1900');
+WriteData('22','+22%','+22%','1900');
+WriteData('23','+23%','+23%','1900');
+WriteData('24','+24%','+24%','1900');
+WriteSkillEnd();
+</script>
+
+<br>
+<!--Refined Rifle-->
+<script>
+WriteSkillRefRif();
+</script>
+
+<br>
+<!--Nanites-->
+<script>
+WriteSkillNanites(1);
+</script>
+
+<br><br>
+<font color=ffcc00><b>Innate Abilities</b></font>
+
+<script>
+WriteSkill('Pep&nbsp;Talk', 'pep', 'ZX', 'Boosts the morale of nearby comrades, increasing their damage and armor. Does not work on mechanical units. Does not affect the Tactician.');
+WriteSkillBegin();
+WriteHeader('Hero Level', 'Damage', 'Armor', 'Radius', 'Duration', 'Energy', 'Cooldown');
+WriteData('1',  '+10%','1','1900','20 s','0','60 s');
+WriteData('10', '+15%','2','1900','20 s','0','60 s');
+WriteData('20', '+20%','3','1900','20 s','0','60 s');
+WriteData('30', '+25%','4','1900','20 s','0','60 s');
+WriteData('40', '+30%','5','1900','20 s','0','60 s');
+WriteSkillBegin2();
+WriteHeader('Hero Level', 'Damage', 'Armor', 'Radius', 'Duration', 'Energy', 'Cooldown');
+WriteData('51', '+32%','5','1900','22 s','0','60 s');
+WriteData('52', '+34%','5','1900','24 s','0','60 s');
+WriteData('53', '+36%','5','1900','26 s','0','60 s');
+WriteData('54', '+38%','5','1900','28 s','0','60 s');
+WriteData('55', '+40%','5','1900','30 s','0','60 s');
+WriteSkillEnd();
+</script>
+
+<br>
+<script>
+WriteSkill('Ion&nbsp;Strike', 'ion', 'ZC', 'Signals a satellite-mounted Ion Cannon to fire on the targeted location. After focusing the beam, an intense blast inflicts extreme damage to all units standing within a short distance of the location. Zombies and zombie corpses hit by Ion Strike will not reanimate.<br><font size=-1><i>Damage is 66% armor-ignoring vs bosses and mini-bosses. Damage is 5% armor-ignoring and nanites-piercing vs power armored units.</i></font>');
+WriteSkillBegin();
+WriteHeader('Rank', 'Damage', 'Radius', 'Range', 'Delay', 'Energy', 'Cooldown');
+WriteData('4', '7500','264','unlimited','3 s','0','150 s');
+WriteData('7', '7500','264','unlimited','3 s','0','120 s');
+WriteData('10', '7500','264','unlimited','3 s','0','90 s');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Recruit', 'recruit', 'ZG', 'Recruits a civilian to join the team under the hero\'s tutelage. Male recruits will be trained into cadets. Female recruits will follow the hero adoringly. The tactician may only have one recruit at a time.','tact','recruit');
+WriteSkillBegin();
+WriteHeader('Skill Level','&nbsp;');
+WriteData('--','&nbsp;');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Rad&nbsp;Away', 'radaway', 'ZB', 'Ingested Potassium Iodide pill provides temporary protection against radiation damage. Restores health to heroes with the rad. resistant trait; amount is five times the current radiation level. Cooldown is 20 seconds when healing a rad. resistant hero.');
+WriteSkillBegin();
+WriteHeader('Skill Level','Energy', 'Duration','Cooldown');
+WriteData('--','50','60 s','1 s');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<!--Sprint-->
+<script>
+WriteSkillSprint(1);
+</script>
+
+<br>
+<!--Frag. Locator-->
+<script>
+WriteSkillFrag();
+</script>
+
+<br>
+</body>
+</html>

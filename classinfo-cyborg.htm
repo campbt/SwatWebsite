@@ -1,0 +1,207 @@
+
+<html>
+<head>
+<title>SWAT: Aftermath</title>
+
+<script language="javascript" src="swat.js">
+</script>
+
+</head>
+<body bgcolor=000000 text=FFFFFF link=99E362 vlink=69B926 alink=00FF00>
+
+<script>
+WriteTopMenu('',true);
+WriteClassMenu();
+WriteSummonedMenu('');
+WriteClassHeaderBegin('Cyborg','cyborg','bor','Tank, Offense','The cyborg has advanced armor. He\'s very versatile, capable of high damage, great durability, and crowd control. But he is very energy dependent. His intelligence is high.');
+WriteSkillLinks('Cluster&nbsp;Rockets','cluster','Xtreme&nbsp;Combat&nbsp;Mode','xcm','Organic&nbsp;Replacement','org','Plasma&nbsp;Rounds','plasrnd','Nanites','nanites');
+WriteSkillLinks('Pheromones','phero','Emergency&nbsp;Power','backbat','Goliath&nbsp;Modification','repairsys','Force&nbsp;Field','ff','Vindicator','wvind','Frag.&nbsp;Locator','frag');
+WriteClassHeaderEnd('cyborg');
+</script>
+
+<br><br>
+<font color=ffcc00><b>Statistics</b></font>
+
+<table cellspacing=0 cellpadding=0 border=0 width=100%><tr valign=top>
+
+<td width=27%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsAttribs('30','1.10','14','0.36','105','0.62');
+</script></table>
+</td>
+
+<td width=23%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsWeapon(2, false, true);
+</script></table>
+</td>
+
+<td width=50%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsArmor('advanced');
+</script></table>
+</td>
+
+</tr></table>
+
+<br><br>
+<font color=ffcc00><b>Bonuses</b></font>
+
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteBonus('Levelup','Emergency Power ability improved at levels 10, 20, 30, 40, and 50.');
+WriteBonus('Epic','Vitality, Agility, Intelligence, and Health increased at each level from 51 to 55.');
+WriteBonus('Rank','Movement speed increased at each rank from 2 to 11.');
+WriteBonus('Droid',InfoLinkS('Droid','unitinfo-lad.htm')+' has 30 extra movement speed.');
+</script></table>
+
+<br><br>
+<font color=ffcc00><b>Trainable Abilities</b></font>
+
+<!--Cluster Rockets-->
+<script>
+WriteSkill('Cluster&nbsp;Rockets', 'cluster', 'X', 'Bombards an area with multiple rockets, briefly stunning and damaging units in the vicinity. Launcher also provides capacity for the cyborg to integrate micro-fusion generators.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Dmg/Max', 'Radius', 'Range', 'Stun', 'Energy', 'Cool.', 'MFG');
+WriteData('1', '1000/250','275','1000','0.33 s','50','6 s', '1');
+WriteData('2', '1200/300','290','1000','0.33 s','60','6 s', '1');
+WriteData('3', '1400/350','305','1000','0.33 s','70','6 s', '1');
+WriteData('4', '1600/400','320','1000','0.33 s','80','6 s', '1');
+WriteData('5', '1800/450','335','1000','0.33 s','90','6 s', '1');
+WriteData('6', '2000/500','350','1000','0.66 s','100','6 s', '2');
+WriteData('7', '2200/550','365','1000','0.66 s','110','6 s', '2');
+WriteData('8', '2400/600','380','1000','0.66 s','120','6 s', '2');
+WriteSkillBegin2();
+WriteHeader('Skill Level', 'Dmg/Max', 'Radius', 'Range', 'Stun', 'Energy', 'Cool.', 'MFG');
+WriteData('9', '2600/650','395','1000','0.66 s','130','6 s', '2');
+WriteData('10', '2800/700','410','1000','0.66 s','140','6 s', '2');
+WriteData('11', '3000/750','425','1000','1.00 s','150','6 s', '3');
+WriteData('12', '3200/800','440','1000','1.00 s','160','6 s', '3');
+WriteData('13', '3400/850','455','1000','1.00 s','170','6 s', '3');
+WriteData('14', '3600/900','470','1000','1.00 s','180','6 s', '3');
+WriteData('15', '3800/950','485','1000','1.00 s','190','6 s', '3');
+WriteData('16', '4000/1000','500','1000','1.33 s','200','6 s', '4');
+WriteSkillEnd();
+</script>
+
+<br>
+<!--XCM-->
+<script>
+WriteSkill('Xtreme&nbsp;Combat&nbsp;Mode', 'xcm', 'C', 'Uses an energy surge to temporarily boost damage and defense.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Damage', 'HP', 'Armor', 'Duration', 'Energy', 'Cool.');
+WriteData('1', '+19%','+0.5&nbsp;hps','+1','20 s','90','21 s');
+WriteData('2', '+21%','+0.6&nbsp;hps','+2','21 s','92','22 s');
+WriteData('3', '+23%','+0.7&nbsp;hps','+3','22 s','94','23 s');
+WriteData('4', '+25%','+0.8&nbsp;hps','+4','23 s','96','24 s');
+WriteData('5', '+27%','+0.9&nbsp;hps','+5','24 s','98','25 s');
+WriteData('6', '+29%','+1.0&nbsp;hps','+6','25 s','100','26 s');
+WriteData('7', '+31%','+1.1&nbsp;hps','+7','26 s','102','27 s');
+WriteData('8', '+33%','+1.2&nbsp;hps','+8','27 s','104','28 s');
+WriteSkillBegin2();
+WriteHeader('Skill Level', 'Damage', 'HP', 'Armor', 'Duration', 'Energy', 'Cool.');
+WriteData('9', '+36%','+1.3&nbsp;hps','+8','31 s','106','32 s');
+WriteData('10', '+40%','+1.4&nbsp;hps','+8','35 s','108','36 s');
+WriteData('11', '+45%','+1.5&nbsp;hps','+8','39 s','110','40 s');
+WriteData('12', '+51%','+1.6&nbsp;hps','+8','43 s','112','44 s');
+WriteData('13', '+58%','+1.7&nbsp;hps','+8','47 s','114','48 s');
+WriteData('14', '+66%','+1.8&nbsp;hps','+8','51 s','116','52 s');
+WriteData('15', '+75%','+1.9&nbsp;hps','+8','55 s','118','56 s');
+WriteData('16', '+85%','+2.0&nbsp;hps','+8','59 s','120','60 s');
+WriteSkillEnd();
+</script>
+
+<br>
+<!--Org. Replacement-->
+<script>
+WriteSkill('Organic&nbsp;Replacement', 'org', '.', 'Cybernetic implants improve the officer\'s reflexes, allowing him to evade some attacks, and increase his maximum health.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Chance', 'Health');
+WriteData('1', '7%', '+25');
+WriteData('2', '13%', '+50');
+WriteData('3', '19%', '+75');
+WriteData('4', '24%', '+100');
+WriteData('5', '29%', '+125');
+WriteData('6', '33%', '+150');
+WriteData('7', '37%', '+175');
+WriteData('8', '40%', '+200');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<!--Plasman Rounds-->
+<script>
+WriteSkillPlasvRnd();
+</script>
+
+<br>
+<!--Nanites-->
+<script>
+WriteSkillNanites(3);
+</script>
+
+
+<br><br>
+<font color=ffcc00><b>Innate Abilities</b></font>
+
+<!--Pheromones-->
+<script>
+WriteSkill('Pheromones', 'phero', 'ZX', 'Creates and later releases an artificial scent which attracts nearby undead and provokes them into attacking the cyborg.');
+WriteSkillBegin();
+WriteHeader('Action', 'Radius', 'Energy', 'Cooldown');
+WriteData('recharge', ' --', '200', '6 s');
+WriteData('release', ' 1600', '0', '--');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<!--Backup Bat-->
+<script>
+WriteSkill('Emergency&nbsp;Power', 'backbat', 'ZC', 'Instantly recharges energy by draining the cyborg\'s backup battery.');
+WriteSkillBegin();
+WriteHeader('Hero Level', 'Energy', 'Cooldown');
+WriteData('1', '+500', '150 s');
+WriteData('10', '+500', '115 s');
+WriteData('20', '+500', '95 s');
+WriteData('30', '+500', '80 s');
+WriteData('40', '+500', '70 s');
+WriteData('50', '+500', '60 s');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Goliath&nbsp;Modification', 'repairsys', 'ZG', 'Disassembles a shield capacitor and permanently integrates the parts into the cyborg\'s armor, upgrading nanites significantly but decreasing movement speed. This modification can only be performed once and cannot be reversed.');
+WriteSkillBegin();
+WriteHeader('Level', 'Move Spd.', 'Nanites');
+WriteData('--', '-20', InfoLinkS('Large+','readmeafterarmor.html#Large+', true));
+WriteSkillEnd(true);
+</script>
+
+<br>
+<!--Force Field-->
+<script>
+WriteSkill('Force&nbsp;Field', 'ff', '+', 'Creates an external field of energy which absorbs all incoming damage until deactivated. Drains progressively more energy while active, and energy efficiency permanently decreased by each activation. Damage from toxins will bypass the force field.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Energy', 'Cooldown');
+WriteData('--', '120', '3 s');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Vindicator', 'wvind', '.', 'Variant of the chaingun. Increases max ammo level by 1.');
+WriteSkillBegin();
+WriteHeader('Skill Level','&nbsp;');
+WriteData('--','&nbsp;');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<!--Frag. Locator-->
+<script>
+WriteSkillFrag();
+</script>
+
+<br>
+</body>
+</html>
