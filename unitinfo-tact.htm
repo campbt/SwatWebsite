@@ -1,0 +1,203 @@
+
+<html>
+<head>
+<title>SWAT: Aftermath</title>
+
+<script language="javascript" src="swat.js"></script>
+<script language="javascript">
+function WriteSkillRefRifCadet() {
+  WriteSkill('Refined&nbsp;Rifle', 'refrif', '.', 'Increases the damage of the assault rifle.');
+  WriteSkillBegin();
+  WriteHeader('Skill Level', 'Damage');
+  WriteData('1', '+6');
+  WriteData('2', '+12');
+  WriteData('3', '+18');
+  WriteData('4', '+24');
+  WriteData('5', '+30');
+  WriteData('6', '+36');
+  WriteData('7', '+42');
+  WriteData('8', '+48');
+  WriteSkillBegin2();
+  WriteHeader('Skill Level', 'Damage');
+  WriteData('9', '+54');
+  WriteData('10', '+60');
+  WriteData('11', '+66');
+  WriteData('12', '+72');
+  WriteData('13', '+78');
+  WriteData('14', '+84');
+  WriteData('15', '+90');
+  WriteData('16', '+96');
+  WriteSkillEnd();
+}
+</script>
+
+</head>
+<body bgcolor=000000 text=FFFFFF link=99E362 vlink=69B926 alink=00FF00>
+
+<script>
+WriteTopMenu('',true);
+WriteClassMenu();
+WriteSummonedMenu('TACT');
+WriteClassUnitHeaderBegin('Cadet','recruitman','Acquired via Ability','Recruited by '+InfoLinkS('tacticians','classinfo-tact.htm#recruit')+', the cadet is a lightly armored support hero. His abilities are limited, but an extra gun can come in quite handy. He gains levels as the tactician gains levels, up to level 30. He can neither carry nor use items.');
+WriteSkillLinks('Refined&nbsp;Rifle','refrif','Nanites','nanites');
+WriteSkillLinks('Beginner\'s Luck', 'crit','Use&nbsp;Drug','usedrug','Use&nbsp;Vest','usevest','Use&nbsp;Shield&nbsp;Cap.','useshieldcap','Equalize&nbsp;Energy','beam','Sprint','sprint');
+WriteClassHeaderEnd();
+</script>
+
+<br><br>
+<font color=ffcc00><b>Statistics</b></font>
+
+<table cellspacing=0 cellpadding=0 border=0 width=100%><tr valign=top>
+
+<td width=27%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsAttribs('20','0.70','10','0.60','100','0.31');
+</script></table>
+</td>
+
+<td width=23%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsWeapon(6);
+</script></table>
+</td>
+
+<td width=50%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsArmor('cadet');
+</script></table>
+</td>
+
+</tr></table>
+
+<br><br>
+<font color=ffcc00><b>Trainable Abilities</b></font>
+
+<script>
+WriteSkillRefRifCadet();
+</script>
+
+<br>
+<script>
+WriteSkillNanites(0, false, 'cadet');
+</script>
+
+<br><br>
+<font color=ffcc00><b>Innate Abilities</b></font>
+
+<script>
+WriteSkill('Beginner\'s Luck', 'luck', '.', 'Knowledge of vulnerable points enables a chance for a shot to inflict massive damage to an enemy. Mechanical units do not have vulnerable points.<br><font size=-1><i>Upgraded when the tactician levels up.</i></font>');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Damage', 'Chance');
+WriteData('1', '4.0x','20%');
+WriteData('2', '4.1x','25%');
+WriteData('3', '4.2x','30%');
+WriteData('4', '4.3x','35%');
+WriteData('5', '4.4x','40%');
+WriteData('6', '4.5x','45%');
+WriteData('7', '4.6x','50%');
+WriteData('8', '4.7x','55%');
+WriteData('9', '4.8x','60%');
+WriteData('10', '4.9x','65%');
+WriteData('11', '5.0x','70%');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Use&nbsp;Drug', 'usedrug', 'Z', 'Uses the targeted speed or buffout. The cadet cannot use another drug until the effect of the current drug wears off.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Duration');
+WriteData('--', '120 s');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Use&nbsp;Vest', 'usevest', 'X', 'Uses targeted Kevlar Vest to increase armor.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Armor');
+WriteData('--', '+2');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Use&nbsp;Shield&nbsp;Cap.', 'useshieldcap', 'X', 'Purchases a shield capacitor for 1500 credits which upgrades the cadet\'s nanites generator and energy storage but decreases movement speed.</font><br><font size=-1>This ability cannot be used until the cadet has used a Kevlar Vest.');
+WriteSkillBegin();
+WriteHeader('Difficulty', 'Nanites', 'Move Spd.', 'Energy');
+WriteData('Normal-Nightmare', '<a href=readmeafterarmor.html#Standard>Standard</a>', '231', '+250');
+WriteData('Extinction', '<a href=readmeafterarmor.html#Large>Large</a>', '204', '+250');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Equalize&nbsp;Energy', 'beam', 'C', 'Combines the energy of the cadet and tactician then distributes an equal percentage to each.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Energy', 'Cooldown');
+WriteData('--', '0', '20 s');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkillSprint(6, 'V');
+</script>
+
+<br><br>
+<script>
+WriteClassUnitHeaderBegin('Woman','woman','Acquired via Ability','Recruited by '+InfoLinkS('tacticians','classinfo-tact.htm#recruit')+', the woman is an unarmed and unarmored companion. Her only function is to adore her rescuer which in turn boosts his morale.');
+WriteSkillLinks('Adoration','ador','I.C.D.','icd','Use&nbsp;Vest','usevest','Rad.&nbsp;Immune','radimm');
+WriteClassHeaderEnd();
+</script>
+
+<br><br>
+<font color=ffcc00><b>Innate Abilities</b></font>
+
+<script>
+WriteSkill('Adoration', 'ador', '.', 'Increases the attack rate of the tactician who recruited the woman.<br><font size=-1><i>Improved when the tactician levels up.</i></font>');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Attack Spd.','Radius');
+WriteData('1', '+100%','900');
+WriteData('2', '+175%','1090');
+WriteData('3', '+250%','1320');
+WriteData('4', '+325%','1590');
+WriteData('5', '+400%','1900');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Implanted Cardioverter Defibrillator', 'icd', '.', 'As long as the defib is charged, the woman will be automatically revived shortly after her death.<br><font size=-1><i>Upgraded when the tactician levels up after Adoration is fully upgraded.</i></font>');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Cooldown');
+WriteData('1', '120 s');
+WriteData('6', '90 s');
+WriteData('7', '60 s');
+WriteData('8', '30 s');
+WriteData('9', '20 s');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Use&nbsp;Vest', 'usevest', 'X', 'Uses targeted Kevlar Vest to increase armor.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Armor');
+WriteData('--', '+2');
+WriteSkillEnd(true);
+</script>
+
+
+<br>
+<script>
+WriteSkill('Rad.&nbsp;Immune', 'radimm', '.', 'A skin-tight, transparent suit protects the woman from the harmful effects of radiation.');
+WriteSkillBegin();
+WriteHeader('Skill Level', '&nbsp;');
+WriteData('--', '&nbsp;');
+WriteSkillEnd(true);
+</script>
+
+<br>
+</body>
+</html>

@@ -156,7 +156,7 @@ WriteSkillEnd(true);
 <br>
 <!--Backup Bat-->
 <script>
-WriteSkill('Emergency&nbsp;Power', 'backbat', 'ZC', 'Instantly recharges energy by draining the cyborg\'s backup battery.');
+WriteSkill('Emergency&nbsp;Power', 'emerpow', 'ZC', 'Instantly recharges energy by draining the cyborg\'s backup battery.');
 WriteSkillBegin();
 WriteHeader('Hero Level', 'Energy', 'Cooldown');
 WriteData('1', '+500', '150 s');
@@ -170,7 +170,7 @@ WriteSkillEnd(true);
 
 <br>
 <script>
-WriteSkill('Goliath&nbsp;Modification', 'repairsys', 'ZG', 'Disassembles a shield capacitor and permanently integrates the parts into the cyborg\'s armor, upgrading nanites significantly but decreasing movement speed. This modification can only be performed once and cannot be reversed.');
+WriteSkill('Goliath&nbsp;Modification', 'repairsys', 'ZG', 'Integrates items permanently into the cyborg. Target a shield capacitor to disassemble and permanently integrate the parts into the cyborg\'s armor, upgrading nanites significantly but decreasing movement speed. Target a microfusion-generator to permanently integrate it. The max number of mfgs that can be integrated is based on the cyborg\'s cluster rockets ability.');
 WriteSkillBegin();
 WriteHeader('Level', 'Move Spd.', 'Nanites');
 WriteData('--', '-20', InfoLinkS('Large+','readmeafterarmor.html#Large+', true));
@@ -189,7 +189,7 @@ WriteSkillEnd(true);
 
 <br>
 <script>
-WriteSkill('Vindicator', 'wvind', '.', 'Variant of the chaingun. Increases max ammo level by 1.');
+WriteSkill('Vindicator', 'plasrnd', '.', 'Variant of the chaingun. Increases max ammo level by 1.');
 WriteSkillBegin();
 WriteHeader('Skill Level','&nbsp;');
 WriteData('--','&nbsp;');

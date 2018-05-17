@@ -13,7 +13,7 @@
 WriteTopMenu('',true);
 WriteClassMenu();
 WriteSummonedMenu('');
-WriteClassHeaderBegin('Pyrotechnician','pyro','pyr','Offense, Debuffing','The pyro relies on his flamethrower and fire-based skills to burn the health off his enemies. He is an extreme class, good against everything while simultaneously vulnerable. His intelligence is only average.<br><font size=-1><i>This class must be unlocked before it can be selected.</i></font>'); 
+WriteClassHeaderBegin('Pyrotechnician','pyro','pyr','Offense, Debuffing','The pyro relies on his flamethrower and fire-based skills to burn the health off his enemies. He is an extreme class, good against everything while simultaneously vulnerable. His intelligence is only average.</font>');
 WriteSkillLinks('Molotov','molotov','Microwave','micro','Incendiary&nbsp;Rocket','incrocket','Advanced&nbsp;Fuel','fuel','Nanites','nanites');
 WriteSkillLinks('Firefly','fly','Combustion','combust','Turn&nbsp;Up&nbsp;the&nbsp;Heat','heat','Reinforced&nbsp;Plating','replate','Sprint','sprint','Frag.&nbsp;Locator','frag');
 WriteClassHeaderEnd('pyro');
@@ -58,7 +58,7 @@ WriteBonus('Droid',InfoLinkS('Droid','unitinfo-lad.htm')+' has an additional 5.8
 <font color=ffcc00><b>Trainable Abilities</b></font>
 
 <script>
-WriteSkill('Molotov', 'molotov', 'X', 'Covers an area with a sticky, slow-burning oil which causes minor damage and reduces the movement speed of all units which walk through the area.');
+WriteSkill('Molotov', 'molotov', 'X', 'Covers an area with a sticky, slow-burning oil which causes minor damage and reduces the movement speed of all units which walk through the area. Stacks up to 2 times. Less effective on bosses.');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'Damage', 'Slow', 'Radius', 'Range', 'Duration','Energy', 'Cooldown');
 WriteData('1', '10 dps','40%','192','650','6 s','122','3 s');
@@ -100,7 +100,7 @@ WriteSkillEnd();
 
 <br>
 <script>
-WriteSkill('Incendiary&nbsp;Rocket', 'incrocket', 'V', 'Sears the flesh of the target, making it more vulnerable and causing extreme damage over time. Incinerated targets suffer increased damage. Power armored units are unaffected. Bosses suffer an additional, permanent armor reduction.');
+WriteSkill('Incendiary&nbsp;Rocket', 'incrocket', 'V', 'Sears the flesh of the target, making it more vulnerable and causing extreme damage over time. Power armored units are unaffected. Bosses suffer an additional, permanent armor reduction.');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'Damage', 'Armor', 'Range', 'Duration', 'Energy', 'Cooldown');
 WriteData('1', '2076-2285','-1','1200','20 s','75','6 s');
@@ -161,12 +161,12 @@ WriteSkillEnd(true);
 
 <br>
 <script>
-WriteSkill('Turn&nbsp;Up&nbsp;the&nbsp;Heat', 'heat', '+', 'Increases damage, but the overburn drains health from the officer and adjacent units.');
+  WriteSkill('Overburn', 'heat', '+', 'Increases damage, number of flame bounces, and the range for bouncing, but the overburn drains health from the officer and adjacent units.<br>The officer can not be healed while overburning.');
 WriteSkillBegin();
-WriteHeader('Level', 'Damage', 'Health', 'Cooldown');
-WriteData('off', '+0', '-0 hps', '6 s');
-WriteData('1', '+15', '-5 hps', '--');
-WriteData('2', '+25', '-9 hps', '--');
+WriteHeader('Level', 'Damage', 'Bounces', 'Bounce Range', 'Health', 'Cooldown');
+WriteData('off', '+0', '+0', '+0', '-0 hps', '6 s');
+WriteData('1', '+8', '+2', '+25', '-5 hps', '--');
+WriteData('2', '+15', '+4', '+50', '-9 hps', '--');
 WriteSkillEnd(true);
 </script>
 

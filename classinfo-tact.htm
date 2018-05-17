@@ -13,7 +13,7 @@
 WriteTopMenu('',true);
 WriteClassMenu();
 WriteSummonedMenu('TACT');
-WriteClassHeaderBegin('Tactician','tact','tac','Group Buffer','The tactician\'s abilities increase the effectiveness of nearby comrades. He can also train a cadet to assist him and utilize powerful satellite Ion Strikes. His intelligence is high.'); 
+WriteClassHeaderBegin('Tactician','tact','tac','Group Buffer','The tactician\'s abilities increase the effectiveness of nearby comrades. He can also train a cadet to assist him and utilize powerful satellite Ion Strikes. His intelligence is high.');
 WriteSkillLinks('Weakpoint','weak','Blitz','blitz','Endurance','endur','Refined&nbsp;Rifle','refrif','Nanites','nanites');
 WriteSkillLinks('Pep&nbsp;Talk','pep','Ion&nbsp;Strike','ion','Recruit','recruit','Rad&nbsp;Away','radaway','Sprint','sprint','Frag.&nbsp;Locator','frag');
 WriteSummonedsLinks('tact','Cadet','recruit','Woman','woman');
@@ -60,7 +60,7 @@ WriteBonus('Droid',InfoLinkS('Droid','unitinfo-lad.htm')+' has 2 inventory slots
 
 <script>
 WriteSkill('Weakpoint', 'weak', '.', 'Identifies the weak points of closeby enemies, allowing allied attacks to inflict more damage. Mechanical units do not have weak points. Bosses are semi\-resistant to Weakpoint. A unit may suffer from only one instance of this tactic at a time.<br><font size=-1><i>This skill can be prioritized at the expense of levels in Blitz and Endurance.</i></font>');
-WriteSkillBegin();
+WriteSkillBegin('33%');
 WriteHeader('Skill Level','Armor','Boss<br>Armor','Radius');
 WriteData('1','-1','-0.95','625');
 WriteData('2','-2','-1.85','625');
@@ -70,52 +70,62 @@ WriteData('5','-5','-4.25','625');
 WriteData('6','-6','-4.95','625');
 WriteData('7','-7','-5.60','625');
 WriteData('8','-8','-6.20','625');
-WriteSkillBegin2();
+WriteSkillBegin2('33%');
 WriteHeader('Prioritized<br>Skill Level','Armor','Boss<br>Armor','Radius');
-WriteData('9','-9','-6.75','625');
-WriteData('10','-10','-7.25','625');
-WriteData('11','-11','-7.70','625');
-WriteData('12','-12','-8.10','625');
-WriteData('13','-13','-8.45','625');
-WriteData('14','-14','-8.75','625');
-WriteData('15','-15','-9.00','625');
-WriteData('16','-16','-9.20','625');
+WriteData('9','-8','-6.75','688');
+WriteData('10','-8','-7.25','757');
+WriteData('11','-8','-7.70','833');
+WriteData('12','-8','-8.10','917');
+WriteData('13','-8','-8.45','1007');
+WriteData('14','-8','-8.75','1104');
+WriteData('15','-8','-9.00','1208');
+WriteData('16','-8','-9.20','1320');
+WriteSkillBegin2('33%');
+WriteHeader('Prioritized<br>Skill Level','Armor','Boss<br>Armor','Radius');
+WriteData('17','-9','-6.75','1320');
+WriteData('18','-10','-7.25','1320');
+WriteData('19','-11','-7.70','1320');
+WriteData('20','-12','-8.10','1320');
+WriteData('21','-13','-8.45','1320');
+WriteData('22','-14','-8.75','1320');
+WriteData('23','-15','-9.00','1320');
+WriteData('24','-16','-9.20','1320');
 WriteSkillEnd(true);
 </script>
 
 <br>
 <script>
-WriteSkill('Blitz', 'blitz', '.', 'Increases the attack rate of nearby allies. Adjacent allies are triple-boosted. Does not affect the Tactician. A unit may have this tactic stacked up to three times.<br><font size=-1><i>This skill can be prioritized at the expense of levels in Weakpoint and Endurance.</i></font>');
+WriteSkill('Blitz', 'blitz', '.', 'Increases the attack rate of nearby allies. Adjacent allies are triple-boosted. Does not affect the Tactician at low levels. A unit may have this tactic stacked up to three times.<br><font size=-1><i>This skill can be prioritized at the expense of levels in Weakpoint and Endurance.</i></font>');
 WriteSkillBegin('33%');
-WriteHeader('Skill Level', 'Attack<br>Spd.', 'Radius');
-WriteData('1', '+1%','900');
-WriteData('2', '+2%','900');
-WriteData('3', '+3%','900');
-WriteData('4', '+4%','900');
-WriteData('5', '+5%','900');
-WriteData('6', '+6%','900');
-WriteData('7', '+7%','900');
-WriteData('8', '+8%','900');
+WriteHeader('Skill Level', 'Attack Spd.', 'Attack Spd.<br>(Self)', 'Radius');
+WriteData('1', '+3%','+0%', '900');
+WriteData('2', '+6%','+0%', '900');
+WriteData('3', '+9%','+0%', '900');
+WriteData('4', '+12%','+0%', '900');
+WriteData('5', '+15%','+0%', '900');
+WriteData('6', '+18%','+0%', '900');
+WriteData('7', '+21%','+0%', '900');
+WriteData('8', '+24%','+0%', '900');
 WriteSkillBegin2('33%');
-WriteHeader('Skill Level', 'Attack<br>Spd.', 'Radius');
-WriteData('9', '+10%','900');
-WriteData('10', '+12%','900');
-WriteData('11', '+14%','900');
-WriteData('12', '+16%','900');
-WriteData('13', '+18%','900');
-WriteData('14', '+20%','900');
-WriteData('15', '+22%','900');
-WriteData('16', '+25%','900');
+WriteHeader('Skill Level', 'Attack Spd.', 'Attack Spd.<br>(Self)', 'Radius');
+WriteData('9', '+3%','+3%', '990');
+WriteData('10', '+6%','+6%', '1090');
+WriteData('11', '+9%','+9%', '1200');
+WriteData('12', '+12%','+12%', '1320');
+WriteData('13', '+15%','+15%', '1450');
+WriteData('14', '+18%','+18%', '1590');
+WriteData('15', '+21%','+21%', '1740');
+WriteData('16', '+24%','+24%', '1900');
 WriteSkillBegin2('33%');
-WriteHeader('Prioritized<br>Skill Level', 'Attack<br>Spd.', 'Radius');
-WriteData('17','+28%','900');
-WriteData('18','+31%','900');
-WriteData('19','+34%','900');
-WriteData('20','+37%','900');
-WriteData('21','+40%','900');
-WriteData('22','+43%','900');
-WriteData('23','+46%','900');
-WriteData('24','+50%','900');
+WriteHeader('Skill Level', 'Attack Spd.', 'Attack Spd.<br>(Self)', 'Radius');
+WriteData('17','+27%','+27%','1900');
+WriteData('18','+30%','+30%','1900');
+WriteData('19','+33%','+33%','1900');
+WriteData('20','+36%','+36%','1900');
+WriteData('21','+39%','+39%','1900');
+WriteData('22','+42%','+42%','1900');
+WriteData('23','+45%','+45%','1900');
+WriteData('24','+48%','+48%','1900');
 WriteSkillEnd();
 </script>
 
@@ -191,7 +201,7 @@ WriteSkillEnd();
 
 <br>
 <script>
-WriteSkill('Ion&nbsp;Strike', 'ion', 'ZC', 'Signals a satellite-mounted Ion Cannon to fire on the targeted location. After focusing the beam, an intense blast inflicts extreme damage to all units standing within a short distance of the location. Zombies and zombie corpses hit by Ion Strike will not reanimate.<br><font size=-1><i>Damage is 66% armor-ignoring vs bosses and mini-bosses. Damage is 5% armor-ignoring and nanites-piercing vs power armored units.</i></font>');
+WriteSkill('Ion&nbsp;Strike', 'ion', 'ZC', 'Signals a satellite-mounted Ion Cannon to fire on the targeted location. After focusing the beam, an intense blast inflicts extreme damage to all units standing within a short distance of the location. Zombies and zombie corpses hit by Ion Strike will not reanimate.<br><font size=-1><i>Damage is 66% armor-ignoring vs bosses, mini-bosses, and power armor.</i></font>');
 WriteSkillBegin();
 WriteHeader('Rank', 'Damage', 'Radius', 'Range', 'Delay', 'Energy', 'Cooldown');
 WriteData('4', '7500','264','unlimited','3 s','0','150 s');

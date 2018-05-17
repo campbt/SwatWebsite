@@ -41,16 +41,14 @@ function ToggleDetails(hinttext, abilitydetails) {
 WriteTopMenu('',true);
 WriteClassMenu();
 WriteSummonedMenu('');
-WriteClassHeaderBegin('Watchman','watchman','wat','Support, Versatility','The watchman hails from the future, equipped with laser weaponry and advanced abilities to aid the heroes of the present. He\'s highly customizable, allowing him to fill almost any role. His intelligence is only average.<br><font size=-1><i>This class must be unlocked before it can be selected.</i></font>'); 
+WriteClassHeaderBegin('Watchman','watchman','wat','Support, Versatility','The watchman hails from the future, equipped with laser weaponry and advanced abilities to aid the heroes of the present. He\'s highly customizable, allowing him to fill almost any role. His intelligence is only average.<br><font size=-1><i>This class must be unlocked by winning Nightmare before it can be selected.</i></font>');
 WriteSkillLinks('X-Grenade','gren','Paradox','paradox','Custom&nbsp;Loadout','loadout','<span id=herogunskillname>Focus&nbsp;Laser</span>','herogunskill','Nanites','nanites');
 WriteSkillLinks('Nano-Inf.','nanoinj','Power&nbsp;Surge','psurge','Advanced&nbsp;Generator','gen','Partner','recall','Frag.&nbsp;Locator','frag');
 WriteClassHeaderEnd('watchman');
 </script>
 
 <br><br>
-<font color=ffcc00><b>Statistics</b></font> 
-<img src=pics/tiny-laserrfl.gif onclick="HeroWeaponSelect(6);" alt="Select Laser Rifle" title="Select Laser Rifle"> 
-<img src=pics/tiny-gatling.gif onclick="HeroWeaponSelect(5);" alt="Select Gatling Laser" title="Select Gatling Laser"> 
+<font color=ffcc00><b>Statistics</b></font>
 
 <table cellspacing=0 cellpadding=0 border=0 width=100%><tr valign=top>
 
@@ -318,19 +316,10 @@ Click this icon to hide customization details.
 <script>
 WriteBr();
 WriteSkillLeftHead();
-WriteSkill('Laser Dissipation <img src=pics/tiny-laserrfl.gif onclick="HeroWeaponSelect(6);" alt="Select Laser Rifle" title="Select Laser Rifle"> <img src=pics/tiny-gatling.gif onclick="HeroWeaponSelect(5);" alt="Select Gatling Laser" title="Select Gatling Laser"> ', 'loadout_laser', '.', 'Amplification mirrors allow the hero\'s weapon to shoot targets at a greater distance. Gatling laser damage is increased due to the intensified energy at a short distance. Also improves energy efficiency of focused lasers.</font><br><font size=-1>This upgrade is part of the Custom Loadout ability.');
+WriteSkill('Laser Dissipation', 'loadout_laser', '.', 'Amplification mirrors allow the hero\'s weapon to shoot targets at a greater distance. Also improves energy efficiency of focused lasers.');
 WriteSkillRightHead();
 WriteSkill('Ocular Enhancement', 'loadout_ocular', '.', 'Allows the hero to see objects at a greater distance and reveals hidden units in his area.</font><br><font size=-1>This upgrade is part of the Custom Loadout ability.');
 WriteSkillLeftStats();
-document.writeln('<span id=herorngskill5 style="display:none">');
-WriteSkillBegin();
-WriteHeader('Level', 'Gatling Laser Damage', 'Energy Degen.');
-WriteData('1','+5','-20%');
-WriteData('2','+10','-40%');
-WriteData('3','+15','-60%');
-WriteData('4','+20','-80%');
-WriteSkillEnd();
-document.writeln('</span><span id=herorngskill6 style="display:block">');
 WriteSkillBegin();
 WriteHeader('Level', 'Laser Rifle Range', 'Energy Degen.');
 WriteData('1','+100','-20%');
@@ -338,7 +327,6 @@ WriteData('2','+200','-40%');
 WriteData('3','+300','-60%');
 WriteData('4','+400','-80%');
 WriteSkillEnd();
-document.writeln('</span>');
 WriteSkillRightStats();
 WriteSkillBegin();
 WriteHeader('Level', 'Radius', 'Range');
@@ -348,6 +336,7 @@ WriteData('3','--','+600');
 WriteData('4','1300','+600');
 WriteSkillEnd();
 WriteSkillLeftRightEnd();
+
 WriteSkillLeftHead();
 WriteSkill('Overdrive', 'loadout_over', '.', 'Increases the hero\'s movement speed.</font><br><font size=-1>This upgrade is part of the Custom Loadout ability.');
 WriteSkillRightHead();
@@ -370,9 +359,9 @@ WriteData('4','29%');
 WriteSkillEnd();
 WriteSkillLeftRightEnd();
 WriteSkillLeftHead();
-WriteSkill('Infusion Efficiency', 'loadout_inf', '.', 'Increases range and amount of health restored by the hero\'s Nano-Infusion ability. Also increases chance for the ability to recharge instantly.</font><br><font size=-1>This upgrade is part of the Custom Loadout ability.');
+WriteSkill('Infusion Efficiency', 'nanoinj', '.', 'Increases range and amount of health restored by the hero\'s Nano-Infusion ability. Also increases chance for the ability to recharge instantly.</font><br><font size=-1>This upgrade is part of the Custom Loadout ability.');
 WriteSkillRightHead();
-WriteSkill('Surge Capacitor', 'loadout_surge', '.', 'Increases range and decreases energy cost of the Power Surge ability. Also increases longevity of circuit board used during a power surge. Increases efficiency of battery usage.</font><br><font size=-1>This upgrade is part of the Custom Loadout ability.');
+WriteSkill('Surge Capacitor', 'psurge', '.', 'Increases range and decreases energy cost of the Power Surge ability. Also increases longevity of circuit board used during a power surge. Increases efficiency of battery usage.</font><br><font size=-1>This upgrade is part of the Custom Loadout ability.');
 WriteSkillLeftStats();
 WriteSkillBegin();
 WriteHeader('Level', 'Chance', 'Efficiency', 'Range');
@@ -393,7 +382,7 @@ WriteSkillLeftRightEnd();
 WriteSkillLeftHead();
 WriteSkill('Neural Augmentation', 'loadout_neural', '.', 'Increases the hero\'s intelligence and reduces his susceptibility to concussions by reinforcing his cranium.</font><br><font size=-1>This upgrade is part of the Custom Loadout ability.');
 WriteSkillRightHead();
-WriteSkill('Auxiliary Generator', 'loadout_gen', '.', 'Increases the hero\'s rate of energy regeneration.</font><br><font size=-1>This upgrade is part of the Custom Loadout ability.');
+WriteSkill('Auxiliary Generator', 'gen', '.', 'Increases the hero\'s rate of energy regeneration.</font><br><font size=-1>This upgrade is part of the Custom Loadout ability.');
 WriteSkillLeftStats();
 WriteSkillBegin();
 WriteHeader('Level', 'Intelligence','Chance');
@@ -415,10 +404,73 @@ WriteSkillLeftRightEnd();
 </span>
 
 <br>
- <img src=pics/tiny-laserrfl.gif onclick="HeroWeaponSelect(6);" alt="Select Laser Rifle" title="Select Laser Rifle"> <img src=pics/tiny-gatling.gif onclick="HeroWeaponSelect(5);" alt="Select Gatling Laser" title="Select Gatling Laser"> 
-<a name=herogunskill></a>
-<span id=herogunskill5 style="display:none"><script>WriteSkillFocusLaser(true);</script></span>
-<span id=herogunskill6 style="display:block"><script>WriteSkillFocusLaser(false);</script></span>
+<script>
+WriteSkillBegin('60%');
+WriteSkillLeftHead();
+WriteSkill('Laser Power', 'laserrifle', '.', 'Increases the power of the laser rifle through the choice of a custom upgrade: Focus or Beam. Also decreases energy regen by -0.3 eps per level. This penalty is reduced with improvements in laser dissipation.');
+WriteSkillRightHead();
+WriteSkill('Laser Heat', 'laserrifle', '.', 'Lasers are especially effective against bosses, dealing extra damage based on the ammo level of the rifle.');
+WriteSkillLeftStats();
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Energy Regen');
+WriteData('1','-5%');
+WriteData('2','-10%');
+WriteData('3','-15%');
+WriteData('4','-20%');
+WriteData('5','-25%');
+WriteData('6','-30%');
+WriteData('7','-35%');
+WriteData('8','-40%');
+WriteSkillEnd();
+WriteSkillRightStats();
+WriteSkillBegin();
+WriteHeader('Ammo', 'Damage');
+WriteData('0', '+15');
+WriteData('1', '+30');
+WriteData('2', '+45');
+WriteData('3', '+60');
+WriteData('4', '+75');
+WriteData('5', '+90');
+WriteData('6', '+105');
+WriteData('7', '+120');
+WriteSkillEnd();
+WriteSkillLeftRightEnd();
+</script>
+
+<script>
+WriteSkillBegin('60%');
+WriteSkillLeftHead();
+WriteSkill('Laser Beam', 'laser_beam', '.', 'Improves the laser rifle\'s beam, causing it to deal a higher percentage of damage to targets it passes through.<br><font size=-1>This upgrade is part of the Laser Power ability.');
+WriteSkillRightHead();
+WriteSkill('Laser Focus', 'laser_focus', '.', 'Improves the laser rifle\'s focus, allowing it deal more damage to the individual target aimed at.<br><font size=-1>This upgrade is part of the Laser Power ability.');
+WriteSkillLeftStats();
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Pierce');
+WriteData('0','10%');
+WriteData('1','14%');
+WriteData('2','18%');
+WriteData('3','22%');
+WriteData('4','26%');
+WriteData('5','30%');
+WriteData('6','34%');
+WriteData('7','38%');
+WriteData('8','42%');
+WriteSkillEnd();
+WriteSkillRightStats();
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Damage');
+WriteData('0','+0');
+WriteData('1','+30');
+WriteData('2','+60');
+WriteData('3','+90');
+WriteData('4','+120');
+WriteData('5','+150');
+WriteData('6','+180');
+WriteData('7','+210');
+WriteData('8','+240');
+WriteSkillEnd();
+WriteSkillLeftRightEnd();
+</script>
 
 <br>
 <script>

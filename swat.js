@@ -245,7 +245,7 @@ function SkillLinkDisplaySkill(SkillLinkClass, SkillLinkSkill) {
 
 //class (unit) main header (begin)
 function WriteClassUnitHeaderBegin(ClassName, ClassImage, ClassAcquire, ClassDescription, SkillLinkClass, SkillLinkSkill, SkillFileType) {
-  var filetype = 'gif';
+  var filetype = 'png';
   if (SkillFileType != null) {
     filetype = SkillFileType;
   }
