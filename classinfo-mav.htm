@@ -31,9 +31,6 @@ function MavWeaponSelect(weapon) {
   }
   mavattribs.innerHTML      = s1;
   mavgunskillname.innerHTML = s2;
-  mavatkgrdname.innerHTML   = s3;
-  mavatkgrd.innerHTML       = s4;
-  mavatkgrdtitle.innerHTML  = s5;
 }
 //-->
 </script>
@@ -45,22 +42,22 @@ function MavWeaponSelect(weapon) {
 WriteTopMenu('',true);
 WriteClassMenu();
 WriteSummonedMenu('MAV');
-WriteClassHeaderBegin('Maverick','mav','mav','Offense, Tank, Recon','The maverick has a varied selection of abilities such as grenades, a robodog companion, and fair healing. He also gets to choose which gun to equip, uses an improved version of each, and begins with one point in his gun skill. His intelligence is only average.'); 
+WriteClassHeaderBegin('Maverick','mav','mav','Offense, Tank, Recon','The maverick has a varied selection of abilities such as grenades, a robodog companion, and fair healing. He also gets to choose which gun to equip, uses an improved version of each, and begins with one point in his gun skill. His intelligence is only average.');
 WriteSkillLinks('Plasma&nbsp;Grenade','gren','Robodog','robodog','Advanced&nbsp;Generator','gen','<span id=mavgunskillname>Advanced&nbsp;Fuel</span>','mavgunskill','Nanites','nanites');
-WriteSkillLinks('Nano-Inj.','nanoinj','Reprogram','reprog','<span id=mavatkgrdname>Target&nbsp;Ground</span>','atkgrd','Mutate','mutate','Sprint','sprint','Frag.&nbsp;Locator','frag');
+WriteSkillLinks('Nano-Inj.','nanoinj','Reprogram','reprog','Mutate','mutate','Sprint','sprint','Frag.&nbsp;Locator','frag');
 WriteSummonedsLinksDog('Chrome&nbsp;Retriever','chrome','Mecha&nbsp;Mutt','mecha','Kamikaze&nbsp;Canine','kami');
 WriteClassHeaderEnd('mav');
 </script>
 
-<br><font color=ffcc00>Select Gun:</font> 
-<img src=pics/tiny-refrif.gif onclick="MavWeaponSelect(0);" alt="Select Assault Rifle" title="Select Assualt Rifle"> 
-<img src=pics/tiny-crit.gif onclick="MavWeaponSelect(1);" alt="Select Sniper Rifle" title="Select Sniper Rifle"> 
-<img src=pics/tiny-plasrnd.gif onclick="MavWeaponSelect(2);" alt="Select Chaingun" title="Select Chaingun"> 
-<img src=pics/tiny-lockdown.gif onclick="MavWeaponSelect(3);" alt="Select Rocket Launcher" title="Select Rocket Launcher"> 
+<br><font color=ffcc00>Select Gun:</font>
+<img src=pics/tiny-refrif.gif onclick="MavWeaponSelect(0);" alt="Select Assault Rifle" title="Select Assualt Rifle">
+<img src=pics/tiny-crit.gif onclick="MavWeaponSelect(1);" alt="Select Sniper Rifle" title="Select Sniper Rifle">
+<img src=pics/tiny-plasrnd.gif onclick="MavWeaponSelect(2);" alt="Select Chaingun" title="Select Chaingun">
+<img src=pics/tiny-lockdown.gif onclick="MavWeaponSelect(3);" alt="Select Rocket Launcher" title="Select Rocket Launcher">
 <img src=pics/tiny-fuel.gif onclick="MavWeaponSelect(4);" alt="Select Flamethrower" title="Select Flamethrower">
 
 <br><br>
-<font color=ffcc00><b>Statistics</b></font> 
+<font color=ffcc00><b>Statistics</b></font>
 
 <table cellspacing=0 cellpadding=0 border=0 width=100%><tr valign=top>
 
@@ -120,7 +117,7 @@ WriteBonus('Droid',InfoLinkS('Droid','unitinfo-lad.htm')+' has 2 extra agility p
 <font color=ffcc00><b>Trainable Abilities</b></font>
 
 <script>
-WriteSkill('Plasma&nbsp;Grenade', 'gren', 'X', 'Uses energy to create a plasma grenade which can be thrown, dealing explosive damage to the target and units around it.</font><br><font size=-1>Below left represents standard ability; below right represents ability while Grenade Launcher item carried.');
+WriteSkill('Plasma&nbsp;Grenade', 'pgren', 'X', 'Uses energy to create a plasma grenade which can be thrown, dealing explosive damage to the target and units around it.</font><br><font size=-1>Below left represents standard ability; below right represents ability while Grenade Launcher item carried.');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'Damage', 'Radius', 'Range', 'Energy', 'Cooldown');
 WriteData('1','115, 85','224, 264','650','55','3 s');
@@ -211,7 +208,7 @@ WriteSkillEnd(true);
 
 <br>
 <script>
-WriteSkill('Reprogram', 'reprog', 'ZC', 'Resets the robodog\'s memory system, allowing the hero to reselect all of its abilities. Nanites are reset only if off when reprogrammed. Also removes custom health modification if nanites are off when reprogrammed.');
+WriteSkill('Reprogram', 'reprog', 'ZC', 'Resets the robodog\'s memory system, allowing the hero to reselect all of its abilities. Nanites are reset only if off when reprogrammed.');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'Radius','Energy', 'Cooldown');
 WriteData('--','2900','0','20 s');
@@ -220,16 +217,7 @@ WriteSkillEnd(true);
 
 <br>
 <script>
-WriteSkill('<span id=mavatkgrdtitle>Target Ground</span>', 'atkgrd', 'ZG', 'Aims the hero\'s weapon at a visible location by overriding his suit\'s built-in targeting. <span id=mavatkgrd></span> This makes the officer a less threatening target to his enemies.');
-WriteSkillBegin();
-WriteHeader('Skill Level','&nbsp;');
-WriteData('--','&nbsp;');
-WriteSkillEnd(true);
-</script>
-
-<br>
-<script>
-WriteSkill('Mutate', 'mutate', '.', 'Initially does nothing. Every time the hero increases in level, there is a chance this will mutate into a second trait. It will never turn into Skilled, Swift Learner, Reckless, or Packrat or duplicate the Mav\'s primary trait. Packrats will not mutate Engineer.');
+WriteSkill('Mutate', 'mutate', '.', 'Initially does nothing. Every time the hero increases in level, there is a chance this will mutate into a second trait. It will never turn into Skilled, Swift Learner, or Reckless or duplicate the Mav\'s primary trait. Packrats will not mutate Engineer.');
 WriteSkillBegin();
 WriteHeader('Skill Level','&nbsp;');
 WriteData('--','&nbsp;');

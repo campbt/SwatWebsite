@@ -1,0 +1,219 @@
+
+<html>
+<head>
+<title>SWAT: Aftermath</title>
+
+<script language="javascript" src="swat.js">
+</script>
+
+</head>
+<body bgcolor=000000 text=FFFFFF link=99E362 vlink=69B926 alink=00FF00>
+
+<script>
+WriteTopMenu('',true);
+WriteClassMenu();
+WriteMechsMenu();
+WriteSummonedMenu('MAV');
+WriteClassUnitHeaderBegin('Robodog','chrome','Maverick Companion','The robodog is the '+InfoLinkS('maverick\'s','classinfo-mav.htm')+' mechanical best friend. At the beginning of each game, the maverick must choose which of the three robodog types he\'ll be using that game. The robodog starts at level 1 and increases by one level for each level of the maverick\'s '+InfoLinkS('Robodog','classinfo-mav.htm#robodog')+' ability. The robodog does not gain skill points from levels; it gains skill points when the maverick reaches certain hero levels.');
+WriteSkillLinks('Turbo','dog_turbo','Advanced&nbsp;Generator','gen','Thrash','slay','Nanites','nanites');
+WriteSkillLinks('A.R.S.','dog_ars','Retrieve&nbsp;Items','retrieve','Evasion','evade');
+WriteClassUnitTypeHeader('Chrome&nbsp;Retriever', 'The retriever is an excellent recon companion which doesn\'t require many skill points invested. It uses light armor, has additional inventory, and cloaks when told to hold position. This is the fastest robodog and can see farther than the other dogs. Chrome does not \'die far from your hero\' when killed by a non-hero unit.');
+WriteSkillLinks('Cloak','cloak','Reconnaissance','recon','Inventory','backpack');
+WriteClassHeaderEnd();
+</script>
+
+<br><br>
+<font color=ffcc00><b>Statistics</b></font>
+
+<table cellspacing=0 cellpadding=0 border=0 width=100%><tr valign=top>
+
+<td width=27%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsAttribs('100','0.00','51','2.00','1','0.00','50','0','600','+25','+1');
+</script></table>
+</td>
+
+<td width=23%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsWeapon(5);
+</script></table>
+</td>
+
+<td width=50%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsArmor('chrome');
+</script></table>
+</td>
+
+</tr></table>
+
+<br><br>
+<font color=ffcc00><b>Trainable Abilities</b></font>
+
+<script>
+WriteSkill('Turbo', 'dog_turbo', '.', 'Increases the movement speed and attack rate of the robodog and its adjacent master.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Attack Spd.', 'Move Spd.');
+WriteData('1', '+10%','+5%');
+WriteData('2', '+16%','+8%');
+WriteData('3', '+22%','+11%');
+WriteData('4', '+28%','+14%');
+WriteData('5', '+34%','+17%');
+WriteData('6', '+40%','+20%');
+WriteData('7', '+46%','+23%');
+WriteData('8', '+52%','+26%');
+WriteSkillBegin2();
+WriteHeader('Skill Level', 'Attack Spd.', 'Move Spd.');
+WriteData('9', '+58%','+29%');
+WriteData('10', '+64%','+32%');
+WriteData('11', '+70%','+35%');
+WriteData('12', '+76%','+38%');
+WriteData('13', '+82%','+41%');
+WriteData('14', '+88%','+44%');
+WriteData('15', '+94%','+47%');
+WriteData('16', '+100%','+50%');
+WriteSkillEnd();
+</script>
+
+<br>
+<script>
+WriteSkillAdvGen('robodog');
+</script>
+
+<br>
+<script>
+WriteSkill('Thrash', 'slay', '.', 'Chance that an attack will inflict additional damage on an enemy. Mechanical units are unaffected by thrash.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Damage', 'Chance');
+WriteData('1','2x','30%');
+WriteData('2','2x','35%');
+WriteData('3','3x','35%');
+WriteData('4','3x','40%');
+WriteData('5','4x','40%');
+WriteData('6','4x','45%');
+WriteData('7','5x','45%');
+WriteData('8','5x','50%');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkillNanites(0, false, 'robodog');
+</script>
+
+<br><br>
+<font color=ffcc00><b>Innate Abilities</b></font>
+
+<script>
+WriteSkill('A.R.S.', 'dog_ars', 'Z', 'The automated repair system restores health to the mechanical unit. It can also be manually used to reallocate agility and vitality (1 agi = 15 vit).');
+WriteSkillBegin();
+WriteHeader('Dog Level', 'HP Healed');
+WriteData('1','1.00 hps');
+WriteData('3','1.25 hps');
+WriteData('5','1.50 hps');
+WriteData('7','1.75 hps');
+WriteData('9','2.00 hps');
+WriteData('11','2.25 hps');
+WriteData('13','2.50 hps');
+WriteData('15','2.75 hps');
+WriteData('17','3.00 hps');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Retrieve&nbsp;Items', 'retrieve', 'D', 'Teleports all items in the robodog\'s inventory to its master\'s feet.');
+WriteSkillBegin();
+WriteHeader('Items', 'Range', 'Energy', 'Cooldown');
+WriteData('1','unlimited','100','6 s');
+WriteData('2','unlimited','150','6 s');
+WriteData('3','unlimited','200','6 s');
+WriteData('4','unlimited','250','6 s');
+WriteData('5','unlimited','300','6 s');
+WriteData('6','unlimited','350','6 s');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Evasion', 'evade', '.', 'Gives a chance to avoid an attack. Damage from bosses cannot be fully evaded.');
+WriteSkillBegin('33%');
+WriteHeader('Dog Level', 'Chance');
+WriteData('1','22%');
+WriteData('2','26%');
+WriteData('3','30%');
+WriteData('4','33%');
+WriteData('5','36%');
+WriteData('6','39%');
+WriteData('7','42%');
+WriteData('8','45%');
+WriteData('9','48%');
+WriteSkillBegin2('33%');
+WriteHeader('Dog Level', 'Chance');
+WriteData('10','50%');
+WriteData('11','52%');
+WriteData('12','54%');
+WriteData('13','56%');
+WriteData('14','57%');
+WriteData('15','58%');
+WriteData('16','59%');
+WriteData('17','60%');
+WriteSkillBegin2('33%');
+WriteHeader('Dog Level', 'Chance');
+WriteData('18','61%');
+WriteData('19','62%');
+WriteData('20','63%');
+WriteData('21','63%');
+WriteData('22','64%');
+WriteData('23','64%');
+WriteData('24','65%');
+WriteData('25','65%');
+WriteSkillEnd();
+</script>
+
+<br>
+<script>
+WriteSkill('Cloak', 'cloak', 'H', 'Hides the robodog from enemies\' view until given another command.');
+WriteSkillBegin();
+WriteHeader('Dog Level', 'Delay');
+WriteData('1','5.0 s');
+WriteData('3','4.4 s');
+WriteData('5','3.2 s');
+WriteData('7','2.0 s');
+WriteData('9','1.0 s');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Reconnaissance', 'recon', '.', 'Increases the robodog\'s sight range and enables it to sniff out units in the area, revealing cloaked units.');
+WriteSkillBegin();
+WriteHeader('Dog Level', 'Radius', 'Range');
+WriteData('1','1400','--');
+WriteData('2','1400','+75');
+WriteData('3','1400','+150');
+WriteData('4','1400','+225');
+WriteData('5','1400','+300');
+WriteData('6','1400','+375');
+WriteData('7','1400','+450');
+WriteData('8','1400','+525');
+WriteData('9','1400','+600');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Inventory', 'backpack', '.', 'Provides additional inventory space.');
+WriteSkillBegin();
+WriteHeader('Dog Level', 'Slots');
+WriteData('1','2');
+WriteData('3','3');
+WriteData('5','4');
+WriteData('7','5');
+WriteData('9','6');
+WriteSkillEnd(true);
+</script>
+
+<br>
+</body>
+</html>

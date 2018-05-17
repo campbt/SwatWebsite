@@ -1,0 +1,229 @@
+
+<html>
+<head>
+<title>SWAT: Aftermath</title>
+
+<script language="javascript" src="swat.js">
+</script>
+
+</head>
+<body bgcolor=000000 text=FFFFFF link=99E362 vlink=69B926 alink=00FF00>
+
+<script>
+WriteTopMenu('',true);
+WriteClassMenu();
+WriteMechsMenu();
+WriteSummonedMenu('MAV');
+WriteClassUnitHeaderBegin('Robodog','mecha','Maverick Companion','The robodog is the '+InfoLinkS('maverick\'s','classinfo-mav.htm')+' mechanical best friend. At the beginning of each game, the maverick must choose which of the three robodog types he\'ll be using that game. The robodog starts at level 1 and increases by one level for each level of the maverick\'s '+InfoLinkS('Robodog','classinfo-mav.htm#robodog')+' ability. The robodog does not gain skill points from levels; it gains skill points when the maverick reaches certain hero levels.');
+WriteSkillLinks('Turbo','dog_turbo','Advanced&nbsp;Generator','gen','Thrash','slay','Nanites','nanites');
+WriteSkillLinks('A.R.S.','dog_ars','Retrieve&nbsp;Items','retrieve','Evasion','evade');
+WriteClassUnitTypeHeader('Mecha&nbsp;Mutt', 'With enough skill points invested, this mutt can take a serious beating so you don\'t have to. It has advanced armor and uses batteries in its inventory when energy drops below 250. It\'s much slower than the other robodogs. Mecha Mutt can integrate a shield capacitor greatly increasing his ability to take damage.');
+WriteSkillLinks('Consume Battery', 'dog_battery', 'Armor', 'dog_armor','Integrate Shield Capacitor', 'repairsys');
+WriteClassHeaderEnd();
+</script>
+
+<br><br>
+<font color=ffcc00><b>Statistics</b></font>
+
+<table cellspacing=0 cellpadding=0 border=0 width=100%><tr valign=top>
+
+<td width=27%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsAttribs('100','0.00','51','2.00','2','0.00','250','0','600','+25','+1');
+</script></table>
+</td>
+
+<td width=23%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsWeapon(5);
+</script></table>
+</td>
+
+<td width=50%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsArmor('mecha');
+</script></table>
+</td>
+
+</tr></table>
+
+<br><br>
+<font color=ffcc00><b>Trainable Abilities</b></font>
+
+<script>
+WriteSkill('Turbo', 'dog_turbo', '.', 'Increases the movement speed and attack rate of the robodog and its adjacent master.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Attack Spd.', 'Move Spd.');
+WriteData('1', '+10%','+5%');
+WriteData('2', '+16%','+8%');
+WriteData('3', '+22%','+11%');
+WriteData('4', '+28%','+14%');
+WriteData('5', '+34%','+17%');
+WriteData('6', '+40%','+20%');
+WriteData('7', '+46%','+23%');
+WriteData('8', '+52%','+26%');
+WriteSkillBegin2();
+WriteHeader('Skill Level', 'Attack Spd.', 'Move Spd.');
+WriteData('9', '+58%','+29%');
+WriteData('10', '+64%','+32%');
+WriteData('11', '+70%','+35%');
+WriteData('12', '+76%','+38%');
+WriteData('13', '+82%','+41%');
+WriteData('14', '+88%','+44%');
+WriteData('15', '+94%','+47%');
+WriteData('16', '+100%','+50%');
+WriteSkillEnd();
+</script>
+
+<br>
+<script>
+WriteSkillAdvGen('robodog');
+</script>
+
+<br>
+<script>
+WriteSkill('Thrash', 'slay', '.', 'Chance that an attack will inflict additional damage on an enemy. Mechanical units are unaffected by thrash.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Damage', 'Chance');
+WriteData('1','2x','20%');
+WriteData('2','2x','25%');
+WriteData('3','2x','30%');
+WriteData('4','2x','35%');
+WriteData('5','3x','35%');
+WriteData('6','3x','40%');
+WriteData('7','4x','40%');
+WriteData('8','4x','45%');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkillNanites(3, false, 'robodog');
+</script>
+
+<br><br>
+<font color=ffcc00><b>Innate Abilities</b></font>
+
+<script>
+WriteSkill('A.R.S.', 'dog_ars', 'Z', 'The automated repair system restores health to the mechanical unit. It can also be manually used to reallocate agility and vitality (1 agi = 15 vit). Piercing Resistance reduces nanite-piercing damage.');
+WriteSkillBegin();
+WriteHeader('Dog Level', 'HP Healed', 'Reduction', 'Damage Floor');
+WriteData('1','1.00 hps','0','200');
+WriteData('2','1.00 hps','20','186');
+WriteData('3','1.25 hps','40','172');
+WriteData('4','1.25 hps','60','160');
+WriteData('5','1.50 hps','80','148');
+WriteData('6','1.50 hps','100','136');
+WriteData('7','1.75 hps','120','126');
+WriteData('8','1.75 hps','140','116');
+WriteSkillBegin2();
+WriteHeader('Dog Level', 'HP Healed', 'Reduction', 'Damage Floor');
+WriteData('9','2.00 hps','160','107');
+WriteData('10','2.00 hps','180','99');
+WriteData('11','2.25 hps','200','91');
+WriteData('12','2.25 hps','220','85');
+WriteData('13','2.50 hps','240','79');
+WriteData('14','2.50 hps','260','73');
+WriteData('15','2.75 hps','280','69');
+WriteData('16','2.75 hps','300','65');
+WriteData('17','3.00 hps','320','62');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Retrieve&nbsp;Items', 'retrieve', 'D', 'Teleports the item in the robodog\'s inventory to its master\'s feet.');
+WriteSkillBegin();
+WriteHeader('Items', 'Range', 'Energy', 'Cooldown');
+WriteData('1','unlimited','100','6 s');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Evasion', 'evade', '.', 'Gives a chance to avoid an attack. Damage from bosses cannot be fully evaded.');
+WriteSkillBegin('33%');
+WriteHeader('Dog Level', 'Chance');
+WriteData('1','22%');
+WriteData('2','26%');
+WriteData('3','30%');
+WriteData('4','33%');
+WriteData('5','36%');
+WriteData('6','39%');
+WriteData('7','42%');
+WriteData('8','45%');
+WriteData('9','48%');
+WriteSkillBegin2('33%');
+WriteHeader('Dog Level', 'Chance');
+WriteData('10','52%');
+WriteData('11','56%');
+WriteData('12','58%');
+WriteData('13','60%');
+WriteData('14','62%');
+WriteData('15','63%');
+WriteData('16','64%');
+WriteData('17','65%');
+WriteSkillBegin2('33%');
+WriteHeader('Dog Level', 'Chance');
+WriteData('18','66%');
+WriteData('19','66%');
+WriteData('20','67%');
+WriteData('21','67%');
+WriteData('22','68%');
+WriteData('23','68%');
+WriteData('24','69%');
+WriteData('25','69%');
+WriteSkillEnd();
+</script>
+
+<br>
+<script>
+WriteSkill('Howl', 'howl', 'W', 'The Mecha Mutt unleashes a powerful howl, slowing nearby enemies\' attack and movement speed. The Mecha Mutt also gains increased nanites protection, especially against explosive sources.');
+WriteSkillBegin();
+WriteHeader('Dog Level', 'Move Speed', 'Atk Speed', 'Duration', 'Radius', 'Nanites Efficiency');
+WriteData('1', '-10%', '-10%','6', '625', '+100%');
+WriteData('3', '-12%', '-12%','6', '625', '+100%');
+WriteData('5', '-14%', '-14%','6', '625', '+100%');
+WriteData('7', '-16%', '-16%','7', '625', '+100%');
+WriteData('9', '-18%', '-18%','7', '625', '+100%');
+WriteData('11', '-20%', '-20%','7', '625', '+100%');
+WriteData('13', '-22%', '-22%','8', '625', '+100%');
+WriteData('15', '-24%', '-24%','8', '625', '+100%');
+WriteData('17', '-26%', '-26%','8', '625', '+100%');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Consume Battery', 'dog_battery', '.', 'If the Mecha Mutt\'s energy levels go below 250 it will consume a battery if one is in its inventory. Cannot be used manually.');
+WriteSkillBegin();
+WriteHeader('Skill Level', '&nbsp;');
+WriteData('--','&nbsp;');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Armor', 'dog_armor', '.', 'Increases robodog\'s defense.');
+WriteSkillBegin();
+WriteHeader('Dog Level', 'Armor');
+WriteData('1','1');
+WriteData('5','2');
+WriteData('9','3');
+WriteData('13','4');
+WriteData('17','5');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Integrate Shield Capacitor', 'repairsys', 'ZC', 'Disassembles a shield capacitor and permanently integrates the parts into the Robodog\'s armor, upgrading nanites significantly but decreasing movement speed. This modification can only be performed once and cannot be reversed. (Reprogram the Mecha with a Shield Capacitor in it\'s inventory to integrate.)');
+WriteSkillBegin();
+WriteHeader('Level', 'Move Spd.', 'Nanites');
+WriteData('--', '-20', InfoLinkS('Large+','readmeafterarmor.html#Large+', true));
+WriteSkillEnd(true);
+</script>
+
+<br>
+</body>
+</html>

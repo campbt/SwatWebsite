@@ -1,0 +1,228 @@
+
+<html>
+<head>
+<title>SWAT: Aftermath</title>
+
+<script language="javascript" src="swat.js">
+</script>
+
+</head>
+<body bgcolor=000000 text=FFFFFF link=99E362 vlink=69B926 alink=00FF00>
+
+<script>
+WriteTopMenu('',true);
+WriteClassMenu();
+WriteMechsMenu();
+WriteSummonedMenu('MAV');
+WriteClassUnitHeaderBegin('Robodog','kami','Maverick Companion','The robodog is the '+InfoLinkS('maverick\'s','classinfo-mav.htm')+' mechanical best friend. At the beginning of each game, the maverick must choose which of the three robodog types he\'ll be using that game. The robodog starts at level 1 and increases by one level for each level of the maverick\'s '+InfoLinkS('Robodog','classinfo-mav.htm#robodog')+' ability. The robodog does not gain skill points from levels; it gains skill points when the maverick reaches certain hero levels.');
+WriteSkillLinks('Turbo','dog_turbo','Advanced&nbsp;Generator','gen','Thrash','slay','Nanites','nanites');
+WriteSkillLinks('A.R.S.','dog_ars','Retrieve&nbsp;Items','retrieve','Evasion','evade');
+WriteClassUnitTypeHeader('Kamikaze&nbsp;Canine', 'Kami is a serious offensive threat when upgraded, capable of tearing through anything in its path. It uses light armor, is equipped with a head-mounted laser for attacking flying enemies, and hyper-thrashes with its shadow pack when explicitly told to attack an enemy.');
+WriteSkillLinks('Hyper-Thrash','kamijaw','Shadow Pack','roboclone','Return','none');
+WriteClassHeaderEnd();
+</script>
+
+<br><br>
+<font color=ffcc00><b>Statistics</b></font>
+
+<table cellspacing=0 cellpadding=0 border=0 width=100%><tr valign=top>
+
+<td width=27%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsAttribs('100','0.00','51','2.00','1','0.00','250','0','600','+25','+1');
+</script></table>
+</td>
+
+<td width=23%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsWeapon(5);
+</script></table>
+</td>
+
+<td width=50%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsArmor('kami');
+</script></table>
+</td>
+
+</tr></table>
+
+<br><br>
+<font color=ffcc00><b>Trainable Abilities</b></font>
+
+<script>
+WriteSkill('Turbo', 'dog_turbo', '.', 'Increases the movement speed and attack rate of the robodog and its adjacent master.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Attack Spd.', 'Move Spd.');
+WriteData('1', '+10%','+5%');
+WriteData('2', '+16%','+8%');
+WriteData('3', '+22%','+11%');
+WriteData('4', '+28%','+14%');
+WriteData('5', '+34%','+17%');
+WriteData('6', '+40%','+20%');
+WriteData('7', '+46%','+23%');
+WriteData('8', '+52%','+26%');
+WriteSkillBegin2();
+WriteHeader('Skill Level', 'Attack Spd.', 'Move Spd.');
+WriteData('9', '+58%','+29%');
+WriteData('10', '+64%','+32%');
+WriteData('11', '+70%','+35%');
+WriteData('12', '+76%','+38%');
+WriteData('13', '+82%','+41%');
+WriteData('14', '+88%','+44%');
+WriteData('15', '+94%','+47%');
+WriteData('16', '+100%','+50%');
+WriteSkillEnd();
+</script>
+
+<br>
+<script>
+WriteSkillAdvGen('robodog');
+</script>
+
+<br>
+<script>
+WriteSkill('Thrash', 'slay', '.', 'Chance that an attack will inflict additional damage on an enemy. Mechanical units are unaffected by thrash.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Damage', 'Chance');
+WriteData('1','3x','35%');
+WriteData('2','3x','40%');
+WriteData('3','4x','40%');
+WriteData('4','4x','45%');
+WriteData('5','5x','45%');
+WriteData('6','5x','50%');
+WriteData('7','6x','50%');
+WriteData('8','7x','50%');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkillNanites(0, false, 'robodog');
+</script>
+
+<br><br>
+<font color=ffcc00><b>Innate Abilities</b></font>
+
+<script>
+WriteSkill('A.R.S.', 'dog_ars', 'Z', 'The automated repair system restores health to the mechanical unit. It can also be manually used to reallocate agility and vitality (1 agi = 15 vit).');
+WriteSkillBegin();
+WriteHeader('Dog Level', 'HP Healed');
+WriteData('1','1.00 hps');
+WriteData('3','1.25 hps');
+WriteData('5','1.50 hps');
+WriteData('7','1.75 hps');
+WriteData('9','2.00 hps');
+WriteData('11','2.25 hps');
+WriteData('13','2.50 hps');
+WriteData('15','2.75 hps');
+WriteData('17','3.00 hps');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Retrieve&nbsp;Items', 'retrieve', 'D', 'Teleports the item in the robodog\'s inventory to its master\'s feet.');
+WriteSkillBegin();
+WriteHeader('Items', 'Range', 'Energy', 'Cooldown');
+WriteData('1','unlimited','100','6 s');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Evasion', 'evade', '.', 'Gives a chance to avoid an attack. Damage from bosses cannot be fully evaded.');
+WriteSkillBegin('33%');
+WriteHeader('Dog Level', 'Chance');
+WriteData('1','22%');
+WriteData('2','26%');
+WriteData('3','30%');
+WriteData('4','33%');
+WriteData('5','36%');
+WriteData('6','39%');
+WriteData('7','42%');
+WriteData('8','45%');
+WriteData('9','48%');
+WriteSkillBegin2('33%');
+WriteHeader('Dog Level', 'Chance');
+WriteData('10','50%');
+WriteData('11','52%');
+WriteData('12','54%');
+WriteData('13','56%');
+WriteData('14','57%');
+WriteData('15','58%');
+WriteData('16','59%');
+WriteData('17','60%');
+WriteSkillBegin2('33%');
+WriteHeader('Dog Level', 'Chance');
+WriteData('18','61%');
+WriteData('19','62%');
+WriteData('20','63%');
+WriteData('21','63%');
+WriteData('22','64%');
+WriteData('23','64%');
+WriteData('24','65%');
+WriteData('25','65%');
+WriteSkillEnd();
+</script>
+
+<br>
+<script>
+WriteSkill('Hyper-Thrash', 'kamijaw', 'A', 'Teleports the robodog to the targeted enemy, instantly causing a critical hit and phasing the robodog (invulnerability). After the phase duration wears off, the robodog remains cloaked until Hyper-Thrash is available again. While Hyper-Thrashing, the Kamikaze Canine can thrash again, refocusing the Shadow Pack and causing another critical hit.');
+WriteSkillBegin('60%');
+WriteHeader('Thrash Level', 'Damage', 'Duration', 'Energy', 'Cooldown');
+WriteData('0','2x','up to 20 s', 'up to 250', 'variable');
+WriteData('1','3x','up to 20 s', 'up to 250', 'variable');
+WriteData('2','4x','up to 20 s', 'up to 250', 'variable');
+WriteData('3','5x','up to 20 s', 'up to 250', 'variable');
+WriteData('4','6x','up to 20 s', 'up to 250', 'variable');
+WriteData('5','7x','up to 20 s', 'up to 250', 'variable');
+WriteData('6','8x','up to 20 s', 'up to 250', 'variable');
+WriteData('7','9x','up to 20 s', 'up to 250', 'variable');
+WriteData('8','10x','up to 20 s', 'up to 250', 'variable');
+WriteSkillBegin2('40%');
+WriteHeader('Dog Level', 'Multi-Thrash Cooldown');
+WriteData('4','20 s');
+WriteData('7','18 s');
+WriteData('8','16 s');
+WriteData('9','14 s');
+WriteData('10','12 s');
+WriteData('11','10 s');
+WriteData('12','9 s');
+WriteData('13','8 s');
+WriteData('15','7 s');
+WriteData('17','6 s');
+WriteData('21','5 s');
+WriteData('25','4 s');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Shadow Pack', 'roboclone', '.', 'While phased, the robodog is accompanied by up to four clones. They are invulnerable and uncontrollable, have the same thrash level as the robodog, but do 33% less damage. Energy cost is applied when the robodog hyper-thrashes.');
+WriteSkillBegin();
+WriteHeader('Dog Level', 'Max Clones', 'Energy (each)');
+WriteData('1', '0','--');
+WriteData('2', '1','170');
+WriteData('3', '1','160');
+WriteData('4', '1','150');
+WriteData('5', '2','140');
+WriteData('6', '2','130');
+WriteData('7', '3','120');
+WriteData('8', '3','110');
+WriteData('9', '4','100');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Return', 'return', 'H', 'Ends phasing early and returns the robodog to its original location.');
+WriteSkillBegin();
+WriteHeader('Skill Level','&nbsp;');
+WriteData('--','&nbsp;');
+WriteSkillEnd(true);
+</script>
+
+<br>
+</body>
+</html>
