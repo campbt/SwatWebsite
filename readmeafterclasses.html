@@ -10,15 +10,15 @@ var Code1 = '';
 var Abbrv1 = '';
 var Role1 = '';
 var Description1 = '';
-var filetype = 'jpg';
+var filetype = 'png';
 var icontype = 'gif';
-var filetype1 = 'jpg';
+var filetype1 = 'png';
 var icontype1 = 'gif';
 function IconStr(Code, Abbrv, Class, Icon) {
   var classtype = Class;
   var iconstype = Icon;
   if (Code != null) {
-    return '<a href=classinfo-'+Code +'.htm><img src=pics/swat-'+Code +'.'+classtype+' width=31 height=31 border=0></a><br><img src=/pics/empty.gif width=1 height=1><br><img src="/forum/images/smiles/class-'+Abbrv +'.'+iconstype+'">';
+    return '<a href=classinfo-'+Code +'.htm><img src=pics/swat-'+Code +'.'+classtype+' width=31 height=31 border=0></a><br><img src=pics/empty.gif width=1 height=1><br><img src="forum/images/smiles/class-'+Abbrv +'.'+iconstype+'">';
   } else {
     return '<img src=/pics/empty.gif width=31 height=31>';
   }
@@ -58,7 +58,7 @@ function WriteClassSummary(Name, Code, Abbrv, Role, Description, ClassFileType, 
 <script>
 WriteTopMenu('',true);
 WriteClassMenu();
-WriteTitle('Classes ' + info_STIT_Heroes);
+WriteTitle('Classes' + info_STIT_Heroes);
 WriteOldHeader();
 WriteClassSummary('Covert&nbsp;Sniper','sniper','sni','Priority, Recon','The sniper is cloaked while idle and moving, and he can open crates covertly. His abilities include surveillance cameras and item teleportation, but his forte is aimed critical shots using a modifed sniper rifle. His intelligence is only average.');
 WriteClassSummary('Field&nbsp;Medic','medic','med','Healer, Buffer','The medic\'s abilities focus on restoring health and fixing injuries. He can also administer adrenaline shots which greatly improve attack speed and uses an urban assault rifle loaded with antipersonnel rounds. His intelligence is superior, providing for optimal item usage.');
@@ -70,8 +70,6 @@ WriteClassSummary('Demolitions','demo','dem','Offense','The primary goal of the 
 WriteClassSummary('Cyborg','cyborg','bor','Tank, Offense','The cyborg has advanced armor. He\'s very versatile, capable of high damage, great durability, and crowd control. But he is very energy dependent. His intelligence is high.');
 WriteClassSummary('Pyrotechnician','pyro','pyr','Offense, Debuffing','The pyro relies on his flamethrower and fire-based skills to burn the health off his enemies. He is an extreme class, good against everything while simultaneously vulnerable. His intelligence is only average.');
 WriteClassSummary('Watchman','watchman','wat','Support, Versatility','The watchman hails from the future, equipped with laser weaponry and advanced abilities to aid the heroes of the present. He\'s highly customizable, allowing him to fill almost any role. His intelligence is only average.');
-WriteClassSummary('Tech Ops','tech','tec','Robot Buffer','No one enhances the squad\'s droids better than the tech. He can repair and upgrade robotic allies, and he\'s accompanied by a '+InfoLinkS('robot of unparalleled size','unitinfo-tech.htm#cpu')+' that boosts the effectiveness of droids around it. His intelligence is above average.');
-WriteClassSummary('Umbrella Clone','umbclone','clo','Offense, Support','Alice is the result of Umbrella experiments with the T-virus. She boasts psionic abilities for offense and assisting others and possesses the technology to clone herself. Her intelligence is above average.','png');
 WriteClassSummary();
 WriteOldFooter();
 </script>

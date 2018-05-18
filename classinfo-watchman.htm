@@ -405,71 +405,7 @@ WriteSkillLeftRightEnd();
 
 <br>
 <script>
-WriteSkillBegin('60%');
-WriteSkillLeftHead();
-WriteSkill('Laser Power', 'laserrifle', '.', 'Increases the power of the laser rifle through the choice of a custom upgrade: Focus or Beam. Also decreases energy regen by -0.3 eps per level. This penalty is reduced with improvements in laser dissipation.');
-WriteSkillRightHead();
-WriteSkill('Laser Heat', 'laserrifle', '.', 'Lasers are especially effective against bosses, dealing extra damage based on the ammo level of the rifle.');
-WriteSkillLeftStats();
-WriteSkillBegin();
-WriteHeader('Skill Level', 'Energy Regen');
-WriteData('1','-5%');
-WriteData('2','-10%');
-WriteData('3','-15%');
-WriteData('4','-20%');
-WriteData('5','-25%');
-WriteData('6','-30%');
-WriteData('7','-35%');
-WriteData('8','-40%');
-WriteSkillEnd();
-WriteSkillRightStats();
-WriteSkillBegin();
-WriteHeader('Ammo', 'Damage');
-WriteData('0', '+15');
-WriteData('1', '+30');
-WriteData('2', '+45');
-WriteData('3', '+60');
-WriteData('4', '+75');
-WriteData('5', '+90');
-WriteData('6', '+105');
-WriteData('7', '+120');
-WriteSkillEnd();
-WriteSkillLeftRightEnd();
-</script>
-
-<script>
-WriteSkillBegin('60%');
-WriteSkillLeftHead();
-WriteSkill('Laser Beam', 'laser_beam', '.', 'Improves the laser rifle\'s beam, causing it to deal a higher percentage of damage to targets it passes through.<br><font size=-1>This upgrade is part of the Laser Power ability.');
-WriteSkillRightHead();
-WriteSkill('Laser Focus', 'laser_focus', '.', 'Improves the laser rifle\'s focus, allowing it deal more damage to the individual target aimed at.<br><font size=-1>This upgrade is part of the Laser Power ability.');
-WriteSkillLeftStats();
-WriteSkillBegin();
-WriteHeader('Skill Level', 'Pierce');
-WriteData('0','10%');
-WriteData('1','14%');
-WriteData('2','18%');
-WriteData('3','22%');
-WriteData('4','26%');
-WriteData('5','30%');
-WriteData('6','34%');
-WriteData('7','38%');
-WriteData('8','42%');
-WriteSkillEnd();
-WriteSkillRightStats();
-WriteSkillBegin();
-WriteHeader('Skill Level', 'Damage');
-WriteData('0','+0');
-WriteData('1','+30');
-WriteData('2','+60');
-WriteData('3','+90');
-WriteData('4','+120');
-WriteData('5','+150');
-WriteData('6','+180');
-WriteData('7','+210');
-WriteData('8','+240');
-WriteSkillEnd();
-WriteSkillLeftRightEnd();
+WriteSkillFocusLaser(false)
 </script>
 
 <br>

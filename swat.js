@@ -8,16 +8,25 @@ function ShowScreenshot(pic) {
   document.writeln('<td width=70><a href=http://night.org/swat2/screenshots/war3-swat-ss' + pic +'.jpg target=_blank><img src=http://night.org/swat2/screenshots/war3-swat-ss' +pic+ 's.jpg alt="Click to Enlarge" title="Click to Enlarge" border=1 width=64 height=48></a></td>');
 }
 
-var info_STIT = '<a href=/forum/viewtopic.php?t=192 target=_blank><img src=/forum/images/smiles/icon_idea2.gif border=0 alt=info title=info width=15 height=15></a>';
-var info_STIT_Ranks = '<a href=/forum/viewtopic.php?t=192#4392 target=_blank><img src=/forum/images/smiles/icon_idea2.gif border=0 alt=info title=info width=15 height=15></a>';
-var info_STIT_Guns = '<a href=/forum/viewtopic.php?t=192#4395 target=_blank><img src=/forum/images/smiles/icon_idea2.gif border=0 alt=info title=info width=15 height=15></a>';
-var info_STIT_Armor = '<a href=/forum/viewtopic.php?t=192#4399 target=_blank><img src=/forum/images/smiles/icon_idea2.gif border=0 alt=info title=info width=15 height=15></a>';
-var info_STIT_Heroes = '<a href=/forum/viewtopic.php?t=192#5609 target=_blank><img src=/forum/images/smiles/icon_idea2.gif border=0 alt=info title=info width=15 height=15></a>';
-var info_STIT_Traits = '<a href=/forum/viewtopic.php?t=192#14403 target=_blank><img src=/forum/images/smiles/icon_idea2.gif border=0 alt=info title=info width=15 height=15></a>';
-var info_STIT_Specs = '<a href=/forum/viewtopic.php?t=192#20711 target=_blank><img src=/forum/images/smiles/icon_idea2.gif border=0 alt=info title=info width=15 height=15></a>';
-var info_STIT_LAD = '<a href=/forum/viewtopic.php?t=192#4450 target=_blank><img src=/forum/images/smiles/icon_idea2.gif border=0 alt=info title=info width=15 height=15></a>';
-var info_URL_Armor = '<a href=readmeafterarmor.html><img src=info.gif border=0 alt=info title=info width=11 height=11></a>';
-var info_FORUM = '<img src=/forum/images/smiles/icon_arrow2.gif border=0 alt="forum" title="forum" width=15 height=15>';
+// TODO Provide STIT
+// var info_STIT = '<a href=/forum/viewtopic.php?t=192 target=_blank><img src=forum/images/smiles/icon_idea2.gif border=0 alt=info title=info width=15 height=15></a>';
+// var info_STIT_Ranks = '<a href=/forum/viewtopic.php?t=192#4392 target=_blank><img src=forum/images/smiles/icon_idea2.gif border=0 alt=info title=info width=15 height=15></a>';
+// var info_STIT_Guns = '<a href=/forum/viewtopic.php?t=192#4395 target=_blank><img src=forum/images/smiles/icon_idea2.gif border=0 alt=info title=info width=15 height=15></a>';
+// var info_STIT_Armor = '<a href=/forum/viewtopic.php?t=192#4399 target=_blank><img src=forum/images/smiles/icon_idea2.gif border=0 alt=info title=info width=15 height=15></a>';
+// var info_STIT_Heroes = '<a href=/forum/viewtopic.php?t=192#5609 target=_blank><img src=forum/images/smiles/icon_idea2.gif border=0 alt=info title=info width=15 height=15></a>';
+// var info_STIT_Traits = '<a href=/forum/viewtopic.php?t=192#14403 target=_blank><img src=forum/images/smiles/icon_idea2.gif border=0 alt=info title=info width=15 height=15></a>';
+// var info_STIT_Specs = '<a href=/forum/viewtopic.php?t=192#20711 target=_blank><img src=forum/images/smiles/icon_idea2.gif border=0 alt=info title=info width=15 height=15></a>';
+// var info_STIT_LAD = '<a href=/forum/viewtopic.php?t=192#4450 target=_blank><img src=forum/images/smiles/icon_idea2.gif border=0 alt=info title=info width=15 height=15></a>';
+var info_STIT = '';
+var info_STIT_Ranks = '';
+var info_STIT_Guns = '';
+var info_STIT_Armor = '';
+var info_STIT_Heroes = '';
+var info_STIT_Traits = '';
+var info_STIT_Specs = '';
+var info_STIT_LAD = '';
+var info_URL_Armor = '';
+var info_FORUM = '';
 
 function info_URL_Guns(guntype) {
   return '<a href=readmeafterweapons.html#'+guntype+'><img src=info.gif border=0 alt=info title=info width=11 height=11></a>';
@@ -254,6 +263,17 @@ function WriteClassUnitHeaderBegin(ClassName, ClassImage, ClassAcquire, ClassDes
   document.writeln('<tr bgcolor=202020 valign=top><td width=4>&nbsp;</td><td align=right width=32><img src=pics/ability-'+ClassImage+'.'+filetype+' width=32 height=32>');
   document.writeln('</td><td width=4>&nbsp;</td><td>');
   document.writeln('<font color=ffe888 face=Arial>'+ClassAcquire+SkillLinkDisplaySkill(SkillLinkClass, SkillLinkSkill)+'</font><br>');
+  document.writeln('<font face=Arial>');
+  document.writeln(ClassDescription);
+  document.writeln('<br>');
+}
+
+function WriteWeaponHeaderBegin(ClassName, ClassAcquire, ClassDescription) {
+  document.writeln('<font size=+1 color=ffcc00><a name='+ClassName+'><b>'+ClassName+'</b></a></font>');
+  document.writeln('<table cellspacing=0 cellpadding=0 border=0 width=100%>');
+  document.writeln('<tr bgcolor=202020 valign=top><td width=4>&nbsp;</td>');
+  document.writeln('</td><td width=4>&nbsp;</td><td>');
+  document.writeln('<font color=ffe888 face=Arial>'+ClassAcquire+'</font><br>');
   document.writeln('<font face=Arial>');
   document.writeln(ClassDescription);
   document.writeln('<br>');
@@ -1059,75 +1079,78 @@ function WriteSkillRightStats() {
 function WriteSkillLeftRightEnd() {
   document.writeln('</td></tr></table>');
 }
-function WriteSkillFocusLaser(gatling, showall) {
-  var s = '';
-  var m = '';
-  if (!showall) {
-    s = '</font><br><font size=-1>Bonus damage is not reflected visibly, but it does apply when attacking bosses.';
-  } else {
-    m = '</font><br><font size=-1>Mini-Droid MkII does not experience energy degeneration.';
-  }
-  WriteSkillLeftHead();
-  WriteSkill('Focus&nbsp;Laser', 'laserfocus', '.', 'Focused lasers deal more damage but decrease energy regeneration.'+m);
-  WriteSkillRightHead();
-  WriteSkill('Laser&nbsp;Heat', 'gatling', '.', 'Lasers are especially effective against bosses, dealing extra damage.'+s);
-  WriteSkillLeftStats();
-  WriteSkillBegin();
-  s = 'Laser Rifle ';
-  if (gatling) { s = 'Gatling Laser '; }
-  WriteHeader('Skill Level', s+'Damage', 'Energy Regen.');
-  if (gatling) {
-  WriteData('1', '+10','-5%');
-  WriteData('2', '+20','-10%');
-  WriteData('3', '+30','-15%');
-  WriteData('4', '+40','-20%');
-  WriteData('5', '+50','-25%');
-  WriteData('6', '+60','-30%');
-  WriteData('7', '+70','-35%');
-  WriteData('8', '+80','-40%');
-  if (showall) {
-  WriteData('9', '+90','-45%');
-  WriteData('10', '+100','-50%');
-  }
-  } else {
-  WriteData('1', '+30','-5%');
-  WriteData('2', '+60','-10%');
-  WriteData('3', '+90','-15%');
-  WriteData('4', '+120','-20%');
-  WriteData('5', '+150','-25%');
-  WriteData('6', '+180','-30%');
-  WriteData('7', '+210','-35%');
-  WriteData('8', '+240','-40%');
-  if (showall) {
-  WriteData('9', '+270','-45%');
-  WriteData('10', '+300','-50%');
-  }
-  }
-  WriteSkillEnd();
-  WriteSkillRightStats();
-  WriteSkillBegin();
-  WriteHeader('Ammo', s+'Damage');
-  if (gatling) {
-  WriteData('0', '+5');
-  WriteData('1', '+10');
-  WriteData('2', '+15');
-  WriteData('3', '+20');
-  WriteData('4', '+25');
-  WriteData('5', '+30');
-  WriteData('6', '+35');
-  WriteData('7', '+40');
-  } else {
-  WriteData('0', '+15');
-  WriteData('1', '+30');
-  WriteData('2', '+45');
-  WriteData('3', '+60');
-  WriteData('4', '+75');
-  WriteData('5', '+90');
-  WriteData('6', '+105');
-  WriteData('7', '+120');
-  }
-  WriteSkillEnd();
-  WriteSkillLeftRightEnd();
+function WriteSkillFocusLaser(showall) {
+    WriteSkillBegin('60%');
+    WriteSkillLeftHead();
+    WriteSkill('Laser Power', 'laserrifle', '.', 'Increases the power of the laser rifle through the choice of a custom upgrade: Focus or Beam. Also decreases energy regen by -0.3 eps per level. This penalty is reduced with improvements in laser dissipation.');
+    WriteSkillRightHead();
+    WriteSkill('Laser Heat', 'laserrifle', '.', 'Lasers are especially effective against bosses, dealing extra damage based on the ammo level of the rifle.');
+    WriteSkillLeftStats();
+    WriteSkillBegin();
+    WriteHeader('Skill Level', 'Energy Regen');
+    WriteData('1','-5%');
+    WriteData('2','-10%');
+    WriteData('3','-15%');
+    WriteData('4','-20%');
+    WriteData('5','-25%');
+    WriteData('6','-30%');
+    WriteData('7','-35%');
+    WriteData('8','-40%');
+    if (showall) {
+    WriteData('9', '-45%');
+    }
+    WriteSkillEnd();
+    WriteSkillRightStats();
+    WriteSkillBegin();
+    WriteHeader('Ammo', 'Damage');
+    WriteData('0', '+15');
+    WriteData('1', '+30');
+    WriteData('2', '+45');
+    WriteData('3', '+60');
+    WriteData('4', '+75');
+    WriteData('5', '+90');
+    WriteData('6', '+105');
+    WriteData('7', '+120');
+    WriteSkillEnd();
+    WriteSkillLeftRightEnd();
+    WriteSkillBegin('60%');
+    WriteSkillLeftHead();
+    WriteSkill('Laser Beam', 'laser_beam', '.', 'Improves the laser rifle\'s beam, causing it to deal a higher percentage of damage to targets it passes through.<br><font size=-1>This upgrade is part of the Laser Power ability.');
+    WriteSkillRightHead();
+    WriteSkill('Laser Focus', 'laser_focus', '.', 'Improves the laser rifle\'s focus, allowing it deal more damage to the individual target aimed at.<br><font size=-1>This upgrade is part of the Laser Power ability.');
+    WriteSkillLeftStats();
+    WriteSkillBegin();
+    WriteHeader('Skill Level', 'Pierce');
+    WriteData('0','10%');
+    WriteData('1','14%');
+    WriteData('2','18%');
+    WriteData('3','22%');
+    WriteData('4','26%');
+    WriteData('5','30%');
+    WriteData('6','34%');
+    WriteData('7','38%');
+    WriteData('8','42%');
+    if (showall) {
+    WriteData('9', '-46%');
+    }
+    WriteSkillEnd();
+    WriteSkillRightStats();
+    WriteSkillBegin();
+    WriteHeader('Skill Level', 'Damage');
+    WriteData('0','+0');
+    WriteData('1','+30');
+    WriteData('2','+60');
+    WriteData('3','+90');
+    WriteData('4','+120');
+    WriteData('5','+150');
+    WriteData('6','+180');
+    WriteData('7','+210');
+    WriteData('8','+240');
+    if (showall) {
+    WriteData('9', '+270');
+    }
+    WriteSkillEnd();
+    WriteSkillLeftRightEnd();
 }
 
 
