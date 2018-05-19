@@ -152,12 +152,12 @@ function WriteClassMenu() {
 function WriteMechsMenu() {
   document.writeln('<center><font size=-1 color=ffe888>');
   document.writeln('<a href=unitinfo-lad.htm>ASSAULT&nbsp;DROID</a> | ');
-  document.writeln('<a href=unitinfo-tech.htm>CPU</a> | ');
+  // document.writeln('<a href=unitinfo-tech.htm>CPU</a> | ');
   document.writeln('<a href=unitinfo-hvyord.htm>MINI&nbsp;DROID</a> | ');
-  document.writeln('<a href=unitinfo-mini2.htm>MINI&nbsp;DROID&nbsp;MKII</a> | ');
+  // document.writeln('<a href=unitinfo-mini2.htm>MINI&nbsp;DROID&nbsp;MKII</a> | ');
   document.writeln('<a href=unitinfo-mav.htm>ROBODOG</a> | ');
-  document.writeln('<a href=unitinfo-robopet.htm>ROBO&nbspPET</a> | ');
-  document.writeln('<a href=unitinfo-repairdroid.htm>REPAIR&nbsp;DROID</a>');
+  // document.writeln('<a href=unitinfo-robopet.htm>ROBO&nbspPET</a> | ');
+  // document.writeln('<a href=unitinfo-repairdroid.htm>REPAIR&nbsp;DROID</a>');
   document.writeln('</font>&nbsp;</center>');
   document.writeln('');
 }
@@ -1219,16 +1219,10 @@ function WriteSkillAdvGen(unit) {
 }
 
 function WriteSkillSprint(Type, hotkey, specialUnit) {
-  var dodge = '';
   if (hotkey == null) {
     hotkey = 'D';
-    dodge = ' Direct attacks are dodged while sprinting.';
-  } else if (specialUnit == 'clone') {
-    dodge = ' Clone sprint type matches the parent unit but clone sprint does not have evasion.';
-  } else if (hotkey == 'V') {
-    dodge = ' Cadet sprint does not have evasion.';
   }
-  WriteSkill('Sprint', 'sprint', hotkey, 'Greatly increases movement speed and lets the hero slip right past units.'+dodge+'</font><br><font size=-1>The values below reflect a hero in '+ ArmorName(Type) +' power armor.');
+  WriteSkill('Sprint', 'sprint', hotkey, 'Greatly increases movement speed and lets the hero slip right past units.</font><br><font size=-1>The values below reflect a hero in '+ ArmorName(Type) +' power armor.');
   WriteSkillBegin();
   if (Type == null) {
     WriteHeader('&nbsp;', 'Move Spd.', 'Duration', 'Energy', 'Cooldown');

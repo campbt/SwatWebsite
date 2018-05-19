@@ -1,0 +1,213 @@
+
+<html>
+<head>
+<title>SWAT: Aftermath</title>
+
+<script language="javascript" src="swat.js">
+</script>
+
+</head>
+<body bgcolor=000000 text=FFFFFF link=99E362 vlink=69B926 alink=00FF00>
+
+<script>
+WriteTopMenu('',true);
+WriteMechsMenu();
+WriteBr();
+WriteClassUnitHeaderBegin('Assault Droid ' + info_STIT_LAD,'lad','Created via Item','The assault droid is a powerful support unit created when a hero uses the assault droid parts item. It requires 2000 energy to create the droid with full health, but a hero with less energy can still construct the droid. When the droid is created, it fuses with the other items in the hero\'s inventory, gaining the benefits of those items. The droid is also granted special benefits dependent on the class of the hero who constructed it.<br><br>'+
+                          'When an assault droid dies, it leaves the parts item behind so players can rebuild it. Fused items are lost forever unless the constructing hero was a '+InfoLinkS('Gadgeteer','readmeaftertraits.html')+', in which case the non-consumable fused items are dropped. Fused assault droid parts are lost unless the constructing hero was a '+InfoLinkS('Field Medic','classinfo-medic.htm')+'.<br><br>'+
+                          'The droid increases in level as players level up; its maximum level is determined by the combined ranks of all players when it was constructed. Game difficulty is increased somewhat by the level of each assault droid assisting players.');
+WriteSkillLinks('O.T.A.','ota','Concussion&nbsp;Rockets','cluster','Reconstruct','recons','Frag.&nbsp;Locator','frag','Nanites','nanites');
+WriteSkillLinks('A.R.S.','ars','Energy&nbsp;Beam','beam','Transfer','transfer');
+WriteClassUnitTypeHeader('Assault&nbsp;Droid&nbsp;MkII', 'This droid is created when the hero fuses one additional assault droid parts item with the assault droid. It is more powerful than the standard Assault Droid, boasting +2 eps, +25 vitality, +2 base agility, +0.15 levelup agility, level 3 ammo, +20 movement speed, Power Armor MkII, +5 initial nanites, and +4 skill points. Concussion Rockets use 3 less energy per rocket.');
+WriteClassUnitTypeHeader('Assault&nbsp;Droid&nbsp;MkIII', 'This droid is created when the hero fuses two additional assault droid parts items with the assault droid. It is more powerful than the standard Assault Droid, boasting +4 eps, +50 vitality, +5 base agility, +0.30 levelup agility, +30 damage, level 6 ammo, +30 movement speed, +3 armor, Power Armor MkII, +6 initial nanites, +4 skill points, and its other skills start at level 1. Concussion Rockets use 5 less energy per rocket.');
+WriteClassHeaderEnd();
+</script>
+
+<br><br>
+<font color=ffcc00><b>Statistics</b></font>
+<table cellspacing=0 cellpadding=0 border=0 width=100%><tr valign=top>
+<td width=27%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsAttribs('25','0.00','1','0.30','1','0.00', '1000', '1');
+</script></table>
+</td>
+<td width=23%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsWeapon(8);
+</script></table>
+</td>
+<td width=50%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsArmor('lad');
+</script></table>
+</td>
+</tr></table>
+
+<br><br>
+<font color=ffcc00><b>Hero Bonuses</b></font>
+
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteBonus('Covert Sniper','Droid has 25% chance to inflict 3x damage to bosses. (multiplayer)<br>Droid is cloaked while idle or moving. (single player)');
+WriteBonus('Field Medic','Droid drops all consumable items, including fused Assault Droid Parts, when it\'s destroyed.');
+WriteBonus('Tactician','Droid has 2 inventory slots per mark.');
+WriteBonus('Psychologist','Droid has 2 extra skill points.');
+WriteBonus('Maverick','Droid has 2 extra agility per mark and +20 damage.');
+WriteBonus('Heavy Ordnance','Droid has +16% energy regeneration and 250 extra energy storage.');
+WriteBonus('Demolitions','Droid overclocks when damaged while health is critical and damages nearby units when destroyed.');
+WriteBonus('Cyborg','Droid has 30 extra movement speed.');
+WriteBonus('Pyrotechnician','Droid has an additional 5.8 damage absorption and an additional 75 vitality.');
+WriteBonus('Watchman','Droid has the Temporal Avatar ability enabled.');
+</script></table>
+
+<br><br>
+<font color=ffcc00><b>Trainable Abilities</b></font>
+<script>
+
+WriteSkill('O.T.A.', 'ota', '.', 'Optimizes target acquisition, increasing the attack rate of the droid and other nearby robots. This ability does not stack with O.T.A. from another assault droid.');
+WriteSkillBegin('33%');
+WriteHeader('Skill Level', 'Attack Spd.', 'Radius');
+WriteData('1', '+1%', '900');
+WriteData('2', '+2%', '900');
+WriteData('3', '+3%', '900');
+WriteData('4', '+4%', '900');
+WriteData('5', '+5%', '900');
+WriteData('6', '+6%', '900');
+WriteData('7', '+7%', '900');
+WriteData('8', '+8%', '900');
+WriteData('9', '+9%', '900');
+WriteData('10', '+10%', '900');
+WriteData('11', '+11%', '900');
+WriteData('12', '+12%', '900');
+WriteData('13', '+13%', '900');
+WriteData('14', '+14%', '900');
+WriteData('15', '+15%', '900');
+WriteSkillBegin2('33%');
+WriteHeader('Skill Level', 'Attack Spd.', 'Radius');
+WriteData('16', '+16%', '900');
+WriteData('17', '+17%', '900');
+WriteData('18', '+18%', '900');
+WriteData('19', '+19%', '900');
+WriteData('20', '+20%', '900');
+WriteData('21', '+21%', '900');
+WriteData('22', '+22%', '900');
+WriteData('23', '+23%', '900');
+WriteData('24', '+24%', '900');
+WriteData('25', '+25%', '900');
+WriteData('26', '+26%', '900');
+WriteData('27', '+27%', '900');
+WriteData('28', '+28%', '900');
+WriteData('29', '+29%', '900');
+WriteData('30', '+30%', '900');
+WriteSkillBegin2('33%');
+WriteHeader('Skill Level', 'Attack Spd.', 'Radius');
+WriteData('31', '+31%', '900');
+WriteData('32', '+32%', '900');
+WriteData('33', '+33%', '900');
+WriteData('34', '+34%', '900');
+WriteData('35', '+35%', '900');
+WriteData('36', '+36%', '900');
+WriteData('37', '+37%', '900');
+WriteData('38', '+38%', '900');
+WriteData('39', '+39%', '900');
+WriteData('40', '+40%', '900');
+WriteData('41', '+41%', '900');
+WriteData('42', '+42%', '900');
+WriteData('43', '+43%', '900');
+WriteData('44', '+44%', '900');
+WriteData('45', '+45%', '900');
+WriteSkillEnd();
+
+WriteBr();
+WriteSkill('Concussion&nbsp;Rockets', 'cluster', 'X', 'Bombards an area with multiple rockets, stunning and damaging units in the vicinity.</font><br><font size=-1>Energy cost for the MkII is reduced by 20%. Energy cost for the MkIII is reduced by 33%.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Damage/Max', 'Radius', 'Range', 'Stun', 'Energy', 'Cooldown');
+WriteData('1', '500/200','275','1000','0.50 s','75','6 s');
+WriteData('2', '600/240','275','1000','0.75 s','90','6 s');
+WriteData('3', '700/280','275','1000','1.00 s','105','6 s');
+WriteData('4', '800/320','275','1000','1.25 s','120','6 s');
+WriteData('5', '900/360','275','1000','1.50 s','135','6 s');
+WriteData('6', '1000/400','275','1000','1.75 s','150','6 s');
+WriteData('7', '1100/440','275','1000','2.00 s','165','6 s');
+WriteData('8', '1200/480','275','1000','2.25 s','180','6 s');
+WriteSkillBegin2();
+WriteHeader('Skill Level', 'Damage/Max', 'Radius', 'Range', 'Stun', 'Energy', 'Cooldown');
+WriteData('9', '1300/520','275','1000','2.50 s','195','6 s');
+WriteData('10', '1400/560','275','1000','2.75 s','210','6 s');
+WriteData('11', '1500/600','275','1000','3.00 s','225','6 s');
+WriteData('12', '1600/640','275','1000','3.25 s','240','6 s');
+WriteData('13', '1700/680','275','1000','3.50 s','255','6 s');
+WriteData('14', '1800/720','275','1000','3.75 s','270','6 s');
+WriteData('15', '1900/760','275','1000','4.00 s','285','6 s');
+WriteData('16', '2000/800','275','1000','4.25 s','300','6 s');
+WriteSkillEnd();
+
+WriteBr();
+WriteSkill('Reconstruct', 'recons', 'C', 'Forces the droid into low-power, defensive mode, disabling movement and slowing attack, but greatly increasing health regeneration and attack deflection.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Attack Spd.', 'Move Spd.', 'HP Healed', 'Deflection', 'Duration', 'Energy', 'Cooldown');
+WriteData('1', '-85%', '0', '+5.0 hps', '10%', '20 s', '0', '60 s');
+WriteData('2', '-85%', '0', '+7.5 hps', '15%', '20 s', '0', '60 s');
+WriteData('3', '-85%', '0', '+10.5 hps', '20%', '19 s', '0', '60 s');
+WriteData('4', '-85%', '0', '+13.0 hps', '25%', '19 s', '0', '60 s');
+WriteData('5', '-85%', '0', '+16.5 hps', '30%', '18 s', '0', '60 s');
+WriteData('6', '-85%', '0', '+19.5 hps', '35%', '18 s', '0', '60 s');
+WriteData('7', '-85%', '0', '+23.5 hps', '40%', '17 s', '0', '60 s');
+WriteData('8', '-85%', '0', '+26.5 hps', '45%', '17 s', '0', '60 s');
+WriteData('9', '-85%', '0', '+31.0 hps', '50%', '16 s', '0', '60 s');
+WriteData('10', '-85%', '0', '+34.5 hps', '55%', '16 s', '0', '60 s');
+WriteData('11', '-85%', '0', '+40.0 hps', '60%', '15 s', '0', '60 s');
+WriteData('12', '-85%', '0', '+43.5 hps', '66%', '15 s', '0', '60 s');
+WriteData('13', '-85%', '0', '+50.0 hps', '72%', '14 s', '0', '60 s');
+WriteData('14', '-85%', '0', '+53.5 hps', '78%', '14 s', '0', '60 s');
+WriteData('15', '-85%', '0', '+61.5 hps', '84%', '13 s', '0', '60 s');
+WriteData('16', '-85%', '0', '+65.0 hps', '90%', '13 s', '0', '60 s');
+WriteSkillEnd();
+
+WriteBr();
+WriteSkill('Frag.&nbsp;Locator', 'frag', 'V', 'Uses a portable scanner to locate nearby radiation fragments.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Number', 'Radius', 'Energy', 'Cooldown');
+WriteData('1', '1', '5500', '150', '120 s');
+WriteData('2', '2', '5500', '150', '105 s');
+WriteData('3', '3', '5500', '150', '90 s');
+WriteData('4', '4', '5500', '150', '75 s');
+WriteData('5', '5', '5500', '150', '60 s');
+WriteData('6', '6', '5500', '150', '50 s');
+WriteData('7', '7', '5500', '150', '40 s');
+WriteData('8', '7', 'unlimited', '300', '30 s');
+WriteSkillEnd(true);
+
+WriteBr();
+WriteSkillNanites(3, false, 'droid');
+</script>
+
+<br><br>
+<font color=ffcc00><b>Innate Abilities</b></font>
+<script>
+
+WriteSkill('A.R.S.', 'ars', '.', 'Automatically restores health to the droid. Increased by increments of 0.25 depending on droid mark and items fused.');
+WriteSkillBegin();
+WriteHeader('Skill Level','HP Healed');
+WriteData('--', '0.25 hps');
+WriteSkillEnd(true);
+
+WriteBr();
+WriteSkill('Energy&nbsp;Beam', 'beam', 'ZV', 'Instantly transfers energy from the target to the droid.');
+WriteSkillBegin();
+WriteHeader('Droid Mk', 'Range','Energy','Cooldown');
+WriteData('I', '350','250','20 s');
+WriteData('II', '350','400','20 s');
+WriteData('III', '350','550','20 s');
+WriteSkillEnd(true);
+
+WriteBr();
+WriteSkill('Transfer', 'transfer', 'ZB', 'Authorizes the targeted officer as the new owner of the assault droid.');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Range','Energy','Cooldown');
+WriteData('--', '350','0','6 s');
+WriteSkillEnd(true);
+
+</script>
+<br>
+</body>
+</html>

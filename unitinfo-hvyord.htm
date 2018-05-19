@@ -1,0 +1,171 @@
+<html>
+<head>
+<title>SWAT: Aftermath</title>
+
+<script language="javascript" src="swat.js">
+</script>
+
+</head>
+<body bgcolor=000000 text=FFFFFF link=99E362 vlink=69B926 alink=00FF00>
+
+<script>
+WriteTopMenu('',true);
+WriteClassMenu();
+WriteMechsMenu();
+WriteClassUnitHeaderBegin('Mini-Droid','droid','Created via Ability','Created by '+InfoLinkS('heavy ords','classinfo-hvyord.htm#droid')+', miniature assault droids are strong support units. They are initialized to half their creator\'s hero level and receive abilities from their creator. Mini-Droids begin with 50 energy and receive one beam of energy from the Heavy Ordnance equal to their current Energy Beam level. Their base movement speed is set to their creator\'s base movement speed.'); 
+WriteSkillLinks('Storage&nbsp;Cells','cell','Energy&nbsp;Beam','beam','Plasma&nbsp;Rounds','plasrnd','Plasma&nbsp;Shield', 'plasshield','Nanites','nanites');
+WriteSkillLinks('A.R.S.','ars','Defense&nbsp;Matrix','defmatrix');
+WriteClassHeaderEnd();
+</script>
+
+<br><br>
+<font color=ffcc00><b>Statistics</b></font>
+
+<table cellspacing=0 cellpadding=0 border=0 width=100%><tr valign=top>
+
+<td width=27%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsAttribs('10','0.00','6','0.30','1','0.00', '500', '¼', '500');
+</script></table>
+</td>
+
+<td width=23%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsWeapon(7);
+</script></table>
+</td>
+
+<td width=50%>
+<table cellspacing=2 cellpadding=4 border=0 width=100%><script>
+WriteStatsArmor('minidroid');
+</script></table>
+</td>
+
+</tr></table>
+
+<br><br>
+<font color=ffcc00><b>Trainable Abilities</b></font>
+
+<script>
+WriteSkill('Storage&nbsp;Cells', 'cell', '.', 'Increases the droid\'s maximum energy capacity.<br><font size=-1><i>Level set to half of Heavy Ordnance\'s Storage Cells level.</i></font>');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Energy');
+WriteData('1', '+250');
+WriteData('2', '+500');
+WriteData('3', '+750');
+WriteData('4', '+1000');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+WriteSkill('Energy&nbsp;Beam', 'beam', 'V', 'Instantly transfers energy from the target to the droid.<br><font size=-1><i>Level set to half of Heavy Ordnance\'s Power Grid level.</i></font>');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Range','Energy','Cooldown');
+WriteData('1', '350','120','20 s');
+WriteData('2', '350','160','20 s');
+WriteData('3', '350','200','20 s');
+WriteData('4', '350','240','20 s');
+WriteData('5', '350','280','20 s');
+WriteData('6', '350','320','20 s');
+WriteData('7', '350','360','20 s');
+WriteData('8', '350','400','20 s');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+  WriteSkill('Plasma&nbsp;Rounds', 'plasrnd', '+', 'This system can be activated to fuse destructive nanites with each round fired. Upon impact, these nanites tear through the target, briefly hindering its movement.<br><font size=-1><i>Level set equal to Heavy Ordnance\'s Plasma Rounds level.</i></font>');
+  WriteSkillBegin();
+  WriteHeader('Skill Level', 'Dmg.', 'Atk.&nbsp;Spd.', 'Slow', 'Duration', 'Energy', 'Cool.');
+  WriteData('1', '+3','-1%','2%','0.10 s', '1','--');
+  WriteData('2', '+4','-1%','2%','0.10 s', '1','--');
+  WriteData('3', '+5','-1%','2%','0.10 s', '1','--');
+  WriteData('4', '+6','-1%','2%','0.10 s', '1','--');
+  WriteData('5', '+12','-2%','3%','0.15 s', '2','0.21 s');
+  WriteData('6', '+14','-2%','3%','0.15 s', '2','0.21 s');
+  WriteData('7', '+16','-2%','3%','0.15 s', '2','0.21 s');
+  WriteData('8', '+18','-2%','3%','0.15 s', '2','0.21 s');
+  WriteSkillBegin2();
+  WriteHeader('Skill Level', 'Dmg.', 'Atk.&nbsp;Spd.', 'Slow', 'Duration', 'Energy', 'Cool.');
+  WriteData( '9', '+27','-3%','4%','0.25 s', '3','0.31 s');
+  WriteData('10', '+29','-3%','4%','0.25 s', '3','0.31 s');
+  WriteData('11', '+31','-3%','4%','0.25 s', '3','0.31 s');
+  WriteData('12', '+33','-3%','4%','0.25 s', '3','0.31 s');
+  WriteData('13', '+44','-4%','5%','0.45 s', '4','0.41 s');
+  WriteData('14', '+46','-4%','5%','0.45 s', '4','0.41 s');
+  WriteData('15', '+48','-4%','5%','0.45 s', '4','0.41 s');
+  WriteData('16', '+50','-4%','5%','0.45 s', '4','0.41 s');
+  WriteSkillEnd();
+</script>
+
+<br>
+<script>
+WriteSkill('Plasma&nbsp;Shield', 'plasshield', '+', 'System which can be activated to over-excite the nanites in the droid\'s armor, making them leap away and deflect some attacks.<br><font size=-1><i>Level set to one-half Heavy Ordnance\'s Plasma Shield level.</i></font>');
+WriteSkillBegin();
+WriteHeader('Skill Level', 'Chance','Energy');
+WriteData('1', '9%','-0.5 eps');
+WriteData('2', '18%','-1.0 eps');
+WriteData('3', '26%','-1.5 eps');
+WriteData('4', '34%','-2.0 eps');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
+  WriteSkill('Nanites', 'nanites', '+', 'The micro-fusion pack powering the droid\'s systems is used to create nanites which absorb nearly all incoming damage.<br><font size=-1><i>Level set to Heavy Ordnance\'s Nanites level.</i></font>');
+  WriteSkillBegin();
+  WriteHeader('Skill Level','Absorption','Efficiency');
+    WriteData('1', '90%', '4.00');
+    WriteData('2', '90%', '3.50');
+    WriteData('3', '90%', '3.00');
+    WriteData('4', '90%', '2.66');
+    WriteData('5', '90%', '2.33');
+    WriteData('6', '91%', '2.00');
+    WriteData('7', '91%', '1.75');
+    WriteData('8', '91%', '1.50');
+    WriteData('9', '91%', '1.25');
+    WriteData('10', '91%', '1.00');
+    WriteData('11', '91%', '0.80');
+    WriteData('12', '91%', '0.60');
+  WriteSkillBegin2();
+  WriteHeader('Skill Level','Absorption','Efficiency');
+    WriteData('13', '91%', '0.50');
+    WriteData('14', '92%', '0.40');
+    WriteData('15', '92%', '0.35');
+    WriteData('16', '92%', '0.30');
+    WriteData('17', '92%', '0.28');
+    WriteData('18', '92%', '0.26');
+    WriteData('19', '93%', '0.24');
+    WriteData('20', '93%', '0.22');
+    WriteData('21', '93%', '0.20');
+    WriteData('22', '93%', '0.18');
+    WriteData('23', '93%', '0.17');
+    WriteData('24', '94%', '0.16');
+  WriteSkillEnd();
+</script>
+
+<br><br>
+<font color=ffcc00><b>Innate Abilities</b></font>
+<script>
+  WriteSkill('A.R.S.', 'ars', '.', 'Automatically restores health to the droid.');
+  WriteSkillBegin();
+  WriteHeader('Skill Level','HP Healed');
+  WriteData('--', '0.10 hps');
+  WriteSkillEnd(true);
+
+WriteBr();
+WriteSkill('Defense&nbsp;Matrix', 'droiddef', '.', 'Defense system integration increases the armor of the droid\'s owner and his closeby droids. Owner gets additional armor while droid is adjacent.</font><br><font size=-1>Owner-specific adjacency bonuses from multiple droids stack.');
+WriteSkillBegin();
+WriteHeader('Droids', 'Armor', 'Radius');
+WriteData('1', '+1, +1', '625, 144');
+WriteData('2', '+2, +2', '625, 144');
+WriteData('3', '+3, +3', '625, 144');
+WriteData('4', '+4, +3', '625, 144');
+WriteData('5', '+5, +3', '625, 144');
+WriteSkillEnd(true);
+</script>
+
+<br>
+</body>
+</html>
