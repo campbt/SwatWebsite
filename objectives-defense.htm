@@ -1,0 +1,129 @@
+<html>
+<head>
+<title>SWAT: Aftermath, Defense</title>
+
+<script language="javascript" src="swat.js">
+</script>
+
+</head>
+<body bgcolor=000000 text=FFFFFF link=99E362 vlink=69B926 alink=00FF00>
+
+<script>
+WriteTopMenu('',true);
+WriteMapsMenu();
+WriteBr();
+</script>
+
+<font size=+1 color=ffcc00><b>Defense Objectives</b></font>
+In order to win the game, players must survive against 40 waves of enemies and defeat the final boss, Nemesis.
+The game ends in defeat if the last surviving main hero dies, even if other support units are
+still alive. Victorious games award much more <script>InfoLink('rank','readmeafterrank.html');</script> and
+<script>InfoLink('renown','readmeafterrenown.html');</script> experience
+and unlock rank caps for heroes who hadn't yet beaten the played difficulty level.
+Completing wave 25 results in a partial victory, unlocking some ranks and giving full rank/renown experience.
+Completing mini-quests is not necessary to win, but the rewards for doing so may make victory easier to achieve.
+<br><br>
+Ranks 4-6 are unlocked when a hero survives past the first 25 waves.
+Ranks 7-9 are unlocked when a hero survives all 40 waves and defeats Nemesis.
+Ranks 10+ can not be unlocked in Defense.
+<br><br>
+
+<font color=ffcc00><b>Primary Objectives</b></font>
+
+<script>
+WriteQuest('Survive enemy waves', 'tors', 'ability-waves.png',
+'Waves of enemies will constantly be spawning during play, with only brief breaks at the end of every 5 waves. ' +
+'More challenging enemies and variants will begin to appear at later waves and a boss wave will occur every 5 waves. ' +
+'Most enemies for each wave will only come in from one of the four entrances to the research lab, and only if that door is unlocked. ' +
+'On certain waves, items may spawn in a random room, reactors may break, or civilians may appear, attempting to escape through televacs. ' +
+'', '', '.gif');
+WriteQData('Objective','Survive all 40 waves');
+WriteQData('Reward','Required to win.', true);
+WriteBr();
+
+WriteQuest('Nemesis', 'nemesis', 'nemesis.png',
+'This boss encounter is the toughest that Bravo team ' +
+'will have to face and requires proper preparation. Nemesis is equipped with a Gatling Laser and uses a variety of skills, ' +
+'including the ability to request backup soldiers. ' +
+'', '', '.gif');
+WriteQData('Objective','Defeat the special Nemesis boss.');
+WriteQData('Reward','Required to win.', true);
+</script>
+
+<br><br>
+<font color=ffcc00><b>Mini-Quests</b></font>
+
+<script>
+
+WriteQuest('Restore Power', 'tors', 'ability-restorepower.png',
+'Located in two buildings in the lab are power plant reactors. They are marked on the player\'s ' +
+'minimap with light blue dots. While powered, the reactors maintain a forcefield that blocks off some entrances to the lab.' +
+'These reactors will occasionally break due to the onslaught of the horde. They will become either <i>badly damaged</i>, or <i>severely damaged</i>. ' +
+'In order to fix a reactor, a unit with energy must stand next to it. The reactor will automatically ' +
+'beam energy continuously off of that unit until the reactor is filled or the unit runs out of energy or out of ' +
+'range. Broken reactors are constantly losing energy - the more damaged the reactor, the faster energy is lost - ' +
+'so it usually takes multiple units (or items like batteries) to fill them.', '', '.gif');
+WriteQData('Objective','Find and fill the reactors\' energy.');
+WriteQData('Reward','Fixing a reactor brings up a forcefield, blocking enemies from entering the lab at a specific entrance');
+WriteQData('',      'Fixing a reactor awards credits which are divided amongst all players.', true);
+WriteBr();
+
+WriteQuest('Reduce Radiation', 'rads', 'ability-rads.png',
+'The horde seems to gain strength from radiation, and has brought heaping doses of it to the lab. '+
+'The radiation level will continuously climb during the fight. Some radiation fragments can be found and destroyed, lowering the level slightly. ' +
+'Radiation is grouped into seven brackets of twenty radiation fragments: 0, 1-19, 20-39, 40-59, 60-79, 80-99, and 100+. ' +
+'Certain factors can shift the non-zero brackets up or down. Radiation passively benefits monsters and hurts players\' ' +
+'units as well as affecting some other aspects of the game; the current bracket determines the level of those effects. ' +
+'', '', '.gif');
+WriteQData('Objective','Find and destroy radiation fragments.');
+WriteQData('Reward','Lowering the radiation level makes it easier to survive.', true);
+
+WriteBr();
+
+WriteQuest('Rescue Civilians', 'civs', 'ability-civs.png',
+'Some civilians have not become infected yet and will try to seek safety by using the televac in the lab. ' +
+'These civilians will appear at random times and they\'ll constantly run towards the televacs, often chased by some enemies ' +
+'that slipped past the forcefields with the civilians. You should protect them on their way to the televac.' +
+'', '', '.gif');
+WriteQData('Objective','Escort civilians to the central lab televac.');
+WriteQData('Reward','Rescuing a civilian awards credits which are divided amongst all players.');
+WriteQData('',      'Rescueing civilians reduces the radiation level slightly', true);
+
+WriteBr();
+
+WriteQuest('Assault Droid <a href=unitinfo-lad.htm#lad><img src=info.gif border=0 alt=info title=info width=11 height=11></a> ' + info_STIT_LAD, 'lad', 'obj-lad.png',
+'The assault droid is a powerful support unit which can be crucial to players\' survival. It is created when a hero ' +
+'uses the assault droid parts item. One of these items is always located in the main laboratory. ' +
+'Twice per game, an enemy Assault Droid will be sent to attack the players.' +
+'<br>When the droid is created, it fuses with the other items in the player\'s inventory, gaining the benefits ' +
+'of those items. The droid is also granted special benefits dependent on the class of the hero who constructed it. ' +
+'When an Assault Droid dies (including the enemy droids), it leaves the parts item behind so players can rebuild it ' +
+'(fused items are lost forever).', '', '.gif');
+WriteQData('Objective','Locate assault droid parts and use them.');
+WriteQData('Reward','Player receives the powerful Assault Droid support unit.', true);
+
+WriteBr();
+
+WriteQuest('A.T.M.E.', 'atme', '',
+'Items which display the A.T.M.E. logo are either extremely advanced versions of more common items or something entirely ' +
+'different but very powerful. All A.T.M.E. items are guaranteed to be easy enough for any hero to use regardless ' +
+'of his intelligence. At least one crate containing an A.T.M.E. item will always exist, and sometimes a second crate ' +
+'will exist in another building too.', '', '.gif');
+WriteQData('Objective','Locate and open the A.T.M.E. crates.');
+WriteQData('Reward','Player receives a unique and powerful item with no int. requirement.', true);
+
+WriteBr();
+
+WriteQuest('Design Plans', 'plans', 'obj-plans.png',
+'Occassionally, when opening a metal crate, a player will find a set of Design Plans. Each ' +
+'type of plans describes how to make an upgraded item by combining other common items with a circuit board. Circuit boards ' +
+'can be purchased from the lab assistant or lab locker; which board is needed for each type of plans is unknown and different each game.', '', '.gif');
+WriteQData('Objective','Combine the items indicated by the design plans.');
+WriteQData('Reward','Player receives an upgraded item.', true);
+
+</script>
+
+
+<br>
+</body>
+</html>

@@ -156,7 +156,7 @@ function WriteMechsMenu() {
   // document.writeln('<a href=unitinfo-tech.htm>CPU</a> | ');
   document.writeln('<a href=unitinfo-hvyord.htm>MINI&nbsp;DROID</a> | ');
   // document.writeln('<a href=unitinfo-mini2.htm>MINI&nbsp;DROID&nbsp;MKII</a> | ');
-  document.writeln('<a href=unitinfo-mav.htm>ROBODOG</a> | ');
+  document.writeln('<a href=unitinfo-mav.htm>ROBODOG</a>');
   // document.writeln('<a href=unitinfo-robopet.htm>ROBO&nbspPET</a> | ');
   // document.writeln('<a href=unitinfo-repairdroid.htm>REPAIR&nbsp;DROID</a>');
   document.writeln('</font>&nbsp;</center>');
@@ -220,6 +220,16 @@ function WriteSummonedMenu(Type) {
   // if(Type == 'CLONE') {
   //   document.writeln('<a href=unitinfo-umbclone.htm>REPLICATED&nbsp;CLONE</a>');
   // }
+  document.writeln('</font>&nbsp;</center>');
+  document.writeln('');
+}
+
+//menu for maps' objectives links
+function WriteMapsMenu() {
+  document.writeln('<center><font size=-1 color=ffe888>');
+  document.writeln('<a href=objectives-defense.htm>DEFENSE</a> | ');
+  document.writeln('<a href=objectives-city.htm>CITY</a> | ');
+  document.writeln('<a href=objectives-hive.htm>HIVE</a>');
   document.writeln('</font>&nbsp;</center>');
   document.writeln('');
 }
@@ -1320,4 +1330,27 @@ function strpage() {
 	var strUrl=window.location.href;
 	var strPage="swat/cn" + strUrl.substr(24,100);
 	return strPage;
+}
+
+function WriteQuest(QuestName, QuestCode, QuestImage, QuestDescription, QuestSS, QuestSStype) {
+  document.writeln('<table cellspacing=0 cellpadding=0 border=0 bgcolor=202020 width=100%><tr valign=top>');
+  document.writeln('<td width=4>&nbsp;</td>');
+  document.writeln('<td align=right width=32>');
+  if (QuestImage != '') { document.writeln('<img src=pics/'+QuestImage+' height=32 width=32>'); }
+  document.writeln('</td>');
+  document.writeln('<td width=4>&nbsp;</td>');
+  document.writeln('<td align=left>');
+  if ((QuestSS != null) && (QuestSS != '')) {
+    document.writeln('<table cellpadding=1 cellspacing=4 border=0 align=right><tr><td bgcolor=ffe888><a href=pics/obj-'+QuestSS+'ss.jpg target=_blank><img src=pics/obj-'+QuestSS+QuestSStype+' width=75 height=75 border=0></a></td></tr></table>');
+  }
+  document.writeln('<font face=Arial><a name='+QuestCode+'><b>'+QuestName+'</a></b><br>' + QuestDescription);
+  document.writeln('</font></td></tr><tr height=5><td></td></tr></table>');
+  document.writeln('<table cellspacing=2 cellpadding=4 border=0 width=100%>');
+}
+function WriteQData(DataName, Description, Done) {
+  document.writeln('<tr align=center valign=top bgcolor=202020>');
+  document.writeln('<td align=right width=90><font size=-1>' + DataName + '</font></td>');
+  document.writeln('<td align=left><font size=-1 face=Arial color=ffe888>' + Description + '</font></td>');
+  document.writeln('</tr>');
+  if (Done) { document.writeln('</table>'); }
 }

@@ -1,0 +1,200 @@
+<html>
+<head>
+<title>SWAT: Aftermath, Hive</title>
+
+<script language="javascript" src="swat.js">
+</script>
+
+</head>
+<body bgcolor=000000 text=FFFFFF link=99E362 vlink=69B926 alink=00FF00>
+
+<script>
+WriteTopMenu('',true);
+WriteMapsMenu();
+WriteBr();
+</script>
+
+<font size=+1 color=ffcc00><b>Hive Objectives</b></font>
+<br>
+The game begins with each player voting for one of three core difficulty levels: Normal, Hard, or Insane.
+If all players have unlocked at least one rank 11 build, they may vote for the challenge mode, Nightmare.
+If all players have unlocked at least one rank 12 build, they may vote for Extinction.
+Difficulty level scales numerous aspects of the game and determines the requirements of the primary objectives.
+<br><br>
+<table cellpadding=0 cellspacing=0 border=0 align=right><tr valign=top align=left><td width=8>&nbsp;</td><td width=1><script>
+WriteSkillBegin();
+WriteHeader('Difficulty','Reactors&nbsp;Fixed','Rad.&nbsp;Count','Civs&nbsp;Rescued');
+WriteData('Normal',    '2+', '25-',  '&nbsp;&nbsp;6+');
+WriteData('Hard',      '3+', '20-', '12+');
+WriteData('Insane',    '3+', '15-', '20+');
+WriteData('"perfect"', '6&nbsp;&nbsp;',   '0',  '32+');
+WriteSkillEnd(true);
+</script></td></tr></table>
+In order to win the game, players must successfully complete the primary objectives (in any order) and then defeat a final boss, Nemesis, with at least one
+player's main hero alive. The game ends in defeat if the last surviving main hero dies, even if other support units are
+still alive. Victorious games award much more <script>InfoLink('rank','readmeafterrank.html');</script> and
+<script>InfoLink('renown','readmeafterrenown.html');</script> experience
+and unlock rank caps for heroes who hadn't yet beaten the played difficulty level. Completing mini-quests
+is not necessary to win, but the rewards for doing so may make victory easier to achieve.
+<br><br>
+Rank 11 is unlocked when a hero has beaten Insane perfectly. To do so requires winning Insane difficulty
+within 60 minutes with two of the three primary objectives over-achieved and the Hazmat mini-quest completed. A hero
+advances to Rank 12 when he beats Nightmare mode. To do so requires winning with all three primary objectives
+over-achieved.
+<br><br>
+The hardest difficulty level, Extinction, requires all players to load a Rank 12 build and there must be at least two players.
+Beating it requires winning with all three primary objectives over-achieved and the
+Hazmat and Red Rads mini-quests completed.
+<br><br>
+<font size=-1><i>Survival can be selected instead of voting for a core difficulty level. This bonus mode
+is included for players who simply want to kill stuff. Heroes can earn rank/renown experience in Survival but cannot
+unlock rank caps. There are no primary objectives in this mode except to stay alive until dawn of Day 3 (44 minutes).</i></font>
+
+<br><br>
+<font color=ffcc00><b>Primary Objectives</b></font>
+
+<script>
+WriteQuest('Restore Power', 'tors', 'ability-restorepower.png',
+'Located in random buildings in Hive are six broken power plant reactors. They are marked on the player\'s ' +
+'minimap with light blue dots. On Normal and Hard difficulties, all six reactors are initially revealed; on ' +
+'Insane difficulty, only three reactors\' locations are initially known. When a player\'s main hero, cadet, or robodog enters a ' +
+'reactor\'s building, he will discover its condition (<i>damaged</i>, <i>badly damaged</i>, or <i>severely ' +
+'damaged</i>). In order to fix a reactor, a unit with energy must stand next to it. The reactor will automatically ' +
+'beam energy continuously off of that unit until the reactor is filled or the unit runs out of energy or out of ' +
+'range. Broken reactors are constantly losing energy - the more damaged the reactor, the faster energy is lost - ' +
+'so it usually takes multiple units (or items like batteries) to fill them. Any unsold conduits on the map increase the energy drain of all reactors.', '', '.gif');
+WriteQData('Objective','Find and fill the reactors\' energy.');
+WriteQData('Victory','Fixing 2 reactors is required on Normal difficulty; rewards for fixing three reactors are applied once two are fixed on Normal.<br>Fixing 3 reactors is required on Hard and Insane difficulties.<br>Fixing 6 reactors is required to over-achieve this objective.');
+WriteQData('Reward','Fixing a reactor awards credits which are divided amongst all players.');
+WriteQData('',      'Fixing 2 reactors restores partial power to the city. This enables the use of Automated Black Markets where players can buy and sell items. It also allows Televacs inside shelters to slowly accumulate energy.');
+WriteQData('',      'Fixing 3 reactors restores full power to the city. This enables use of the city-wide Radiation Scanner in the laboratory, permanent sight inside shelters, and protection from radiation damage for units inside shelters. It also grants permanent sight on all new, non-cloaked bosses, except on Extinction.');
+WriteQData('',      'Fixing 3 reactors causes a power surge to restore a large amount of energy to a Televac. Fixing 4, 5, and 6 reactors each cause another power surge.');
+WriteQData('',      'Fixing 6 reactors initiates periodic power surges for the duration of the game.', true);
+WriteBr();
+
+WriteQuest('Reduce Radiation', 'rads', 'ability-rads.png',
+'Scattered randomly throughout the city are numerous radiation fragments. As long as the number of rads is greater than the '+
+'safe level (or the nuclear fallout indicator is not clear), more rad. fragments will continue to spawn. And the more rads ' +
+'there are, the faster they spawn. Rad. Count is represented by the number of fragments over the safe level in the top-right ' +
+'corner of the screen. The numbers are red until the count is reduced to the safe level, then the numbers turn white.<br>' +
+'Radiation is grouped into seven brackets of twenty radiation fragments: 0, 1-19, 20-39, 40-59, 60-79, 80-99, and 100+. ' +
+'Certain factors can shift the non-zero brackets up or down. Radiation passively benefits monsters and hurts players\' ' +
+'units as well as affecting some other aspects of the game; the current bracket determines the level of those effects.', '', '.gif');
+WriteQData('Objective','Find and destroy radiation fragments.');
+WriteQData('Victory','Reducing the rad. count to 25 is required on Normal difficulty.<br>Reducing the rad. count to 20 is required on Hard difficulty.<br>Reducing the rad. count to 15 is required on Insane difficulty.<br>Reducing the rad. count to 0 is required to over-achieve this objective.');
+WriteQData('Reward','Lowering the radiation level makes it easier to survive and complete other objectives.', true);
+
+WriteBr();
+
+WriteQuest('Rescue Civilians', 'civs', 'ability-civs.png',
+'The zombies which plague Hive are actually civilians which were infected by a virus ' +
+'and mutated by radiation. A short while into the game, the scientist will finish developing an antidote and make it ' +
+'available for free in the laboratory. Players can use this antidote to inoculate zombies. Sometimes a zombie ' +
+'will be only partially inoculated; players must use more antidotes on these to finish the process. Fully inoculated zombies ' +
+'will eventually be cured of the virus and revert to their human form. Players must then lead these civs to a rescue platform with a ' +
+'powered Televac or an APC inside. Civs will automatically board an APC once they are near it. Televacs with at least 250 energy will '+
+'instantly whisk a civilian away to safety. There are four platform in Hive, always in the same locations,  marked on the player\'s ' +
+'minimap with green dots. If power hasn\'t been restored, Televacs won\'t be operational, but players can request an APC from the lab. ' +
+'The shelter an APC travels to when entering the city is random. APCs wait on platforms for up to two and a half minutes (or until ' +
+'filled with 10 civs) before leaving. Once an APC exits the city, any civs it was carrying are considered successfully evacuated.', '', '.gif');
+WriteQData('Objective','Inoculate zombies then escort the cured civilians to Televacs or APCs for evacuation.');
+WriteQData('Victory','Rescuing 6 civs is required on Normal difficulty.<br>Rescuing 12 civs is required on Hard difficulty.<br>Rescuing 20 civs is required on Insane difficulty.<br>Rescuing 32 civs is required to over-achieve this objective.');
+WriteQData('Reward','Rescuing a civilian awards credits which are divided amongst all players.');
+WriteQData('',      'Rescuing civilans increases each player\'s hazard pay and chance to be awarded an additional valor point each level-up.');
+WriteQData('',      'Rescuing enough civs to complete the objective initiates the government\'s Ion Cannon which periodically destroys radiation fragments. Rescuing additional civs increases the frequency of Ion Strikes against rad. fragments.', true);
+
+WriteBr();
+
+WriteQuest('Nemesis', 'nemesis', 'nemesis.png',
+'This boss encounter is the toughest that Bravo team ' +
+'will have to face and requires proper preparation. Nemesis is equipped with a Gatling Laser and uses a variety of skills, ' +
+'including the ability to request backup soldiers. Nemesis is sent against the heroes on each difficulty' +
+', after all of the other objectives have been completed. He gains new abilities in harder difficulties.', '', '.gif');
+WriteQData('Objective','Defeat the special Nemesis boss.');
+WriteQData('Reward','Required to win.', true);
+</script>
+
+<br><br>
+<font color=ffcc00><b>Mini-Quests</b></font>
+
+<script>
+
+WriteQuest('Assault Droid <a href=unitinfo-lad.htm#lad><img src=info.gif border=0 alt=info title=info width=11 height=11></a> ' + info_STIT_LAD, 'lad', 'obj-lad.png',
+'The assault droid is a powerful support unit which can be crucial to players\' survival. It is created when a hero ' +
+'uses the assault droid parts item. One of these items is always located in the laboratory. Sometimes one of these items ' +
+'will have spawned in a random building, and once per game, an enemy Assault Droid will be sent to attack the ' +
+'players.<br>When the droid is created, it fuses with the other items in the player\'s inventory, gaining the benefits ' +
+'of those items. The droid is also granted special benefits dependent on the class of the hero who constructed it. ' +
+'When an Assault Droid dies (including the enemy droid), it leaves the parts item behind so players can rebuild it ' +
+'(fused items are lost forever).', '', '.gif');
+WriteQData('Objective','Locate assault droid parts and use them.');
+WriteQData('Reward','Player receives the powerful Assault Droid support unit.', true);
+
+WriteBr();
+
+WriteQuest('A.T.M.E.', 'atme', '',
+'Items which display the A.T.M.E. logo are either extremely advanced versions of more common items or something entirely ' +
+'different but very powerful. All A.T.M.E. items are guaranteed to be easy enough for any hero to use regardless ' +
+'of his intelligence. At least one crate containing an A.T.M.E. item will always exist, and sometimes a second crate ' +
+'will exist in another building too.', '', '.gif');
+WriteQData('Objective','Locate and open the A.T.M.E. crates.');
+WriteQData('Reward','Player receives a unique and powerful item with no int. requirement.', true);
+
+WriteBr();
+
+WriteQuest('Design Plans', 'plans', 'obj-plans.png',
+'Occassionally, when opening a metal crate, a player will find a set of Design Plans. Each ' +
+'type of plans describes how to make an upgraded item by combining other common items with a circuit board. Circuit boards ' +
+'can be purchased from the lab assistant or lab locker; which board is needed for each type of plans is unknown and different each game.', '', '.gif');
+WriteQData('Objective','Combine the items indicated by the design plans.');
+WriteQData('Reward','Player receives an upgraded item.', true);
+
+WriteBr();
+
+WriteQuest('ExoSuit', 'exosuit', 'obj-exo.png',
+'The ExoSuit is a powerful item consisting of six parts which are located in random buildings. Each part (except the ' +
+'activator) provides a minor bonus on its own, but the combined effect is much better. This mini-quest is not always ' +
+'available, but if one part spawns, all parts will have spawned.','','.png');
+WriteQData('Objective','Locate and combine the six exosuit pieces.');
+WriteQData('Reward','Player receives the ExoSuit item.', true);
+
+WriteBr();
+
+WriteQuest('Godzilla', 'godzilla', 'godzilla.png',
+'Every time a boss spawns, there is a very rare chance that it will be Godzilla. This boss can only spawn once per game, '+
+'and his ranged lightning attack and energy disruption field can make defeating him a challenging task.','','.png');
+WriteQData('Objective','Kill the special Godzilla boss.');
+WriteQData('Reward','Players each receive +1 skill point.', true);
+
+WriteBr();
+
+WriteQuest('Conduits', 'conduits', 'ability-conduits.png',
+'Sometimes broken conduits will have spawned in the HQ. In Nightmare and Extinction difficulties, they will also spawn in a random room(s). Each of these conduits ' +
+'increases the energy degeneration of all unpowered reactors. The only way to rid these conduits ' +
+'is for a player\'s main hero to carry them to a Reactor. Unpowered reactors will permanently gain some energy, reducing the amount ' +
+'necessary to repair them. Powered reactors will gain a permanent passive aura that increases all allied units\' energy regen in a large radius ' +
+'around the reactor. Conduits must be carried one at a time and disrupt the energy regen and cloaking of the carrier.', '', '.gif');
+WriteQData('Objective','Locate all conduits and bring them to a Reactor.');
+WriteQData('Reward','Reduces the energy degernation of all unpowered reactors');
+WriteQData('',      'If brought to an unpowered reactor, reduces energy required to power it.');
+WriteQData('',      'If brought to a powered reactor, adds a large +eps aura to the reactor.');
+WriteQData('',      'Required to win Insane difficulty perfectly.');
+WriteQData('',      'Required to win Extinction difficulty.', true);
+
+WriteBr();
+
+WriteQuest('Red Rads', 'redrads', '',
+'In Extinction difficulty, several red radiation fragments will spawn. Each of these red rads negatively shifts the ' +
+'radiation bracket and increases the rate at which rad. fragments spawn. Once destroyed, these red rads burst into many radlet fragments ' +
+'that disipate much slower than normal.', '','.png');
+WriteQData('Objective','Destroy all red radiation fragments.');
+WriteQData('Reward','Reducing the radiation penalty makes it easier to survive and complete other objectives.');
+WriteQData('',      'Antidotes are more effective on partially inoculated zombies.');
+WriteQData('',      'Required to win Extinction difficulty.', true);
+
+</script>
+
+
+<br>
+</body>
+</html>

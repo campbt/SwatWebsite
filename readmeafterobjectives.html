@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>SWAT: Aftermath, Objectives</title>
+<script language="javascript" src="swat.js"></script>
+<script language="javascript">
+function IconStr(Code, ImageName) {
+  if (Code != null && ImageName != null) {
+    return '<a href=objectives-'+Code +'.htm><img src=pics/' + ImageName +'.png width=31 height=31 border=0></a><br><img src=pics/empty.gif width=1 height=1>';
+  } else {
+    return '<img src=pics/empty.gif width=31 height=31>';
+  }
+}
+function DescStr(Code, Name, Subtitle, Description) {
+  if (Code != null) {
+    return '<a href=objectives-'+Code +'.htm><b>'+Name +'</b></a><br><font color=ffe888 face=Arial size=-1>'+Subtitle+'</font><br>'+Description;
+  } else {
+    return '';
+  }
+}
+function WriteMapSummary(Name, Code, Abbrv, Subtitle, Description) {
+  WriteOldRow(IconStr(Code, Abbrv), DescStr(Code, Name, Subtitle, Description));
+}
+</script>
+</head>
+<body bgcolor=000000 text=FFFFFF link=99E362 vlink=69B926 alink=00FF00>
+
+<script>
+WriteTopMenu('',true);
+WriteMapsMenu();
+WriteTitle('Maps and Objectives');
+WriteOldHeader();
+WriteMapSummary('Defense','defense',null,'Survive waves of undead','While investigating reports of suspicious activity at an old research lab, Bravo team is descended upon by an enormous horde of undead. The team must bunker up and surive!');
+WriteMapSummary('City','city',null,'Restore power<br>Rescue civilians<br>Clean up radiation','The city has become infected with a virus dispersed by some unknown corporation. Bravo team has taken on the daunting task of saving the city.');
+WriteMapSummary('Hive','hive',null,'Restore power<br>Rescue civilians<br>Clean up radiation','With the city downtown under control, Bravo team takes the fight to the corporation\'s headquarters, the Hive.');
+WriteOldFooter();
+</script>
+
+<br>
+
+</body>
+</html>
