@@ -105,7 +105,7 @@ function WriteItem(aIcon, aName, aSource, aDesc, aLevel, aValue, aBuyable, aSell
     sDesc = sDesc + sItemNC;
   }
   sDesc = sDesc + '</font><br>' + aDesc;
-  aDesc = '<td align=right>'+ConfigIconStr(aIcon)+'</td><td width=4>&nbsp;</td><td width=' + iItemColSize + '>' + ConfigDescStr(aIcon, aName, aSource, sDesc) + '</td>';
+  aDesc = '<td align=right>'+ConfigIconItem(aIcon)+'</td><td width=4>&nbsp;</td><td width=' + iItemColSize + '>' + ConfigDescStr(aIcon, aName, aSource, sDesc) + '</td>';
   iItem = iItem + 1;
   if (iItem == iItemCols) {
     WriteOldRow('', sItemRow + aDesc + '</tr></table>');
@@ -114,6 +114,13 @@ function WriteItem(aIcon, aName, aSource, aDesc, aLevel, aValue, aBuyable, aSell
     sItemRow = sItemRow + aDesc;
   } else {
     sItemRow = '<table cellpadding=0 cellspacing=0 border=0 width=100%><tr valign=top>' + aDesc;
+  }
+}
+function ConfigIconItem(Code) {
+  if(Code != null) {
+    return '<img src=pics/'+Code +'.png width=64 height=32>';
+  } else {
+    return '<img src=pics/empty.gif width=64 height=32>';
   }
 }
 function WriteItems() {
@@ -142,7 +149,6 @@ var sNote = '&nbsp;<a href=#sourcenote alt="More..." title="More..."><font size=
 
 <script>
 WriteTopMenu('',true);
-WriteItemsMenu();
 
 WriteBr();
 WriteTitle('Items');
@@ -150,7 +156,7 @@ WriteTitle('Items');
 
 //          ICON, NAME, SOURC, DESCRIPTINO, LEVEL, VALUE, BUYABLE, SELLABLE, FUSABLE, NON_CONSUMABLE
 
-  WriteItem('exo', 'Activator', sRoom, InfoLinkS('ExoSuit','readmeafterobjectives.html#exosuit')+' piece which assembles and activates all of the pieces into one.', 0, 400, false, true);
+  WriteItem('activator', 'Activator', sRoom, InfoLinkS('ExoSuit','readmeafterobjectives.html#exosuit')+' piece which assembles and activates all of the pieces into one.', 0, 400, false, true);
   WriteItem('aegis', 'Aegis Vest', sATME, 'Provides an additional 25 points of armor and helps prevent injuries. 20% chance to fully absorb damage.', 0, 4000, false, true, true, true);
   WriteItem('ammo', 'Ammo Upgrade', sRoom+sp+sWood+sp+sUmb, 'Load this manual into your weapon systems to upgrade your ammunition.', 0, 200, false, true, true);
   WriteItem('antidote', 'Antidote', sAsst, 'Special crossbow shoots a bolt which injects the '+InfoLinkS('antivirus','readmeafterobjectives.html#civs')+' into the target. If successful, recipient will pacify & follow you. Roughly a minute later, the pacified zombie will be cured.', 0, 0, true);
@@ -167,17 +173,16 @@ WriteTitle('Items');
   WriteItem('combat', 'Combat Vest', sMetal, 'Provides an additional 6 points of armor and helps prevent injuries. 4% chance to absorb minor blows.', 3, 500, false, true, true, true);
   WriteItem('combat2', 'Combat Vest MkII', sMetal, 'Provides an additional 12 points of armor and helps prevent injuries. 7% chance to absorb minor blows.', 5, 500, false, true, true, true);
   WriteItem('combat3', 'Combat Vest MkIII', sMetal, 'Provides an additional 25 points of armor and helps prevent injuries. 10% chance to absorb minor blows.', 8, 500, false, true, true, true);
+  WriteItem('conduit', 'Conduit', sRoom, 'Only found in the Hive map, Conduits spawn in various rooms and the Umbrella HQ. Each one increases the degeneration rate of all reactors. Selling them at an ABM removes this effect. All Conduits must be removed in Extinction. While carrying them, officers have reduced energy regeneration and can not cloak. They can not be teleported or recalled.', -1, 1000, false, true, false, false);
   WriteItem('cyber', 'Cyber-Net', sATME, 'Increases intelligence by 20 and increases all experience gained by 10%. Click to permanently integrate.', 0, 4000, false, true);
-  WriteItem('remote', 'Droid Remote', sSci, 'Creates or deconstructs a '+InfoLinkS('Mini-Droid MkII','unitinfo-mini2.htm#droid')+'. Droid must stay within range of the remote to remain active. Powering the remote decreases energy regeneration by 16%. Uses 600 energy to create droid.', 7, 1500, true, true, true, true);
   WriteItem('drugrep', 'Drug Replicator', sATME, 'Can consume energy to create one of these drug coins: Buffout, Speed, Mentat. Increases energy regeneration by 33% and maximum energy capacity by 500. Uses 50 energy to create Buffout, 160 energy to create Speed, and 250 energy to create a Mentat. Can also be used to store regular drugs.', 0, 4000, false, true);
   WriteItem('efield', 'Energy Field', sATME, 'Increases energy regeneration of this unit and nearby allies by 33%.', 0, 4000, false, true, true, true);
   WriteItem('exo', 'ExoSuit', 'Activator&nbsp;Item', 'Increases agility by 12, armor by 3, vitality by 25, and movement speed. Prevents the hero from being injured.', 4, 3000, false, true, true, true);
   WriteItem('flare', 'Flare Gun', sAsst+sp+sWood, 'Launches a flare to reveal the targeted area for 6 seconds.', 0, 300, true, true, true);
   WriteItem('ffneut', 'Force Field Neutralizer', sDevice, 'This device was created by the scientist to help you defeat Nemesis. It uses huge bursts of energy to weaken the target\'s force field. Uses up to 500 of the user\'s energy in addition to draining any power plants in the vicinity.', -1, 0, false, false, false, false);
   WriteItem('freeze', 'Freeze Ray', sSci, 'Freezes target permanently. Drains its health, prevents reanimation, and causes a chill aura. Bosses and power armored units are only momentarily chilled. Uses 250 energy per shot. Higher intelligence allows this item to be used for as little as 100 energy per shot.', 4, 1500, true, true, true, true);
-  WriteItem('fremnants', 'Fungal Remnants', sFungal, 'The radiation modified the genetic code of this fungus, causing it to grow rapidly and interfere with nanite\-based systems. The last living remnants of the exterminated fungal colony are captured here.', -1, 3000, false, true, false, false);
   WriteItem('grenade', 'Grenade Launcher', sAsst, 'Launches a plasma grenade, dealing about 380 damage to all units in radius around target. Each shot requires 150 energy and 3 seconds to reload.', 2, 1000, true, true, true, true);
-  WriteItem('hazmat', 'Hazmat', sRoom, 'Sometimes barrels of hazardous materials will have spawned in the graveyard. In Nightmare and Extinction, they will also spawn in a random room. Each of these barrels negatively shifts the radiation bracket and increases the rate at which rad. fragments spawn. Hazmats must be carried one at a time and continuously drain the health of the carrier.', -1, 1000, false, true, false, false);
+  WriteItem('hazmat', 'Hazmat', sRoom, 'Sometimes barrels of hazardous materials will have spawned in the graveyard. In Nightmare and Extinction, they will also spawn in a random room. Each of these barrels negatively shifts the radiation bracket and increases the rate at which rad. fragments spawn. Hazmats must be carried one at a time and continuously drain the health of the carrier. They can not be teleported or recalled.', -1, 1000, false, true, false, false);
   WriteItem('kevlar', 'Kevlar Vest', sMetal, 'Provides an additional 2 points of armor and helps prevent injuries. 2% chance to absorb minor blows.', 0, 400, false, true, true, true);
   WriteItem('magnum', 'Magnum', sChro, 'ChronoTech Corporation\'s finest achievement in ammunition enhancement, this device greatly increases damage potential without affecting weapon compatibility.<br><b>Use:</b> Ammo level and maximum ammo level increased by 1.<br><b>Passive:</b> Increases damage by 85%.', 9, 0);
   WriteItem('masamune', 'Masamune', sChro, 'Once thought lost forever, ChonoTech historians first located and then found a way to draw power from the spirit forged into this ancient sword of legendary might.<br><b>Use:</b> Learn how to better wield your gun. Effective skill level increased by 1.<br><b>Passive:</b> The warrior spirit flows through you, increasing your damage by 40%, energy regeneration by 99%, and vitality by 125.', 9, 0);
@@ -200,7 +205,7 @@ WriteTitle('Items');
   WriteItem('shieldcap', 'Shield Capacitor', sSci, 'Uses advanced technology to upgrade your '+InfoLinkS('nanites','readmeafterarmor.html#large')+' generator and energy storage but decreases movement speed.', 5, 1500, true, true, true, true);
   WriteItem('speed', 'Speed', sWood+sp+sABM+sNote, 'Increases agility by 10. Lasts 120 seconds.', 0, 30, true, false, true);
   WriteItem('solar', 'Solar Battery', sATME, 'Restores 500 energy when used. Recharges during the daytime. Automatically used if energy drops below 250.', 0, 0);
-  WriteItem('stim', 'Stim Pack', sWood+sp+sABM+sNote, 'Increases attack rate by 75% and movement speed by 15%. Lasts 20 seconds. Uses 600 energy to refill 3 charges.', 5, 400, true, true);
+  WriteItem('stim', 'Stim Pack', sWood+sp+sABM, 'Increases attack rate by 75% and movement speed by 15%. Lasts 20 seconds. Uses 600 energy to refill 3 charges.', 5, 400, true, true);
   WriteItem('cell', 'Storage Cell', sMetal+sp+sABM, 'Increases maximum energy capacity by 250.', 1, 500, true, true, true, true);
   WriteItem('duo', 'Storage Duo-Cell', sMetal, 'Increases maximum energy capactiy by 500.', 4, 500, false, true, true, true);
   WriteItem('storgen', 'Storage Generator', sPlan, 'Increases maximum energy capacity by 250 and energy regeneration by 33%.', 4, 1000, false, true, true, true);
@@ -210,7 +215,7 @@ WriteTitle('Items');
   WriteItem('distortion', 'Temporal Distortion Field', sChro, 'ChonoTech\'s very name is legitimized by this portable and stable device for manipulating time around the bearer. Power armored units & '+InfoLinkS('returners','classinfo-watchman.htm#paradox')+' are shielded from the effect.<br><b>Use:</b> Movement and attack speed increased by 5% via networked temporal armor upgrade.<br><b>Passive:</b> Slows movement and attack speed of nearby units by 25%.', 9, 0);
   WriteItem('tesla', 'Tesla Vest', sPlan, 'Increases energy regeneration by 66%. Provides an additional 6 points of armor and helps prevent injuries. 4% chance to absorb minor blows.', 6, 1000, false, true, true, true);
   WriteItem('tesla2', 'Tesla Vest MkII', sPlan, 'Increases energy regeneration by 99%. Provides an additional 12 points of armor and helps prevent injuries. 7% chance to absorb minor blows.', 8, 1000, false, true, true, true);
-  WriteItem('titan', 'Titan Vest', sChro, 'ChronoTech defense experts believe they created the ultimate in protection with this vest which emits an immense defense matrix around the wearer and adjacent comrades.<br><b>Use:</b> Implanted subdermal plating increases armor by 4.<br><b>Passive:</b> Increases maximum energy capacity by 750. Provides an additional 25 points of armor and helps prevent injuries. 20% chance to fully absorb damage.', 9, 0);
+  WriteItem('titan', 'Titan Vest', sChro, 'ChronoTech defense experts believe they created the ultimate in protection with this vest which emits an immense defense matrix around the wearer and adjacent comrades.<br><b>Use:</b> Implanted subdermal plating increases armor by 4.<br><b>Passive:</b> Increases maximum energy capacity by 500. Provides an additional 25 points of armor and upgrades the wearer\'s nanites generator.', 9, 0);
   WriteItem('stim', 'Ultra Stim Pack', sWood, 'Increases attack rate by 225% and movement speed by 15%. Lasts 20 seconds. Uses 1200 energy to refill 3 charges.', 8, 400, false, true);
   WriteItem('zeal', 'Zeal-Mag.', sATME, 'Increases attack rate by 65% and damage by 10%.', 0, 4000, false, true, true, true);
   WriteItems();
@@ -223,7 +228,6 @@ The bronze text under an item's name indicates where it can be acquired from. Th
 <hr size=1>
 <br><a name=sourcenote><font color=ffe888>**</font></a> Temporal Avatar, bandages, drugs, and revives can be found on the ground in the initial bunker
 <br>&nbsp;&nbsp;&nbsp;&nbsp;Drugs and revives can be obtained from the Watchman's <script>InfoLink('Pharmacist','classinfo-watchman.htm#paradox_pharm');</script>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;Stims, batteries, bandages, and drugs can be obtained from a <script>InfoLink('Pack Rat','readmeaftertraits.html');</script> hero's pet rat
 <br><br>
 <a name=gadget><font color=ffe888 size=-1><sup>NC</sup></font></a> Assault <script>InfoLink('droids','unitinfo-lad.htm');</script> drop non-consumable fused items when built by a <script>InfoLink('Gadgeteer','readmeaftertraits.html');</script>
 
