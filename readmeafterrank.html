@@ -13,61 +13,45 @@ WriteBr();
 
 <font size=+1 color=ffcc00><b>Rank</b> <script>document.writeln(info_STIT_Ranks)</script></font>
 <br>
-When the game ends, you will receive a sixteen-digit numeric rank code. This code is only valid 
-for <b>your</b> account name. You can enter your code in a new game instead of creating a hero, 
-restoring your previous hero configuration selections. 
-<script>InfoLink('Record your new code','http://night.org/swat2/playerdb/index.php?p=new');</script> 
-at the end of each game in order to accumulate more rank experience for your hero.
+When the game ends, your performance can increase your officer's Rank and Renown experience.
+<br><br>
+When creating a new character, that character's initial rank will be set to the minimum unlocked
+rank for all the attributes selected.
+<br>
+For example, if you made a Rank 4 Skilled Medic and a Rank 3
+Gifted Tactician (and all other attributes being equal), you could make a Rank 3 Gifted Medic because you
+already unlocked Medic to Rank 4 and Gifted to Rank 3
+<br><br>
+Certain ranks are restricted until you have completed a specific difficulty. Once you have
+completed that difficulty, the unlocked ranks are available for every hero, not just the one
+that completed the difficulty.
 <br><br><font color=ffe888>
-Heroes must achieve the rank of National Hero before they can participate in a Nightmare game 
-which is where the real challenge begins. Only Legendary Heroes can attempt Extinction, the 
+Heroes must achieve the rank of National Hero before they can participate in a Nightmare game
+which is where the real challenge begins. Only Legendary Heroes can attempt Extinction, the
 experts' difficulty level.</font>
 <br><br>
-The following table lists the hero bonuses associated with each rank. Additionally, the Frag. 
-Locator ability requires Officer II and is improved at higher ranks, and each class has a unique 
-bonus which improves with rank. Cargo Bots' armor is determined by their owner's rank. The max 
-level of the <script>InfoLink('Assault Droid','unitinfo-lad.htm')</script> is determined by the combined ranks of all heroes in the game.
+The following table lists the hero bonuses associated with each rank. Each class has a unique
+bonus which improves with rank.
+The max level of the <script>InfoLink('Assault Droid','unitinfo-lad.htm')</script> is determined
+by the combined ranks of all heroes in the game.
+<br>
 <br>
 <script>
 WriteSkillBegin('75%');
-WriteHeader('Rank','Description','Agility','Skill&nbsp;Pts.','Other','Req.&nbsp;Diff.');
-WriteData('1', RankName(1,1,'Officer&nbsp;I'),       '+0','+0','--','--');
-WriteData('2', RankName(2,1,'Officer&nbsp;II'),      '+1','+0','Pill&nbsp;Pouch','--');
-WriteData('3', RankName(3,1,'Officer&nbsp;III'),     '+2','+0','--','--');
-WriteData('4', RankName(4,4,'Detective'),            '+3','+1','<i>-revive</i>','Normal');
-WriteData('5', RankName(5,4,'Sergeant'),             '+4','+1','--','Normal');
-WriteData('6', RankName(6,4,'Lieutenant'),           '+5','+1','Lab.&nbsp;Locker','Normal');
-WriteData('7', RankName(7,7,'Captain'),              '+6','+2','<i>-perfect</i>','Hard');
-WriteData('8', RankName(8,7,'Commander'),            '+7','+2','--','Hard');
-WriteData('9', RankName(9,7,'Deputy&nbsp;Chief'),    '+8','+2','Talent','Hard');
-WriteData('10',RankName(10,10,'Chief'),              '+9','+3','--','Insane');
-WriteData('11',RankName(11,10,'National&nbsp;Hero'), '+10','+4','--','Perf.&nbsp;Insane');
-WriteData('12',RankName(12,11,'Legendary&nbsp;Hero'),'+10','+4','+1&nbsp;Nanites','Nightmare');
+WriteHeader('Rank','Description','Agility','Skill&nbsp;Pts.','Req.&nbsp;Diff.');
+WriteData('1', RankName(1,1,'Officer&nbsp;I'),       '+0','+0','--');
+WriteData('2', RankName(2,1,'Officer&nbsp;II'),      '+1','+0','--');
+WriteData('3', RankName(3,1,'Officer&nbsp;III'),     '+2','+0','--');
+WriteData('4', RankName(4,4,'Detective'),            '+3','+1','Normal');
+WriteData('5', RankName(5,4,'Sergeant'),             '+4','+1','Normal');
+WriteData('6', RankName(6,4,'Lieutenant'),           '+5','+1','Normal');
+WriteData('7', RankName(7,7,'Captain'),              '+6','+2','Hard');
+WriteData('8', RankName(8,7,'Commander'),            '+7','+2','Hard');
+WriteData('9', RankName(9,7,'Deputy&nbsp;Chief'),    '+8','+2','Hard');
+WriteData('10',RankName(10,10,'Chief'),              '+9','+3','Insane');
+WriteData('11',RankName(11,10,'National&nbsp;Hero'), '+10','+4','Perf.&nbsp;Insane');
+WriteData('12',RankName(12,11,'Legendary&nbsp;Hero'),'+10','+4<br><small>(+1 nanites)</small>','Nightmare');
 WriteSkillBegin2('24%');
-WriteSkillEnd();
-</script>
-<br>
-<font color=ffcc00><b>Earning Rank Exp.</b></font>
-<br>
-You can earn rank experience whether you're online (battle.net) or offline (local network), and with any number of players in the game. 
-You cannot earn rank experience if you create the game in single-player. But you can solo and earn rank experience if you simply create a Local Network game where you are the only player.
-<br><br>
-<a name=medals><font color=ffcc00 size=+1><b>Medals</b></font></a>
-<br>
-When the game ends, medals will be awarded if the team accomplished certain achievements. No 
-medal will be awarded to more than one hero in a game, and no hero may earn more than one medal 
-in a game. If you receive a medal, be sure to record your new rank code. Medals are primarily a 
-source of prestige; medal bonuses are only activated when attempting Extinction as a team or Nightmare alone.
-<br>
-<script>
-WriteSkillBegin();
-WriteHeader('Medal','Description','Bonus','Min.&nbsp;Rank','Min.&nbsp;Diff.');
-WriteData('REM', MedalName('rem','Recognition&nbsp;for&nbsp;Exceptional&nbsp;Merit'),'Increases personal hazard pay by 40-80.','--','Normal');
-WriteData('LSA', MedalName('lsa','Life&nbsp;Saving&nbsp;Award'),'Gives a 33% chance for +1 valor each level-up.','--','Insane');
-WriteData('COB', MedalName('cob','Commendation&nbsp;Bar'),'Increases energy regeneration by 16%.','--','Insane');
-WriteData('PCC', MedalName('pcc','Police&nbsp;Combat&nbsp;Cross'),'Modifies weapon, increasing its damage.','10','Insane');
-WriteData('MOH', MedalName('moh','Medal&nbsp;of&nbsp;Honor'),'Increases effective nanites level by 1.','12','Nightmare');
-WriteData('KEY', MedalName('key','Key&nbsp;to&nbsp;the&nbsp;City'),'Grants usage of the <i>-color</i> chat command.','12','Extinction');
 WriteSkillEnd();
 </script>
 <br>

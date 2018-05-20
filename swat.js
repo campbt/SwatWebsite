@@ -69,6 +69,7 @@ function WriteTopMenu(base) {
   document.writeln('<a href='+base+'readmeaftermechs.html>MECHS</a> | ');
   document.writeln('<a href='+base+'readmeafteritems.html>ITEMS</a> | ');
   document.writeln('<a href='+base+'readmeafterrank.html>RANK</a> | ');
+  document.writeln('<a href='+base+'readmeafterrenown.html>RENOWN</a> | ');
   // document.writeln('<a href=http://night.org/swat2/playerdb/>RCPD</a> | ');
   document.writeln('<a href='+base+'map.html>MAP</a>');
   document.writeln('</font></center>');
@@ -440,7 +441,7 @@ function WriteSkillEnd(NoSecondBatch) {
 //special function for formatting rank names
 
 function RankName(Level, Icon, Desc) {
-  return '<table cellpadding=0 cellspacing=0 border=0 align=left><tr align=left><td width=16><img src="/forum/images/smiles/icon_rank'+Icon+'.gif" alt="Rank '+Level+'" title="Rank '+Level+'"></td><td><font size=-1 face=Arial color=ffe888>'+Desc+'</font></td></tr></table>';
+  return '<table cellpadding=0 cellspacing=0 border=0 align=left><tr align=left><td width=16><img src="pics/icon_rank'+Icon+'.gif" alt="Rank '+Level+'" title="Rank '+Level+'"></td><td><font size=-1 face=Arial color=ffe888>'+Desc+'</font></td></tr></table>';
 }
 
 function MedalName(Icon, Desc) {
