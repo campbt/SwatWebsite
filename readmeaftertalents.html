@@ -14,26 +14,27 @@ WriteTitle('Talents ');// + info_STIT_Specs);
   //sni med tac psy mav hvy dem bor pyr wat
   WriteConfigSummary('Wiring', 'talent-wiring', 'Extra Energy', 'Increases energy regeneration by 14%.',
                      'Running', 'talent-running', 'Mobility', 'Movement speed is increased by 15.',
-                     'med','sni','tec','tac','psy', 'clo','sni','bor','tac','hvy','dem','mav');
+                     'med','sni','tac','psy',null,null,'sni','bor','tac','hvy','dem','mav');
   WriteConfigSummary('Spotting', 'talent-spotting', 'Team Asset', 'Increases sight range by 266.<br><font size=-1><i>Bonus affects the officer, prowler\'s sensor, pyro\'s firefly, psy\'s clairvoyance, and demo\'s C4.</i></font>',
                      'Toughness', 'talent-toughness', 'Defense', 'Increases health by 40 and armor by 1.',
-                     'wat','bor','psy','pyr','dem', 'clo','hvy','dem','wat','med','pyr', 'clo');
+                     'wat','bor','psy','pyr','dem', null,'hvy','dem','wat','med','pyr', null);
   WriteConfigSummary('Tinkering', 'talent-tinkering', 'Item Usage', 'Intelligence is +3-4 for the purpose of determining item usability.',
                      'Hacking', 'talent-hacking', 'Team Asset', 'Allows you to auction items and confiscate credits from the black market via your Lab. Locker.',
-                     'mav','hvy','pyr','sni','tec','wat','bor','tec','psy','tac','mav','med');
+                     'mav','hvy','pyr','sni','wat',null, 'bor','psy','tac','mav','med', null);
   WriteConfigSummary('Courage', 'talent-courage', 'Team Asset', 'Gives a chance to gain an additional valor point each level-up.');
   WriteOldFooter();
 </script>
 <br>
 <font color=ffcc00><b>Acquiring a Talent</b></font>
 <br>
-Your hero's talent was determined when he was first created, but it remains hidden, 
-and thus provides no bonus, until he attains the <script>InfoLink('rank','readmeafterrank.html');</script> 
-of Deputy Chief. Because you cannot directly select your hero's talent, if you 
-don't discover the talent you hoped for, you will have to create a new hero and rank 
-him up again. Each hero will discover that he has one of the three talents available 
-to his class. Courage is a unique talent that any class can have, but none will ever 
-discover it as their hidden talent; it is only available on 
-<script>InfoLink('generated','http://night.org/swat2/playerdb/index.php?p=gen');</script> heroes.
+Talents are extra customization perks that you may select when creating new officers.
+Unlike Talents and Specializations, each talent can only be used by a subset of the classes,
+with each class getting 3 talents to choose from (with the exception of Courage,
+which all officers can select).
+Talents can be ranked up like other attributes.
+One talent is unlocked for every 75 achievement points earned -
+the talent unlocked is entirely random,
+except Courage will always be unlocked first.
+Talents are unlocked at a rank that is based on your renown level.
 </body>
 </html>

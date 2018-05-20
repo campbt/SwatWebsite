@@ -1269,17 +1269,17 @@ function ConfigIconStr(Code, Abrva, Abrvb, Abrvc, Abrvd, Abrve, Abrvf) {
   if (Code != null) {
     var s = '<img src=pics/'+Code +'.png width=32 height=32>';
     if (Abrva != null) {
-      s = s + '<br><img src=pics/empty.gif width=31 height=1><br><img src="/forum/images/smiles/class-'+Abrva +'.gif">';
+      s = s + '<br><img src=pics/empty.gif width=31 height=1><br><img src="forum/images/smiles/class-'+Abrva +'.gif">';
       if (Abrvb != null) {
-        s = s + '<img src=pics/empty.gif width=1 height=15><img src="/forum/images/smiles/class-'+Abrvb +'.gif">';
+        s = s + '<img src=pics/empty.gif width=1 height=15><img src="forum/images/smiles/class-'+Abrvb +'.gif">';
         if (Abrvc != null) {
-          s = s + '<br><img src=pics/empty.gif width=31 height=1><br><img src="/forum/images/smiles/class-'+Abrvc +'.gif">';
+          s = s + '<br><img src=pics/empty.gif width=31 height=1><br><img src="forum/images/smiles/class-'+Abrvc +'.gif">';
           if (Abrvd != null) {
-            s = s + '<img src=pics/empty.gif width=1 height=15><img src="/forum/images/smiles/class-'+Abrvd +'.gif">';
+            s = s + '<img src=pics/empty.gif width=1 height=15><img src="forum/images/smiles/class-'+Abrvd +'.gif">';
             if (Abrve != null) {
-              s = s + '<br><img src=pics/empty.gif width=31 height=1><br><img src="/forum/images/smiles/class-'+Abrve +'.gif">';
+              s = s + '<br><img src=pics/empty.gif width=31 height=1><br><img src="forum/images/smiles/class-'+Abrve +'.gif">';
               if (Abrvf != null) {
-                s = s + '<img src=pics/empty.gif width=1 height=15><img src="/forum/images/smiles/class-'+Abrvf +'.gif">';
+                s = s + '<img src=pics/empty.gif width=1 height=15><img src="forum/images/smiles/class-'+Abrvf +'.gif">';
               }
             }
           }
