@@ -171,9 +171,7 @@ function WriteWeaponMenu() {
   document.writeln('<a href=#wchain>CHAINGUN</a> | ');
   document.writeln('<a href=#wrocket>ROCKET</a> | ');
   document.writeln('<a href=#wflame>FLAME</a> | ');
-  document.writeln('<a href=#wrifle>LASERS</a> | ');
-  document.writeln('<a href=#wbgloves>BLAST&nbsp;GLOVES</a> | ');
-  document.writeln('<a href=#wpistol>PISTOLS</a> | ');
+  document.writeln('<a href=#wrifle>LASER RIFLE</a> | ');
   document.writeln('<a href=#wbozar>BOZAR</a>');
   document.writeln('</font>&nbsp;</center>');
   document.writeln('');
@@ -1142,7 +1140,7 @@ function WriteSkillFocusLaser(showall) {
     WriteData('7','38%');
     WriteData('8','42%');
     if (showall) {
-    WriteData('9', '-46%');
+    WriteData('9', '46%');
     }
     WriteSkillEnd();
     WriteSkillRightStats();
