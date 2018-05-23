@@ -1,0 +1,1450 @@
+--------------------------------------------------------------------
+1.11.3:
+
+Bugfixes:
++ Hive: Fixed Rescue Civilians objective not using correct customizations
++ Maverick: Fixed bug that allowed him to use the Laser Rifle
++ Maverick: Fixed Chrome Retriever losing armor on death
++ Heavy Ordnance: Activating XLR8 no longer interrupts Power Grid
++ Pyrotechnician: Fixed incorrect tooltip for overburn bonus damage
++ Energizer: Fixed tooltip showing 33%
++ Fixed Enemy AI issues involving invisible units
++ Additional improvements made to prevent placing contraptions on walls
++ Fixed extra win text if Nemesis was killed after players already lost
+
+--------------------------------------------------------------------
+1.11.2:
++ Demo: MIRV's energy cost increased and its napalm's damage and duration have been reduced.
++ Demo: Reduced Biochem's effectiveness on high health normal units.
++ Heavy Ordnance: Minidroids can now automatically drain energy while the HO is channeling Power Grid.
++ Heavy Ordnance: Power Grid bonus eps for partial power is now removed if the officer took damage recently.
++ Heavy Ordnance: Power Grid no longer kills fireflies; he is now just immune to their drain while channeling power grid.
+
+Bugfixes:
++ Espionage: Fixed eps penalty not always being applied.
+
+--------------------------------------------------------------------
+1.11.1:
++ Watchman: Surge capacitor custom loadout subupgrade now improves Energizer trait battery
++ Increased armor of most non-nanites using units
++ Performance improvements
+
+Bugfixes:
++ Maverick: Fixed hotkey issue on Kamikaze Canine
++ Survivalist: Fixed low health modifier persisting in non-critical health
++ Fixed some City map issues
+
+--------------------------------------------------------------------
+1.11.0:
++ Cyborg: Can no longer acquire Large++ nanites
++ Demo: Reduced napalm damage (100->80) and linger duration to (3.0->2.5s). Increased level 16 cost to 360e.
++ HO: Power Grid now kills nearby fireflies while being channeled
++ HO: slight XLR8 rework; now with stacks
++ Maverick: Added new Mecha Mutt skill: Howl
++ Pyro: Overburn now gives bonus bounces but reduced bonus damage
++ Psychologist: Mind Slay will now set commandoes health to 2 instead of killing
++ LAD: Reduced cluster rocket stuns on bosses and power armored enemies
++ Freeze Ray: Now removes virunating buff
++ Flare Gun: Now reveals invisible units
++ Titan Vest passive changed to: Upgrades nanites, +25 armor (no aura), +500 energy cap.
++ Added TNT dogs and TNT grotesques
++ Improved some enemy AI involving skills
++ Extinction mode now gets harder faster
++ Added additional leaderboards
++ Fireflies no longer spawn if the zombie can't revive
++ Particle performance improvements
+
+Bugfixes:
++ Maverick: Improved robodog energy regen when near officer
++ Maverick: Fixed Kami hyper thrash clones not contributing to damage stats
++ Psychologist: Fixed bonus int from Mental Clarity being lost on death.
++ Watchman: Fixed an issue where some subupgrades were not applied properly
++ Reckless: Fixed shield capacitor lowering nanites level to 14
++ Attempt to reduce A.P.C.s getting stuck
++ Improved loot not getting stuck in walls
++ Fixed some issues with items, like the MFG MkII giving duplicate bonuses.
++ Fixed some areas on city map where cameras could be placed on walls
++ Fixes for some locker and drug rep issues
++ Fixed a display bug when turning off resource pooling
+
+--------------------------------------------------------------------
+1.10.9.5:
+
+Bugfixes:
++ Demo: Fixed MIRV tooltip showing 17 levels
++ Fixed some issues with items, like the MFG MkII giving duplicate bonuses.
++ Fixed a display bug when turning off resource pooling
+
+--------------------------------------------------------------------
+1.10.9.4:
+
+Bugfixes:
++ Maverick: Fixed Mecha Mutt not auto using batteries.
++ Psychologist: Fixed bonus int from Mental Clarity being lost on death.
+
+--------------------------------------------------------------------
+1.10.9.3:
++ Maverick: Added new Mecha Mutt skill: Howl
++ Titan Vest changed to: Upgrades nanites, +25 armor (no aura), +500 energy cap.
+
+Bugfixes:
++ Maverick: Improved robodog energy regen when near officer
+
+--------------------------------------------------------------------
+1.10.9.2:
+
+Bugfixes:
++ Maverick: Fixed Kami hyper thrash clones not contributing to damage stats
++ Fixed AI targetting claymores with some abilities
++ Fixed Fireflies not spawning
+
+--------------------------------------------------------------------
+1.10.9.1:
++ Cyborg: Can no longer acquire Large++ nanites
++ Demo: Reduced napalm damage (100->80) and linger duration to (3.0->2.5s). Increased level 16 cost to 360e.
++ HO: Power Grid now kills nearby fireflies while being channeled
++ HO: slight XLR8 rework; now with stacks
++ Pyro: Overburn now gives bonus bounces but reduced bonus damage
++ Psychologist: Mind Slay will now set commandoes health to 2 instead of killing
++ LAD: Reduced cluster rocket stuns on bosses and power armored enemies
++ Freeze Ray: Now removes virunating buff
++ Flare Gun: Now reveals invisible units
++ Added TNT dogs and TNT grotesques
++ Improved some enemy AI involving skills
++ Extinction mode now gets harder faster
++ Fireflies no longer spawn if the zombie can't revive
++ Particle performance improvements
+
+Bugfixes:
++ Watchman: Fixed an issue where some subupgrades were not applied properly
++ Reckless: Fixed shield capacitor lowering nanites level to 14
++ Attempt to reduce A.P.C.s getting stuck
++ Improved loot not getting stuck in walls
++ Fixed some areas on city map where cameras could be placed on walls
++ Fixes for some locker and drug rep issues
+
+--------------------------------------------------------------------
+1.10.9:
++ LAD: Riot Shield aura no longer stacks with Riot Shield item
+
+Bugfixes:
++ Sniper: Fixed being able to place cameras on walls
++ HO: Fixed Energy Cells bonus regen not displaying correct value
++ Fixed stats issues after being revived
++ Fixed armor not being applied to LADs or the Chrome Retriever
++ Fixed some enemy abilities not affecting rad immune units
++ Map, City: Minor enhancements to the Park
+
+--------------------------------------------------------------------
+1.10.8:
++ Flower Child, Chem. Reliant, and Chemistry now give a pill pouch regardless of renown.
++ Pack Rat: Changed bonus from 0 second cooldowns on sending/retrieval of items to
+the locker with a 3 second cooldown. Still no energy cost. Added eject all button when not in lab.
++ Added Camera Angle option to settings
+
+Bugfixes:
++ Psychologist: Fixed confidence applying to the Psychologist instead of his target.
++ Sniper: Marksman pierce can no longer hit gray zombies
++ Fixed some issues with mob spawning during Extinction Nemesis fight.
++ Votekicks will not be initiated on Team Kills if you're the only remaining player
++ Removed all teleport scrolls
+
+--------------------------------------------------------------------
+1.10.7.1:
+
+Bugfixes:
++ Fixed crash caused by removing TP scroll, and removed the initial TP scroll
+
+--------------------------------------------------------------------
+1.10.7:
+
+Bugfixes:
++ Tactician: Fixed dota stats being applied to cadet when he levels up
++ Psychologist: Fixed some stat issues on mental clarity and confidence
+
+--------------------------------------------------------------------
+1.10.6:
+
+Bugfixes:
++ Fixed incorrect items being dropped on LAD deaths
++ Corrected robodog base hps
+
+--------------------------------------------------------------------
+1.10.5:
++ Medic: LAD bonus changed to:
+    LADs drop all consumable items fused
++ Demo: LAD bonus changed to:
+    Increased weapon damage and splash
++ Refined Rifle ability bonus damage now gives
+  more bonus splash damage
++ Freeze ray now removes brainlust
++ LADs now always drop all fused LAD parts
++ Exosuit more likely on Nightmare and guarenteed on Extinction
+
+
+Bugfixes:
++ Demo: Fixed biochem not leveling up while locked down
++ Maverick: Fixed robodogs not getting stat bonus if A.R.S. activated when leveling up
++ Watchman: Fixed gaining energy from leveling weapon
++ Engineer: duplicated items now keep the same cooldown
++ Implemented custom stat system to undo 7.07 stat changes
++ Disabled map-scan feature
++ Fixed an issue where LADs were not getting the correct number skill points
++ Fixed some issues with green bonus damage and splash
+
+--------------------------------------------------------------------
+1.10.5.1:
++ Medic: LAD bonus changed to:
+    LADs drop all consumable items fused
++ Demo: LAD bonus changed to:
+    Increased weapon damage and splash
++ Refined Rifle ability bonus damage now gives
+  more bonus splash damage
++ Freeze ray now removes brainlust
++ LADs now always drop all fused LAD parts
++ Exosuit more likely on Nightmare and guarenteed on Extinction
+
+
+Bugfixes:
++ Maverick: Fixed robodogs not getting stat bonus if A.R.S. activated when leveling up
++ Engineer: duplicated items now keep the same cooldown
++ Implemented custom stat system to undo 7.07 stat changes
++ Disabled map-scan feature
++ Fixed an issue where LADs were not getting the correct number skill points
++ Fixed some issues with green bonus damage and splash
+
+--------------------------------------------------------------------
+1.10.4:
++ Maverick: Can now mutate Engineer
+
+Bugfixes:
++ Some improvements to Extinction's Nemesis fight
+
+--------------------------------------------------------------------
+1.10.3:
++ Added Chinese and Russian localizations
+
+Bugfixes:
++ Watchman: Lethality grenade will no longer affect invulnerable units
++ Watchman: Fixed some subupgrades being lost upon death
++ Tactician: Cadet can now consume insta-drugs
++ Chaingun: Fixed plasma rounds being auto cast even if no available mana
++ Drug Rep: No longer receives energy cells bonus
++ Riot Shield: Addressed receiving duplicate riot shield modifiers
++ Fixed A.P.C. minimap indicators not disappearing if A.P.C. destroyed
++ Fixed some achievements not unlocking correctly
+
+--------------------------------------------------------------------
+1.10.2:
+
+Bugfixes:
++ Watchman: Fixed lethality not always working
++ Watchman: Avatars now deal reduced damage to rads/crates
++ Watchman: Surge Capacitor upgrade now improves batteries properly
++ Watchman: Fixed paradox debuff modifier remaing after toggled off
++ LAD: No longer breaks if Pyrotechnician constructs it
++ Commandos no longer run from Xnade if reviving
+
+--------------------------------------------------------------------
+1.10.1:
++ Watchman: Subupgrades can no longer be upgraded while the game is paused or the Watchman is dead
++ Watchman: Improved Nurse's autocast nano injection AI
++ Defense: Added Repair Armor item to Lab shop for Watchman
+
+Bugfixes:
++ Watchman: Dying while using Partner will now cancel the teleport
++ Watchman: Can no longer power surge reactors
++ Engineer: Fixed some issues where duped items could disappear or cost more than 250e
++ Fixed issue with Nemesis' max health
++ Fixed bosses not spawning correctly
+
+--------------------------------------------------------------------
+1.10.0:
++ New Class: Watchman
++ New Trait: Engineer
++ New Secret Weapon Item: Riot Shield
++ New A.T.M.E. Item: Drug Replicator
++ Added Chinese translations
++ Added Russian translations
++ Added more achievements
++ Added minimap indicator for A.P.C. destinations
++ Improvements to the Nemesis fight
++ Maverick: Mecha Mutt base move speed increased to 220
+
+Bugfixes:
++ Lab rad scan should now work in Survival
++ Player death count no longer increment if disconnected before officer selected
++ Fixed bosses not receiving uber health upgrades
+
+--------------------------------------------------------------------
+1.9.0.1:
++ New Class: Watchman
++ New Trait: Engineer
++ New Secret Weapon Item: Riot Shield
++ New A.T.M.E. Item: Drug Replicator
++ Added Chinese translations
++ Added Russian translations
++ Added more achievements
++ Added minimap indicator for A.P.C. destinations
++ Improvements to the Nemesis fight
+
+Bugfixes:
++ Lab rad scan should now work in Survival
++ Player death count no longer increment if disconnected before officer selected
++ Fixed bosses not receiving uber health upgrades
+
+
+--------------------------------------------------------------------
+1.9.0:
++ Added Talents
++ Added Player Stats
++ Added Achievements
++ Added Leaderboards
++ Added Settings HUD which syncs with server
++ Upgraded Server
++ City map updated to remove invisible walls
++ Some improvements to the HUD
++ LAD parts now sell for less for each parts previously sold
+
+Bugfixes:
++ Cyborg: Chaingun now splashes allies
++ Heavy Ordnance: Using solar batteries no longer adds a charge to Recharge Battery
++ Maverick: Fixed robodogs causing disabled items
++ Maverick: Chaingun now splashes allies
++ Sniper: Concussion grenade no longer works on a phased super mutant
++ Energizer: No longer triggered if killed
++ Espionage: Now properly applies the negative energy regen for all armors
++ Atomic Zombies: No longer detonates when hitting a force field
++ Atomic Zombies: Fixed regaining hp regen after detonating
++ Defense: Fixed crate minimap icons not always disappearing
++ Defense: Fixed finale not ending when everyone in lab
++ Flare Gun: Fixed last charge not working
++ Titan Vest: Fixed aura not stacking with vests
++ Fixed locker items in the 6th slot not stacking
++ Fixed some truesight issues
++ Fixed bosses spawning after objectives completed
+
+--------------------------------------------------------------------
+1.8.5.6:
++ Added Chinese localizations
+
+Bugfixes:
++ Heavy Ordnance: Using solar batteries no longer adds a charge to Recharge Battery
++ Fixed ChronoTech item not spawning
++ Fixed enemy nukes not working
++ More Truesight issues addressed
+
+--------------------------------------------------------------------
+1.8.5.5:
+
+Bugfixes:
++ Addressed some map issues with City
++ Fixed Hive sewer slow lasting forever
++ Fixed innards not spawning
++ Addressed some boss truesight issues
++ Fixed last charge of flare gun not working
+
+
+--------------------------------------------------------------------
+1.8.5.4:
+
+Bugfixes:
++ Fixed some truesight issues
++ Fixed bosses spawning after objectives completed
++ Fixed Defense not spawning an A.B.M.
++ Fixed unlocked Achievements not displaying in game results screen
++ Fixed some HUD issues
+
+--------------------------------------------------------------------
+1.8.5.3:
++ Added Talents
++ City map updated to remove invisible walls
++ LAD parts now sell for less for each parts previously sold
+
+Bugfixes:
++ Cyborg: Chaingun now splashes allies
++ Maverick: Chaingun now splashes allies
++ Energizer: No longer triggered if killed
++ Espionage: Now properly applies the negative energy regen for all armors
++ Atomic Zombies: No longer detonates when hitting a force field
++ Atomic Zombies: Fixed regaining hp regen after detonating
++ Defense: Fixed crate minimap icons not always disappearing
++ Defense: Fixed finale not ending when everyone in lab
+
+--------------------------------------------------------------------
+1.8.5.2:
+
+Bugfixes:
++ Fixed server registering all games as wins
++ Fixed robodogs causing disabled items
+
+--------------------------------------------------------------------
+1.8.5.1:
++ Some improvements to the HUD
+
+Bugfixes:
++ Fixed game not submitting "Perfect" Insane wins
++ Fixed some game duration tracking issues
++ Sniper: Concussion grenade no longer works on a phased super mutant
++ Fixed titan vest aura not stacking with vests
++ Fixed locker items in the 6th slot not stacking
++ Fixed LAD creation bug
+
+--------------------------------------------------------------------
+1.8.5:
+
+Bugfixes:
++ Changed A.B.M. and Televac models so they are now selectable
++ Cyborg: Pheromones now works if cast while invisible
++ Energizer: No longer breaks if it recharges while dead
++ Exosuit: Fixed issue with improper stat attributes being applied
++ Enemy rad bolts now properly deal Explosion type damage
+
+--------------------------------------------------------------------
+1.8.4.2:
+
+Bugfixes:
++ Fixed some issues with the displaying of achievements, leaderboards, and settings
+
+--------------------------------------------------------------------
+1.8.4.1:
++ Added Achievements
++ Added Leaderboards
++ Added Settings Screen + Syncing
+
+--------------------------------------------------------------------
+1.8.4:
++ Updated hp regen and mana per int for dota 7.06 patch
+
+Bugfixes:
++ Addressed some no nav issues on city
+
+--------------------------------------------------------------------
+1.8.3:
++ Maverick: Robodogs agility values have been doubled
+            Base agility increased: 51 -> 102
+            Agility per level increased: 2 -> 4
+            A.R.S. now 1 agility -> 7.5 vitality
+            Death penalty increased:-1 -> -2 agility
++ Covert Sniper: Conc Grenade boss effect duration increased
++ Sniper Rifle: Damage penalty vs rads reduced: -50% -> -40%
++ Flamethrower: Can no longer bounce to splash immune enemies
++ Rocket Launcher: Lockdown now knocks enemies back
++ Energizer: Battery can now be manually activated by typing "-batt"
++ Energizer: Added modifier to indicate battery recharge time
++ Survivalist: The no int requirement for vests no longer applies to Titan Vest
++ Titan Vest: Now gives +25 armor aura in a small radius
++ Freeze Ray and Shield Cap: initial item stock decreased: 2 -> 1
++ Solar Batteries: Reduced recharge time: 60s -> 36s
++ Increased the cast range of sniper's cameras, demo's c4, and claymores
++ Atomic Zombies: Increased single target damage; removed regen on explode; reduced freeze ray effectiveness
++ Red Rads radlets now last significantly longer
++ Reactor rooms are now discovered by all units
++ Extinction now requires 2 people
++ Rooms are now marked discovered on the minimap based on sight of the center of the room
+
+Bugfixes:
++ Survivalist: Fixed issue with severe ankle injuries
++ Stims: Fixed potential 0 stack issue if used on rez sickness officer
++ Fixed units being able to get up onto walls
++ Fixed initial Avatar item not always being removed in Extinction
+
+--------------------------------------------------------------------
+1.8.2.1:
++ Maverick: Robodogs agility values have been doubled
+            Base agility increased: 51 -> 102
+            Agility per level increased: 1 -> 2
+            A.R.S. now 1 agility -> 7.5 vitality
+            Death penalty increased:-1 -> -2 agility
++ Covert Sniper: Conc Grenade boss effect duration increased
++ Sniper Rifle: Damage penalty vs rads reduced: -50% -> -40%
++ Flamethrower: Can no longer bounce to splash immune enemies
++ Rocket Launcher: Lockdown now knocks enemies back
++ Energizer: Battery can now be manually activated by typing "-batt"
++ Energizer: Added modifier to indicate battery recharge time
++ Survivalist: The no int requirement for vests no longer applies to Titan Vest
++ Titan Vest: Now gives +25 armor aura in a small radius
++ Freeze Ray and Shield Cap: initial item stock decreased: 2 -> 1
++ Solar Batteries: Reduced recharge time: 60s -> 36s
++ Atomic Zombies: Increased single target damage; removed regen on explode; reduced freeze ray effectiveness
++ Red Rads radlets now last significantly longer
++ Reactor rooms are now discovered by all units
++ Extinction now requires 2 people
++ Rooms are now marked discovered on the minimap based on sight of the center of the room
+
+Bugfixes:
++ Survivalist: Fixed issue with severe ankle injuries
++ Stims: Fixed potential 0 stack issue if used on rez sickness officer
++ Fixed units being able to get up onto walls
++ Fixed initial Avatar item not always being removed in Extinction
+
+--------------------------------------------------------------------
+1.8.2:
+
+Bugfixes:
++ Fixed an issue where radiation could decrease to negative values.
+
+--------------------------------------------------------------------
+1.8.1:
++ Prowler: Sonar triggers 10x faster at night
++ Stims now fail if used on officers with rez sickness (unless psycho)
++ Atomic zombies now explode on death
+
+Bugfixes:
++ Cyborg: Plasma rounds now affect allies
++ Tactician: Ion strike changed to explosion damage
++ Tactician: Fixed some issues with prioritization
++ Fixed crash during Extinction's Nemesis
++ Fixed issue when eating drug from pill pouch while dead
++ Fixed Freeze Ray targetting non-organics
+
+--------------------------------------------------------------------
+1.8.0:
++ Added Extinction Mode
++ Added ChronoTech items (Survival + Extinction only)
++ Tactician: Added aura prioritization
++ Tactician: Blitz level progression changed
++ Medic: Added modifier display for mending station cooldown
++ Pyrotechnician: Incendiary rocket no longer triggers Super Mutant regeneration
+
+Bugfixes:
++ Maverick: Plasma rounds slow should now work
++ HO: Plasma shield now upgrades properly while toggled on
++ Fixed a bug where bosses could have "hidden" armor
++ Corrected the Attack Speed and negative armor values on the stats screen for Officers
++ Metabolic Synergizer and H.E.R.M.E.S Valor upgrades now persist through death
++ Promote Officer item can no longer be placed in the locker
+
+--------------------------------------------------------------------
+1.7.6.2:
++ Minor Extinction adjustments
+
+Bugfixes:
++ Super rad and red rads have correct health
+
+--------------------------------------------------------------------
+1.7.6.1:
++ Added Extinction Mode
++ Added ChronoTech items (Survival + Extinction only)
++ Medic: Added modifier display for mending station cooldown
+
+Bugfixes:
++ Maverick: Plasma rounds slow should now work
++ Corrected the Attack Speed value on the stats screen for Officers
++ Metabolic Synergizer and H.E.R.M.E.S Valor upgrades now persist through death
++ Promote Officer item can no longer be placed in the locker
+
+
+--------------------------------------------------------------------
+1.7.6:
+
+Bugfixes:
++ Updated game to support new Dota 2 version's HTTP request
+
+--------------------------------------------------------------------
+1.7.5:
+
+Bugfixes:
++ Fixed an issue that prevented the game results screen from appearing
+
+--------------------------------------------------------------------
+1.7.4:
++ Added schinese and new tchinese localizations
++ Psychologist: Mind Slay cooldown increased (especially vs bosses)
+
+Bugfixes:
++ Maverick: Mutating Chem Reliant or Flower Child now only flushes the maverick
++ Chaingun: Cooldowns on plasma rounds now work properly
++ Fixed game results time not matching game clock
+
+--------------------------------------------------------------------
+1.7.3:
++ Improved sharable units when disconnected/reconnected
++ Added -share on/off command
+
+Bugfixes:
++ Fixed conduits not spawning in the Hive map
++ Fixed the Avatar unit not animating properly
+
+
+--------------------------------------------------------------------
+1.7.2:
+
+Bugfixes:
++ Fixed a problem in the Defense finale
+
+--------------------------------------------------------------------
+1.7.1:
++ Added Chinese localizations
+
+Bugfixes:
++ Fixed minor issue when dropping items close to hero
+
+--------------------------------------------------------------------
+1.7.0:
++ New Map: Hive
++ Added Game Results screen and Trophies
++ Added new Chinese localizations
++ Improved resource pooling
++ Maverick: Robodog advanced generator now just +1 eps per level
++ Maverick: Kami thrash crit multiplier reduced
++ Maverick: Robodogs now have reduced efficiency for power core repairing
++ You can now kick if you are the only person in the game
+
+Bugfixes:
++ Maverick: Robodog will no longer keep O.T.A. when hyper thrashing out of radius
++ Abomination toxic aura damage corrected on Nightmare
++ Abomination toxic aura damage now affects Rad Resist officers
++ Fixed some issues with Trophies
++ Fixed mutant buffs not being removed if rad count moved to lowest bracket
+
+--------------------------------------------------------------------
+1.6.4.4:
++ Improved resource pooling
+
+Bugfixes:
++ Fixed some issues with trophies
+
+--------------------------------------------------------------------
+1.6.4.3:
++ Added new Chinese localizations
++ Maverick: Robodog advanced generator now just +1 eps per level
++ Maverick: Kami thrash levels reduced
++ Maverick: Robodogs now have reduced efficiency for power core repairing
++ Updated models and particles for Hive special units
++ You can now kick if you are the only person in the game
+
+Bugfixes:
++ Maverick: Robodog will no longer keep O.T.A. when hyper thrashing out of radius
++ Abomination toxic aura damage corrected on Nightmare
++ Abomination toxic aura damage now affects Rad Resist officers
++ Fixed some issues with Trophies
+
+
+--------------------------------------------------------------------
+1.6.4.2:
++ Added Game Results screen and Trophies
+
+--------------------------------------------------------------------
+1.6.4.1:
++ Added new Abomination variants to NM+
+
+Bugfixes:
++ Fixed mutant buffs not being removed if rad count moved to lowest bracket
+
+--------------------------------------------------------------------
+1.6.4:
++ Maverick: Kamikaze Canine will now explode on death
++ Maverick: Kamikaze Canine is now issued an attack command on the hyper thrash target
++ Added Chinese localizations
+
+Bugfixes:
++ City Map: Fixed APCs not being able to leave from North exit
++ Pyrotechnician: Fixed health decreasing when vitality changes while overburning
++ Pyrotechnician: Microwave explosion now properly deals explosion damage (previously flame)
++ Maverick: Chrome Retriever can now hold more than one unique item (such as vests)
++ Swift Learner: Fixed not getting objectives' bonus XP even if XP gain is disabled
++ Commandoes: Blitz aura will no longer affect zombies
++ Fixed Civilians that die near APCs not being able to get into APCs after being revived
++ Fixed Freeze Ray potentially killing Nemesis
+
+--------------------------------------------------------------------
+1.6.3.1:
++ New Map: Hive
+
+--------------------------------------------------------------------
+1.6.3:
++ Demo: Reduced the tick time of MIRV (same DPS)
++ Super Mutants will no longer be pissed off from phasing
+
+Bugfixes:
++ Demo: Fixed an issue with demo c4 not detonating at level 16 AI
++ Stats UI now shows correct move speed and updates appropiately
++ Units are now prevented from teleporting items to/from locker while dead
++ Nearby Robots with antidote items no longer provide a bonus when using antidotes
++ Character build screens rank filter will no longer set that rank and instead use max rank
+
+--------------------------------------------------------------------
+1.6.2:
+
+Bugfixes:
++ Fixed being able to buy items while dead
++ Fixed ejecting items from locker when not in the lab
++ Maverick: Fixed spawning with 2 robodogs
++ Maverick: Fixed robodog losing stats from ARS
+
+--------------------------------------------------------------------
+1.6.1:
+
+Bugfixes:
++ Demo: Corrected some C4 AI issues
++ Medic: Revive will now properly refund 50% of the cost
++ Maverick: Robodog can no longer pick up hazmat
++ Maverick: Addressed some robodog stats and dog selector issues
++ Prowler: Sensor will now disappear on death
++ Fixed HUD issue involving items on cooldown
++ Hazmat can no longer be placed in locker
++ Enemy soldiers can no longer pep talk non-soldiers
+
+--------------------------------------------------------------------
+1.6.0:
++ New Class: Maverick
++ New Specialization: Pack Rat
++ New Item: Freeze Ray (Secret Weapon bought in lab)
++ New Item: Grenade Launcher (Secret Weapon bought in lab)
++ Cyborg: can now integrate MFGs by upgrading cluster rockets
++ Cyborg: Pheromones now has a 6 second cooldown after charging before it can be cast
++ Heavy Ordnance: Plasma Shield now increases threat while activated
++ Medic: Mend wounds and mending station will no longer target overburning pyrotechnicians
++ Medic: Rapid therapy will now wake unconscious units
++ Psychologist: Prowler now increases clairvoyance sight radius by 300
++ Tactician: Constructing LAD bonus changed to be +2 inactive inventory slots per mark
++ Chemistry: +33% stim duration
++ Flower Child: -33% stim duration
++ Prowler: Added heartbeat sensor while standing still
++ Survivalist: Can now use kevlar and combat vests regardless of intelligence
++ Batteries will now be auto consumed based on the order in inventory
++ Increased rank/renown experience gain for Defense mode
++ Innards reworked; now take significantly more damage from explosion abilities
++ Fireflies spawned is reduced if killed with revive-preventing skills
++ Nemesis will now only counter slay if Nemesis, himself, is slayed
++ Hazmat items will now drop if held while recalling
++ You can now move items to/from locker while at a shop
++ You can now swap items inventory/locker items if you are in lab or have pack rat
+
+Bugfixes:
++ Tactician: fixed endurance aura radius not increasing
++ Reckless: fixed not upgrading past level 14 correctly
++ Fixed not always receiving a skill point upon leveling up
++ Fixed power plants showing their energy degen before being discovered
++ Chat commands are no longer caps sensitive
++ Fixed antidotes not initially restocking correctly
++ Addressed some issues with items getting stuck in ABMs
++ Improved character build screen for Russian
++ Fixed Locker showing up before Renown level 18
++ Fixed HUD issues for Dota update
++ Fixed some issues involving injury immunity
++ Fixed broken text when alt clicking weapon skill as weaponry
+
+--------------------------------------------------------------------
+1.5.1.6:
++ You can now swap items inventory/locker items if you are in lab or have pack rat
+
+Bugfixes:
++ Fixed Robodog nanites toggle state not persisting on revive
+
+--------------------------------------------------------------------
+1.5.1.5:
++ You can now move items to/from locker while at a shop
+
+Bugfixes:
++ Fixed Tactician endurance aura radius not increasing
++ Fixed Locker showing up before Renown level 18
++ Improved character build screen for Russian
+
+--------------------------------------------------------------------
+1.5.1.4:
++ Increased rank/renown experience gain for Defense mode
+
+Bugfixes:
++ Fixed HUD issues for Dota update
++ Fixed robodog select screen appearing on reconnect
++ Fixed reckless not upgrading past level 14 correctly
+
+--------------------------------------------------------------------
+1.5.1.3:
++ New Specialization: Pack Rat
+
+Bugfixes:
++ Fixed Hyper Thrash issues
++ Robodogs can now trigger graveyard
++ Robodog's nanites toggle state will now match what they died with
++ Solars no longer work on Kami or Chrome
++ Addressed some issues with pill pouches on robodogs
++ Fixed issues with mutating traits that give stats
++ Weaponry on Assault Rifle Maverick now goes to level 17
+
+--------------------------------------------------------------------
+1.5.1.2:
+
+Bugfixes:
++ Fixed not always receiving a skill point upon leveling up
++ Fixed prowler crashing the game
++ Fixed Skilled not applying robodog upgrades for first skill point
++ Fixed issue where items disabled units could use some items
++ Fixed reprogram allowed despite dog being far away
++ Robodog acquisition range lowered to 400
++ Chrome retriever's cloaking now only activates from a hold position command
++ Fixed robodog nearby maverick energy bonus not always being removed
++ Fixed no tooltip on chaingun maverick
++ Fixed batteries not auto casting correctly
++ Fixed broken text when alt clicking weapon skill as weaponry
++ Fixed reactors issues in Defense mode
+
+--------------------------------------------------------------------
+1.5.1.1:
++ New Class: Maverick
++ New Item: Freeze Ray (Secret Weapon bought in lab)
++ New Item: Grenade Launcher (Secret Weapon bought in lab)
++ Cyborg: can now integrate MFGs by upgrading cluster rockets
++ Cyborg: Pheromones now has a 6 second cooldown after charging before it can be cast
++ Heavy Ordnance: Plasma Shield now increases threat while activated
++ Medic: Rapid therapy will now wake unconscious units
++ Psychologist: Prowler now increases clairvoyance sight radius by 300
++ Tactician: Constructing LAD bonus changed to be +2 inactive inventory slots per mark
++ Chemistry: +33% stim duration
++ Flower Child: -33% stim duration
++ Prowler: Added heartbeat sensor while standing still
++ Survivalist: Can now use kevlar and combat vests regardless of intelligence
++ Fireflies spawned is reduced if killed with revive-preventing skills
++ Nemesis will now only counter slay if Nemesis, himself, is slayed
++ Hazmat items will now drop if held while recalling
+
+Bugfixes:
++ Medic: Mend wounds and mending station will no longer target overburning pyrotechnicians
++ Fixed power plants showing their energy degen before being discovered
++ Chat commands are no longer caps sensitive
++ Fixed antidotes not initially restocking correctly
++ Batteries will now be auto consumed based on the order in inventory
++ Addressed some issues with items getting stuck in ABMs
++ Fixed some issues involving injury immunity
+
+--------------------------------------------------------------------
+1.5.1:
++ Added russian localizations
+
+Bugfixes:
++ Fixed some missing modifier icons
+
+--------------------------------------------------------------------
+1.5.0:
++ New Map: Defense Mode
++ Added significant HUD improvements for Dota 7.00
++ Added custom shops
++ A.B.M. inventories are no longer shared
+
+Bugfixes:
++ Fixed Super Mutant not phasing in Nightmare
++ Psychologist: Clairvoyance now reveals invisible units
++ Disabled some targets of minidroids and LADs energy beam skill
++ Unique valor upgrades can now be bought by multiple officers
+
+--------------------------------------------------------------------
+1.4.3.3:
+
+Bugfixes:
++ Fixed some modifier images not appearing
+
+--------------------------------------------------------------------
+1.4.3.2:
++ Added significant HUD improvements for Dota 7.00
++ Added custom shops
++ A.B.M. inventories are no longer shared
+
+Bugfixes:
++ Fixed Super Mutant not phasing in Nightmare
++ Psychologist: Clairvoyance now reveals invisible units
++ Disabled some targets of minidroids and LADs energy beam skill
+
+--------------------------------------------------------------------
+1.4.3.1:
++ New Map Type: Defense Mode
+
+--------------------------------------------------------------------
+1.4.3:
++ Improved HUD for Dota 7.00
+
+--------------------------------------------------------------------
+1.4.2:
++ Added Chinese localizations
++ Added Russian localizations
+
+--------------------------------------------------------------------
+
+1.4.1:
++ Nemesis: Reduced damage in non-Nightmare modes
++ Nemesis: No longer nukes in Normal and Hard mode
+
+Bugfixes:
++ Locker will now not disappear on disconnect
++ Can no longer vote -perfect after Nemesis has begun
+
+--------------------------------------------------------------------
+1.4.0.1:
++ Nemesis: Reduced damage in non-Nightmare modes
++ Nemesis: No longer nukes in Normal and Hard mode
+
+Bugfixes:
++ Locker will now not disappear on disconnect
++ Can no longer vote -perfect after Nemesis has begun
+
+--------------------------------------------------------------------
+1.4.0:
+
++ Final Boss Added: Nemesis
++ Added Locker (requires Renown level 18+)
++ Cyborg: Goliath modification now gives +250 max energy
++ Demolitions: Biochem damage reduced vs bosses
++ Demolitions: Napalm debuff now persists for 3 seconds
++ Sniper: Cameras now have reduced priority for enemies
++ Higher Mk LADs now have an improved concussion rockets ability
++ Reactors now display a warning when chance to explode passes a threshold
++ Fireflies have been reworked
+
+Bugfixes:
++ Significant performance improvements, especially for late game
++ Heavy Ordnance: Fixed some issues on Power Grid and XLR8
++ Demolitions: Reactors will no longer drain C4
++ Sniper: Fixed attack range dropping below 1200
++ Cyborg: Goliath modification cast range fixed
++ Tactician: Cadet's Use Drug, Use Vest, and Use Shield Cap cast range fixed
++ LADs can no longer fuse more than one of any type of consumable
++ Tesla Vest and Tesla Vest MkII now give armor when fused into LADs
++ Improved enemy dodging
+
+--------------------------------------------------------------------
+1.3.1.3:
++ Locker now requires Renown 18+
+
+Bugfixes:
++ Fixed some minor display issues
+
+--------------------------------------------------------------------
+1.3.1.2:
+
+Bugfixes:
++ Improved enemy dodging
++ Fixed Sgargs not getting their bonus armor
++ Fixed battery particle
+
+--------------------------------------------------------------------
+1.3.1.1:
+
++ Final Boss Added: Nemesis
++ Added Locker
++ Reactors now display a warning when chance to explode passes a threshold
++ Cyborg: Goliath modification now gives +250 max energy
++ Demolitions: Biochem damage reduced vs bosses
++ Demolitions: Napalm debuff now persists for 3 seconds
++ Sniper: Cameras now have reduced priority for enemies
++ Higher Mk LADs now have an improved concussion rockets ability
++ Fireflies have been reworked
+
+Bugfixes:
++ Significant performance improvements, especially for late game
++ Heavy Ordnance: Fixed some issues on Power Grid and XLR8
++ Demolitions: Reactors will no longer drain C4
++ Sniper: Fixed attack range dropping below 1200
++ LADs can no longer fuse more than one of any type of consumable
+
+--------------------------------------------------------------------
+1.3.1:
++ Demo: Gear Mod now checks target's inventory for circuit boards
++ Improved innards model and particles
++ -revive command now works on players under Renown 20 (previously Rank 1)
+
+Bugfixes:
++ Cyborg: Pheromones now works better on bosses
++ Fixed an issue where evil civilians spawned incorrectly
++ Fixed issue where you could hold 2 unique items simultaneously
++ Fixed issues where HUD could incorrectly say item Int requirements were not met
++ Fixed an issue involving filling a reactor before discovering it
++ Fixed items spawning inside televacs
++ Pill pouch is no longer attackable
+
+
+--------------------------------------------------------------------
+1.3.0.2:
+
+Bugfixes:
++ Fixed issues with -revive command
+
+--------------------------------------------------------------------
+1.3.0.1:
++ Demo: Gear Mod now checks target's inventory for circuit boards
++ Improved innards model and particles
++ -revive command now works on players under Renown 20 (previously Rank 1)
+
+Bugfixes:
++ Cyborg: Pheromones now works better on bosses
++ Fixed an issue where evil civillians spawned incorrectly
++ Fixed issue where you could hold 2 unique items simultaneously
++ Fixed issues where HUD could say item int requirements not met
++ Fixed an issue involving filling a reactor before discovering it
++ Fixed items spawning inside televacs
++ Pill pouch is no longer attackable
+
+--------------------------------------------------------------------
+1.3.0:
++ New Difficulty: Nightmare Mode
++ New Boss: Covert Commandos Strike Force
++ Added Pill Pouch
++ Added new models for officer armors
++ Added new Tyrant/Lad models
++ Added auto-revive to Normal and Survival (Day 1) modes
++ -revive commands now also works in Hard mode
++ Pyrotechnician: Overburn prevents healing while active
++ Pyrotechnician: Incendiary Rocket damage no longer stacks nor pierces armor
++ Tactician: Blitz and Endurance aura now affect mechanical
++ Tactician: Blitz aura now gives a bonus for being adjacent
++ Tactician: Cadet's Use Shield Cap skill will now drop Shield Capacitor Parts
++ Medic: Assault Rifle now has Anti-Personnel rounds
++ Weaponry: Added Anti-Personnel rounds and increased plasma rounds damage
++ Sniper Rifle: Reduced damage sniper rifles do to crates/rads by 50%
++ Improved particles and look of enemies
++ Items HUD now alerts player if Int requirement is not met
++ Added APC indicators for duration remaining and number of civs inside
++ Upgraded Enemy Soldiers
++ Upgraded Tyrants
++ Spiders now do reduced damage vs mechanical
++ Enemy soldiers and commandos now do significantly more damage to contraptions
++ Added more DotaStats metrics
++ Improved player data saving/retrieving to server
+
+Bugfixes:
++ Sniper: Espionage bonus now properly applied only while invisible
++ Heavy Ordnance: Fixed Minidroid Plasma Rounds auto cast toggle issue
++ Heavy Ordnance: No longer a delay between xlr8 levels
++ Tactician: Ion damage type corrected
++ Reactor explosions should now stun all units inside
++ Fixed Exosuit injury immunity not being removed
++ Fixed Radlets size
++ APCs should more reliably make it out of the city
+
+--------------------------------------------------------------------
+1.2.4.5:
++ Items now alert player if Int requirement is not met
++ Medic: Assault Rifle now has Anti-Personnel rounds
++ Weaponry: Added Anti-Personnel rounds and increased plasma rounds damage
++ Tactician: Cadet's Use Shield Cap skill will now drop Shield Capacitor Parts
++ Enemy soldiers and commandos now do significantly more damage to contraptions
++ Spiders now do reduced damage vs mechanical
+
+Bugfixes:
++ Repairing armor no longer gives health
++ Heavy Ordnance: no longer a delay between xlr8 levels
++ Horror's Rad Wave will now give reduced sleep duration to mechanical
+
+--------------------------------------------------------------------
+1.2.4.4:
++ Pyrotechnician: Overburn prevents healing while active
++ Pyrotechnician: Incendiary Rocket damage no longer stacks nor pierces armor
++ Special zombies' abilities will now activate when doted
++ Added additional hints for low renown players
+
+Bugfixes:
++ Charred mutants will not revive if slayed, microwaved, or ioned
++ Commando and Umbrella dodge AI improved
++ APCs should more reliably make it out of the city
++ Ion damage type corrected
+
+--------------------------------------------------------------------
+1.2.4.3:
++ Improved player data saving/retrieving to server
++ Nightmare difficulty restricted to Rank 11+
++ Added auto-revive to Normal and Survival (Day 1) modes
++ -revive commands now also works in Hard mode
+
+Bugfixes:
++ Sniper: Espionage bonus now properly applied only while invisible
++ Heavy Ordnance: Fixed Minidroid Plasma Rounds auto cast toggle issue
+
+--------------------------------------------------------------------
+1.2.4.2:
++ Increased miniboss health scaling
+
+Bugfixes:
++ Improved AI when enemies go invisible
++ Improved zombie phase AI
++ Fixed some issues with the objectives HUD
++ Reactor explosions should now stun all units inside
++ Fixed Exosuit injury immunity not being removed
++ Fixed Radlets scaling
+
+--------------------------------------------------------------------
+1.2.4.1:
++ Upgraded Enemy Soldiers
++ Upgraded Tyrants
++ Added more DotaStats metrics
+
+Bugfixes:
++ Fixed blue dogs not spawning
+
+--------------------------------------------------------------------
+1.2.4:
+
+Bugfixes:
++ Pyrotechnician: Fixed attack not bouncing after Dota 2 Compendium patch
++ Fixed issue where exosuit could set life to 0
+
+--------------------------------------------------------------------
+1.2.3.2:
+
+Bugfixes:
++ Fixed Super Mutant regening too often
++ Fixed Super Mutant phasing too often
++ Mind Slayed commandos can no longer be revived
++ Fixed repair armor buying issue
+
+--------------------------------------------------------------------
+1.2.3.1:
++ New Difficulty: Nightmare Mode
++ New Boss: Covert Commandos Strike Force
++ Added Pill Pouch
++ Added new models for officer armors
++ Added new Tyrant/Lad models
++ Added new radiation fragment model
++ Improved particles and look of enemies
++ Reduced damage sniper rifles do to crates/rads by 50%
++ Added APC indicators for duration remaining and number of civs inside
+
+Bugfixes:
+
+--------------------------------------------------------------------
+1.2.3:
+
+Bugfixes:
++ Fixed an issue with corpses sometimes not being revivable
+
+--------------------------------------------------------------------
+1.2.2:
++ Added indicators for disconnected and kicked to squad status
++ Recall now works on units in Lockdown
+
+Bugfixes:
++ Fixed some issues with the Russian localization
++ Heavy Ordnance: Battery charger now properly corrodes
++ Fixed an issue where rads could spawn despite being under safe level
++ Fixed an issue with how radiation damage is calculated
+
+--------------------------------------------------------------------
+1.2.1.1:
++ Added indicators for disconnected and kicked to squad status
++ Recall now works on units in Lockdown
+
+Bugfixes:
++ Fixed some issues with the Russian localization
++ Heavy Ordnance: Battery charger now properly corrodes
++ Fixed an issue where rads could spawn despite being under safe level
++ Fixed an issue with how radiation damage is calculated
+
+--------------------------------------------------------------------
+
+1.2.1:
++ Increased the difficulty of Survival mode
++ Added stat collection for GetDotaStats.com
++ Added Russian localization
++ Flamethrower will now bounce off/to bosses and power armor units but has no bonus damage
++ Antidotes now have an initial stock delay of 360 seconds
++ Sniper: marksman will no longer pierce into allies
++ Sniper: marksman pierced shots can now crit
+
+Bugfixes:
++ Ctrl and Alt clicking abilities now works
++ Should no longer be prevented from buying items due to max item limit
++ Cameras, C4, and Claymores can no longer be placed on walls
++ Disconnected players should now receive level up bonuses
++ One televac will now overcharge when power is restored instead of always at 2
++ Removed extra skillpoint being given at start
++ Spiders can now ensnare rad immune units
++ Addressed some issues with leveling up
++ Projectiles can no longer discover rooms
++ Fixed incorrect nanites efficiency on level 20 Heavy++ nanites
++ Fixed sometimes not seeing team members' selections in class select screen
+
+--------------------------------------------------------------------
+1.2.0.6:
+
+Bugfixes:
++ Ctrl and Alt clicking abilities now works
++ Sniper: marksman will no longer pierce into allies
+
+--------------------------------------------------------------------
+1.2.0.5:
+
+Bugfixes:
++ Fixed incorrect nanites efficiency on level 20 Heavy++ nanites
++ Projectiles no longer can discover rooms
++ Fixed sometimes not seeing team members' selections in class select screen
+
+--------------------------------------------------------------------
+1.2.0.4:
++ Minor fix to stats
+
+--------------------------------------------------------------------
+1.2.0.3:
++ Added stats
+
+--------------------------------------------------------------------
+1.2.0.2:
++ Added initial Russian localization
++ Flamethrower will now bounce off/to bosses and power armor units but has no bonus damage
+
+Bugfixes:
++ Should no longer be prevented from buying items due to max item limit
++ Addressed some issues with leveling up
+
+--------------------------------------------------------------------
+1.2.0.1:
++ Increased the difficulty of Survival mode
+
+Bugfixes:
++ Cameras, C4, and Claymores can no longer be placed on walls
++ Disconnected players should now receive level up bonuses
++ One televac will now overcharge when power is restored instead of always at 2
++ Removed extra skillpoint being given at start
++ Spiders can now ensnare rad immune units
+
+--------------------------------------------------------------------
+1.2.0:
++ New Class: Pyrotechnician
++ New Boss: Super Mutant
++ New Boss: Godzilla
++ New Enemy: Tyrant
++ New Enemy: Enemy Soldiers
++ New Enemy: Enemy Assault Droid
++ Insane can now be beaten "Perfectly" by overachieving two objectives and removing Hazmat in 60 minutes
++ Rank 11 unlocked. You must beat insane perfectly to attain it.
++ Added -perfect command
++ Added new models for all weapon types
++ Added new models for Crates
+
+Bugfixes:
++ Heavy Ordnance: minidroid plasma rounds level corrected
++ Medic: Revive corrected to 500 energy
++ Sniper: Concussion grenade duration corrected against bosses
++ Prowler: Fixed armor bug
+
+--------------------------------------------------------------------
+1.1.2.6:
+
+Bugfixes:
++ Fixed issue where shops were not selling items
+
+
+--------------------------------------------------------------------
+1.1.2.5:
+
+Bugfixes:
++ Fixed issue with Godzilla spawning
++ Minor fixes for map and some models
+
+--------------------------------------------------------------------
+1.1.2.4:
+
+Bugfixes:
++ Godzilla can now spawn in Survival
++ Heavy Ordnance: minidroid plasma rounds level corrected
++ Medic: Revive corrected to 500 energy
++ Pyrotechnician: Microwave now goes through nanites
++ Prowler: Fixed armor bug
++ Fixed bug where innards weren't spawning properly
+
+--------------------------------------------------------------------
+1.1.2.3:
++ New Boss: Super Mutant
++ New Boss: Godzilla
++ New Enemy: Tyrant
++ New Enemy: Enemy Soldiers
++ New Enemy: Enemy Assault Droid
++ Insane can now be beaten "Perfectly"
++ -perfect command now works
++ Rank 11 unlocked
++ Added rocket launcher model
++ Added bozar model for LADs
++ Updated assault rifle model
+
+Bugfixes:
++ Dummy officers (before picking class) should no longer be controllable
+
+--------------------------------------------------------------------
+1.1.2.2:
++ Minidroids now have correct model
+
+Bugfixes:
++ Revived officers now have mana set based on armor type
++ Pyrotechnician: Microwave no longer affects mechanical
++ Sniper: Fixed cameras not having a duration
++ Sniper: Concussion grenade duration corrected against bosses
++ Psychologist: Mind rot now deals damage
+
+--------------------------------------------------------------------
+1.1.2.1:
++ Added Pyrotechnician
++ Added Officer models for weapons
++ Added crate models
+
+Bugfixes:
++ Fixed an issue with kick weight
+
+--------------------------------------------------------------------
+1.1.2:
+
+Bugfixes:
++ Fixed some issues related to Toxic
++ Heavy Ordnance: Constructed Droids should no longer spawn on walls
++ Stims no longer work on mechanical
++ Addressed some tooltip issues
+
+--------------------------------------------------------------------
+1.1.1.2:
+
+Bugfixes:
++ Fixed issues related to Toxic on Rad Immune units
++ HO: Construct Droids should no longer spawn on walls
+
+--------------------------------------------------------------------
+1.1.1.1:
++ Sniper: can now covertly open crates even when not sneaking
+
+Bugfixes:
++ Fixed some issues related to Toxic
++ Tactician: Cadet's equalize fixed
++ Stims no longer work on mechanical
++ Addressed some tooltip issues
+
+--------------------------------------------------------------------
+1.1.1:
+
+Bugfixes:
++ Fixed not being able to be revived after dying to a reactor explosion
++ Updated gadgeteer tooltip to reflect bonus towards Assault Droids
+
+--------------------------------------------------------------------
+1.1:
++ Added the Assault Droid support unit
++ New Items: Design Plans
++ New Item: Exosuit
++ When a team kill occurs, a vote to kick the attacker will immediately occur.
+  If successfully kicked, all victims will be revived
++ Added Vibrations aura to bosses that massively damages nearby contraptions
+
+Bugfixes:
++ Demo: Mininuke now has an AOE indicator
++ Demo: C4 now take at least 1 damage per hit
++ Heavy Ordnance: Plasma shield evasion values corrected
++ Sniper: can now activate Sneak without losing cloaking
++ Psychologist: Abilities no longer affect mechanical
++ Psychologist: Mind slay now sets allied officers health to 1 hp
++ Tactician: Abilities no longer affect mechanical units
++ Tactician: Cadets can no longer eat cybnertic upgrades
++ Removed delay when queueing abilities
++ Survivalist: removed healing from low damage attacks
++ Failed to convert civs are no longer fully healed
++ Fixed toxic damage being too high and not affecting Rad Resist
++ Fixed graveyard zombies not spawning correctly
++ Fixed controlling an invulnerable unit when a player disconnects without selecting a class
++ Fixed some issues involving loading in with Dota options menu up
+
+--------------------------------------------------------------------
+1.0.2.7:
+
+Bugfixes:
++ Fixed issue with LADs and cadets not holding position correctly
++ Cadets and LADs can no longer eat cybnertic upgrades
++ Fixed exosuit tooltip and vitality given
+
+--------------------------------------------------------------------
+1.0.2.6:
++ Team Killers can now be more easily voted out and players that were team killed will be revived
++ Added Vibrations aura to bosses that massively damages nearby contraptions
+
+Bugfixes:
++ Toxic damage no longer affects mechanical units
++ Fixed claymore damage
++ Fixed gold not being set correctly for disconnected players
+
+--------------------------------------------------------------------
+1.0.2.5:
+
++ Added initial Norwegian translations
++ Updated chinese translations
+
+--------------------------------------------------------------------
+1.0.2.4:
+
+Bugfixes:
++ Removed delay when queueing abilities
++ Fixed controlling invulnerable unit when player disconnects without selecting
++ Fixed HO plasma shield numbers
++ Mind slay now sets allied officers health to 1 hp
++ Failed to convert civs are no longer fully healed
++ Fixed toxic damage being too high and not affecting Rad Resist
++ C4 now take at least 1 damage per hit
++ Fixed graveyard not triggering correctly
++ Mininuke now has an AOE indicator
++ Fixed survivalist's healing from low damage attacks
++ Fixed some issues involving loading with dota menu up
+
+--------------------------------------------------------------------
+1.0.2.3:
+
+Bugfixes:
++ Fixed a variety of issues with LADs
++ Psychologist abilities no longer affect mechanical
++ Exosuit health buff fixed
+
+--------------------------------------------------------------------
+1.0.2.2:
+
+Bugfixes:
++ Fixed crash
+
+--------------------------------------------------------------------
+1.0.2.1:
++ Added LAD
++ Added Design plan items
++ Added Exosuit
+
+Bugfixes:
++ Tactician abilities no longer affect mechanical
+
+--------------------------------------------------------------------
+1.0.2:
+
+Bugfixes:
++ Fixed horror death not decrementing rad count if a player is disconnected
++ Fixed some issues involving 0hp untargetable enemies
++ Fixed votes needed to kick including disconnected players
+
+--------------------------------------------------------------------
+1.0.1.1:
+
+Bugfixes:
++ Fixed horror death not decrementing rad count if a player is disconnected
++ Fixed some issues involving 0hp untargetable enemies
++ Fixed votes needed to kick including disconnected players
+
+--------------------------------------------------------------------
+1.0.1:
+
++ Disconnected players are no longer killed
++ Non-warning/error notifications now appear on the right
++ Reduced power core explosion chance on lower difficulties
+
+Bugfixes:
++ Fixed extra items being buyable in the lab via search
++ Fixed an animation and sound glitch on power core explosions
+
+--------------------------------------------------------------------
+1.0.0.3:
++ Reduced power core explosion chance on lower difficulties
+
+--------------------------------------------------------------------
+1.0.0.2:
++ Non-warning/error notifications now appear on the right
+
+Bugfixes:
++ Fixed some issues with kicking
+
+--------------------------------------------------------------------
+1.0.0.1:
+
++ Disconnected players are no longer killed
+
+Bugfixes:
++ Fixed extra items being buyable in the lab via search
+
+--------------------------------------------------------------------
+1.0.0:
++ Released July 15, 2016

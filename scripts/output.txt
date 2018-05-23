@@ -1,0 +1,621 @@
+VerHead('1.11.3');
+VerData('Hive: Fixed Rescue Civilians objective not using correct customizations');
+VerData('Maverick: Fixed bug that allowed him to use the Laser Rifle');
+VerData('Maverick: Fixed Chrome Retriever losing armor on death');
+VerData('Heavy Ordnance: Activating XLR8 no longer interrupts Power Grid');
+VerData('Pyrotechnician: Fixed incorrect tooltip for overburn bonus damage');
+VerData('Energizer: Fixed tooltip showing 33%');
+VerData('Fixed Enemy AI issues involving invisible units');
+VerData('Additional improvements made to prevent placing contraptions on walls');
+VerData('Fixed extra win text if Nemesis was killed after players already lost');
+VerFoot();
+
+VerHead('1.11.2');
+VerData('Demo: MIRV\'s energy cost increased and its napalm\'s damage and duration have been reduced.');
+VerData('Demo: Reduced Biochem\'s effectiveness on high health normal units.');
+VerData('Heavy Ordnance: Minidroids can now automatically drain energy while the HO is channeling Power Grid.');
+VerData('Heavy Ordnance: Power Grid bonus eps for partial power is now removed if the officer took damage recently.');
+VerData('Heavy Ordnance: Power Grid no longer kills fireflies; he is now just immune to their drain while channeling power grid.');
+VerData('Espionage: Fixed eps penalty not always being applied.');
+VerFoot();
+
+VerHead('1.11.1');
+VerData('Watchman: Surge capacitor custom loadout subupgrade now improves Energizer trait battery');
+VerData('Increased armor of most non-nanites using units');
+VerData('Performance improvements');
+VerData('Maverick: Fixed hotkey issue on Kamikaze Canine');
+VerData('Survivalist: Fixed low health modifier persisting in non-critical health');
+VerData('Fixed some City map issues');
+VerFoot();
+
+VerHead('1.11.0');
+VerData('Cyborg: Can no longer acquire Large++ nanites');
+VerData('Demo: Reduced napalm damage (100->80) and linger duration to (3.0->2.5s). Increased level 16 cost to 360e.');
+VerData('HO: Power Grid now kills nearby fireflies while being channeled');
+VerData('HO: slight XLR8 rework; now with stacks');
+VerData('Maverick: Added new Mecha Mutt skill: Howl');
+VerData('Pyro: Overburn now gives bonus bounces but reduced bonus damage');
+VerData('Psychologist: Mind Slay will now set commandoes health to 2 instead of killing');
+VerData('LAD: Reduced cluster rocket stuns on bosses and power armored enemies');
+VerData('Freeze Ray: Now removes virunating buff');
+VerData('Flare Gun: Now reveals invisible units');
+VerData('Titan Vest passive changed to: Upgrades nanites, +25 armor (no aura), +500 energy cap.');
+VerData('Added TNT dogs and TNT grotesques');
+VerData('Improved some enemy AI involving skills');
+VerData('Extinction mode now gets harder faster');
+VerCol2()
+VerData('Added additional leaderboards');
+VerData('Fireflies no longer spawn if the zombie can\'t revive');
+VerData('Particle performance improvements');
+VerData('Maverick: Improved robodog energy regen when near officer');
+VerData('Maverick: Fixed Kami hyper thrash clones not contributing to damage stats');
+VerData('Psychologist: Fixed bonus int from Mental Clarity being lost on death.');
+VerData('Watchman: Fixed an issue where some subupgrades were not applied properly');
+VerData('Reckless: Fixed shield capacitor lowering nanites level to 14');
+VerData('Attempt to reduce A.P.C.s getting stuck');
+VerData('Improved loot not getting stuck in walls');
+VerData('Fixed some issues with items, like the MFG MkII giving duplicate bonuses.');
+VerData('Fixed some areas on city map where cameras could be placed on walls');
+VerData('Fixes for some locker and drug rep issues');
+VerData('Fixed a display bug when turning off resource pooling');
+VerFoot();
+
+VerHead('1.10.9');
+VerData('LAD: Riot Shield aura no longer stacks with Riot Shield item');
+VerData('Sniper: Fixed being able to place cameras on walls');
+VerData('HO: Fixed Energy Cells bonus regen not displaying correct value');
+VerData('Fixed stats issues after being revived');
+VerData('Fixed armor not being applied to LADs or the Chrome Retriever');
+VerData('Fixed some enemy abilities not affecting rad immune units');
+VerData('Map, City: Minor enhancements to the Park');
+VerFoot();
+
+VerHead('1.10.8');
+VerData('Flower Child, Chem. Reliant, and Chemistry now give a pill pouch regardless of renown.');
+VerData('Pack Rat: Changed bonus from 0 second cooldowns on sending/retrieval of items to');
+VerData('the locker with a 3 second cooldown. Still no energy cost. Added eject all button when not in lab.');
+VerData('Added Camera Angle option to settings');
+VerData('Psychologist: Fixed confidence applying to the Psychologist instead of his target.');
+VerData('Sniper: Marksman pierce can no longer hit gray zombies');
+VerData('Fixed some issues with mob spawning during Extinction Nemesis fight.');
+VerData('Votekicks will not be initiated on Team Kills if you\'re the only remaining player');
+VerData('Removed all teleport scrolls');
+VerFoot();
+
+VerHead('1.10.7');
+VerData('Tactician: Fixed dota stats being applied to cadet when he levels up');
+VerData('Psychologist: Fixed some stat issues on mental clarity and confidence');
+VerFoot();
+
+VerHead('1.10.6');
+VerData('Fixed incorrect items being dropped on LAD deaths');
+VerData('Corrected robodog base hps');
+VerFoot();
+
+VerHead('1.10.5');
+VerData('Medic: LAD bonus changed to:');
+VerData('LADs drop all consumable items fused');
+VerData('Demo: LAD bonus changed to:');
+VerData('Increased weapon damage and splash');
+VerData('Refined Rifle ability bonus damage now gives');
+VerData('more bonus splash damage');
+VerData('Freeze ray now removes brainlust');
+VerData('LADs now always drop all fused LAD parts');
+VerCol2()
+VerData('Exosuit more likely on Nightmare and guarenteed on Extinction');
+VerData('Demo: Fixed biochem not leveling up while locked down');
+VerData('Maverick: Fixed robodogs not getting stat bonus if A.R.S. activated when leveling up');
+VerData('Watchman: Fixed gaining energy from leveling weapon');
+VerData('Engineer: duplicated items now keep the same cooldown');
+VerData('Implemented custom stat system to undo 7.07 stat changes');
+VerData('Disabled map-scan feature');
+VerData('Fixed an issue where LADs were not getting the correct number skill points');
+VerData('Fixed some issues with green bonus damage and splash');
+VerFoot();
+
+VerHead('1.10.4');
+VerData('Maverick: Can now mutate Engineer');
+VerData('Some improvements to Extinction\'s Nemesis fight');
+VerFoot();
+
+VerHead('1.10.3');
+VerData('Added Chinese and Russian localizations');
+VerData('Watchman: Lethality grenade will no longer affect invulnerable units');
+VerData('Watchman: Fixed some subupgrades being lost upon death');
+VerData('Tactician: Cadet can now consume insta-drugs');
+VerData('Chaingun: Fixed plasma rounds being auto cast even if no available mana');
+VerData('Drug Rep: No longer receives energy cells bonus');
+VerData('Riot Shield: Addressed receiving duplicate riot shield modifiers');
+VerData('Fixed A.P.C. minimap indicators not disappearing if A.P.C. destroyed');
+VerData('Fixed some achievements not unlocking correctly');
+VerFoot();
+
+VerHead('1.10.2');
+VerData('Watchman: Fixed lethality not always working');
+VerData('Watchman: Avatars now deal reduced damage to rads/crates');
+VerData('Watchman: Surge Capacitor upgrade now improves batteries properly');
+VerData('Watchman: Fixed paradox debuff modifier remaing after toggled off');
+VerData('LAD: No longer breaks if Pyrotechnician constructs it');
+VerData('Commandos no longer run from Xnade if reviving');
+VerFoot();
+
+VerHead('1.10.1');
+VerData('Watchman: Subupgrades can no longer be upgraded while the game is paused or the Watchman is dead');
+VerData('Watchman: Improved Nurse\'s autocast nano injection AI');
+VerData('Defense: Added Repair Armor item to Lab shop for Watchman');
+VerData('Watchman: Dying while using Partner will now cancel the teleport');
+VerData('Watchman: Can no longer power surge reactors');
+VerData('Engineer: Fixed some issues where duped items could disappear or cost more than 250e');
+VerData('Fixed issue with Nemesis\' max health');
+VerData('Fixed bosses not spawning correctly');
+VerFoot();
+
+VerHead('1.10.0');
+VerData('New Class: Watchman');
+VerData('New Trait: Engineer');
+VerData('New Secret Weapon Item: Riot Shield');
+VerData('New A.T.M.E. Item: Drug Replicator');
+VerData('Added Chinese translations');
+VerData('Added Russian translations');
+VerCol2()
+VerData('Added more achievements');
+VerData('Added minimap indicator for A.P.C. destinations');
+VerData('Improvements to the Nemesis fight');
+VerData('Maverick: Mecha Mutt base move speed increased to 220');
+VerData('Lab rad scan should now work in Survival');
+VerData('Player death count no longer increment if disconnected before officer selected');
+VerData('Fixed bosses not receiving uber health upgrades');
+VerFoot();
+
+VerHead('1.9.0');
+VerData('Added Talents');
+VerData('Added Player Stats');
+VerData('Added Achievements');
+VerData('Added Leaderboards');
+VerData('Added Settings HUD which syncs with server');
+VerData('Upgraded Server');
+VerData('City map updated to remove invisible walls');
+VerData('Some improvements to the HUD');
+VerData('LAD parts now sell for less for each parts previously sold');
+VerData('Cyborg: Chaingun now splashes allies');
+VerData('Heavy Ordnance: Using solar batteries no longer adds a charge to Recharge Battery');
+VerData('Maverick: Fixed robodogs causing disabled items');
+VerCol2()
+VerData('Maverick: Chaingun now splashes allies');
+VerData('Sniper: Concussion grenade no longer works on a phased super mutant');
+VerData('Energizer: No longer triggered if killed');
+VerData('Espionage: Now properly applies the negative energy regen for all armors');
+VerData('Atomic Zombies: No longer detonates when hitting a force field');
+VerData('Atomic Zombies: Fixed regaining hp regen after detonating');
+VerData('Defense: Fixed crate minimap icons not always disappearing');
+VerData('Defense: Fixed finale not ending when everyone in lab');
+VerData('Flare Gun: Fixed last charge not working');
+VerData('Titan Vest: Fixed aura not stacking with vests');
+VerData('Fixed locker items in the 6th slot not stacking');
+VerData('Fixed some truesight issues');
+VerData('Fixed bosses spawning after objectives completed');
+VerFoot();
+
+VerHead('1.8.5');
+VerData('Changed A.B.M. and Televac models so they are now selectable');
+VerData('Cyborg: Pheromones now works if cast while invisible');
+VerData('Energizer: No longer breaks if it recharges while dead');
+VerData('Exosuit: Fixed issue with improper stat attributes being applied');
+VerData('Enemy rad bolts now properly deal Explosion type damage');
+VerFoot();
+
+VerHead('1.8.4');
+VerData('Updated hp regen and mana per int for dota 7.06 patch');
+VerData('Addressed some no nav issues on city');
+VerFoot();
+
+VerHead('1.8.3');
+VerData('Maverick: Robodogs agility values have been doubled');
+VerData('Base agility increased: 51 -> 102');
+VerData('Agility per level increased: 2 -> 4');
+VerData('A.R.S. now 1 agility -> 7.5 vitality');
+VerData('Death penalty increased:-1 -> -2 agility');
+VerData('Covert Sniper: Conc Grenade boss effect duration increased');
+VerData('Sniper Rifle: Damage penalty vs rads reduced: -50% -> -40%');
+VerData('Flamethrower: Can no longer bounce to splash immune enemies');
+VerData('Rocket Launcher: Lockdown now knocks enemies back');
+VerData('Energizer: Battery can now be manually activated by typing "-batt"');
+VerData('Energizer: Added modifier to indicate battery recharge time');
+VerData('Survivalist: The no int requirement for vests no longer applies to Titan Vest');
+VerCol2()
+VerData('Titan Vest: Now gives +25 armor aura in a small radius');
+VerData('Freeze Ray and Shield Cap: initial item stock decreased: 2 -> 1');
+VerData('Solar Batteries: Reduced recharge time: 60s -> 36s');
+VerData('Increased the cast range of sniper\'s cameras, demo\'s c4, and claymores');
+VerData('Atomic Zombies: Increased single target damage; removed regen on explode; reduced freeze ray effectiveness');
+VerData('Red Rads radlets now last significantly longer');
+VerData('Reactor rooms are now discovered by all units');
+VerData('Extinction now requires 2 people');
+VerData('Rooms are now marked discovered on the minimap based on sight of the center of the room');
+VerData('Survivalist: Fixed issue with severe ankle injuries');
+VerData('Stims: Fixed potential 0 stack issue if used on rez sickness officer');
+VerData('Fixed units being able to get up onto walls');
+VerData('Fixed initial Avatar item not always being removed in Extinction');
+VerFoot();
+
+VerHead('1.8.2');
+VerData('Fixed an issue where radiation could decrease to negative values.');
+VerFoot();
+
+VerHead('1.8.1');
+VerData('Prowler: Sonar triggers 10x faster at night');
+VerData('Stims now fail if used on officers with rez sickness (unless psycho)');
+VerData('Atomic zombies now explode on death');
+VerData('Cyborg: Plasma rounds now affect allies');
+VerData('Tactician: Ion strike changed to explosion damage');
+VerData('Tactician: Fixed some issues with prioritization');
+VerData('Fixed crash during Extinction\'s Nemesis');
+VerData('Fixed issue when eating drug from pill pouch while dead');
+VerData('Fixed Freeze Ray targetting non-organics');
+VerFoot();
+
+VerHead('1.8.0');
+VerData('Added Extinction Mode');
+VerData('Added ChronoTech items (Survival + Extinction only)');
+VerData('Tactician: Added aura prioritization');
+VerData('Tactician: Blitz level progression changed');
+VerData('Medic: Added modifier display for mending station cooldown');
+VerData('Pyrotechnician: Incendiary rocket no longer triggers Super Mutant regeneration');
+VerCol2()
+VerData('Maverick: Plasma rounds slow should now work');
+VerData('HO: Plasma shield now upgrades properly while toggled on');
+VerData('Fixed a bug where bosses could have "hidden" armor');
+VerData('Corrected the Attack Speed and negative armor values on the stats screen for Officers');
+VerData('Metabolic Synergizer and H.E.R.M.E.S Valor upgrades now persist through death');
+VerData('Promote Officer item can no longer be placed in the locker');
+VerFoot();
+
+VerHead('1.7.6');
+VerData('Updated game to support new Dota 2 version\'s HTTP request');
+VerFoot();
+
+VerHead('1.7.5');
+VerData('Fixed an issue that prevented the game results screen from appearing');
+VerFoot();
+
+VerHead('1.7.4');
+VerData('Added schinese and new tchinese localizations');
+VerData('Psychologist: Mind Slay cooldown increased (especially vs bosses)');
+VerData('Maverick: Mutating Chem Reliant or Flower Child now only flushes the maverick');
+VerData('Chaingun: Cooldowns on plasma rounds now work properly');
+VerData('Fixed game results time not matching game clock');
+VerFoot();
+
+VerHead('1.7.3');
+VerData('Improved sharable units when disconnected/reconnected');
+VerData('Added -share on/off command');
+VerData('Fixed conduits not spawning in the Hive map');
+VerData('Fixed the Avatar unit not animating properly');
+VerFoot();
+
+VerHead('1.7.2');
+VerData('Fixed a problem in the Defense finale');
+VerFoot();
+
+VerHead('1.7.1');
+VerData('Added Chinese localizations');
+VerData('Fixed minor issue when dropping items close to hero');
+VerFoot();
+
+VerHead('1.7.0');
+VerData('New Map: Hive');
+VerData('Added Game Results screen and Trophies');
+VerData('Added new Chinese localizations');
+VerData('Improved resource pooling');
+VerData('Maverick: Robodog advanced generator now just +1 eps per level');
+VerData('Maverick: Kami thrash crit multiplier reduced');
+VerCol2()
+VerData('Maverick: Robodogs now have reduced efficiency for power core repairing');
+VerData('You can now kick if you are the only person in the game');
+VerData('Maverick: Robodog will no longer keep O.T.A. when hyper thrashing out of radius');
+VerData('Abomination toxic aura damage corrected on Nightmare');
+VerData('Abomination toxic aura damage now affects Rad Resist officers');
+VerData('Fixed some issues with Trophies');
+VerData('Fixed mutant buffs not being removed if rad count moved to lowest bracket');
+VerFoot();
+
+VerHead('1.6.4');
+VerData('Maverick: Kamikaze Canine will now explode on death');
+VerData('Maverick: Kamikaze Canine is now issued an attack command on the hyper thrash target');
+VerData('Added Chinese localizations');
+VerData('City Map: Fixed APCs not being able to leave from North exit');
+VerData('Pyrotechnician: Fixed health decreasing when vitality changes while overburning');
+VerCol2()
+VerData('Pyrotechnician: Microwave explosion now properly deals explosion damage (previously flame)');
+VerData('Maverick: Chrome Retriever can now hold more than one unique item (such as vests)');
+VerData('Swift Learner: Fixed not getting objectives\' bonus XP even if XP gain is disabled');
+VerData('Commandoes: Blitz aura will no longer affect zombies');
+VerData('Fixed Civilians that die near APCs not being able to get into APCs after being revived');
+VerData('Fixed Freeze Ray potentially killing Nemesis');
+VerFoot();
+
+VerHead('1.6.3');
+VerData('Demo: Reduced the tick time of MIRV (same DPS)');
+VerData('Super Mutants will no longer be pissed off from phasing');
+VerData('Demo: Fixed an issue with demo c4 not detonating at level 16 AI');
+VerData('Stats UI now shows correct move speed and updates appropiately');
+VerData('Units are now prevented from teleporting items to/from locker while dead');
+VerData('Nearby Robots with antidote items no longer provide a bonus when using antidotes');
+VerData('Character build screens rank filter will no longer set that rank and instead use max rank');
+VerFoot();
+
+VerHead('1.6.2');
+VerData('Fixed being able to buy items while dead');
+VerData('Fixed ejecting items from locker when not in the lab');
+VerData('Maverick: Fixed spawning with 2 robodogs');
+VerData('Maverick: Fixed robodog losing stats from ARS');
+VerFoot();
+
+VerHead('1.6.1');
+VerData('Demo: Corrected some C4 AI issues');
+VerData('Medic: Revive will now properly refund 50% of the cost');
+VerData('Maverick: Robodog can no longer pick up hazmat');
+VerData('Maverick: Addressed some robodog stats and dog selector issues');
+VerData('Prowler: Sensor will now disappear on death');
+VerData('Fixed HUD issue involving items on cooldown');
+VerData('Hazmat can no longer be placed in locker');
+VerData('Enemy soldiers can no longer pep talk non-soldiers');
+VerFoot();
+
+VerHead('1.6.0');
+VerData('New Class: Maverick');
+VerData('New Specialization: Pack Rat');
+VerData('New Item: Freeze Ray (Secret Weapon bought in lab)');
+VerData('New Item: Grenade Launcher (Secret Weapon bought in lab)');
+VerData('Cyborg: can now integrate MFGs by upgrading cluster rockets');
+VerData('Cyborg: Pheromones now has a 6 second cooldown after charging before it can be cast');
+VerData('Heavy Ordnance: Plasma Shield now increases threat while activated');
+VerData('Medic: Mend wounds and mending station will no longer target overburning pyrotechnicians');
+VerData('Medic: Rapid therapy will now wake unconscious units');
+VerData('Psychologist: Prowler now increases clairvoyance sight radius by 300');
+VerData('Tactician: Constructing LAD bonus changed to be +2 inactive inventory slots per mark');
+VerData('Chemistry: +33% stim duration');
+VerData('Flower Child: -33% stim duration');
+VerData('Prowler: Added heartbeat sensor while standing still');
+VerData('Survivalist: Can now use kevlar and combat vests regardless of intelligence');
+VerData('Batteries will now be auto consumed based on the order in inventory');
+VerData('Increased rank/renown experience gain for Defense mode');
+VerCol2()
+VerData('Innards reworked; now take significantly more damage from explosion abilities');
+VerData('Fireflies spawned is reduced if killed with revive-preventing skills');
+VerData('Nemesis will now only counter slay if Nemesis, himself, is slayed');
+VerData('Hazmat items will now drop if held while recalling');
+VerData('You can now move items to/from locker while at a shop');
+VerData('You can now swap items inventory/locker items if you are in lab or have pack rat');
+VerData('Tactician: fixed endurance aura radius not increasing');
+VerData('Reckless: fixed not upgrading past level 14 correctly');
+VerData('Fixed not always receiving a skill point upon leveling up');
+VerData('Fixed power plants showing their energy degen before being discovered');
+VerData('Chat commands are no longer caps sensitive');
+VerData('Fixed antidotes not initially restocking correctly');
+VerData('Addressed some issues with items getting stuck in ABMs');
+VerData('Improved character build screen for Russian');
+VerData('Fixed Locker showing up before Renown level 18');
+VerData('Fixed HUD issues for Dota update');
+VerData('Fixed some issues involving injury immunity');
+VerData('Fixed broken text when alt clicking weapon skill as weaponry');
+VerFoot();
+
+VerHead('1.5.1');
+VerData('Added russian localizations');
+VerData('Fixed some missing modifier icons');
+VerFoot();
+
+VerHead('1.5.0');
+VerData('New Map: Defense Mode');
+VerData('Added significant HUD improvements for Dota 7.00');
+VerData('Added custom shops');
+VerData('A.B.M. inventories are no longer shared');
+VerData('Fixed Super Mutant not phasing in Nightmare');
+VerData('Psychologist: Clairvoyance now reveals invisible units');
+VerData('Disabled some targets of minidroids and LADs energy beam skill');
+VerData('Unique valor upgrades can now be bought by multiple officers');
+VerFoot();
+
+VerHead('1.4.3');
+VerData('Improved HUD for Dota 7.00');
+VerFoot();
+
+VerHead('1.4.2');
+VerData('Added Chinese localizations');
+VerData('Added Russian localizations');
+VerFoot();
+
+VerHead('1.4.1');
+VerData('Nemesis: Reduced damage in non-Nightmare modes');
+VerData('Nemesis: No longer nukes in Normal and Hard mode');
+VerData('Locker will now not disappear on disconnect');
+VerData('Can no longer vote -perfect after Nemesis has begun');
+VerFoot();
+
+VerHead('1.4.0');
+VerData('Final Boss Added: Nemesis');
+VerData('Added Locker (requires Renown level 18+)');
+VerData('Cyborg: Goliath modification now gives +250 max energy');
+VerData('Demolitions: Biochem damage reduced vs bosses');
+VerData('Demolitions: Napalm debuff now persists for 3 seconds');
+VerData('Sniper: Cameras now have reduced priority for enemies');
+VerData('Higher Mk LADs now have an improved concussion rockets ability');
+VerData('Reactors now display a warning when chance to explode passes a threshold');
+VerData('Fireflies have been reworked');
+VerCol2()
+VerData('Significant performance improvements, especially for late game');
+VerData('Heavy Ordnance: Fixed some issues on Power Grid and XLR8');
+VerData('Demolitions: Reactors will no longer drain C4');
+VerData('Sniper: Fixed attack range dropping below 1200');
+VerData('Cyborg: Goliath modification cast range fixed');
+VerData('Tactician: Cadet\'s Use Drug, Use Vest, and Use Shield Cap cast range fixed');
+VerData('LADs can no longer fuse more than one of any type of consumable');
+VerData('Tesla Vest and Tesla Vest MkII now give armor when fused into LADs');
+VerData('Improved enemy dodging');
+VerFoot();
+
+VerHead('1.3.1');
+VerData('Demo: Gear Mod now checks target\'s inventory for circuit boards');
+VerData('Improved innards model and particles');
+VerData('-revive command now works on players under Renown 20 (previously Rank 1)');
+VerData('Cyborg: Pheromones now works better on bosses');
+VerData('Fixed an issue where evil civilians spawned incorrectly');
+VerCol2()
+VerData('Fixed issue where you could hold 2 unique items simultaneously');
+VerData('Fixed issues where HUD could incorrectly say item Int requirements were not met');
+VerData('Fixed an issue involving filling a reactor before discovering it');
+VerData('Fixed items spawning inside televacs');
+VerData('Pill pouch is no longer attackable');
+VerFoot();
+
+VerHead('1.3.0');
+VerData('New Difficulty: Nightmare Mode');
+VerData('New Boss: Covert Commandos Strike Force');
+VerData('Added Pill Pouch');
+VerData('Added new models for officer armors');
+VerData('Added new Tyrant/Lad models');
+VerData('Added auto-revive to Normal and Survival (Day 1) modes');
+VerData('-revive commands now also works in Hard mode');
+VerData('Pyrotechnician: Overburn prevents healing while active');
+VerData('Pyrotechnician: Incendiary Rocket damage no longer stacks nor pierces armor');
+VerData('Tactician: Blitz and Endurance aura now affect mechanical');
+VerData('Tactician: Blitz aura now gives a bonus for being adjacent');
+VerData('Tactician: Cadet\'s Use Shield Cap skill will now drop Shield Capacitor Parts');
+VerData('Medic: Assault Rifle now has Anti-Personnel rounds');
+VerData('Weaponry: Added Anti-Personnel rounds and increased plasma rounds damage');
+VerData('Sniper Rifle: Reduced damage sniper rifles do to crates/rads by 50%');
+VerData('Improved particles and look of enemies');
+VerCol2()
+VerData('Items HUD now alerts player if Int requirement is not met');
+VerData('Added APC indicators for duration remaining and number of civs inside');
+VerData('Upgraded Enemy Soldiers');
+VerData('Upgraded Tyrants');
+VerData('Spiders now do reduced damage vs mechanical');
+VerData('Enemy soldiers and commandos now do significantly more damage to contraptions');
+VerData('Added more DotaStats metrics');
+VerData('Improved player data saving/retrieving to server');
+VerData('Sniper: Espionage bonus now properly applied only while invisible');
+VerData('Heavy Ordnance: Fixed Minidroid Plasma Rounds auto cast toggle issue');
+VerData('Heavy Ordnance: No longer a delay between xlr8 levels');
+VerData('Tactician: Ion damage type corrected');
+VerData('Reactor explosions should now stun all units inside');
+VerData('Fixed Exosuit injury immunity not being removed');
+VerData('Fixed Radlets size');
+VerData('APCs should more reliably make it out of the city');
+VerFoot();
+
+VerHead('1.2.4');
+VerData('Pyrotechnician: Fixed attack not bouncing after Dota 2 Compendium patch');
+VerData('Fixed issue where exosuit could set life to 0');
+VerFoot();
+
+VerHead('1.2.3');
+VerData('Fixed an issue with corpses sometimes not being revivable');
+VerFoot();
+
+VerHead('1.2.2');
+VerData('Added indicators for disconnected and kicked to squad status');
+VerData('Recall now works on units in Lockdown');
+VerData('Fixed some issues with the Russian localization');
+VerData('Heavy Ordnance: Battery charger now properly corrodes');
+VerData('Fixed an issue where rads could spawn despite being under safe level');
+VerData('Fixed an issue with how radiation damage is calculated');
+VerFoot();
+
+VerHead('1.2.1');
+VerData('Increased the difficulty of Survival mode');
+VerData('Added stat collection for GetDotaStats.com');
+VerData('Added Russian localization');
+VerData('Flamethrower will now bounce off/to bosses and power armor units but has no bonus damage');
+VerData('Antidotes now have an initial stock delay of 360 seconds');
+VerData('Sniper: marksman will no longer pierce into allies');
+VerData('Sniper: marksman pierced shots can now crit');
+VerData('Ctrl and Alt clicking abilities now works');
+VerData('Should no longer be prevented from buying items due to max item limit');
+VerCol2()
+VerData('Cameras, C4, and Claymores can no longer be placed on walls');
+VerData('Disconnected players should now receive level up bonuses');
+VerData('One televac will now overcharge when power is restored instead of always at 2');
+VerData('Removed extra skillpoint being given at start');
+VerData('Spiders can now ensnare rad immune units');
+VerData('Addressed some issues with leveling up');
+VerData('Projectiles can no longer discover rooms');
+VerData('Fixed incorrect nanites efficiency on level 20 Heavy++ nanites');
+VerData('Fixed sometimes not seeing team members\' selections in class select screen');
+VerFoot();
+
+VerHead('1.2.0');
+VerData('New Class: Pyrotechnician');
+VerData('New Boss: Super Mutant');
+VerData('New Boss: Godzilla');
+VerData('New Enemy: Tyrant');
+VerData('New Enemy: Enemy Soldiers');
+VerData('New Enemy: Enemy Assault Droid');
+VerData('Insane can now be beaten "Perfectly" by overachieving two objectives and removing Hazmat in 60 minutes');
+VerCol2()
+VerData('Rank 11 unlocked. You must beat insane perfectly to attain it.');
+VerData('Added -perfect command');
+VerData('Added new models for all weapon types');
+VerData('Added new models for Crates');
+VerData('Heavy Ordnance: minidroid plasma rounds level corrected');
+VerData('Medic: Revive corrected to 500 energy');
+VerData('Sniper: Concussion grenade duration corrected against bosses');
+VerData('Prowler: Fixed armor bug');
+VerFoot();
+
+VerHead('1.1.2');
+VerData('Fixed some issues related to Toxic');
+VerData('Heavy Ordnance: Constructed Droids should no longer spawn on walls');
+VerData('Stims no longer work on mechanical');
+VerData('Addressed some tooltip issues');
+VerFoot();
+
+VerHead('1.1.1');
+VerData('Fixed not being able to be revived after dying to a reactor explosion');
+VerData('Updated gadgeteer tooltip to reflect bonus towards Assault Droids');
+VerFoot();
+
+VerHead('1.1');
+VerData('Added the Assault Droid support unit');
+VerData('New Items: Design Plans');
+VerData('New Item: Exosuit');
+VerData('When a team kill occurs, a vote to kick the attacker will immediately occur.');
+VerData('If successfully kicked, all victims will be revived');
+VerData('Added Vibrations aura to bosses that massively damages nearby contraptions');
+VerData('Demo: Mininuke now has an AOE indicator');
+VerData('Demo: C4 now take at least 1 damage per hit');
+VerData('Heavy Ordnance: Plasma shield evasion values corrected');
+VerData('Sniper: can now activate Sneak without losing cloaking');
+VerCol2()
+VerData('Psychologist: Abilities no longer affect mechanical');
+VerData('Psychologist: Mind slay now sets allied officers health to 1 hp');
+VerData('Tactician: Abilities no longer affect mechanical units');
+VerData('Tactician: Cadets can no longer eat cybnertic upgrades');
+VerData('Removed delay when queueing abilities');
+VerData('Survivalist: removed healing from low damage attacks');
+VerData('Failed to convert civs are no longer fully healed');
+VerData('Fixed toxic damage being too high and not affecting Rad Resist');
+VerData('Fixed graveyard zombies not spawning correctly');
+VerData('Fixed controlling an invulnerable unit when a player disconnects without selecting a class');
+VerData('Fixed some issues involving loading in with Dota options menu up');
+VerFoot();
+
+VerHead('1.0.2');
+VerData('Fixed horror death not decrementing rad count if a player is disconnected');
+VerData('Fixed some issues involving 0hp untargetable enemies');
+VerData('Fixed votes needed to kick including disconnected players');
+VerFoot();
+
+VerHead('1.0.1');
+VerData('Disconnected players are no longer killed');
+VerData('Non-warning/error notifications now appear on the right');
+VerData('Reduced power core explosion chance on lower difficulties');
+VerData('Fixed extra items being buyable in the lab via search');
+VerData('Fixed an animation and sound glitch on power core explosions');
+VerFoot();
+
+VerHead('1.0.0');
+VerData('Released July 15, 2016');
+VerFoot();
+
