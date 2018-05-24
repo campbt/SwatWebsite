@@ -29,7 +29,7 @@ var info_URL_Armor = '';
 var info_FORUM = '';
 
 function info_URL_Guns(guntype) {
-  return '<a href=readmeafterweapons.html#'+guntype+'><img src=info.gif border=0 alt=info title=info width=11 height=11></a>';
+  return '<a href=readmerebornweapons.html#'+guntype+'><img src=info.gif border=0 alt=info title=info width=11 height=11></a>';
 }
 
 
@@ -50,7 +50,7 @@ function InfoLinkS(label, url, gold) {
 }
 
 function InfoAtkDef(label, white) {
-  return InfoLink(label, 'readmeafteratkdef.html', !white, true);
+  return InfoLink(label, 'readmerebornatkdef.html', !white, true);
 }
 
 //menu for all pages
@@ -58,18 +58,18 @@ function WriteTopMenu(base) {
   var rcpd = false;
   if (!base) { base = ''; }
   document.writeln('<center><font size=-1 color=ffe888>');
-  document.writeln('<a href='+base+'readmeafter.html>HOME</a> | ');
-  document.writeln('<a href='+base+'readmeafterobjectives.html>OBJS</a> | ');
-  document.writeln('<a href='+base+'readmeafterclasses.html>CLASSES</a> | ');
-  document.writeln('<a href='+base+'readmeafterweapons.html>GUNS</a> | ');
-  document.writeln('<a href='+base+'readmeafterarmor.html>ARMOR</a> | ');
-  document.writeln('<a href='+base+'readmeaftertraits.html>TRAITS</a> | ');
-  document.writeln('<a href='+base+'readmeafterspecs.html>SPECS</a> | ');
-  document.writeln('<a href='+base+'readmeaftertalents.html>TALENTS</a> | ');
-  document.writeln('<a href='+base+'readmeaftermechs.html>MECHS</a> | ');
-  document.writeln('<a href='+base+'readmeafteritems.html>ITEMS</a> | ');
-  document.writeln('<a href='+base+'readmeafterrank.html>RANK</a> | ');
-  document.writeln('<a href='+base+'readmeafterrenown.html>RENOWN</a> | ');
+  document.writeln('<a href='+base+'readmereborn.html>HOME</a> | ');
+  document.writeln('<a href='+base+'readmerebornobjectives.html>OBJS</a> | ');
+  document.writeln('<a href='+base+'readmerebornclasses.html>CLASSES</a> | ');
+  document.writeln('<a href='+base+'readmerebornweapons.html>GUNS</a> | ');
+  document.writeln('<a href='+base+'readmerebornarmor.html>ARMOR</a> | ');
+  document.writeln('<a href='+base+'readmereborntraits.html>TRAITS</a> | ');
+  document.writeln('<a href='+base+'readmerebornspecs.html>SPECS</a> | ');
+  document.writeln('<a href='+base+'readmereborntalents.html>TALENTS</a> | ');
+  document.writeln('<a href='+base+'readmerebornmechs.html>MECHS</a> | ');
+  document.writeln('<a href='+base+'readmerebornitems.html>ITEMS</a> | ');
+  document.writeln('<a href='+base+'readmerebornrank.html>RANK</a> | ');
+  document.writeln('<a href='+base+'readmerebornrenown.html>RENOWN</a> | ');
   // document.writeln('<a href=http://night.org/swat2/playerdb/>RCPD</a> | ');
   document.writeln('<a href='+base+'map.html>MAP</a>');
   document.writeln('</font></center>');
@@ -180,8 +180,8 @@ function WriteWeaponMenu() {
 //menu for items
 function WriteItemsMenu() {
   document.writeln('<center><font size=-1 color=ffe888>');
-  document.writeln('<a href=readmeafteritems.html>ITEMS</a> | ');
-  document.writeln('<a href=readmeafteritems-engi.html>ENGINEERED&nbsp;ITEMS</a>');
+  document.writeln('<a href=readmerebornitems.html>ITEMS</a> | ');
+  document.writeln('<a href=readmerebornitems-engi.html>ENGINEERED&nbsp;ITEMS</a>');
   document.writeln('</font>&nbsp;</center>');
   document.writeln('');
 }
@@ -189,7 +189,7 @@ function WriteItemsMenu() {
 //menu for armor atkdef type
 function WriteArmorMenu() {
   document.writeln('<center><font size=-1 color=ffe888>');
-  document.writeln('<a href=readmeafteratkdef.html>DAMAGE&nbsp;MULTIPLIERS</a>');
+  document.writeln('<a href=readmerebornatkdef.html>DAMAGE&nbsp;MULTIPLIERS</a>');
   document.writeln('</font>&nbsp;</center>');
   document.writeln('');
 }
