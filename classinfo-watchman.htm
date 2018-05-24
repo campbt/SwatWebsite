@@ -93,7 +93,7 @@ WriteBonus('Droid',InfoLinkS('Droid','unitinfo-lad.htm')+' has the Temporal Avat
 <font color=ffcc00><b>Trainable Abilities</b></font>
 
 <script>
-WriteSkill('X-Grenade', 'gren', 'X', 'Uses energy to create a plasma grenade which can be thrown, dealing explosive damage to the target and units around it. Custom upgrades enhance the grenade with extra effects.</font><br><font size=-1>Duration is applicable only to the Napalm and Distortion upgrades.');
+WriteSkill('X-Grenade', 'gren', '', 'Uses energy to create a plasma grenade which can be thrown, dealing explosive damage to the target and units around it. Custom upgrades enhance the grenade with extra effects.</font><br><font size=-1>Duration is applicable only to the Napalm and Distortion upgrades.');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'Dmg.', 'Radius', 'Range', 'Dur.', 'Energy', 'Cool.');
 WriteData('1','100,&nbsp;75','224, 264','650','2 s','60','3 s');
@@ -394,10 +394,10 @@ WriteSkillEnd();
 WriteSkillRightStats();
 WriteSkillBegin();
 WriteHeader('Level', 'Energy Regen.');
-WriteData('1','+16%');
-WriteData('2','+33%');
-WriteData('3','+50%');
-WriteData('4','+66%');
+WriteData('1','+1 eps');
+WriteData('2','+2 eps');
+WriteData('3','+3 eps');
+WriteData('4','+4 eps');
 WriteSkillEnd();
 WriteSkillLeftRightEnd();
 </script>
@@ -417,7 +417,7 @@ WriteSkillNanites(3);
 <font color=ffcc00><b>Innate Abilities</b></font>
 
 <script>
-WriteSkill('Nano-Infusion', 'nanoinj', 'ZX', 'Converts up to 20% of the hero\'s energy into a beamed infusion of biomed nanites, restoring health to target non-mechanical unit.');
+WriteSkill('Nano-Infusion', 'nanoinj', '', 'Converts up to 20% of the hero\'s energy into a beamed infusion of biomed nanites, restoring health to target non-mechanical unit.');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'Efficiency', 'Range', 'Energy', 'Cooldown');
 WriteData('--','40%','175','50 +20%','20 s');
@@ -426,7 +426,7 @@ WriteSkillEnd(true);
 
 <br>
 <script>
-WriteSkill('Power&nbsp;Surge', 'psurge', 'ZC', 'Establishes a rapid transfer energy conduit with target in an attempt to fill its energy reserves from the hero\'s own storage.</font><br><font size=-1>Requires a circuit board to handle the transfer.');
+WriteSkill('Power&nbsp;Surge', 'psurge', '', 'Establishes a rapid transfer energy conduit with target in an attempt to fill its energy reserves from the hero\'s own storage.</font><br><font size=-1>Requires a circuit board to handle the transfer.');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'Range', 'Energy', 'Cooldown');
 WriteData('--', '175', '100 +100%','20 s');
@@ -438,22 +438,22 @@ WriteSkillEnd(true);
 WriteSkill('Advanced&nbsp;Generator', 'gen', '.', 'Increases the hero\'s rate of energy regeneration. Bonus based on hero level is combined with bonus based on rank.');
 WriteSkillBegin();
 WriteHeader('Hero Level', 'Energy Regen.');
-WriteData('1','+33%');
-WriteData('10','+50%');
-WriteData('20','+66%');
-WriteData('30','+83%');
-WriteData('40','+99%');
+WriteData('1','+2 eps');
+WriteData('10','+3 eps');
+WriteData('20','+4 eps');
+WriteData('30','+5 eps');
+WriteData('40','+6 eps');
 WriteSkillBegin2();
 WriteHeader('Rank', 'Energy Regen.');
-WriteData('4','+16%');
-WriteData('7','+33%');
-WriteData('10','+50%');
+WriteData('4','+1 eps');
+WriteData('7','+2 eps');
+WriteData('10','+3 eps');
 WriteSkillEnd();
 </script>
 
 <br>
 <script>
-WriteSkill('Partner', 'recall', 'ZV', 'Used to designate a comrade as the hero\'s partner. Then, the hero can teleport to his partner\'s location from anywhere within the city. Partner cannot be changed unless that player leaves the game. Failing to finish location synchronization will damage your power armor during the transport.</font><br><font size=-1>If the hero has less than 500 energy, teleporting requires 0 energy but the cooldown is 150 seconds.');
+WriteSkill('Partner', 'recall', '', 'Used to designate a comrade as the hero\'s partner. Then, the hero can teleport to his partner\'s location from anywhere within the city. Partner cannot be changed unless that player leaves the game. Failing to finish location synchronization will damage your power armor during the transport.</font><br><font size=-1>If the hero has less than 500 energy, teleporting requires 0 energy but the cooldown is 150 seconds.');
 WriteSkillBegin();
 WriteHeader('Distance', 'Range', 'Delay', 'Energy', 'Cooldown');
 WriteData('<900&nbsp;&nbsp;', 'unlimited', '0.75 s', '250','6 s');

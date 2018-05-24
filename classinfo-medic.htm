@@ -60,7 +60,7 @@ WriteBonus('Droid',InfoLinkS('Droid','unitinfo-lad.htm')+' drops all fused Assau
 
 <!--Nano Injection-->
 <script>
-WriteSkill('Nano-Injection', 'nanoinj', 'X', 'Uses a beamed injection of biomed nanites to restore health to a non-mechanical unit. Also restores additional health and prevents injuries over a short period. Has a chance to remove injuries and resurrection sickness.');
+WriteSkill('Nano-Injection', 'nanoinj', '', 'Uses a beamed injection of biomed nanites to restore health to a non-mechanical unit. Also restores additional health and prevents injuries over a short period. Has a chance to remove injuries and resurrection sickness.');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'HP', 'HoT', 'Inj.', 'Rez Sick.', 'Range', 'Dur.', 'Energy', 'Cool.');
 WriteData('1', '100','+0','0%','0%','175','0 s','250','20 s');
@@ -87,7 +87,7 @@ WriteSkillEnd();
 <br>
 <!--Mend Wounds-->
 <script>
-WriteSkill('Mend&nbsp;Wounds', 'mend', 'C', 'Uses standard medical techniques to restore health to a non-mechanical unit. Also improves effectiveness of bandages. The Mending Station is upgraded by this ability.');
+WriteSkill('Mend&nbsp;Wounds', 'mend', '', 'Uses standard medical techniques to restore health to a non-mechanical unit. Also improves effectiveness of bandages. The Mending Station is upgraded by this ability.');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'HP Healed', 'Bandages', 'Energy', 'Cooldown');
 WriteData('1', '17','+17','0','1.5 s');
@@ -113,7 +113,7 @@ WriteSkillEnd();
 
 <br>
 <script>
-WriteSkill('Adrenaline&nbsp;Junkie', 'junkie', '.', 'Chance that the medic administers himself an adrenaline shot when using adrenaline on others. Also causes the medic to experience more and longer adrenaline rushes.');
+WriteSkill('Adrenaline&nbsp;Junkie', 'junkie', '', 'Chance that the medic administers himself an adrenaline shot when using adrenaline on others. Also causes the medic to experience more and longer adrenaline rushes.');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'Chance');
 WriteData('1', '65%');
@@ -145,7 +145,7 @@ WriteSkillNanites(1);
 
 <!--Adrenaline-->
 <script>
-WriteSkill('Adrenaline', 'adren', 'ZX', 'Quadruples the attack rate of the recipient. Cannot be used on robots. Excessive kills may cause an adrenaline rush, extending the duration.');
+WriteSkill('Adrenaline', 'adren', '', 'Quadruples the attack rate of the recipient. Cannot be used on robots. Excessive kills may cause an adrenaline rush, extending the duration.');
 WriteSkillBegin();
 WriteHeader('Hero Level', 'Attack Spd.', 'Duration', 'Energy', 'Cooldown');
 WriteData('1', '+300%', '20 s', '0', '60 s');
@@ -160,7 +160,7 @@ WriteSkillEnd(true);
 <br>
 <!--Rapid Therapy-->
 <script>
-WriteSkill('Rapid&nbsp;Therapy', 'therapy', 'ZC', 'Instantly removes sprained ankle, fractured arm, and mild concussion injuries from target unit. Also restores consciousness. Unit cannot be immediately re-injured.');
+WriteSkill('Rapid&nbsp;Therapy', 'therapy', '', 'Instantly removes sprained ankle, fractured arm, and mild concussion injuries from target unit. Also restores consciousness. Unit cannot be immediately re-injured.');
 WriteSkillBegin();
 WriteHeader('Rank', 'Duration', 'Energy', 'Cooldown');
 WriteData('1', '2 s', '0', '20 s');
@@ -182,7 +182,7 @@ WriteSkillEnd();
 <br>
 <!--Mending Station-->
 <script>
-WriteSkill('Mending&nbsp;Station', 'station', 'ZG', 'Uses a supply of nanites to rapidly construct a mending station which automatically heals nearby allies and provides a defense network.','medic','station');
+WriteSkill('Mending&nbsp;Station', 'station', '', 'Uses a supply of nanites to rapidly construct a mending station which automatically heals nearby allies and provides a defense network.','medic','station');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'Duration', 'Energy', 'Cooldown', 'Recharge');
 WriteData('--', '20 s', '250+', '20 s', '90 s');
@@ -192,7 +192,7 @@ WriteSkillEnd(true);
 <br>
 <!--Revive-->
 <script>
-WriteSkill('Revive', 'revive', 'ZB', 'Injects nanites into a recently slain comrade, bringing him back to life. Comrade suffers from resurrection sickness dependent on his armor type. There is a chance that the ability will require half energy and recharge instantly.');
+WriteSkill('Revive', 'revive', '', 'Injects nanites into a recently slain comrade, bringing him back to life. Comrade suffers from resurrection sickness dependent on his armor type. There is a chance that the ability will require half energy and recharge instantly.');
 WriteSkillBegin();
 WriteHeader('Hero Level', 'Chance', 'Energy', 'Cooldown');
 WriteData('1', '5.0%','500','20 s');

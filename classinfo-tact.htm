@@ -181,7 +181,7 @@ WriteSkillNanites(1);
 <font color=ffcc00><b>Innate Abilities</b></font>
 
 <script>
-WriteSkill('Pep&nbsp;Talk', 'pep', 'ZX', 'Boosts the morale of nearby comrades, increasing their damage and armor. Does not work on mechanical units. Does not affect the Tactician.');
+WriteSkill('Pep&nbsp;Talk', 'pep', '', 'Boosts the morale of nearby comrades, increasing their damage and armor. Does not work on mechanical units. Does not affect the Tactician.');
 WriteSkillBegin();
 WriteHeader('Hero Level', 'Damage', 'Armor', 'Radius', 'Duration', 'Energy', 'Cooldown');
 WriteData('1',  '+10%','1','1900','20 s','0','60 s');
@@ -201,7 +201,7 @@ WriteSkillEnd();
 
 <br>
 <script>
-WriteSkill('Ion&nbsp;Strike', 'ion', 'ZC', 'Signals a satellite-mounted Ion Cannon to fire on the targeted location. After focusing the beam, an intense blast inflicts extreme damage to all units standing within a short distance of the location. Zombies and zombie corpses hit by Ion Strike will not reanimate.<br><font size=-1><i>Damage is 66% armor-ignoring vs bosses, mini-bosses, and power armor.</i></font>');
+WriteSkill('Ion&nbsp;Strike', 'ion', '', 'Signals a satellite-mounted Ion Cannon to fire on the targeted location. After focusing the beam, an intense blast inflicts extreme damage to all units standing within a short distance of the location. Zombies and zombie corpses hit by Ion Strike will not reanimate.<br><font size=-1><i>Damage is 66% armor-ignoring vs bosses, mini-bosses, and power armor.</i></font>');
 WriteSkillBegin();
 WriteHeader('Rank', 'Damage', 'Radius', 'Range', 'Delay', 'Energy', 'Cooldown');
 WriteData('4', '7500','264','unlimited','3 s','0','150 s');
@@ -212,7 +212,7 @@ WriteSkillEnd(true);
 
 <br>
 <script>
-WriteSkill('Recruit', 'recruit', 'ZG', 'Recruits a civilian to join the team under the hero\'s tutelage. Male recruits will be trained into cadets. Female recruits will follow the hero adoringly. The tactician may only have one recruit at a time.','tact','recruit');
+WriteSkill('Recruit', 'recruit', '', 'Recruits a civilian to join the team under the hero\'s tutelage. Male recruits will be trained into cadets. Female recruits will follow the hero adoringly. The tactician may only have one recruit at a time.','tact','recruit');
 WriteSkillBegin();
 WriteHeader('Skill Level','&nbsp;');
 WriteData('--','&nbsp;');
@@ -221,7 +221,7 @@ WriteSkillEnd(true);
 
 <br>
 <script>
-WriteSkill('Rad&nbsp;Away', 'radaway', 'ZB', 'Ingested Potassium Iodide pill provides temporary protection against radiation damage. Restores health to heroes with the rad. resistant trait; amount is five times the current radiation level. Cooldown is 20 seconds when healing a rad. resistant hero.');
+WriteSkill('Rad&nbsp;Away', 'radaway', '', 'Ingested Potassium Iodide pill provides temporary protection against radiation damage. Restores health to heroes with the rad. resistant trait; amount is five times the current radiation level. Cooldown is 20 seconds when healing a rad. resistant hero.');
 WriteSkillBegin();
 WriteHeader('Skill Level','Energy', 'Duration','Cooldown');
 WriteData('--','50','60 s','1 s');

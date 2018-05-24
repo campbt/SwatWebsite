@@ -74,7 +74,7 @@ WriteBonus('Droid',InfoLinkS('Droid','unitinfo-lad.htm')+' has 25% chance to inf
 <font color=ffcc00><b>Trainable Abilities</b></font>
 
 <script>
-WriteSkill('Concussion&nbsp;Grenade', 'conc', 'X', 'Uses energy to create a concussion grenade which can be thrown, disorienting non-mechanical units around the target.');
+WriteSkill('Concussion&nbsp;Grenade', 'conc', '', 'Uses energy to create a concussion grenade which can be thrown, disorienting non-mechanical units around the target.');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'Attack Spd.', 'Accuracy', 'Slow', 'Radius', 'Range', 'Stun', 'Duration', 'Energy', 'Cooldown');
 WriteData('1','-30%','-20%','50%','264','650','0 s','4 s','80','3 s');
@@ -98,7 +98,7 @@ WriteSkillEnd();
 
 <br>
 <script>
-WriteSkill('Aim', 'aim', 'C', 'Slows movement and fire rate, but shots always deliver critical damage. Critical damage multiplier is determined by level of sniper\'s Critical Shot ability. Zombies killed by aiming snipers will have less opportunities to reanimate.');
+WriteSkill('Aim', 'aim', '', 'Slows movement and fire rate, but shots always deliver critical damage. Critical damage multiplier is determined by level of sniper\'s Critical Shot ability. Zombies killed by aiming snipers will have less opportunities to reanimate.');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'Attack Spd.', 'Move Spd.', 'Duration', 'Energy', 'Cooldown');
 WriteData('1', '-45%','-14%','20 s','0','89 s');
@@ -124,7 +124,7 @@ WriteSkillEnd();
 
 <br>
 <script>
-WriteSkill('Marksman', 'marks', '.', 'Upgrades the sniper rifle\'s scope, allowing the hero to see and shoot targets at a greater distance. Enables a chance for the bullet to pierce each successively slain target and hit the unit behind it. When aiming, the hero\'s shots have a chance to inflict extra damage on pierced targets.');
+WriteSkill('Marksman', 'marks', '', 'Upgrades the sniper rifle\'s scope, allowing the hero to see and shoot targets at a greater distance. Enables a chance for the bullet to pierce each successively slain target and hit the unit behind it. When aiming, the hero\'s shots have a chance to inflict extra damage on pierced targets.');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'Pierce Chance', 'Range', 'Critical Chance', 'Damage');
 WriteData('1', '15%','+40','20%','+0.2x');
@@ -162,7 +162,7 @@ WriteSkillNanites(0);
 <font color=ffcc00><b>Innate Abilities</b></font>
 
 <script>
-WriteSkill('Item&nbsp;Teleport', 'itd', 'ZX', 'Used to mark a destination location or destination unit. When used on an item, it is instantly teleported to the last marked destination. If the destination is a powered kiosk, teleported items are pawned automatically. The money from telepawned items is divided amongst the team. Only uses energy if an item is teleported. Teleporting a drug, implant, or antidote always uses only 90 energy.');
+WriteSkill('Item&nbsp;Teleport', 'itd', '', 'Used to mark a destination location or destination unit. When used on an item, it is instantly teleported to the last marked destination. If the destination is a powered kiosk, teleported items are pawned automatically. The money from telepawned items is divided amongst the team. Only uses energy if an item is teleported. Teleporting a drug, implant, or antidote always uses only 90 energy.');
 WriteSkillBegin();
 WriteHeader('Rank', 'Range', 'Energy', 'Cooldown', 'Recharge');
 WriteData('1', 'unlimited', '150+', '3 s', '30 s');
@@ -183,7 +183,7 @@ WriteSkillEnd();
 
 <br>
 <script>
-WriteSkill('Construct&nbsp;Camera', 'camera', 'ZC', 'Uses a small supply of nanites to rapidly construct a surveillance camera. It has improved day and night vision, helping units acquire more distant targets.','','');
+WriteSkill('Construct&nbsp;Camera', 'camera', '', 'Uses a small supply of nanites to rapidly construct a surveillance camera. It has improved day and night vision, helping units acquire more distant targets.','','');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'Duration', 'Energy', 'Cooldown');
 WriteData('--', '600 s', '100', '6 s');

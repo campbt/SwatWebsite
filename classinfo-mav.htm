@@ -117,7 +117,7 @@ WriteBonus('Droid',InfoLinkS('Droid','unitinfo-lad.htm')+' has 2 extra agility p
 <font color=ffcc00><b>Trainable Abilities</b></font>
 
 <script>
-WriteSkill('Plasma&nbsp;Grenade', 'pgren', 'X', 'Uses energy to create a plasma grenade which can be thrown, dealing explosive damage to the target and units around it.</font><br><font size=-1>Below left represents standard ability; below right represents ability while Grenade Launcher item carried.');
+WriteSkill('Plasma&nbsp;Grenade', 'pgren', '', 'Uses energy to create a plasma grenade which can be thrown, dealing explosive damage to the target and units around it.</font><br><font size=-1>Below left represents standard ability; below right represents ability while Grenade Launcher item carried.');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'Damage', 'Radius', 'Range', 'Energy', 'Cooldown');
 WriteData('1','115, 85','224, 264','650','55','3 s');
@@ -143,7 +143,7 @@ WriteSkillEnd();
 
 <br>
 <script>
-WriteSkill('Robodog', 'robodog', 'C', 'Reconstructs the hero\'s robodog companion and passively increases its effectiveness. If the robodog is far away (more than 2900) when it dies, the hero will have to be near (within 900) its death location to reconstruct it.','mav','robodog');
+WriteSkill('Robodog', 'robodog', '', 'Reconstructs the hero\'s robodog companion and passively increases its effectiveness. If the robodog is far away (more than 2900) when it dies, the hero will have to be near (within 900) its death location to reconstruct it.','mav','robodog');
 WriteSkillBegin('33%');
 WriteHeader('Skill Level', 'Energy', 'Dog Regen.', 'Cool.');
 WriteData('1','350','1 eps','1 s');
@@ -199,7 +199,7 @@ WriteSkillNanites(2);
 <font color=ffcc00><b>Innate Abilities</b></font>
 
 <script>
-WriteSkill('Nano-Injection', 'nanoinj', 'ZX', 'Uses a beamed injection of biomed nanites to restore health to a non-mechanical unit.');
+WriteSkill('Nano-Injection', 'nanoinj', '', 'Uses a beamed injection of biomed nanites to restore health to a non-mechanical unit.');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'HP Healed', 'Range', 'Energy', 'Cooldown');
 WriteData('--','100','175','250','20 s');
@@ -208,7 +208,7 @@ WriteSkillEnd(true);
 
 <br>
 <script>
-WriteSkill('Reprogram', 'reprog', 'ZC', 'Resets the robodog\'s memory system, allowing the hero to reselect all of its abilities. Nanites are reset only if off when reprogrammed.');
+WriteSkill('Reprogram', 'reprog', '', 'Resets the robodog\'s memory system, allowing the hero to reselect all of its abilities. Nanites are reset only if off when reprogrammed.');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'Radius','Energy', 'Cooldown');
 WriteData('--','2900','0','20 s');

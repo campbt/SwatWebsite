@@ -142,7 +142,7 @@ function WriteClassMenu() {
   document.writeln('<a href=classinfo-demo.htm>DEMO</a> | ');
   document.writeln('<a href=classinfo-cyborg.htm>BORG</a> | ');
   document.writeln('<a href=classinfo-pyro.htm>PYRO</a> | ');
-  document.writeln('<a href=classinfo-watchman.htm>WATCHMAN</a> | ');
+  document.writeln('<a href=classinfo-watchman.htm>WATCHMAN</a>');
   // document.writeln('<a href=classinfo-tech.htm>TECH</a> | ');
   // document.writeln('<a href=classinfo-umbclone.htm>UMB&nbsp;CLONE</a>');
   document.writeln('</font>&nbsp;</center>');
@@ -1173,55 +1173,55 @@ function WriteSkillAdvGen(unit) {
   if (unit == 'mav') {
   WriteSkillBegin();
   WriteHeader('Skill Level','Hero Energy Regen.','Robodog Energy Regen.');
-  WriteData('1','+16%','+116%');
-  WriteData('2','+33%','+133%');
-  WriteData('3','+50%','+150%');
-  WriteData('4','+66%','+166%');
-  WriteData('5','+83%','+183%');
-  WriteData('6','+99%','+199%');
-  WriteData('7','+116%','+216%');
-  WriteData('8','+133%','+233%');
+  WriteData('1','+1 eps','+1 eps');
+  WriteData('2','+2 eps','+2 eps');
+  WriteData('3','+3 eps','+3 eps');
+  WriteData('4','+4 eps','+4 eps');
+  WriteData('5','+5 eps','+5 eps');
+  WriteData('6','+6 eps','+6 eps');
+  WriteData('7','+7 eps','+7 eps');
+  WriteData('8','+8 eps','+8 eps');
   WriteSkillBegin2();
   WriteHeader('Skill Level','Hero Energy Regen.','Robodog Energy Regen.');
-  WriteData('9','+150%','+250%');
-  WriteData('10','+166%','+266%');
-  WriteData('11','+183%','+283%');
-  WriteData('12','+199%','+299%');
-  WriteData('13','+216%','+316%');
-  WriteData('14','+233%','+333%');
-  WriteData('15','+250%','+350%');
-  WriteData('16','+266%','+366%');
+  WriteData('9','+9 eps','+9 eps');
+  WriteData('10','+10 eps','+10 eps');
+  WriteData('11','+11 eps','+11 eps');
+  WriteData('12','+12 eps','+12 eps');
+  WriteData('13','+13 eps','+13 eps');
+  WriteData('14','+14 eps','+14 eps');
+  WriteData('15','+15 eps','+15 eps');
+  WriteData('16','+16 eps','+16 eps');
   } else {
   WriteSkillBegin();
   WriteHeader('Skill Level','Energy Regen.');
-  WriteData('1','+16%');
-  WriteData('2','+33%');
-  WriteData('3','+50%');
-  WriteData('4','+66%');
-  WriteData('5','+83%');
-  WriteData('6','+99%');
-  WriteData('7','+116%');
-  WriteData('8','+133%');
+  WriteData('1','+1 eps');
+  WriteData('2','+2 eps');
+  WriteData('3','+3 eps');
+  WriteData('4','+4 eps');
+  WriteData('5','+5 eps');
+  WriteData('6','+6 eps');
+  WriteData('7','+7 eps');
+  WriteData('8','+8 eps');
   WriteSkillBegin2();
   WriteHeader('Skill Level','Energy Regen.');
   if (unit == 'hero') {
-  WriteData('9','+150%');
-  WriteData('10','+166%');
-  WriteData('11','+183%');
-  WriteData('12','+199%');
-  WriteData('13','+216%');
-  WriteData('14','+233%');
-  WriteData('15','+250%');
-  WriteData('16','+266%');
+  WriteData('9','+9 eps');
+  WriteData('10','+10 eps');
+  WriteData('11','+11 eps');
+  WriteData('12','+12 eps');
+  WriteData('13','+13 eps');
+  WriteData('14','+14 eps');
+  WriteData('15','+15 eps');
+  WriteData('16','+16 eps');
   } else {
-  WriteData('9','+150%');
-  WriteData('10','+166%');
-  WriteData('11','+199%');
-  WriteData('12','+233%');
-  WriteData('13','+266%');
-  WriteData('14','+299%');
-  WriteData('15','+350%');
-  WriteData('16','+399%');
+  WriteData('9','+9 eps');
+  WriteData('10','+10 eps');
+  WriteData('11','+11 eps');
+  WriteData('12','+12 eps');
+  WriteData('13','+13 eps');
+  WriteData('14','+14 eps');
+  WriteData('15','+15 eps');
+  WriteData('16','+16 eps');
   }
   }
   WriteSkillEnd();
@@ -1231,7 +1231,7 @@ function WriteSkillSprint(Type, hotkey, specialUnit) {
   if (hotkey == null) {
     hotkey = 'D';
   }
-  WriteSkill('Sprint', 'sprint', hotkey, 'Greatly increases movement speed and lets the hero slip right past units.</font><br><font size=-1>The values below reflect a hero in '+ ArmorName(Type) +' power armor.');
+  WriteSkill('Sprint', 'sprint', hotkey, 'Greatly increases movement speed and lets the hero slip right past units. Nanites Shield\'s protection is also improved while sprinting.</font><br><font size=-1>The values below reflect a hero in '+ ArmorName(Type) +' power armor.');
   WriteSkillBegin();
   if (Type == null) {
     WriteHeader('&nbsp;', 'Move Spd.', 'Duration', 'Energy', 'Cooldown');

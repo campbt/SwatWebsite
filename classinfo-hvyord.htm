@@ -79,14 +79,14 @@ WriteSkillEnd(true);
 WriteSkill('Storage&nbsp;Cells', 'cell', '.', 'Increases the hero\'s maximum energy capacity, and increases energy regeneration while current energy is less than 1000. Also increases initial energy of constructed mini-droids.</font><br><font size=-1>This ability is part of the Cells & Droids ability.');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'Energy','Energy Regen.','Droid Energy');
-WriteData('1', '+250','+16%','+25');
-WriteData('2', '+500','+33%','+50');
-WriteData('3', '+750','+50%','+75');
-WriteData('4', '+1000','+66%','+100');
-WriteData('5', '+1250','+83%','+125');
-WriteData('6', '+1500','+99%','+150');
-WriteData('7', '+1750','+116%','+175');
-WriteData('8', '+2000','+133%','+200');
+WriteData('1', '+250','+1 eps','+25');
+WriteData('2', '+500','+2 eps','+50');
+WriteData('3', '+750','+3 eps','+75');
+WriteData('4', '+1000','+4 eps','+100');
+WriteData('5', '+1250','+5 eps','+125');
+WriteData('6', '+1500','+6 eps','+150');
+WriteData('7', '+1750','+7 eps','+175');
+WriteData('8', '+2000','+8 eps','+200');
 WriteSkillEnd(true);
 </script>
 
@@ -124,7 +124,7 @@ WriteSkillEnd(true);
 
 <br>
 <script>
-WriteSkill('Power&nbsp;Grid', 'reactor', 'V', 'Allows the officer to siphon energy from the city\'s power grid. Energy regeneration bonus is doubled when partial power is restored and the officer hasn\'t been hit recently. While using power grid, the officer is immune to fireflies.');
+WriteSkill('Power&nbsp;Grid', 'reactor', '', 'Allows the officer to siphon energy from the city\'s power grid. Energy regeneration bonus is doubled when partial power is restored and the officer hasn\'t been hit recently. While using power grid, the officer is immune to fireflies.');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'Duration','Energy','Cooldown');
 WriteData('1', '20 s','+40 eps','120 s');
@@ -162,7 +162,7 @@ WriteSkillNanites(2);
 <font color=ffcc00><b>Innate Abilities</b></font>
 
 <script>
-WriteSkill('Construct&nbsp;Droid', 'droid', 'ZX', 'Uses a large supply of nanites to rapidly construct a miniature assault droid. Each concurrent droid requires more energy to construct.','hvyord','droid');
+WriteSkill('Construct&nbsp;Droid', 'droid', '', 'Uses a large supply of nanites to rapidly construct a miniature assault droid. Each concurrent droid requires more energy to construct.','hvyord','droid');
 WriteSkillBegin();
 WriteHeader('Hero Level', 'Droid Nanites', 'Droid Health', 'Energy', 'Cooldown');
 WriteData('1', '+0', '+0', '250*', '20 s');
@@ -184,7 +184,7 @@ WriteSkillEnd();
 
 <br>
 <script>
-WriteSkill('XLR8', 'xlr8', 'ZC', 'Incrementally increases attack speed by accelerating the main firing mechanism, but also generates excess heat. Accelerates hero\'s adjacent mini-droids, too. Moving lowers attack speed bonus and cancels the effect if excessive. Cooldown is determined by duration and rank.');
+WriteSkill('XLR8', 'xlr8', '', 'Incrementally increases attack speed by accelerating the main firing mechanism, but also generates excess heat. Accelerates hero\'s adjacent mini-droids, too. Moving lowers attack speed bonus and cancels the effect if excessive. Cooldown is determined by duration and rank.');
 WriteSkillBegin();
 WriteHeader('Stage', 'Attack Spd.', 'Delay','Energy','Cooldown');
 WriteData('1', '+25%', '0.0 s', '0', 'variable');
@@ -197,7 +197,7 @@ WriteSkillEnd(true);
 
 <br>
 <script>
-WriteSkill('Recharge&nbsp;Battery', 'batt', 'ZG', 'Adds an additional charge to an existing battery in the unit\'s inventory. Becomes corroded after recharging 20 batteries. If the Heavy Ord uses a battery it allows him to recharge one additional battery.');
+WriteSkill('Recharge&nbsp;Battery', 'batt', '', 'Adds an additional charge to an existing battery in the unit\'s inventory. Becomes corroded after recharging 20 batteries. If the Heavy Ord uses a battery it allows him to recharge one additional battery.');
 WriteSkillBegin();
 WriteHeader('Status', 'Energy','Cooldown');
 WriteData('normal', '500', '1 s');
@@ -207,7 +207,7 @@ WriteSkillEnd(true);
 
 <br>
 <script>
-WriteSkill('Phased&nbsp;Droids', 'phase', 'ZB', 'Activates a phase-shifter on the officer\'s nearby mini-droids which prevents them from being targeted or taking damage. Performing any action cancels the effect.');
+WriteSkill('Phased&nbsp;Droids', 'phase', '', 'Activates a phase-shifter on the officer\'s nearby mini-droids which prevents them from being targeted or taking damage. Performing any action cancels the effect.');
 WriteSkillBegin();
 WriteHeader('Droids', 'Duration', 'Energy','Cooldown');
 WriteData('0', '--', '0', '--');

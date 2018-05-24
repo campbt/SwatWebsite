@@ -58,7 +58,7 @@ WriteBonus('Droid',InfoLinkS('Droid','unitinfo-lad.htm')+' overclocks when damag
 <font color=ffcc00><b>Trainable Abilities</b></font>
 
 <script>
-WriteSkill('M.I.R.V.', 'mirv', 'Q', 'Uses energy to create a napalm-laced rocket which detonates multiple times in a line away from the point of impact, damaging units and leaving a persistent trail of burning napalm that deals damage over time and lowers the armor of bosses/minibosses.', 'Napalm effect lingers on units for seconds');
+WriteSkill('M.I.R.V.', 'mirv', '', 'Uses energy to create a napalm-laced rocket which detonates multiple times in a line away from the point of impact, damaging units and leaving a persistent trail of burning napalm that deals damage over time and lowers the armor of bosses/minibosses.', 'Napalm effect lingers on units for seconds');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'Detonations', 'Damage', 'Radius', 'Range', 'Napalm', 'Armor', 'Duration', 'Energy', 'Cooldown');
 WriteData('1','2','250, 150','144, 192','1000','5 dps','-4','1 s','135','6 s');
@@ -82,7 +82,7 @@ WriteSkillEnd();
 
 <br>
 <script>
-WriteSkill('Place&nbsp;C4', 'c4', 'W', 'Uses a small supply of nanites to rapidly construct a remote-triggered explosive. C4 can be concealed from enemies via a built-in cloaking device, and if smart mine automation is activated, the explosive\'s A.I. rouintes will automatically try to lure units and destroy them. C4 will not cause damage if it is destroyed; it must be manually detonated or detonated by its A.I.');
+WriteSkill('Place&nbsp;C4', 'c4', '', 'Uses a small supply of nanites to rapidly construct a remote-triggered explosive. C4 can be concealed from enemies via a built-in cloaking device, and if smart mine automation is activated, the explosive\'s A.I. rouintes will automatically try to lure units and destroy them. C4 will not cause damage if it is destroyed; it must be manually detonated or detonated by its A.I.');
 WriteSkillBegin('60%');
 WriteHeader('Skill Level', 'Damage', 'Radius', 'Armor/<br>Absorp.', 'Dur.', 'Energy', 'C4 Energy', 'Placement<br>Range');
 WriteData('1','200, 100','96, 120','5/0','720 s','80','45', '50');
@@ -123,7 +123,7 @@ WriteSkillNanites(1);
 <font color=ffcc00><b>Innate Abilities</b></font>
 
 <script>
-WriteSkill('BioChemical&nbsp;Energy', 'biochem', 'F', 'Rapid nano-combustion of organic material instantly converts up to 50% of target\'s health into energy. Bosses and power armored units are somewhat resistant. Efficiency doubled when used on self. Range increased by 40 per level of Adv. Generator. Base range quadrupled while locked down.<br><font size=-1><i>Energy gain is reduced on larger transfers.</i></font>');
+WriteSkill('BioChemical&nbsp;Energy', 'biochem', '', 'Rapid nano-combustion of organic material instantly converts up to 50% of target\'s health into energy. Bosses and power armored units are somewhat resistant. Efficiency doubled when used on self. Range increased by 40 per level of Adv. Generator. Base range quadrupled while locked down.<br><font size=-1><i>Energy gain is reduced on larger transfers.</i></font>');
 WriteSkillBegin();
 WriteHeader('Rank', 'Base Range', 'Efficiency', 'Cooldown');
 WriteData('1', '350', '35-66%', '20 s');
@@ -144,7 +144,7 @@ WriteSkillEnd();
 
 <br>
 <script>
-WriteSkill('Mini-Nuke', 'nuke', 'R', 'Launches a small nuclear missile which explodes when it reaches the targeted location, inflicting massive damage in a huge radius. Frequent nuking may significantly increase radiation levels.');
+WriteSkill('Mini-Nuke', 'nuke', '', 'Launches a small nuclear missile which explodes when it reaches the targeted location, inflicting massive damage in a huge radius. Frequent nuking may significantly increase radiation levels.');
 WriteSkillBegin();
 WriteHeader('Rank', 'Damage', 'Radius', 'Range', 'Energy');
 WriteData('4', '6000, 3000', '336, 1200', 'unlimited', '600');

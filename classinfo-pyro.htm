@@ -58,7 +58,7 @@ WriteBonus('Droid',InfoLinkS('Droid','unitinfo-lad.htm')+' has an additional 5.8
 <font color=ffcc00><b>Trainable Abilities</b></font>
 
 <script>
-WriteSkill('Molotov', 'molotov', 'X', 'Covers an area with a sticky, slow-burning oil which causes minor damage and reduces the movement speed of all units which walk through the area. Stacks up to 2 times. Less effective on bosses.');
+WriteSkill('Molotov', 'molotov', '', 'Covers an area with a sticky, slow-burning oil which causes minor damage and reduces the movement speed of all units which walk through the area. Stacks up to 2 times. Less effective on bosses.');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'Damage', 'Slow', 'Radius', 'Range', 'Duration','Energy', 'Cooldown');
 WriteData('1', '10 dps','40%','192','650','6 s','122','3 s');
@@ -74,7 +74,7 @@ WriteSkillEnd(true);
 
 <br>
 <script>
-WriteSkill('Microwave', 'micro', 'C', 'Instantly super-heats the target with a microwave beam, damaging it severely. If a normal unit is killed by the beam, it explodes violently and damages nearby units; splash damage is determined by a percent of the exploding unit\'s health. Power armored units suffer 40% beam damage and will never explode. Mechanical units are unaffected. Beam is 100% effective up to 500 range but is less effective at longer ranges. Targeting self cumulates energy, increasing beam damage to next non-self target.');
+WriteSkill('Microwave', 'micro', '', 'Instantly super-heats the target with a microwave beam, damaging it severely. If a normal unit is killed by the beam, it explodes violently and damages nearby units; splash damage is determined by a percent of the exploding unit\'s health. Power armored units suffer 40% beam damage and will never explode. Mechanical units are unaffected. Beam is 100% effective up to 500 range but is less effective at longer ranges. Targeting self cumulates energy, increasing beam damage to next non-self target.');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'Damage','Splash', 'Radius', 'Range', 'Effective','Energy','Cool.');
 WriteData('1', '250','50%','96','1000','50%','75','1 s');
@@ -100,27 +100,27 @@ WriteSkillEnd();
 
 <br>
 <script>
-WriteSkill('Incendiary&nbsp;Rocket', 'incrocket', 'V', 'Sears the flesh of the target, making it more vulnerable and causing extreme damage over time. Power armored units are unaffected. Bosses suffer an additional, permanent armor reduction.');
+WriteSkill('Incendiary&nbsp;Rocket', 'incrocket', '', 'Sears the flesh of the target, making it more vulnerable and causing extreme damage over time. Power armored units are unaffected. Bosses suffer an additional, permanent armor reduction.');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'Damage', 'Armor', 'Range', 'Duration', 'Energy', 'Cooldown');
-WriteData('1', '2076-2285','-1','1200','20 s','75','6 s');
-WriteData('2', '2192-2412','-2','1200','20 s','80','6 s');
-WriteData('3', '2313-2546','-3','1200','20 s','85','6 s');
-WriteData('4', '2440-2685','-4','1200','20 s','90','6 s');
-WriteData('5', '2572-2830','-5','1200','20 s','95','6 s');
-WriteData('6', '2710-2982','-6','1200','20 s','100','6 s');
-WriteData('7', '2854-3140','-7','1200','20 s','105','6 s');
-WriteData('8', '3004-3305','-8','1200','20 s','110','6 s');
+WriteData('1', '~1500','-1','1200','20 s','75','6 s');
+WriteData('2', '~1700','-2','1200','20 s','80','6 s');
+WriteData('3', '~1900','-3','1200','20 s','85','6 s');
+WriteData('4', '~2100','-4','1200','20 s','90','6 s');
+WriteData('5', '~2300','-5','1200','20 s','95','6 s');
+WriteData('6', '~2500','-6','1200','20 s','100','6 s');
+WriteData('7', '~2700','-7','1200','20 s','105','6 s');
+WriteData('8', '~2900','-8','1200','20 s','110','6 s');
 WriteSkillBegin2();
 WriteHeader('Skill Level', 'Damage', 'Armor', 'Range', 'Duration', 'Energy', 'Cooldown');
-WriteData('9', '3160-3477','-9','1200','20 s','115','6 s');
-WriteData('10', '3324-3657','-10','1200','20 s','120','6 s');
-WriteData('11', '3494-3844','-11','1200','20 s','125','6 s');
-WriteData('12', '3672-4040','-12','1200','20 s','130','6 s');
-WriteData('13', '3857-4244','-13','1200','20 s','135','6 s');
-WriteData('14', '4050-4456','-14','1200','20 s','140','6 s');
-WriteData('15', '4251-4677','-15','1200','20 s','145','6 s');
-WriteData('16', '4461-4908','-16','1200','20 s','150','6 s');
+WriteData('9', '~3100','-9','1200','20 s','115','6 s');
+WriteData('10', '~3300','-10','1200','20 s','120','6 s');
+WriteData('11', '~3500','-11','1200','20 s','125','6 s');
+WriteData('12', '~3800','-12','1200','20 s','130','6 s');
+WriteData('13', '~4100','-13','1200','20 s','135','6 s');
+WriteData('14', '~4400','-14','1200','20 s','140','6 s');
+WriteData('15', '~4700','-15','1200','20 s','145','6 s');
+WriteData('16', '~5000','-16','1200','20 s','150','6 s');
 WriteSkillEnd();
 </script>
 
@@ -139,7 +139,7 @@ WriteSkillNanites(2);
 <font color=ffcc00><b>Innate Abilities</b></font>
 
 <script>
-WriteSkill('Firefly', 'fly', 'ZX', 'Uses a small supply of nanites to rapidly construct a surveillance droid which immediately flies to the targeted location.');
+WriteSkill('Firefly', 'fly', '', 'Uses a small supply of nanites to rapidly construct a surveillance droid which immediately flies to the targeted location.');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'Duration', 'Energy', 'Cooldown');
 WriteData('--', '20+60 s', '100', '60 s');
@@ -148,7 +148,7 @@ WriteSkillEnd(true);
 
 <br>
 <script>
-WriteSkill('Combustion', 'combust', 'ZC', 'Ignites fuel tanks to generate energy over a short duration, but the burning drains health from the officer.');
+WriteSkill('Combustion', 'combust', '', 'Ignites fuel tanks to generate energy over a short duration, but the burning drains health from the officer.');
 WriteSkillBegin();
 WriteHeader('Hero Level', 'Duration', 'Health', 'Energy', 'Cooldown');
 WriteData('1', '12 s', '-4 hps', '+50 eps', '120 s');
@@ -161,7 +161,7 @@ WriteSkillEnd(true);
 
 <br>
 <script>
-  WriteSkill('Overburn', 'heat', '+', 'Increases damage, number of flame bounces, and the range for bouncing, but the overburn drains health from the officer and adjacent units.<br>The officer can not be healed while overburning.');
+WriteSkill('Overburn', 'heat', '+', 'Increases damage, number of flame bounces, and the range for bouncing, but the overburn drains health from the officer and adjacent units.<br>The officer can not be healed while overburning.');
 WriteSkillBegin();
 WriteHeader('Level', 'Damage', 'Bounces', 'Bounce Range', 'Health', 'Cooldown');
 WriteData('off', '+0', '+0', '+0', '-0 hps', '6 s');

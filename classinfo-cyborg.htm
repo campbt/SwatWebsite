@@ -59,7 +59,7 @@ WriteBonus('Droid',InfoLinkS('Droid','unitinfo-lad.htm')+' has 30 extra movement
 
 <!--Cluster Rockets-->
 <script>
-WriteSkill('Cluster&nbsp;Rockets', 'cluster', 'X', 'Bombards an area with multiple rockets, briefly stunning and damaging units in the vicinity. Launcher also provides capacity for the cyborg to integrate micro-fusion generators.');
+WriteSkill('Cluster&nbsp;Rockets', 'cluster', '', 'Bombards an area with multiple rockets, briefly stunning and damaging units in the vicinity. Launcher also provides capacity for the cyborg to integrate micro-fusion generators.');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'Dmg/Max', 'Radius', 'Range', 'Stun', 'Energy', 'Cool.', 'MFG');
 WriteData('1', '1000/250','275','1000','0.33 s','50','6 s', '1');
@@ -86,7 +86,7 @@ WriteSkillEnd();
 <br>
 <!--XCM-->
 <script>
-WriteSkill('Xtreme&nbsp;Combat&nbsp;Mode', 'xcm', 'C', 'Uses an energy surge to temporarily boost damage and defense.');
+WriteSkill('Xtreme&nbsp;Combat&nbsp;Mode', 'xcm', '', 'Uses an energy surge to temporarily boost damage and defense.');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'Damage', 'HP', 'Armor', 'Duration', 'Energy', 'Cool.');
 WriteData('1', '+19%','+0.5&nbsp;hps','+1','20 s','90','21 s');
@@ -145,7 +145,7 @@ WriteSkillNanites(3);
 
 <!--Pheromones-->
 <script>
-WriteSkill('Pheromones', 'phero', 'ZX', 'Creates and later releases an artificial scent which attracts nearby undead and provokes them into attacking the cyborg.');
+WriteSkill('Pheromones', 'phero', '', 'Creates and later releases an artificial scent which attracts nearby undead and provokes them into attacking the cyborg.');
 WriteSkillBegin();
 WriteHeader('Action', 'Radius', 'Energy', 'Cooldown');
 WriteData('recharge', ' --', '200', '6 s');
@@ -156,7 +156,7 @@ WriteSkillEnd(true);
 <br>
 <!--Backup Bat-->
 <script>
-WriteSkill('Emergency&nbsp;Power', 'emerpow', 'ZC', 'Instantly recharges energy by draining the cyborg\'s backup battery.');
+WriteSkill('Emergency&nbsp;Power', 'emerpow', '', 'Instantly recharges energy by draining the cyborg\'s backup battery.');
 WriteSkillBegin();
 WriteHeader('Hero Level', 'Energy', 'Cooldown');
 WriteData('1', '+500', '150 s');
@@ -170,7 +170,7 @@ WriteSkillEnd(true);
 
 <br>
 <script>
-WriteSkill('Goliath&nbsp;Modification', 'repairsys', 'ZG', 'Integrates items permanently into the cyborg. Target a shield capacitor to disassemble and permanently integrate the parts into the cyborg\'s armor, upgrading nanites significantly but decreasing movement speed. Target a microfusion-generator to permanently integrate it. The max number of mfgs that can be integrated is based on the cyborg\'s cluster rockets ability.');
+WriteSkill('Goliath&nbsp;Modification', 'repairsys', '', 'Integrates items permanently into the cyborg. Target a shield capacitor to disassemble and permanently integrate the parts into the cyborg\'s armor, upgrading nanites significantly but decreasing movement speed. Target a microfusion-generator to permanently integrate it. The max number of mfgs that can be integrated is based on the cyborg\'s cluster rockets ability.');
 WriteSkillBegin();
 WriteHeader('Level', 'Move Spd.', 'Nanites');
 WriteData('--', '-20', InfoLinkS('Large+','readmeafterarmor.html#Large+', true));
