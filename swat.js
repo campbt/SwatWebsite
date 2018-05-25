@@ -406,7 +406,18 @@ function WriteSkill(SkillName, SkillCode, SkillKey, SkillDescription, SkillMore,
   }
   document.writeln('<table cellspacing=0 cellpadding=0 border=0 bgcolor=202020 width=100%><tr valign=top>');
   document.writeln('<td width=4>&nbsp;</td>');
-  document.writeln('<td align=right width=32><img src=pics/ability-'+SkillCode+'.'+filetype+' height=32 width=32></td>');
+
+  document.writeln('<td align=right width=32>');
+  document.writeln('<div style="position:relative;top:0;left:0;">');
+  document.writeln('<img style="position:relative;top:0;left:0;" src=pics/ability-'+SkillCode+'.'+filetype+' height=32 width=32>');
+  if(SkillKey == '.') {
+      document.writeln('<img style="position:absolute;top:0px;left:0px;" src=pics/overlay-passive.png height=32 width=32>');
+  } else {
+      document.writeln('<img style="position:absolute;top:0px;left:0px;" src=pics/overlay-active.png height=32 width=32>');
+  }
+  document.writeln('</div>');
+  document.writeln('</td>');
+
   document.writeln('<td width=4>&nbsp;</td>');
   document.writeln('<td align=left><font face=Arial><a name='+SkillCode+'><b>'+SkillName+'</a></b>'+HotkeyDisplay(SkillKey)+SkillLinkDisplayUnit(SkillLinkClass, SkillLinkUnit)+'<br>');
   document.writeln(SkillDescription);
