@@ -14,17 +14,20 @@ WriteBr();
 <font size=+1 color=ffcc00><b>Rank</b> <script>document.writeln(info_STIT_Ranks)</script></font>
 <br>
 When the game ends, your performance can increase your officer's Rank and Renown experience.
-<br><br>
-When creating a new character, that character's initial rank will be set to the minimum unlocked
+<br>
+<img src="pics/ranks_dashes.png" height=75/>
+<br>
+The dashes next to attribute icons represent the highest ranked Officer build
+that had that attribute. When creating a new character, that character's initial rank will be set to the minimum unlocked
 rank for all the attributes selected.
 <br>
 For example, if you made a Rank 4 Skilled Medic and a Rank 3
 Gifted Tactician (and all other attributes being equal), you could make a Rank 3 Gifted Medic because you
 already unlocked Medic to Rank 4 and Gifted to Rank 3
 <br><br>
-Certain ranks are restricted until you have completed a specific difficulty. Once you have
-completed that difficulty, the unlocked ranks are available for every hero, not just the one
-that completed the difficulty.
+Certain ranks are restricted until you have completed a specific difficulty on Hive/City or defeated a specific wave number on defense.
+Once you have completed that difficulty, the unlocked ranks are available for every hero, not just the one
+that completed the difficulty. It is not possible to go beyond rank 9 through Defense alone.
 <br><br><font color=ffe888>
 Heroes must achieve the rank of National Hero before they can participate in a Nightmare game
 which is where the real challenge begins. Only Legendary Heroes can attempt Extinction, the
@@ -38,19 +41,19 @@ by the combined ranks of all heroes in the game.
 <br>
 <script>
 WriteSkillBegin('75%');
-WriteHeader('Rank','Description','Agility','Skill&nbsp;Pts.','Req.&nbsp;Diff.');
-WriteData('1', RankName(1,1,'Officer&nbsp;I'),       '+0','+0','--');
-WriteData('2', RankName(2,1,'Officer&nbsp;II'),      '+1','+0','--');
-WriteData('3', RankName(3,1,'Officer&nbsp;III'),     '+2','+0','--');
-WriteData('4', RankName(4,4,'Detective'),            '+3','+1','Normal');
-WriteData('5', RankName(5,4,'Sergeant'),             '+4','+1','Normal');
-WriteData('6', RankName(6,4,'Lieutenant'),           '+5','+1','Normal');
-WriteData('7', RankName(7,7,'Captain'),              '+6','+2','Hard');
-WriteData('8', RankName(8,7,'Commander'),            '+7','+2','Hard');
-WriteData('9', RankName(9,7,'Deputy&nbsp;Chief'),    '+8','+2','Hard');
-WriteData('10',RankName(10,10,'Chief'),              '+9','+3','Insane');
-WriteData('11',RankName(11,10,'National&nbsp;Hero'), '+10','+4','Perf.&nbsp;Insane');
-WriteData('12',RankName(12,11,'Legendary&nbsp;Hero'),'+10','+4<br><small>(+1 nanites)</small>','Nightmare');
+WriteHeader('Rank','Description','Agility','Skill&nbsp;Pts.','Req.&nbsp;Diff. <font size=-1>(City | Hive)</font>', 'Defense');
+WriteData('1', RankName(1,1,'Officer&nbsp;I'),       '+0','+0','--','--');
+WriteData('2', RankName(2,1,'Officer&nbsp;II'),      '+1','+0','--','--');
+WriteData('3', RankName(3,1,'Officer&nbsp;III'),     '+2','+0','--','--');
+WriteData('4', RankName(4,4,'Detective'),            '+3','+1','Normal','Wave 25');
+WriteData('5', RankName(5,4,'Sergeant'),             '+4','+1','Normal','Wave 25');
+WriteData('6', RankName(6,4,'Lieutenant'),           '+5','+1','Normal','Wave 25');
+WriteData('7', RankName(7,7,'Captain'),              '+6','+2','Hard','Wave 41');
+WriteData('8', RankName(8,7,'Commander'),            '+7','+2','Hard','Wave 41');
+WriteData('9', RankName(9,7,'Deputy&nbsp;Chief'),    '+8','+2','Hard','Wave 41');
+WriteData('10',RankName(10,10,'Chief'),              '+9','+3','Insane','--');
+WriteData('11',RankName(11,10,'National&nbsp;Hero'), '+10','+4','Perf.&nbsp;Insane','--');
+WriteData('12',RankName(12,11,'Legendary&nbsp;Hero'),'+10','+4<br><small>(+1 nanites)</small>','Nightmare','--');
 WriteSkillBegin2('24%');
 WriteSkillEnd();
 </script>
