@@ -1341,7 +1341,7 @@ function strpage() {
 	return strPage;
 }
 
-function WriteQuest(QuestName, QuestCode, QuestImage, QuestDescription, QuestSS, QuestSStype) {
+function WriteQuest(QuestName, QuestCode, QuestImage, QuestDescription, QuestSS, QuestSStype, QuestSSLarge, QuestSSLargeType) {
   document.writeln('<table cellspacing=0 cellpadding=0 border=0 bgcolor=202020 width=100%><tr valign=top>');
   document.writeln('<td width=4>&nbsp;</td>');
   document.writeln('<td align=right width=32>');
@@ -1350,7 +1350,11 @@ function WriteQuest(QuestName, QuestCode, QuestImage, QuestDescription, QuestSS,
   document.writeln('<td width=4>&nbsp;</td>');
   document.writeln('<td align=left>');
   if ((QuestSS != null) && (QuestSS != '')) {
-    document.writeln('<table cellpadding=1 cellspacing=4 border=0 align=right><tr><td bgcolor=ffe888><a href=pics/obj-'+QuestSS+'ss.jpg target=_blank><img src=pics/obj-'+QuestSS+QuestSStype+' width=75 height=75 border=0></a></td></tr></table>');
+      if(QuestSSLarge != null && QuestSSLarge != '') {
+          document.writeln('<table cellpadding=1 cellspacing=4 border=0 align=right><tr><td bgcolor=ffe888><a href=pics/obj-'+QuestSSLarge+QuestSSLargeType+' target=_blank><img src=pics/obj-'+QuestSS+QuestSStype+' width=90 height=90 border=0></a></td></tr></table>');
+      } else {
+          document.writeln('<table cellpadding=1 cellspacing=4 border=0 align=right><tr><td bgcolor=ffe888><img src=pics/obj-'+QuestSS+QuestSStype+' width=90 height=90 border=0></a></td></tr></table>');
+      }
   }
   document.writeln('<font face=Arial><a name='+QuestCode+'><b>'+QuestName+'</a></b><br>' + QuestDescription);
   document.writeln('</font></td></tr><tr height=5><td></td></tr></table>');
