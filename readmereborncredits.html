@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>SWAT: Reborn, Credits</title>
+<script language="javascript" src="swat.js"></script>
+<script language="javascript">
+    function WriteCredits(name, description, steamProfile) {
+      document.writeln('<tr align=center valign=top bgcolor=202020>');
+        document.writeln('<td width=140>');
+        if(steamProfile != null) {
+            document.writeln('<a href=' + steamProfile + ' target="_blank">');
+        }
+        document.writeln('<b>' + name + '</b></td>');
+        if(steamProfile != null) {
+            document.writeln('</a>');
+        }
+      document.writeln('<td style="text-align:left" width=300><font size=-1 face=Arial color=ffe888>' + description + '</font></td>');
+    }
+</script>
+</head>
+<body bgcolor=000000 text=FFFFFF link=bb99ff vlink=aa80ff alink=884dff>
+
+<script>
+WriteTopMenu('',true);
+WriteBr();
+</script>
+
+<font size=+1 color=ffcc00><b>Credits</b></script></font>
+<br>
+SWAT: Reborn was a collaborative effort made by many people over its lifetime.
+<br>
+<br>
+<script>
+WriteSkillBegin('20%');
+WriteCredits('Shooper', 'Lead Developer', 'http://steamcommunity.com/id/TyWizard');
+WriteCredits('Cazora1', 'Map designer; project manager', 'http://steamcommunity.com/profiles/76561198092341203/');
+WriteCredits('BadHorse', 'Game HUD', 'http://steamcommunity.com/profiles/76561198018242523/');
+WriteCredits('NmdSnprenigma', 'Hero abilities', 'http://steamcommunity.com/profiles/76561198010088486/');
+WriteCredits('BikeHelmet', 'Server developer', 'http://steamcommunity.com/id/BikeHelmet/');
+WriteCredits('EKH4X', 'Server and website deployment', 'http://steamcommunity.com/id/EKH4X/');
+WriteCredits('Teller55', 'Forums', 'http://steamcommunity.com/id/teller55/');
+WriteCredits('Zergling_man', 'Website', 'http://steamcommunity.com/id/zerglingman/');
+WriteCredits('Trispast', 'Models', 'http://steamcommunity.com/id/sentinalg/');
+WriteCredits('jacklarnes', 'Developer', 'http://steamcommunity.com/id/DaymItzJack/');
+WriteCredits('Amedor', 'Developer', 'http://steamcommunity.com/id/Amedor/');
+WriteCredits('silent_kill', 'Developer', 'http://steamcommunity.com/id/NMFS/');
+WriteCredits('Shade', 'Developer, Russian translations', 'https://steamcommunity.com/id/Kulakaa073/');
+WriteSkillEnd(true);
+</script>
+<br>
+Special Thanks
+<br>
+<script>
+WriteSkillBegin('20%');
+WriteCredits('Redscull', 'SWAT: Aftermath developer', 'http://steamcommunity.com/id/redscull/');
+WriteCredits('Noya', 'Dota 2 modding guides', 'http://steamcommunity.com/id/mnoya/');
+WriteCredits('Myll', 'D2ModKit', 'http://steamcommunity.com/id/Myll');
+WriteCredits('BMD', 'Work on barebones', 'http://steamcommunity.com/id/bmddota');
+WriteCredits('Mayheim', 'Map Terrain Expertise', 'http://steamcommunity.com/id/mayheim');
+WriteCredits('Holicl', 'Chinese translations', 'http://steamcommunity.com/profiles/76561198295071015/');
+WriteCredits('GL☢☢M', 'Alpha tester', 'http://steamcommunity.com/id/Gloomby/');
+WriteCredits('Frozen00043', 'Alpha tester', 'http://steamcommunity.com/profiles/76561198025558264/');
+WriteCredits('Dota Stats', 'Match info and metrics', 'https://getdotastats.com');
+WriteSkillEnd(true);
+</script>
+<br>
+</body>
+</html>
