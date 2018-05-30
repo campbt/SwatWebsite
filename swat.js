@@ -872,14 +872,9 @@ function WriteSkillRefRif(showall) {
   WriteData('6', '+36', '+90');
   WriteData('7', '+42', '+105');
   WriteData('8', '+48', '+120');
-  if (showall) {
-  WriteData('9', '+54', '+135');
-  }
   WriteSkillBegin2();
   WriteHeader('Skill Level', 'Damage', 'Range');
-  if (!showall) {
   WriteData('9', '+54', '+135');
-  }
   WriteData('10', '+60', '+150');
   WriteData('11', '+66', '+165');
   WriteData('12', '+72', '+180');
@@ -887,11 +882,7 @@ function WriteSkillRefRif(showall) {
   WriteData('14', '+84', '+210');
   WriteData('15', '+90', '+225');
   WriteData('16', '+96', '+240');
-  if (showall) {
   WriteData('17', '+102', '+255');
-  WriteData('18', '+108', '+270');
-  WriteData('19', '+114', '+285');
-  }
   WriteSkillEnd();
 }
 
@@ -907,14 +898,9 @@ function WriteSkillPlasRnd(showall) {
   WriteData('6', '+13', '-4%', '29%','0.25 s','2','0.13 s');
   WriteData('7', '+20', '-6%', '35%','0.45 s','3','0.23 s');
   WriteData('8', '+22', '-7%', '36%','0.45 s','3','0.23 s');
-  if (showall) {
-  WriteData('9',  '+24', '-8%', '37%','0.45 s','3','0.23 s');
-  }
   WriteSkillBegin2();
   WriteHeader('Skill Level', 'Dmg.', 'Atk.&nbsp;Spd.', 'Slow', 'Duration', 'Energy', 'Cool.');
-  if (!showall) {
   WriteData('9',  '+24', '-8%', '37%','0.45 s','3','0.23 s');
-  }
   WriteData('10', '+26', '-9%', '38%','0.45 s','3','0.23 s');
   WriteData('11', '+28', '-10%', '39%','0.45 s','3','0.23 s');
   WriteData('12', '+38', '-12%', '45%','0.70 s','4','0.35 s');
@@ -924,8 +910,6 @@ function WriteSkillPlasRnd(showall) {
   WriteData('16', '+50', '-20%', '49%','0.70 s','4','0.35 s');
   if (showall) {
   WriteData('17', '+53', '-22%', '50%','0.70 s','4','0.35 s');
-  WriteData('18', '+56', '-24%', '51%','0.70 s','4','0.35 s');
-  WriteData('19', '+59', '-26%', '52%','0.70 s','4','0.35 s');
   }
   WriteSkillEnd();
 }
@@ -942,14 +926,9 @@ function WriteSkillPlasvRnd(showall) {
   WriteData('6', '+25', '-7%', '20%','0.40 s','1','--');
   WriteData('7', '+29', '-7%', '20%','0.43 s','1','--');
   WriteData('8', '+33', '-8%', '20%','0.46 s','1','--');
-  if (showall) {
-  WriteData('9',  '+37', '-8%', '20%','0.49 s','1','--');
-  }
   WriteSkillBegin2();
   WriteHeader('Skill Level', 'Dmg.', 'Atk.&nbsp;Spd.', 'Slow', 'Duration', 'Energy', 'Cool.');
-  if (!showall) {
   WriteData('9',  '+37', '-8%', '20%','0.49 s','1','--');
-  }
   WriteData('10', '+41', '-9%', '20%','0.52 s','1','--');
   WriteData('11', '+45', '-9%', '20%','0.55 s','1','--');
   WriteData('12', '+49', '-10%', '20%','0.58 s','1','--');
@@ -959,7 +938,6 @@ function WriteSkillPlasvRnd(showall) {
   WriteData('16', '+65', '-12%', '20%','0.70 s','1','--');
   if (showall) {
   WriteData('17', '+69', '-12%', '20%','0.73 s','1','--');
-  WriteData('18', '+73', '-13%', '20%','0.76 s','1','--');
   }
   WriteSkillEnd();
 }
@@ -978,27 +956,6 @@ function WriteSkillCrit(showall) {
   WriteData('8', '3.4x', '45%');
   if (showall) {
   WriteData('9', '3.6x', '50%');
-  WriteData('10', '3.8x', '55%');
-  WriteData('11', '4.0x', '60%');
-  }
-  WriteSkillEnd(true);
-}
-
-function WriteSkillCritTech(showall) {
-  WriteSkill('Critical&nbsp;Shot', 'crit', '.', 'Knowledge of vulnerable points enables a chance for a shot to inflict massive damage to an enemy. Mechanical units do not have vulnerable points. Also increases the agility of the companion robot.');
-  WriteSkillBegin();
-  WriteHeader('Skill Level', 'Damage', 'Chance', 'Agility');
-  WriteData('1', '2.0x', '10%','+2');
-  WriteData('2', '2.2x', '15%','+4');
-  WriteData('3', '2.4x', '20%','+6');
-  WriteData('4', '2.6x', '25%','+8');
-  WriteData('5', '2.8x', '30%','+10');
-  WriteData('6', '3.0x', '35%','+12');
-  WriteData('7', '3.2x', '40%','+14');
-  WriteData('8', '3.4x', '45%','+16');
-  if (showall) {
-  WriteData('9', '3.6x', '50%','+18');
-  WriteData('10', '3.8x', '55%','+20');
   }
   WriteSkillEnd(true);
 }
@@ -1017,46 +974,6 @@ function WriteSkillLockdown(showall) {
   WriteData('8','+48%','+25%','175','3 s','6 s');
   if (showall) {
   WriteData('9','+56%','+25%','200','3 s','6 s');
-  // WriteData('10','+65%','+25%','225','3 s','6 s');
-  // WriteData('11','+74%','+25%','250','3 s','6 s');
-  }
-  WriteSkillEnd(true);
-}
-
-function WriteSkillBlastAmp(showall) {
-  WriteSkill('Blast&nbsp;Amplifiers', 'bamp', '+', 'This unit\'s blast gloves are its secondary form of attack. It is leveled simultaneously with Dual Wield.',null,null,'png');
-  WriteSkillBegin();
-  WriteHeader('Skill Level', 'Damage', 'Inner Radius','Mid Radius','Outer Radius');
-  WriteData('1','+10','42','84','115');
-  WriteData('2','+20','44','88','120');
-  WriteData('3','+30','46','92','125');
-  WriteData('4','+40','48','96','130');
-  WriteData('5','+50','50','100','135');
-  WriteData('6','+60','52','104','140');
-  WriteData('7','+70','54','108','145');
-  WriteData('8','+80','56','112','150');
-  if (showall) {
-  WriteData('9','+90','58','116','155');
-  WriteData('10','+100','60','120','160');
-  }
-  WriteSkillEnd(true);
-}
-
-function WriteSkillDual(showall) {
-  WriteSkill('Dual&nbsp;Wield', 'dual', '+', 'This unit\'s pistols are its main form of attack. It is leveled simultaneously with Blast Amplifiers.',null,null,'png');
-  WriteSkillBegin();
-  WriteHeader('Skill Level', 'Damage');
-  WriteData('1','+10');
-  WriteData('2','+20');
-  WriteData('3','+30');
-  WriteData('4','+40');
-  WriteData('5','+50');
-  WriteData('6','+60');
-  WriteData('7','+70');
-  WriteData('8','+80');
-  if (showall) {
-  WriteData('9','+90');
-  WriteData('10','+100');
   }
   WriteSkillEnd(true);
 }
@@ -1073,14 +990,9 @@ function WriteSkillFuel(showall) {
   WriteData('6', '+6');
   WriteData('7', '+7');
   WriteData('8', '+8');
-  if (showall) {
-  WriteData('9', '+9');
-  }
   WriteSkillBegin2();
   WriteHeader('Skill Level', 'Damage');
-  if (!showall) {
   WriteData('9', '+9');
-  }
   WriteData('10', '+10');
   WriteData('11', '+11');
   WriteData('12', '+12');
@@ -1090,8 +1002,6 @@ function WriteSkillFuel(showall) {
   WriteData('16', '+18');
   if (showall) {
   WriteData('17', '+21');
-  WriteData('18', '+24');
-  WriteData('19', '+28');
   }
   WriteSkillEnd();
 }
