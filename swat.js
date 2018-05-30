@@ -1,4 +1,4 @@
-// document.writeln('<script language="javascript" src="link.js"></script><style><!--BODY {font-family: "Arial";} #bg_link { right: 2px; top: 2px; position: absolute; z-index: 2; } #bg_lang { right: 70px; top: 5px; position: absolute; z-index: 2; font-size: 16px; font-family: "Arial"; } --></style>');
+document.writeln('</script><style><!--BODY {font-family: "Arial";} #bg_link { right: 2px; top: 2px; position: absolute; z-index: 2; } #bg_lang { right: 70px; top: 5px; position: absolute; z-index: 2; font-size: 16px; font-family: "Arial"; } --></style>');
 
 function WriteBr() {
   document.writeln('<br>');
@@ -73,10 +73,6 @@ function WriteTopMenu(base) {
   // document.writeln('<a href=http://night.org/swat2/playerdb/>RCPD</a> | ');
   document.writeln('<a href='+base+'map.html>MAP</a>');
   document.writeln('</font></center>');
-    // TODO: Not sure what this is
-  // if (navigator.userAgent.indexOf("iPhone") < 1) {
-  //   vURL('<img src='+base+'pics/mapicond.gif border=0 id=bg_link alt="'+SwatHover+'" title="'+SwatHover+'">');
-  // }
   document.writeln('');
 }
 
