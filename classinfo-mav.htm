@@ -23,11 +23,11 @@ function MavWeaponSelect(weapon) {
   mavgunskill3.style.display = "none";
   mavgunskill4.style.display = "none";
   switch (weapon) {
-    case 0 : s1 = "0.60"; s2 = "Refined&nbsp;Rifle"; s3 = "Target Ground"; s5 = "Target Ground"; s4 = ""; mavweapon0.style.display = "block"; mavgunskill0.style.display = "block"; break;
-    case 1 : s1 = "0.60"; s2 = "Critical&nbsp;Shot"; s3 = "Ricochet";      s5 = "Ricochet";      s4 = "The ricochet will hit up to two units adjacent to the targeted location."; mavweapon1.style.display = "block"; mavgunskill1.style.display = "block"; break;
-    case 2 : s1 = "0.30"; s2 = "Plasma&nbsp;Rounds"; s3 = "Target Ground"; s5 = "Target Ground"; s4 = ""; mavweapon2.style.display = "block"; mavgunskill2.style.display = "block"; break;
-    case 3 : s1 = "0.60"; s2 = "Lock-Down";          s3 = "Target Ground"; s5 = "Target Ground"; s4 = ""; mavweapon3.style.display = "block"; mavgunskill3.style.display = "block"; break;
-    case 4 : s1 = "0.60"; s2 = "Advanced&nbsp;Fuel"; s3 = "Target Ground"; s5 = "Target Ground"; s4 = ""; mavweapon4.style.display = "block"; mavgunskill4.style.display = "block"; break;
+    case 0 : s1 = "1.20"; s2 = "Refined&nbsp;Rifle"; s3 = "Target Ground"; s5 = "Target Ground"; s4 = ""; mavweapon0.style.display = "block"; mavgunskill0.style.display = "block"; break;
+    case 1 : s1 = "1.20"; s2 = "Critical&nbsp;Shot"; s3 = "Ricochet";      s5 = "Ricochet";      s4 = "The ricochet will hit up to two units adjacent to the targeted location."; mavweapon1.style.display = "block"; mavgunskill1.style.display = "block"; break;
+    case 2 : s1 = "1.20"; s2 = "Plasma&nbsp;Rounds"; s3 = "Target Ground"; s5 = "Target Ground"; s4 = ""; mavweapon2.style.display = "block"; mavgunskill2.style.display = "block"; break;
+    case 3 : s1 = "1.20"; s2 = "Lock-Down";          s3 = "Target Ground"; s5 = "Target Ground"; s4 = ""; mavweapon3.style.display = "block"; mavgunskill3.style.display = "block"; break;
+    case 4 : s1 = "1.20"; s2 = "Advanced&nbsp;Fuel"; s3 = "Target Ground"; s5 = "Target Ground"; s4 = ""; mavweapon4.style.display = "block"; mavgunskill4.style.display = "block"; break;
   }
   mavattribs.innerHTML      = s1;
   mavgunskillname.innerHTML = s2;
@@ -63,7 +63,7 @@ WriteClassHeaderEnd('mav');
 
 <td width=27%>
 <table cellspacing=2 cellpadding=4 border=0 width=100%><script>
-WriteStatsAttribs('22','0.70','12','<span id=mavattribs>0.60</span>','100','0.31');
+WriteStatsAttribs('22','0.70','24','<span id=mavattribs>1.20</span>','100','0.31');
 </script></table>
 </td>
 
@@ -110,7 +110,7 @@ WriteStatsArmor();
 WriteBonus('Levelup','Extra skill point awared to robodog at levels 3 to 18, 20, 22, 24, 26, 29, 32, 35, and 40.');
 WriteBonus('Epic','Extra skill point awarded at each level from 51 to 55.');
 WriteBonus('Rank','Extra skill point awarded to robodog at ranks 4, 7, 10, and 11.');
-WriteBonus('Droid',InfoLinkS('Droid','unitinfo-lad.htm')+' has 2 extra agility per mark and +20 damage.');
+WriteBonus('Droid',InfoLinkS('Droid','unitinfo-lad.htm')+' has 4 extra agility per mark and +20 damage.');
 </script></table>
 
 <br><br>

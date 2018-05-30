@@ -530,6 +530,18 @@ function WriteStatsAttribs(VitB, VitL, AgiB, AgiL, IntB, IntL, health, regen, em
   WriteCols('Intelligence',90,IntB,'','+'+IntL,'','right', '+0', true);
 }
 
+function WriteStatsNoAttribs(health, regen, emax, elvl, epslvl) {
+    if (health == null) { health = '500'; }
+    if (regen == null) { regen = '6'; }
+    if (emax == null) { emax = '1000'; }
+    if (elvl == null) { elvl = '--'; }
+    if (epslvl == null) { epslvl = '--'; }
+    WriteCols('&nbsp;', 90,'&nbsp;&nbsp;&nbsp;&nbsp;Base','','&nbsp;Levelup','', 'right', '-1', false);
+    WriteCols('Health', 90,health,'','--','','right', '+0', true);
+    WriteCols('Energy', 90,emax,'',elvl,'','right', '+0', true);
+    WriteCols('Regen.', 90,regen+'&nbsp;eps','',epslvl,'','right', '+0', true);
+}
+
 function WriteStatsWeaponEx(Weapon, Type, Cooldown, Damage, Ammo, Range, Splash, Levelup) {
   if (Levelup == null) { Levelup = 'Ammo'; }
   WriteCols('Weapon',80,Weapon,'','','', 'left', '+0', false);

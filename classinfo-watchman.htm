@@ -6,22 +6,6 @@ a
 <script language="javascript" src="swat.js"></script>
 <script language="javascript">
 <!--
-function HeroWeaponSelect(weapon) {
-  var s1 = "";
-  var s2 = "";
-  heroweapon5.style.display = "none";
-  heroweapon6.style.display = "none";
-  herogunskill5.style.display = "none";
-  herogunskill6.style.display = "none";
-  herorngskill5.style.display = "none";
-  herorngskill6.style.display = "none";
-  switch (weapon) {
-    case 5 : s1 = "0.60"; s2 = "Focus&nbsp;Laser"; heroweapon5.style.display = "block"; herogunskill5.style.display = "block"; herorngskill5.style.display = "block"; break;
-    case 6 : s1 = "0.60"; s2 = "Focus&nbsp;Laser"; heroweapon6.style.display = "block"; herogunskill6.style.display = "block"; herorngskill6.style.display = "block"; break;
-  }
-  heroattribs.innerHTML      = s1;
-  herogunskillname.innerHTML = s2;
-}
 function ToggleDetails(hinttext, abilitydetails) {
   if (abilitydetails.style.display == "none") {
     hinttext.innerHTML = "Click this icon to hide customization details.";
@@ -54,7 +38,7 @@ WriteClassHeaderEnd('watchman');
 
 <td width=27%>
 <table cellspacing=2 cellpadding=4 border=0 width=100%><script>
-WriteStatsAttribs('22','0.60','12','<span id=heroattribs>0.60</span>','100','0.31');
+WriteStatsAttribs('22','0.60','22','1.20','100','0.31');
 </script></table>
 </td>
 
