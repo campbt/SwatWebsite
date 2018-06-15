@@ -1,4 +1,30 @@
 --------------------------------------------------------------------
+1.11.5:
+
+Bugfixes:
++ Gadgeteer: Fixed LADs not dropping a lad part item on death
++ Removed LAD creation time delay
++ Fixed TNT negative armor glitch
++ Nemesis forcefield counter now properly removed
+
+--------------------------------------------------------------------
+1.11.4:
++ Tactician: Ion Strike is now less effective vs Commandos and now slightly pierces nanites against non-Commando units.
++ Contraptions can no longer trigger spiders
++ Injury modifiers can now be alt-clicked to alert the team
++ Drug Overdose modifier now includes current experience penalty value
++ Kicked players will now have all of their locker items ejected
++ Nemesis Forcefield modifier now shows percent remaining as stack count
+
+Bugfixes:
++ Maverick: Fixed mecha being completely immune to TNTs while howl up. Damage now correctly dealt to nanites.
++ Watchman: Pharmacist aura now only applies to other paradox units of the watchman
++ Fixed being able to use replicate on other people's heroes without control of the hero
++ Fixed an issue where item modifiers may not be removed on unequip
++ Fixed LAD part item duplication exploit
++ Fixed LAD's and Cadet's weapon sound+particle not working
+
+--------------------------------------------------------------------
 1.11.3:
 
 Bugfixes:
