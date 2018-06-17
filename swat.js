@@ -58,7 +58,7 @@ function WriteTopMenu(base) {
   var rcpd = false;
   if (!base) { base = ''; }
   document.writeln('<center><font size=-1 color=ffe888>');
-  document.writeln('<a href='+base+'readmereborn.html>HOME</a> | ');
+  document.writeln('<a href='+base+'index.html>HOME</a> | ');
   document.writeln('<a href='+base+'readmerebornobjectives.html>OBJS</a> | ');
   document.writeln('<a href='+base+'readmerebornclasses.html>CLASSES</a> | ');
   document.writeln('<a href='+base+'readmerebornweapons.html>GUNS</a> | ');
