@@ -263,7 +263,7 @@ function WriteClassUnitHeaderBegin(ClassName, ClassImage, ClassAcquire, ClassDes
   if (SkillFileType != null) {
     filetype = SkillFileType;
   }
-  document.writeln('<font size=+1 color=ffcc00><a name='+ClassImage+'><b>'+ClassName+'</b></a></font>');
+  document.writeln('<font size=+1 color=ffcc00><a name='+ClassImage+'></a><b>'+ClassName+'</b></font>');
   document.writeln('<table cellspacing=0 cellpadding=0 border=0 width=100%>');
   document.writeln('<tr bgcolor=202020 valign=top><td width=4>&nbsp;</td><td align=right width=32><img src=pics/ability-'+ClassImage+'.'+filetype+' width=32 height=32>');
   document.writeln('</td><td width=4>&nbsp;</td><td>');
@@ -274,7 +274,7 @@ function WriteClassUnitHeaderBegin(ClassName, ClassImage, ClassAcquire, ClassDes
 }
 
 function WriteWeaponHeaderBegin(ClassName, ClassAcquire, ClassDescription) {
-  document.writeln('<font size=+1 color=ffcc00><a name='+ClassName+'><b>'+ClassName+'</b></a></font>');
+  document.writeln('<font size=+1 color=ffcc00><a name='+ClassName+'></a><b>'+ClassName+'</b></font>');
   document.writeln('<table cellspacing=0 cellpadding=0 border=0 width=100%>');
   document.writeln('<tr bgcolor=202020 valign=top><td width=4>&nbsp;</td>');
   document.writeln('</td><td width=4>&nbsp;</td><td>');
@@ -415,7 +415,7 @@ function WriteSkill(SkillName, SkillCode, SkillKey, SkillDescription, SkillMore,
   document.writeln('</td>');
 
   document.writeln('<td width=4>&nbsp;</td>');
-  document.writeln('<td align=left><font face=Arial><a name='+SkillCode+'><b>'+SkillName+'</a></b>'+HotkeyDisplay(SkillKey)+SkillLinkDisplayUnit(SkillLinkClass, SkillLinkUnit)+'<br>');
+  document.writeln('<td align=left><font face=Arial><a name='+SkillCode+'></a><b>'+SkillName+'</b>'+HotkeyDisplay(SkillKey)+SkillLinkDisplayUnit(SkillLinkClass, SkillLinkUnit)+'<br>');
   document.writeln(SkillDescription);
   document.writeln('</font></td></tr>');
   document.writeln('<tr height=5><td></td></tr></table>');
@@ -1274,7 +1274,7 @@ function WriteQuest(QuestName, QuestCode, QuestImage, QuestDescription, QuestSS,
           document.writeln('<table cellpadding=1 cellspacing=4 border=0 align=right><tr><td bgcolor=ffe888><img src=pics/obj-'+QuestSS+QuestSStype+' width=90 height=90 border=0></a></td></tr></table>');
       }
   }
-  document.writeln('<font face=Arial><a name='+QuestCode+'><b>'+QuestName+'</a></b><br>' + QuestDescription);
+  document.writeln('<font face=Arial><a name='+QuestCode+'></a><b>'+QuestName+'</b><br>' + QuestDescription);
   document.writeln('</font></td></tr><tr height=5><td></td></tr></table>');
   document.writeln('<table cellspacing=2 cellpadding=4 border=0 width=100%>');
 }

@@ -1,0 +1,20 @@
+body {
+    background-color: 000000;
+    color: #FFFFFF;
+    max-width: 1400;
+    width: 95%;
+    margin: 10 auto;
+}
+
+a {
+    color: #bb99ff;
+}
+
+a:visited {
+    color: #aa80ff;
+}
+
+a:active {
+    color: #884dff;
+}
+
