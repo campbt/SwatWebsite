@@ -16,9 +16,16 @@ WriteBr();
 
 <font size=+1 color=ffcc00><b>Defense Objectives</b></font>
 <br>
-<table cellpadding=0 cellspacing=0 border=0 align=right>
-<tr valign=top align=center><td width=8>&nbsp;</td><td width=1><img src=pics/map_defense.png height=200/></td></tr>
-</table>
+<table cellpadding=0 cellspacing=0 border=0 align=right style="padding: 0px 80px 0px 0px;">
+<script>
+WriteObjectivesMap('defense');
+WriteSkillBegin();
+WriteHeader('Wave',' ', 'Rank/Renown');
+WriteData('< 25', 'Loss', '-50% rank/renown penalty');
+WriteData('25+', 'Partial Victory', '100% rank/renown');
+WriteData('Final', 'Full Victory', '100% + bonus rank/renown');
+WriteSkillEnd(true);
+</script></td></tr></table>
 In order to win the game, players must survive against 40 waves of enemies and defeat the final boss, Nemesis.
 The game ends in defeat if the last surviving main hero dies, even if other support units are
 still alive. Victorious games award much more <script>InfoLink('rank','readmerebornrank.html');</script> and
@@ -30,6 +37,11 @@ Completing mini-quests is not necessary to win, but the rewards for doing so may
 Ranks 4-6 are unlocked when a hero survives past the first 25 waves.
 Ranks 7-9 are unlocked when a hero survives all 40 waves and defeats Nemesis.
 Ranks 10+ can not be unlocked in Defense.
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
 <br><br>
 
 <font color=ffcc00><b>Primary Objectives</b></font>

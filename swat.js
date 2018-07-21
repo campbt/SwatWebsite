@@ -1285,3 +1285,15 @@ function WriteQData(DataName, Description, Done) {
   document.writeln('</tr>');
   if (Done) { document.writeln('</table>'); }
 }
+
+function WriteObjectivesMap(MapName) {
+    document.write('<tr valign=top align=center>');
+    document.write('<td width=8>&nbsp;</td>');
+    document.write('<td width=1>');
+    document.write('<a href=pics/map_' + MapName + '_full.png >');
+    document.write('<img src=pics/map_' + MapName + '.png height=200/>');
+    document.write('</a>');
+    document.write('</td>');
+    document.writeln('</tr>');
+    document.writeln('<tr valign=top align=center><td width=8>&nbsp;</td><td width=1>');
+}
