@@ -230,7 +230,7 @@ function WriteMapsMenu() {
 
 //class main header (begin)
 function WriteClassHeaderBegin(ClassName, ClassImage, ClassIcon, ClassRoles, ClassDescription, ClassFileType, ClassIconType) {
-  var filetype = 'png';
+  var filetype = 'gif';
   var icontype = 'gif';
   if (ClassFileType != null) {
     filetype = ClassFileType;
@@ -259,7 +259,7 @@ function SkillLinkDisplaySkill(SkillLinkClass, SkillLinkSkill) {
 
 //class (unit) main header (begin)
 function WriteClassUnitHeaderBegin(ClassName, ClassImage, ClassAcquire, ClassDescription, SkillLinkClass, SkillLinkSkill, SkillFileType) {
-  var filetype = 'png';
+  var filetype = 'gif';
   if (SkillFileType != null) {
     filetype = SkillFileType;
   }
@@ -396,7 +396,7 @@ function SkillLinkDisplayUnit(SkillLinkClass, SkillLinkUnit) {
 
 //skill header
 function WriteSkill(SkillName, SkillCode, SkillKey, SkillDescription, SkillMore, SkillLinkClass, SkillLinkUnit, SkillFileType,) {
-  var filetype = 'png';
+  var filetype = 'gif';
   if (SkillFileType != null) {
     filetype = SkillFileType;
   }
@@ -407,9 +407,9 @@ function WriteSkill(SkillName, SkillCode, SkillKey, SkillDescription, SkillMore,
   document.writeln('<div style="position:relative;top:0;left:0;">');
   document.writeln('<img style="position:relative;top:0;left:0;" src=pics/ability-'+SkillCode+'.'+filetype+' height=32 width=32>');
   if(SkillKey == '.') {
-      document.writeln('<img style="position:absolute;top:0px;left:0px;" src=pics/overlay-passive.png height=32 width=32>');
+      document.writeln('<img style="position:absolute;top:0px;left:0px;" src=pics/overlay-passive.gif height=32 width=32>');
   } else {
-      document.writeln('<img style="position:absolute;top:0px;left:0px;" src=pics/overlay-active.png height=32 width=32>');
+      document.writeln('<img style="position:absolute;top:0px;left:0px;" src=pics/overlay-active.gif height=32 width=32>');
   }
   document.writeln('</div>');
   document.writeln('</td>');
@@ -1205,7 +1205,7 @@ function WriteSkillFrag() {
 
 function ConfigIconStr(Code, Abrva, Abrvb, Abrvc, Abrvd, Abrve, Abrvf) {
   if (Code != null) {
-    var s = '<img src=pics/'+Code +'.png width=32 height=32>';
+    var s = '<img src=pics/'+Code +'.gif width=32 height=32>';
     if (Abrva != null) {
       s = s + '<br><img src=pics/empty.gif width=31 height=1><br><img src="forum/images/smiles/class-'+Abrva +'.gif">';
       if (Abrvb != null) {
