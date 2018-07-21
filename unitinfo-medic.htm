@@ -1,0 +1,98 @@
+
+<html>
+<head>
+<title>SWAT: Aftermath</title>
+
+<script language="javascript" src="swat.js">
+</script>
+
+</head>
+<body bgcolor=000000 text=FFFFFF link=bb99ff vlink=aa80ff alink=884dff>
+
+<script>
+WriteTopMenu('',true);
+WriteClassMenu();
+WriteSummonedMenu('MEDIC');
+WriteClassUnitHeaderBegin('Mending Station','station','Created via Ability','Placed by '+InfoLinkS('medics','classinfo-medic.htm#station')+', the mending station automatically heals nearby comrades until its structural integrity fails or it\'s destroyed. It also provides a defense boost to closeby allies.');
+WriteSkillLinks('Mend&nbsp;Wounds','mend','Defense&nbsp;Network','defmatrix','Contraption&nbsp;Plating','armor');
+WriteClassHeaderEnd();
+</script>
+
+<br><br>
+<font color=ffcc00><b>Innate Abilities</b></font>
+
+<!--Mend Wounds-->
+<script>
+WriteSkill('Mend&nbsp;Wounds', 'mend', 'X', 'Uses standard medical techniques to restore health to a non-mechanical unit. Autocast is initially enabled.</font><br><font size=-1>Levels in the medic\'s Mend Wounds ability will improve this ability.');
+WriteSkillBegin();
+WriteHeader('Mend Level', 'HP Healed', 'Range', 'Energy', 'Cooldown');
+WriteData('0', '12','625','0','0.99 s');
+WriteData('1', '17','625','0','0.99 s');
+WriteData('2', '23','625','0','0.99 s');
+WriteData('3', '28','625','0','0.99 s');
+WriteData('4', '34','625','0','0.99 s');
+WriteData('5', '39','625','0','0.99 s');
+WriteData('6', '45','625','0','0.99 s');
+WriteData('7', '50','625','0','0.99 s');
+WriteData('8', '56','625','0','0.99 s');
+WriteSkillBegin2();
+WriteHeader('Mend Level', 'HP Healed', 'Range', 'Energy', 'Cooldown');
+WriteData('9', '61','625','0','0.99 s');
+WriteData('10', '67','625','0','0.99 s');
+WriteData('11', '72','625','0','0.99 s');
+WriteData('12', '78','625','0','0.99 s');
+WriteData('13', '83','625','0','0.99 s');
+WriteData('14', '89','625','0','0.99 s');
+WriteData('15', '94','625','0','0.99 s');
+WriteData('16', '100','625','0','0.99 s');
+WriteSkillEnd();
+</script>
+
+<br>
+<!--Defense Matrix-->
+<script>
+WriteSkill('Defense&nbsp;Network', 'defmatrix', '.', 'Reduces the amount of melee damage received by closeby allies.</font><br><font size=-1>Levels in the medic\'s Mend Wounds ability will improve this ability.');
+WriteSkillBegin();
+WriteHeader('Mend Level', 'Damage', 'Radius');
+WriteData('0', '-9%', '625');
+WriteData('1', '-10%', '625');
+WriteData('2', '-11%', '625');
+WriteData('3', '-12%', '625');
+WriteData('4', '-13%', '625');
+WriteData('5', '-14%', '625');
+WriteData('6', '-15%', '625');
+WriteData('7', '-16%', '625');
+WriteData('8', '-17%', '625');
+WriteSkillBegin2();
+WriteHeader('Mend Level', 'Damage', 'Radius');
+WriteData('9', '-18%', '625');
+WriteData('10', '-19%', '625');
+WriteData('11', '-20%', '625');
+WriteData('12', '-21%', '625');
+WriteData('13', '-22%', '625');
+WriteData('14', '-23%', '625');
+WriteData('15', '-24%', '625');
+WriteData('16', '-25%', '625');
+WriteSkillEnd();
+</script>
+
+<br>
+<script>
+WriteSkill('Contraption&nbsp;Plating', 'armor', '.', 'Special plating reduces damage from physical attacks.</font><br><font size=-1>Levels in the medic\'s Mend Wounds ability will improve this ability.');
+WriteSkillBegin();
+WriteHeader('Mend Level', 'Armor', 'Absorption');
+WriteData('0', '+0', '0');
+WriteData('2', '+4', '10');
+WriteData('4', '+8', '20');
+WriteData('6', '+12', '30');
+WriteData('8', '+16', '45');
+WriteData('10', '+20', '60');
+WriteData('12', '+24', '75');
+WriteData('14', '+28', '100');
+WriteData('16', '+32', '125');
+WriteSkillEnd(true);
+</script>
+
+<br>
+</body>
+</html>
