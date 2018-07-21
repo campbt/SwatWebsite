@@ -9,6 +9,8 @@
 <script>
 WriteTopMenu('',true);
 WriteWeaponMenu();
+
+document.writeln('<a id="wassault"/>');
 WriteWeaponHeaderBegin('Assault&nbsp;Rifle','Field Medic, Tactician, Psychologist, Maverick, <font size=-1>Cadet</font>','The assault rifle is fairly effective in all situations thanks to its well-rounded qualities. But of course it doesn\'t excel at anything either.</font><br><font size=-1>Cadet does not get the range bonus of Refined Rifle.');
 WriteClassHeaderEnd();
 WriteSkillBegin();
@@ -21,6 +23,7 @@ WriteSkillRefRif(true);
 WriteBr();
 WriteBr();
 
+document.writeln('<a id="wsniper"/>');
 WriteWeaponHeaderBegin('Sniper&nbsp;Rifle','Covert Sniper, Maverick','The sniper rifle is designed to deliver high damage to a single unit from a safe range. It\'s great against high-hitpoint enemies, especially bosses. This gun is much less effective when confronted by many nearly-dead enemies.');
 WriteClassHeaderEnd();
 WriteSkillBegin();
@@ -32,6 +35,7 @@ WriteSkillCrit(true);
 WriteBr();
 WriteBr();
 
+document.writeln('<a id="wchain"/>');
 WriteWeaponHeaderBegin('Chaingun','Heavy Ordnance, Maverick, <font size=-1>Mini-Droid</font>','The chaingun is good for taking out single or tightly-packed units. Its rapid fire rate is very effective against masses of nearly-dead enemies, and combined with Plasma Rounds, it can deliver incredible damage which briefly hinders targets\' movement speed. Short range and Plasma\'s high energy cost offset this gun\'s power.</font><br><font size=-1>Droid does not get the slow bonus of Plasma Rounds.');
 WriteClassHeaderEnd();
 WriteSkillBegin();
@@ -53,6 +57,7 @@ WriteSkillPlasvRnd(true);
 WriteBr();
 WriteBr();
 
+document.writeln('<a id="wrocket"/>');
 WriteWeaponHeaderBegin('Rocket&nbsp;Launcher','Demolitions, Maverick','The rocket launcher\'s range and large splash area make it ideal against hordes of incoming units. Its overall damage output, however, can be pretty low if its splash isn\'t fully taken advantage of. Rocket damage is reduced by 66% against nanites.');
 WriteClassHeaderEnd();
 WriteSkillBegin();
@@ -64,6 +69,7 @@ WriteSkillLockdown(true);
 WriteBr();
 WriteBr();
 
+document.writeln('<a id="wflame"/>');
 WriteWeaponHeaderBegin('Flamethrower','Pyrotechnician, Maverick','The flamethrower delivers superior damage to tightly-packed units, but it\'s fairly ineffective against a single unit or spread-out units.');
 WriteClassHeaderEnd();
 WriteSkillBegin();
@@ -75,6 +81,7 @@ WriteSkillFuel(true);
 WriteBr();
 WriteBr();
 
+document.writeln('<a id="wrifle"/>');
 WriteWeaponHeaderBegin('Laser&nbsp;Rifle','Watchman','The laser rifle is a powerful futuristic weapon that hits all targets in a line. It is highly customizable, able to specialize in dealing high single target damage or increasing the damage dealt to enemies pierced. It also does bonus damage to bosses, and it\'s good against Umbrellas because laser damage ignores evasion and is not reduced vs power armor.');
 WriteClassHeaderEnd();
 WriteSkillBegin();
@@ -85,6 +92,7 @@ WriteSkillFocusLaser(true);
 WriteBr();
 WriteBr();
 
+document.writeln('<a id="wbozar"/>');
 WriteWeaponHeaderBegin('Bozar','<font size=-1>Assault Droid</font>','The Bozar is the ultimate gun. Its damage, range, and fire rate, combined with some splash damage, make it excellent in nearly every situation.</font><br><font size=-1>Ammo level is determined by Droid Mk, not fused ammos.');
 WriteClassHeaderEnd();
 WriteSkillBegin();
