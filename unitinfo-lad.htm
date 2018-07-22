@@ -119,7 +119,7 @@ WriteData('45', '+45%', '900');
 WriteSkillEnd();
 
 WriteBr();
-WriteSkill('Concussion&nbsp;Rockets', 'cluster', 'X', 'Bombards an area with multiple rockets, stunning and damaging units in the vicinity.</font><br><font size=-1>Energy cost for the MkII is reduced by 20%. Energy cost for the MkIII is reduced by 33%.');
+WriteSkill('Concussion&nbsp;Rockets', 'cluster', '', 'Bombards an area with multiple rockets, stunning and damaging units in the vicinity.</font><br><font size=-1>Energy cost for the MkII is reduced by 20%. Energy cost for the MkIII is reduced by 33%.');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'Damage/Max', 'Radius', 'Range', 'Stun', 'Energy', 'Cooldown');
 WriteData('1', '500/200','275','1000','0.50 s','75','6 s');
@@ -143,7 +143,7 @@ WriteData('16', '2000/800','275','1000','4.25 s','300','6 s');
 WriteSkillEnd();
 
 WriteBr();
-WriteSkill('Reconstruct', 'recons', 'C', 'Forces the droid into low-power, defensive mode, disabling movement and slowing attack, but greatly increasing health regeneration and attack deflection.');
+WriteSkill('Reconstruct', 'recons', '', 'Forces the droid into low-power, defensive mode, disabling movement and slowing attack, but greatly increasing health regeneration and attack deflection.');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'Attack Spd.', 'Move Spd.', 'HP Healed', 'Deflection', 'Duration', 'Energy', 'Cooldown');
 WriteData('1', '-85%', '0', '+5.0 hps', '10%', '20 s', '0', '60 s');
@@ -165,7 +165,7 @@ WriteData('16', '-85%', '0', '+65.0 hps', '90%', '13 s', '0', '60 s');
 WriteSkillEnd();
 
 WriteBr();
-WriteSkill('Frag.&nbsp;Locator', 'frag', 'V', 'Uses a portable scanner to locate nearby radiation fragments.');
+WriteSkill('Frag.&nbsp;Locator', 'frag', '', 'Uses a portable scanner to locate nearby radiation fragments.');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'Number', 'Radius', 'Energy', 'Cooldown');
 WriteData('1', '1', '5500', '150', '120 s');
@@ -193,7 +193,7 @@ WriteData('--', '0.25 hps');
 WriteSkillEnd(true);
 
 WriteBr();
-WriteSkill('Energy&nbsp;Beam', 'beam', 'ZV', 'Instantly transfers energy from the target to the droid.');
+WriteSkill('Energy&nbsp;Beam', 'beam', '', 'Instantly transfers energy from the target to the droid.');
 WriteSkillBegin();
 WriteHeader('Droid Mk', 'Range','Energy','Cooldown');
 WriteData('I', '350','250','20 s');
@@ -202,7 +202,7 @@ WriteData('III', '350','550','20 s');
 WriteSkillEnd(true);
 
 WriteBr();
-WriteSkill('Transfer', 'transfer', 'ZB', 'Authorizes the targeted officer as the new owner of the assault droid.');
+WriteSkill('Transfer', 'transfer', '', 'Authorizes the targeted officer as the new owner of the assault droid.');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'Range','Energy','Cooldown');
 WriteData('--', '350','0','6 s');

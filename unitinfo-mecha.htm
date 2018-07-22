@@ -106,7 +106,7 @@ WriteSkillNanites(3, false, 'robodog');
 <font color=ffcc00><b>Innate Abilities</b></font>
 
 <script>
-WriteSkill('A.R.S.', 'dog_ars', 'Z', 'The automated repair system restores health to the mechanical unit. It can also be manually used to reallocate agility and vitality (1 agi = 7.5 vit). Piercing Resistance reduces nanite-piercing damage.');
+WriteSkill('A.R.S.', 'dog_ars', '', 'The automated repair system restores health to the mechanical unit. It can also be manually used to reallocate agility and vitality (1 agi = 7.5 vit). Piercing Resistance reduces nanite-piercing damage.');
 WriteSkillBegin();
 WriteHeader('Dog Level', 'HP Healed', 'Reduction', 'Damage Floor');
 WriteData('1','1.00 hps','0','200');
@@ -133,7 +133,7 @@ WriteSkillEnd(true);
 
 <br>
 <script>
-WriteSkill('Retrieve&nbsp;Items', 'retrieve', 'D', 'Teleports the item in the robodog\'s inventory to its master\'s feet.');
+WriteSkill('Retrieve&nbsp;Items', 'retrieve', '', 'Teleports the item in the robodog\'s inventory to its master\'s feet.');
 WriteSkillBegin();
 WriteHeader('Items', 'Range', 'Energy', 'Cooldown');
 WriteData('1','unlimited','100','6 s');
@@ -172,7 +172,7 @@ WriteSkillEnd();
 
 <br>
 <script>
-WriteSkill('Howl', 'howl', 'W', 'The Mecha Mutt unleashes a powerful howl, slowing nearby enemies\' attack and movement speed. The Mecha Mutt also gains increased nanites protection, especially against explosive sources.');
+WriteSkill('Howl', 'howl', '', 'The Mecha Mutt unleashes a powerful howl, slowing nearby enemies\' attack and movement speed. The Mecha Mutt also gains increased nanites protection, especially against explosive sources.');
 WriteSkillBegin();
 WriteHeader('Dog Level', 'Move Speed', 'Atk Speed', 'Duration', 'Cooldown', 'Radius', 'Nanites Efficiency');
 WriteData('1', '-10%', '-10%','6 s', '20 s', '625', '+100%');
@@ -211,7 +211,7 @@ WriteSkillEnd(true);
 
 <br>
 <script>
-WriteSkill('Integrate Shield Capacitor', 'repairsys', 'ZC', 'Disassembles a shield capacitor and permanently integrates the parts into the Robodog\'s armor, upgrading nanites significantly but decreasing movement speed. This modification can only be performed once and cannot be reversed. (Reprogram the Mecha with a Shield Capacitor in it\'s inventory to integrate.)');
+WriteSkill('Integrate Shield Capacitor', 'repairsys', '', 'Disassembles a shield capacitor and permanently integrates the parts into the Robodog\'s armor, upgrading nanites significantly but decreasing movement speed. This modification can only be performed once and cannot be reversed. (Reprogram the Mecha with a Shield Capacitor in it\'s inventory to integrate.)');
 WriteSkillBegin();
 WriteHeader('Level', 'Move Spd.', 'Nanites');
 WriteData('--', '-20', InfoLinkS('Large+','readmerebornarmor.html#Large+', true));

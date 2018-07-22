@@ -1156,11 +1156,8 @@ function WriteSkillAdvGen(unit) {
   WriteSkillEnd();
 }
 
-function WriteSkillSprint(Type, hotkey, specialUnit) {
-  if (hotkey == null) {
-    hotkey = 'D';
-  }
-  WriteSkill('Sprint', 'sprint', hotkey, 'Greatly increases movement speed and lets the hero slip right past units. Nanites Shield\'s protection is also improved while sprinting.</font><br><font size=-1>The values below reflect a hero in '+ ArmorName(Type) +' power armor.');
+function WriteSkillSprint(Type) {
+  WriteSkill('Sprint', 'sprint', null, 'Greatly increases movement speed and lets the hero slip right past units. Nanites Shield\'s protection is also improved while sprinting.</font><br><font size=-1>The values below reflect a hero in '+ ArmorName(Type) +' power armor.');
   WriteSkillBegin();
   if (Type == null) {
     WriteHeader('&nbsp;', 'Move Spd.', 'Duration', 'Energy', 'Cooldown');

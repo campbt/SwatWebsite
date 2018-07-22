@@ -106,7 +106,7 @@ WriteSkillNanites(0, false, 'robodog');
 <font color=ffcc00><b>Innate Abilities</b></font>
 
 <script>
-WriteSkill('A.R.S.', 'dog_ars', 'Z', 'The automated repair system restores health to the mechanical unit. It can also be manually used to reallocate agility and vitality (1 agi = 7.5 vit).');
+WriteSkill('A.R.S.', 'dog_ars', '', 'The automated repair system restores health to the mechanical unit. It can also be manually used to reallocate agility and vitality (1 agi = 7.5 vit).');
 WriteSkillBegin();
 WriteHeader('Dog Level', 'HP Healed');
 WriteData('1','1.00 hps');
@@ -123,7 +123,7 @@ WriteSkillEnd(true);
 
 <br>
 <script>
-WriteSkill('Retrieve&nbsp;Items', 'retrieve', 'D', 'Teleports the item in the robodog\'s inventory to its master\'s feet.');
+WriteSkill('Retrieve&nbsp;Items', 'retrieve', '', 'Teleports the item in the robodog\'s inventory to its master\'s feet.');
 WriteSkillBegin();
 WriteHeader('Items', 'Range', 'Energy', 'Cooldown');
 WriteData('1','unlimited','100','6 s');
@@ -162,7 +162,7 @@ WriteSkillEnd();
 
 <br>
 <script>
-WriteSkill('Hyper-Thrash', 'kamijaw', 'A', 'Teleports the robodog to the targeted enemy, instantly causing a critical hit and phasing the robodog (invulnerability). After the phase duration wears off, the robodog remains cloaked until Hyper-Thrash is available again. While Hyper-Thrashing, the Kamikaze Canine can thrash again, refocusing the Shadow Pack and causing another critical hit.');
+WriteSkill('Hyper-Thrash', 'kamijaw', '', 'Teleports the robodog to the targeted enemy, instantly causing a critical hit and phasing the robodog (invulnerability). After the phase duration wears off, the robodog remains cloaked until Hyper-Thrash is available again. While Hyper-Thrashing, the Kamikaze Canine can thrash again, refocusing the Shadow Pack and causing another critical hit.');
 WriteSkillBegin('60%');
 WriteHeader('Thrash Level', 'Damage', 'Duration', 'Energy', 'Cooldown');
 WriteData('0','2x','up to 20 s', 'up to 250', 'variable');
@@ -210,7 +210,7 @@ WriteSkillEnd(true);
 
 <br>
 <script>
-WriteSkill('Return', 'return', 'H', 'Ends phasing early and returns the robodog to its original location.');
+WriteSkill('Return', 'return', '', 'Ends phasing early and returns the robodog to its original location.');
 WriteSkillBegin();
 WriteHeader('Skill Level','&nbsp;');
 WriteData('--','&nbsp;');
