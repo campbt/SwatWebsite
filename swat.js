@@ -685,8 +685,8 @@ function WriteStatsArmor(type) {
 
 function ArmorName(Type) {
   if (Type == null) { return 'each type of'; }
-  else if (Type == 4) { return 'Goliath or Heavy (Shield Capacitor)'; }
-  else if (Type == 5) { return 'Goliath (Shield Capacitor)'; }
+  else if (Type == 4) { return 'Heavy (Shield Capacitor or Titan Vest)'; }
+  else if (Type == 5) { return 'Heavy (Shield Capacitor and Titan Vest)'; }
   else if (Type == 0) { return 'Light'; }
   else if (Type == 1) { return 'Medium'; }
   else if (Type == 2) { return 'Heavy'; }
@@ -715,142 +715,137 @@ function WriteSkillNanites(Type, Differentiate, unit) {
   WriteSkillBegin();
   WriteHeader('Skill Level','Absorption','Efficiency');
   if (Type == 4) {
-    WriteData('1', '91%', '2.00');
-    WriteData('2', '91%', '1.75');
-    WriteData('3', '91%', '1.50');
-    WriteData('4', '91%', '1.25');
-    WriteData('5', '91%', '1.00');
-    WriteData('6', '91%', '0.80');
-    WriteData('7', '91%', '0.60');
-    WriteData('8', '91%', '0.50');
-    WriteData('9', '92%', '0.40');
-    WriteData('10', '92%', '0.35');
+    WriteData('1', '91%', '1.000');
+    WriteData('2', '91%', '0.848');
+    WriteData('3', '91%', '0.733');
+    WriteData('4', '91%', '0.641');
+    WriteData('5', '91%', '0.564');
+    WriteData('6', '91%', '0.499');
+    WriteData('7', '91%', '0.442');
+    WriteData('8', '92%', '0.392');
+    WriteData('9', '92%', '0.348');
+    WriteData('10','92%', '0.309');
   } else if (Type == 5) {
-    WriteData('1', '91%', '1.75');
-    WriteData('2', '91%', '1.50');
-    WriteData('3', '91%', '1.25');
-    WriteData('4', '91%', '1.00');
-    WriteData('5', '91%', '0.80');
-    WriteData('6', '91%', '0.60');
-    WriteData('7', '91%', '0.45');
-    WriteData('8', '92%', '0.35');
-    WriteData('9', '92%', '0.30');
-    WriteData('10', '92%', '0.26');
+    WriteData('1', '91%', '1.000');
+    WriteData('2', '91%', '0.795');
+    WriteData('3', '91%', '0.656');
+    WriteData('4', '91%', '0.554');
+    WriteData('5', '91%', '0.473');
+    WriteData('6', '91%', '0.409');
+    WriteData('7', '92%', '0.355');
+    WriteData('8', '92%', '0.309');
+    WriteData('9', '92%', '0.270');
+    WriteData('10','92%', '0.237');
   } else if (Type == 0) {
-    WriteData('1', '90%', '4.00');
-    WriteData('2', '90%', '3.50');
-    WriteData('3', '90%', '3.00');
-    WriteData('4', '90%', '2.70');
-    WriteData('5', '90%', '2.40');
-    WriteData('6', '90%', '2.10');
-    WriteData('7', '91%', '1.85');
-    WriteData('8', '91%', '1.65');
-    WriteData('9', '91%', '1.45');
-    WriteData('10', '91%', '1.25');
-  } else if (Type == 1) {
-    WriteData('1', '90%', '4.00');
-    WriteData('2', '90%', '3.50');
-    WriteData('3', '90%', '3.00');
-    WriteData('4', '90%', '2.66');
-    WriteData('5', '90%', '2.33');
-    WriteData('6', '91%', '2.00');
-    WriteData('7', '91%', '1.75');
-    WriteData('8', '91%', '1.50');
-    WriteData('9', '91%', '1.25');
-    WriteData('10', '91%', '1.00');
+    WriteData('1', '90%', '4.000');
+    WriteData('2', '90%', '2.200');
+    WriteData('3', '91%', '1.524');
+    WriteData('4', '91%', '1.168');
+    WriteData('5', '91%', '0.950');
+    WriteData('6', '91%', '0.803');
+    WriteData('7', '91%', '0.699');
+    WriteData('8', '91%', '0.621');
+    WriteData('9', '91%', '0.561');
+    WriteData('10','91%', '0.514');
+  } else if (Type == 1) {  0.476
+    WriteData('1', '90%', '2.500');
+    WriteData('2', '91%', '1.641');
+    WriteData('3', '91%', '1.222');
+    WriteData('4', '91%', '0.973');
+    WriteData('5', '90%', '0.808');
+    WriteData('6', '91%', '0.691');
+    WriteData('7', '91%', '0.604');
+    WriteData('8', '91%', '0.536');
+    WriteData('9', '91%', '0.482');
+    WriteData('10','91%', '0.438');
   } else {
-    WriteData('1', '90%', '2.33');
-    WriteData('2', '91%', '2.00');
-    WriteData('3', '91%', '1.75');
-    WriteData('4', '91%', '1.50');
-    WriteData('5', '91%', '1.25');
-    WriteData('6', '91%', '1.00');
-    WriteData('7', '91%', '0.80');
-    WriteData('8', '91%', '0.60');
-    WriteData('9', '91%', '0.50');
-    WriteData('10', '92%', '0.40');
+    WriteData('1', '91%', '1.000');
+    WriteData('2', '91%', '0.896');
+    WriteData('3', '91%', '0.809');
+    WriteData('4', '91%', '0.734');
+    WriteData('5', '91%', '0.666');
+    WriteData('6', '91%', '0.605');
+    WriteData('7', '91%', '0.550');
+    WriteData('8', '91%', '0.498');
+    WriteData('9', '91%', '0.451');
+    WriteData('10','91%', '0.408');
     if (unit == 'droid') {
-    WriteData('11', '92%', '0.35');
+    WriteData('11','92%', '0.368');
     }
   }
   WriteSkillBegin2();
   WriteHeader('Skill Level','Absorption','Efficiency');
   if (Type == 4) {
-    WriteData('11', '92%', '0.30');
-    WriteData('12', '92%', '0.26');
-    WriteData('13', '93%', '0.22');
-    WriteData('14', '93%', '0.19');
-    WriteData('15', '94%', '0.16');
-    WriteData('16', '94%', '0.14');
-    WriteData('17', '94%', '0.13');
-    WriteData('18', '94%', '0.12');
-    WriteData('19', '95%', '0.11');
+    WriteData('11', '93%', '0.274');
+    WriteData('12', '93%', '0.244');
+    WriteData('13', '93%', '0.217');
+    WriteData('14', '94%', '0.193');
+    WriteData('15', '94%', '0.172');
+    WriteData('16', '94%', '0.153');
+    WriteData('17', '95%', '0.137');
+    WriteData('18', '95%', '0.123');
+    WriteData('19', '95%', '0.110');
     if (unit == 'unit') {
-    WriteData('20', '95%', '0.105');
-    WriteData('21', '95%', '0.101');
+    WriteData('20', '95%', '0.099');
     }
   } else if (Type == 5) {
-    WriteData('11', '93%', '0.22');
-    WriteData('12', '93%', '0.18');
-    WriteData('13', '94%', '0.15');
-    WriteData('14', '94%', '0.13');
-    WriteData('15', '95%', '0.11');
-    WriteData('16', '95%', '0.10');
-    WriteData('17', '95%', '0.091');
-    WriteData('18', '95%', '0.084');
+    WriteData('11', '92%', '0.208');
+    WriteData('12', '92%', '0.183');
+    WriteData('13', '93%', '0.161');
+    WriteData('14', '93%', '0.142');
+    WriteData('15', '93%', '0.126');
+    WriteData('16', '94%', '0.112');
+    WriteData('17', '94%', '0.099');
+    WriteData('18', '94%', '0.088');
     WriteData('19', '95%', '0.079');
     if (unit == 'unit') {
-    WriteData('20', '95%', '0.076');
-    WriteData('21', '95%', '0.073');
+    WriteData('20', '95%', '0.071');
     }
   } else if (Type == 0) {
-    WriteData('11', '91%', '1.10');
-    WriteData('12', '91%', '0.95');
-    WriteData('13', '91%', '0.80');
-    WriteData('14', '91%', '0.70');
-    WriteData('15', '91%', '0.60');
-    WriteData('16', '91%', '0.50');
-    WriteData('17', '91%', '0.45');
-    WriteData('18', '92%', '0.40');
-    WriteData('19', '92%', '0.35');
+    WriteData('11', '91%', '0.476');
+    WriteData('12', '91%', '0.446');
+    WriteData('13', '91%', '0.421');
+    WriteData('14', '92%', '0.400');
+    WriteData('15', '92%', '0.385');
+    WriteData('16', '92%', '0.372');
+    WriteData('17', '92%', '0.362');
+    WriteData('18', '92%', '0.355');
+    WriteData('19', '92%', '0.350');
     if (unit == 'unit') {
-    WriteData('20', '92%', '0.32');
-    WriteData('21', '92%', '0.30');
+    WriteData('20', '92%', '0.345');
     }
   } else if (Type == 1) {
-    WriteData('11', '91%', '0.80');
-    WriteData('12', '91%', '0.60');
-    WriteData('13', '91%', '0.50');
-    WriteData('14', '92%', '0.40');
-    WriteData('15', '92%', '0.35');
-    WriteData('16', '92%', '0.30');
-    WriteData('17', '92%', '0.28');
-    WriteData('18', '92%', '0.26');
-    WriteData('19', '93%', '0.24');
+    WriteData('11', '91%', '0.400');
+    WriteData('12', '92%', '0.370');
+    WriteData('13', '92%', '0.344');
+    WriteData('14', '92%', '0.320');
+    WriteData('15', '92%', '0.300');
+    WriteData('16', '92%', '0.283');
+    WriteData('17', '92%', '0.267');
+    WriteData('18', '92%', '0.253');
+    WriteData('19', '93%', '0.240');
     if (unit == 'unit') {
-    WriteData('20', '93%', '0.22');
-    WriteData('21', '93%', '0.21');
+    WriteData('20', '93%', '0.229');
     }
   } else {
     if (unit != 'droid') {
-    WriteData('11', '92%', '0.35');
+    WriteData('11', '92%', '0.368');
     }
-    WriteData('12', '92%', '0.30');
-    WriteData('13', '92%', '0.27');
-    WriteData('14', '93%', '0.24');
-    WriteData('15', '93%', '0.22');
-    WriteData('16', '93%', '0.20');
-    WriteData('17', '93%', '0.18');
-    WriteData('18', '93%', '0.17');
-    WriteData('19', '94%', '0.16');
+    WriteData('12', '92%', '0.332');
+    WriteData('13', '92%', '0.299');
+    WriteData('14', '92%', '0.269');
+    WriteData('15', '92%', '0.242');
+    WriteData('16', '93%', '0.218');
+    WriteData('17', '93%', '0.197');
+    WriteData('18', '93%', '0.177');
+    WriteData('19', '94%', '0.160');
     if (unit == 'unit') {
-    WriteData('20', '94%', '0.15');
-    WriteData('21', '94%', '0.143');
+    WriteData('20', '94%', '0.145');
     }
     if (unit == 'droid') {
-    WriteData('20', '94%', '0.14');
-    WriteData('21', '94%', '0.13');
-    WriteData('22', '94%', '0.12');
+    WriteData('20', '94%', '0.145');
+    WriteData('21', '94%', '0.130');
+    WriteData('22', '94%', '0.119');
     }
   }
   WriteSkillEnd();
