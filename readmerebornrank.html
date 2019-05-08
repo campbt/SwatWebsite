@@ -29,6 +29,15 @@ already unlocked Medic to Rank 4 and Gifted to Rank 3
 Certain ranks are restricted until you have completed a specific difficulty on Hive/City or defeated a specific wave number on defense.
 Once you have completed that difficulty, the unlocked ranks are available for every hero, not just the one
 that completed the difficulty. It is not possible to go beyond rank 9 through Defense alone.
+<br>
+Winning a difficulty with Challenges enabled will allow that build to potentially unlock one rank
+higher than the cap for that difficulty. This does not unlock the rank for all builds.
+<br>
+For example, winning Normal mode with challenges would allow that build to get to Captain (rank 7), if it earned enough rank in that game, even if
+that rank has not been unlocked yet because the player has not beaten Hard mode. But other builds would still be capped at rank 6 unless challenge mode was won again.
+<br>
+Winning challenge mode on Insane is required to get a rank 11 build and unlock the ability to vote for Nightmare.
+Once a player wins Nightmare, ranks 1-11 are unlocked for all builds.
 <br><br><font color=ffe888>
 Heroes must achieve the rank of National Hero before they can participate in a Nightmare game
 which is where the real challenge begins. Only Legendary Heroes can attempt Extinction, the
@@ -53,7 +62,7 @@ WriteData('7', RankName(7,7,'Captain'),              '+12','+2','Hard','Wave 41'
 WriteData('8', RankName(8,7,'Commander'),            '+14','+2','Hard','Wave 41');
 WriteData('9', RankName(9,7,'Deputy&nbsp;Chief'),    '+16','+2','Hard','Wave 41');
 WriteData('10',RankName(10,10,'Chief'),              '+18','+3','Insane','--');
-WriteData('11',RankName(11,10,'National&nbsp;Hero'), '+20','+4','Perf.&nbsp;Insane','--');
+WriteData('11',RankName(11,10,'National&nbsp;Hero'), '+20','+4','Insane (Challenges)','--');
 WriteData('12',RankName(12,11,'Legendary&nbsp;Hero'),'+20','+4<br><small>(+1 nanites)</small>','Nightmare','--');
 WriteSkillBegin2('24%');
 WriteSkillEnd();
