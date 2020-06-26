@@ -627,7 +627,7 @@ function WriteStatsArmor(type) {
     WriteCols('Absorption',90,'0.0','--','--','--', 'right', '+0', true);
     WriteCols('Armor',90,'60','--','--','--', 'right', '+0', true);
   } else if (type == 'mecha') {
-    WriteCols('Move&nbsp;Spd.',90,'--','--','--','200', 'right', '+0', true);
+    WriteCols('Move&nbsp;Spd.',90,'--','--','--','240', 'right', '+0', true);
     WriteCols('Sprint&nbsp;Spd.',90,'--','--','--','--', 'right', '+0', true);
     WriteCols('Sprint&nbsp;Cool.',90,'--','--','--','--', 'right', '+0', true);
     WriteCols('Absorption',90,'--','--','--','0.0', 'right', '+0', true);
@@ -880,58 +880,58 @@ function WriteSkillRefRif(showall) {
 function WriteSkillPlasRnd(showall) {
   WriteSkill('Plasma&nbsp;Rounds', 'plasrnd', '+', 'This system can be activated to fuse destructive nanites with each round fired. Upon impact, these nanites tear through the target, briefly hindering its movement.');
   WriteSkillBegin();
-  WriteHeader('Skill Level', 'Dmg.', 'Atk.&nbsp;Spd.', 'Slow', 'Duration', 'Energy', 'Cool.');
-  WriteData('1', '+4', '-1%', '20%','0.15 s','1','--');
-  WriteData('2', '+9', '-2%',  '25%','0.25 s','2','0.13 s');
-  WriteData('3', '+10', '-3%', '26%','0.25 s','2','0.13 s');
-  WriteData('4', '+11', '-3%', '27%','0.25 s','2','0.13 s');
-  WriteData('5', '+12', '-4%', '28%','0.25 s','2','0.13 s');
-  WriteData('6', '+13', '-4%', '29%','0.25 s','2','0.13 s');
-  WriteData('7', '+20', '-6%', '35%','0.45 s','3','0.23 s');
-  WriteData('8', '+22', '-7%', '36%','0.45 s','3','0.23 s');
+  WriteHeader('Skill Level', 'Dmg.', 'Atk.&nbsp;Spd.', 'Slow', 'Duration', 'Energy');
+  WriteData('1', '+5', '-1%', '20%','0.25 s','1');
+  WriteData('2', '+8', '-2%',  '22%','0.26 s','1');
+  WriteData('3', '+11', '-3%', '24%','0.27 s','1');
+  WriteData('4', '+14', '-3%', '26%','0.28 s','1');
+  WriteData('5', '+17', '-4%', '28%','0.29 s','1');
+  WriteData('6', '+20', '-4%', '30%','0.30 s','1');
+  WriteData('7', '+23', '-6%', '32%','0.31 s','1');
+  WriteData('8', '+26', '-7%', '34%','0.32 s','1');
   WriteSkillBegin2();
-  WriteHeader('Skill Level', 'Dmg.', 'Atk.&nbsp;Spd.', 'Slow', 'Duration', 'Energy', 'Cool.');
-  WriteData('9',  '+24', '-8%', '37%','0.45 s','3','0.23 s');
-  WriteData('10', '+26', '-9%', '38%','0.45 s','3','0.23 s');
-  WriteData('11', '+28', '-10%', '39%','0.45 s','3','0.23 s');
-  WriteData('12', '+38', '-12%', '45%','0.70 s','4','0.35 s');
-  WriteData('13', '+41', '-14%', '46%','0.70 s','4','0.35 s');
-  WriteData('14', '+44', '-16%', '47%','0.70 s','4','0.35 s');
-  WriteData('15', '+47', '-18%', '48%','0.70 s','4','0.35 s');
-  WriteData('16', '+50', '-20%', '49%','0.70 s','4','0.35 s');
+  WriteHeader('Skill Level', 'Dmg.', 'Atk.&nbsp;Spd.', 'Slow', 'Duration', 'Energy');
+  WriteData('9',  '+29', '-8%', '36%','0.33 s','1');
+  WriteData('10', '+32', '-9%', '38%','0.34 s','1');
+  WriteData('11', '+35', '-10%', '40%','0.35 s','1');
+  WriteData('12', '+38', '-12%', '42%','0.36 s','1');
+  WriteData('13', '+41', '-14%', '44%','0.37 s','1');
+  WriteData('14', '+44', '-16%', '46%','0.38 s','1');
+  WriteData('15', '+47', '-18%', '48%','0.39 s','1');
+  WriteData('16', '+50', '-20%', '50%','0.40 s','1');
   if (showall) {
-  WriteData('17', '+53', '-22%', '50%','0.70 s','4','0.35 s');
+  WriteData('17', '+53', '-22%', '52%','0.41 s','1');
   }
   WriteSkillEnd();
 }
 
-function WriteSkillPlasvRnd(showall) {
-  WriteSkill('Plasma-V&nbsp;Rounds', 'plasrnd', '+', 'This system can be activated to fuse destructive nanites with each round fired. Upon impact, these nanites tear through the target, briefly hindering its movement.');
-  WriteSkillBegin();
-  WriteHeader('Skill Level', 'Dmg.', 'Atk.&nbsp;Spd.', 'Slow', 'Duration', 'Energy', 'Cool.');
-  WriteData('1', '+5', '-4%', '20%','0.25 s','1','--');
-  WriteData('2', '+9', '-5%',  '20%','0.28 s','1','--');
-  WriteData('3', '+13', '-5%', '20%','0.31 s','1','--');
-  WriteData('4', '+17', '-6%', '20%','0.34 s','1','--');
-  WriteData('5', '+21', '-6%', '20%','0.37 s','1','--');
-  WriteData('6', '+25', '-7%', '20%','0.40 s','1','--');
-  WriteData('7', '+29', '-7%', '20%','0.43 s','1','--');
-  WriteData('8', '+33', '-8%', '20%','0.46 s','1','--');
-  WriteSkillBegin2();
-  WriteHeader('Skill Level', 'Dmg.', 'Atk.&nbsp;Spd.', 'Slow', 'Duration', 'Energy', 'Cool.');
-  WriteData('9',  '+37', '-8%', '20%','0.49 s','1','--');
-  WriteData('10', '+41', '-9%', '20%','0.52 s','1','--');
-  WriteData('11', '+45', '-9%', '20%','0.55 s','1','--');
-  WriteData('12', '+49', '-10%', '20%','0.58 s','1','--');
-  WriteData('13', '+53', '-10%', '20%','0.61 s','1','--');
-  WriteData('14', '+57', '-11%', '20%','0.64 s','1','--');
-  WriteData('15', '+61', '-11%', '20%','0.67 s','1','--');
-  WriteData('16', '+65', '-12%', '20%','0.70 s','1','--');
-  if (showall) {
-  WriteData('17', '+69', '-12%', '20%','0.73 s','1','--');
-  }
-  WriteSkillEnd();
-}
+// function WriteSkillPlasvRnd(showall) {
+//   WriteSkill('Plasma-V&nbsp;Rounds', 'plasrnd', '+', 'This system can be activated to fuse destructive nanites with each round fired. Upon impact, these nanites tear through the target, briefly hindering its movement.');
+//   WriteSkillBegin();
+//   WriteHeader('Skill Level', 'Dmg.', 'Atk.&nbsp;Spd.', 'Slow', 'Duration', 'Energy', 'Cool.');
+//   WriteData('1', '+5', '-4%', '20%','0.25 s','1','--');
+//   WriteData('2', '+9', '-5%',  '20%','0.28 s','1','--');
+//   WriteData('3', '+13', '-5%', '20%','0.31 s','1','--');
+//   WriteData('4', '+17', '-6%', '20%','0.34 s','1','--');
+//   WriteData('5', '+21', '-6%', '20%','0.37 s','1','--');
+//   WriteData('6', '+25', '-7%', '20%','0.40 s','1','--');
+//   WriteData('7', '+29', '-7%', '20%','0.43 s','1','--');
+//   WriteData('8', '+33', '-8%', '20%','0.46 s','1','--');
+//   WriteSkillBegin2();
+//   WriteHeader('Skill Level', 'Dmg.', 'Atk.&nbsp;Spd.', 'Slow', 'Duration', 'Energy', 'Cool.');
+//   WriteData('9',  '+37', '-8%', '20%','0.49 s','1','--');
+//   WriteData('10', '+41', '-9%', '20%','0.52 s','1','--');
+//   WriteData('11', '+45', '-9%', '20%','0.55 s','1','--');
+//   WriteData('12', '+49', '-10%', '20%','0.58 s','1','--');
+//   WriteData('13', '+53', '-10%', '20%','0.61 s','1','--');
+//   WriteData('14', '+57', '-11%', '20%','0.64 s','1','--');
+//   WriteData('15', '+61', '-11%', '20%','0.67 s','1','--');
+//   WriteData('16', '+65', '-12%', '20%','0.70 s','1','--');
+//   if (showall) {
+//   WriteData('17', '+69', '-12%', '20%','0.73 s','1','--');
+//   }
+//   WriteSkillEnd();
+// }
 
 function WriteSkillCrit(showall) {
   WriteSkill('Critical&nbsp;Shot', 'crit', '.', 'Knowledge of vulnerable points enables a chance for a shot to inflict massive damage to an enemy. Mechanical units do not have vulnerable points.');

@@ -59,7 +59,7 @@ WriteBonus('Droid',InfoLinkS('Droid','unitinfo-lad.htm')+' gains +5 damage in ea
 <font color=ffcc00><b>Trainable Abilities</b></font>
 
 <script>
-WriteSkill('M.I.R.V.', 'mirv', '', 'Uses energy to create a napalm-laced rocket which detonates multiple times in a line away from the point of impact, damaging units and leaving a persistent trail of burning napalm that deals damage over time and lowers the armor of bosses/minibosses.', 'Napalm effect lingers on units for 1.2 seconds');
+    WriteSkill('M.I.R.V.', 'mirv', '', 'Uses energy to create a napalm-laced rocket which detonates multiple times in a line away from the point of impact, damaging units and leaving a persistent trail of burning napalm that deals damage over time and lowers the armor of bosses/minibosses.<br><font size=-1>Napalm effect lingers on units for 1.2 seconds');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'Detonations', 'Damage', 'Radius', 'Range', 'Napalm', 'Armor', 'Duration', 'Energy', 'Cooldown');
 WriteData('1','2','250, 150','144, 192','1000','5 dps','-4','2 s','135','6 s');
@@ -83,25 +83,25 @@ WriteSkillEnd();
 
 <br>
 <script>
-WriteSkill('Place&nbsp;C4', 'c4', '', 'Uses a small supply of nanites to rapidly construct a remote-triggered explosive. C4 can be concealed from enemies via a built-in cloaking device, and if smart mine automation is activated, the explosive\'s A.I. rouintes will automatically try to lure units and destroy them. C4 will not cause damage if it is destroyed; it must be manually detonated or detonated by its A.I.');
+    WriteSkill('Place&nbsp;C4', 'c4', '', 'Uses a small supply of nanites to rapidly construct a remote-triggered explosive with knockback. Placing a C4 requires a charge. A charge is added every 6 seconds up to a maximum determined by the skill level. Hit enemies are temporarily slowed unless damaged.<br><font size=-1>Attacking your C4 will detonate it.');
 WriteSkillBegin('60%');
-WriteHeader('Skill Level', 'Damage', 'Radius', 'Armor/<br>Absorp.', 'Dur.', 'Energy', 'C4 Energy', 'Placement<br>Range');
-WriteData('1','200, 100','96, 120','5/0','720 s','80','45', '50');
-WriteData('2','300, 150','112, 192','5/0','720 s','120','50', '50');
-WriteData('3','400, 200','128, 264','5/0','720 s','160','55', '50');
-WriteData('4','500, 250','144, 336','5/0','720 s','200','60', '50');
-WriteData('5','500, 250','144, 336','30/10','720 s','230','65', '50');
-WriteData('6','500, 250','144, 336','55/20','720 s','245','70', '50');
-WriteData('7','500, 250','144, 336','80/30','720 s','260','75', '50');
-WriteData('8','500, 250','144, 336','105/45','720 s','280','80', '50');
-WriteData('9','500, 250','144, 336','130/60','720 s','300','85', '50');
-WriteData('10','500, 250','144, 336','155/75','720 s','320','90', '50');
-WriteData('11','500, 250','144, 336','180/100','720 s','350','95', '50');
-WriteData('12','500, 250','144, 336','205/125','720 s','380','100', '50');
-WriteData('13','500, 250','144, 336','205/125','660 s','360','115', '100');
-WriteData('14','500, 250','144, 336','205/125','600 s','340','130', '150');
-WriteData('15','500, 250','144, 336','205/125','540 s','320','145', '200');
-WriteData('16','500, 250','144, 336','205/125','480 s','300','160', '250');
+WriteHeader('Skill Level', 'Damage', 'Radius', 'Max Charges', 'Duration', 'Energy Cost');
+WriteData('1','100, 75','224, 264','3','20 s','55');
+WriteData('2','100, 75','224, 264','4','25 s','55');
+WriteData('3','120, 90','224, 264','4','25 s','60');
+WriteData('4','120, 90','224, 264','5','30 s','60');
+WriteData('5','140, 105','224, 264','5','30 s','70');
+WriteData('6','140, 105','224, 264','6','35 s','70');
+WriteData('7','170, 120','224, 264','6','35 s','80');
+WriteData('8','170, 120','224, 264','7','40 s','80');
+WriteData('9','210, 155','224, 264','7','40 s','95');
+WriteData('10','210, 155','224, 264','8','45 s','95');
+WriteData('11','260, 195','224, 264','8','45 s','110');
+WriteData('12','260, 195','224, 264','9','50 s','110');
+WriteData('13','320, 240','224, 264','9','50 s','130');
+WriteData('14','320, 240','224, 264','10','55 s','130');
+WriteData('15','390, 290','224, 264','10','55 s','150');
+WriteData('16','390, 290','224, 264','11','60 s','150');
 WriteSkillEnd(true);
 </script>
 

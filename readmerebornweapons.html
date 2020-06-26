@@ -37,7 +37,7 @@ WriteBr();
 WriteBr();
 
 document.writeln('<a id="wchain"/>');
-WriteWeaponHeaderBegin('Chaingun','Heavy Ordnance, Maverick, <font size=-1>Mini-Droid</font>','The chaingun is good for taking out single or tightly-packed units. Its rapid fire rate is very effective against masses of nearly-dead enemies, and combined with Plasma Rounds, it can deliver incredible damage which briefly hinders targets\' movement speed. Short range and Plasma\'s high energy cost offset this gun\'s power.</font><br><font size=-1>Droid does not get the slow bonus of Plasma Rounds.');
+WriteWeaponHeaderBegin('Chaingun','Heavy Ordnance, Cyborg, Maverick, <font size=-1>Mini-Droid</font>','The chaingun is good for taking out single or tightly-packed units. Its rapid fire rate is very effective against masses of nearly-dead enemies, and combined with Plasma Rounds, it can deliver incredible damage which briefly hinders targets\' movement speed. Short range and Plasma\'s high energy cost offset this gun\'s power.</font><br><font size=-1>Droid does not get the slow bonus of Plasma Rounds.');
 WriteClassHeaderEnd();
 WriteSkillBegin();
 WriteGunHeader('', 'Type', 'Cooldown', 'Damage', 'Ammo', 'Mod.', 'Range', 'Splash');
@@ -45,16 +45,6 @@ WriteData('', '<font size=-2>&nbsp;</font><br>'+InfoAtkDef('Bullets'),'<font siz
 WriteData('', '<font size=-2>MkII</font><br>'+InfoAtkDef('Bullets'),'<font size=-2>fast</font><br>0.56','<font size=-2>low</font><br>45-52','<font size=-2>&nbsp;</font><br>+1-8','<font size=-2>&nbsp;</font><br>+4', '<font size=-2>short</font><br>625', '<font size=-2>small</font><br>100% (24), 90% (96), 15% (120)');
 WriteSkillEnd();
 WriteSkillPlasRnd(true);
-WriteBr();
-WriteBr();
-
-WriteWeaponHeaderBegin('Vindicator','Cyborg','The vindicator is a redesigned chaingun that fires more slowly but causes more damage per burst, yielding the same overall damage. It uses Plasma-V Rounds that focus on energy-efficiency rather than slowing targets, and it can utilize an extra ammo upgrade.');
-WriteClassHeaderEnd();
-WriteSkillBegin();
-WriteGunHeader('', 'Type', 'Cooldown', 'Damage', 'Ammo', 'Mod.', 'Range', 'Splash');
-WriteData('', '<font size=-2>&nbsp;</font><br>'+InfoAtkDef('Bullets'),'<font size=-2>fast</font><br>0.76','<font size=-2>low</font><br>55-64','<font size=-2>&nbsp;</font><br>+1-10','<font size=-2>&nbsp;</font><br>+5', '<font size=-2>short</font><br>550', '<font size=-2>small</font><br>100% (24), 90% (96), 15% (120)');
-WriteSkillEnd();
-WriteSkillPlasvRnd(true);
 WriteBr();
 WriteBr();
 

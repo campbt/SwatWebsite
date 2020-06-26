@@ -15,7 +15,7 @@ WriteTopMenu('',true);
 WriteMechsMenu();
 WriteBr();
 WriteClassUnitHeaderBegin('Assault Droid ' + info_STIT_LAD,'lad','Created via Item','The assault droid is a powerful support unit created when a hero uses the assault droid parts item. It requires 2000 energy to create the droid with full health, but a hero with less energy can still construct the droid. When the droid is created, it fuses with the other items in the hero\'s inventory, gaining the benefits of those items. The droid is also granted special benefits dependent on the class of the hero who constructed it.<br><br>'+
-    'When an assault droid dies, it leaves the parts item, and any fused parts, behind so players can rebuild it. Fused items are lost forever unless the constructing hero was a '+InfoLinkS('Gadgeteer','readmereborntraits.html')+', in which case the non-consumable fused items are dropped, or the constructing hero was a ' + InfoLinkS('Field Medic','classinfo-medic.htm') + ', in which case the consummable fused items are dropped.<br><br>'+
+    'When an assault droid dies, it leaves the parts item, and any fused parts, behind so players can rebuild it.<br><br>'+
                           'The droid increases in level as players level up; its maximum level is determined by the combined ranks of all players when it was constructed. Game difficulty is increased somewhat by the level of each assault droid assisting players.');
 WriteSkillLinks('O.T.A.','ota','Concussion&nbsp;Rockets','cluster','Reconstruct','recons','Frag.&nbsp;Locator','frag','Nanites','nanites');
 WriteSkillLinks('A.R.S.','ars','Energy&nbsp;Beam','beam','Transfer','transfer');
@@ -49,7 +49,7 @@ WriteStatsArmor('lad');
 
 <table cellspacing=2 cellpadding=4 border=0 width=100%><script>
 WriteBonus('Covert Sniper','Droid has 25% chance to inflict 3x damage to bosses. (multiplayer)<br>Droid is cloaked while idle or moving. (single player)');
-WriteBonus('Field Medic','Droid drops all consumable items when it\'s destroyed.');
+WriteBonus('Field Medic','Droid is constructed using 75% less energy.');
 WriteBonus('Tactician','Droid has 2 inventory slots per mark.');
 WriteBonus('Psychologist','Droid has 2 extra skill points.');
 WriteBonus('Maverick','Droid has 4 extra agility per mark and +20 damage.');
