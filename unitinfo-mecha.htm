@@ -198,14 +198,14 @@ WriteSkillEnd(true);
 
 <br>
 <script>
-WriteSkill('Armor', 'dog_armor', '.', 'Increases robodog\'s defense.');
+WriteSkill('Armor', 'dog_armor', '.', 'Increases robodog\'s defense and threat to nearby enemies. When the robodog attacks any enemy, it will automatically taunt all nearby units in the threat radius. Threat radius is doubled while Howl is active. Additionaly, if the Mecha Mutt\'s energy levels go below 250 it will consume a battery if one is in its inventory.');
 WriteSkillBegin();
-WriteHeader('Dog Level', 'Armor');
-WriteData('1','1');
-WriteData('5','2');
-WriteData('9','3');
-WriteData('13','4');
-WriteData('17','5');
+WriteHeader('Dog Level', 'Armor', 'Taunt Radius');
+WriteData('1','1','600');
+WriteData('5','2','700');
+WriteData('9','3','800');
+WriteData('13','4','900');
+WriteData('17','5','1000');
 WriteSkillEnd(true);
 </script>
 

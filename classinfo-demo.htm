@@ -16,7 +16,7 @@ WriteClassMenu();
 WriteSummonedMenu('');
 WriteClassHeaderBegin('Demolitions','demo','dem','Offense','The primary goal of the demolitions expert is to blow stuff up using rockets, MIRVs, C4, and even miniature nuclear warheads. His intelligence is above average.');
 WriteSkillLinks('M.I.R.V.','mirv','Place&nbsp;C4','c4','Advanced&nbsp;Generator','gen','Lock-Down','lockdown','Nanites','nanites');
-WriteSkillLinks('BioChemical&nbsp;Energy','biochem','Gear&nbsp;Mod.','gearmod','Mini-Nuke','nuke','S.M.A.','sma','Sprint','sprint','Frag.&nbsp;Locator','frag');
+WriteSkillLinks('BioChemical&nbsp;Energy','biochem','Isolation Beam','isolation','Mini-Nuke','nuke','S.M.A.','sma','Sprint','sprint','Frag.&nbsp;Locator','frag');
 WriteClassHeaderEnd('demo');
 </script>
 
@@ -83,25 +83,17 @@ WriteSkillEnd();
 
 <br>
 <script>
-    WriteSkill('Place&nbsp;C4', 'c4', '', 'Uses a small supply of nanites to rapidly construct a remote-triggered explosive with knockback. Placing a C4 requires a charge. A charge is added every 6 seconds up to a maximum determined by the skill level. Hit enemies are temporarily slowed unless damaged.<br><font size=-1>Attacking your C4 will detonate it.');
-WriteSkillBegin('60%');
+    WriteSkill('Place&nbsp;C4', 'c4', '', 'Uses a small supply of nanites to rapidly construct a remote-triggered explosive. Placing a C4 requires a charge. A charge is added every 6 seconds up to a maximum determined by the skill level. C4 apply a stack of Shattered, increasing explosion damage and knockback.<br><font size=-1>Attacking your C4 will detonate it.');
+WriteSkillBegin('60t enemies are temporarily slowed unless damaged.%');
 WriteHeader('Skill Level', 'Damage', 'Radius', 'Max Charges', 'Duration', 'Energy Cost');
-WriteData('1','100, 75','224, 264','3','20 s','55');
-WriteData('2','100, 75','224, 264','4','25 s','55');
-WriteData('3','120, 90','224, 264','4','25 s','60');
-WriteData('4','120, 90','224, 264','5','30 s','60');
-WriteData('5','140, 105','224, 264','5','30 s','70');
-WriteData('6','140, 105','224, 264','6','35 s','70');
-WriteData('7','170, 120','224, 264','6','35 s','80');
-WriteData('8','170, 120','224, 264','7','40 s','80');
-WriteData('9','210, 155','224, 264','7','40 s','95');
-WriteData('10','210, 155','224, 264','8','45 s','95');
-WriteData('11','260, 195','224, 264','8','45 s','110');
-WriteData('12','260, 195','224, 264','9','50 s','110');
-WriteData('13','320, 240','224, 264','9','50 s','130');
-WriteData('14','320, 240','224, 264','10','55 s','130');
-WriteData('15','390, 290','224, 264','10','55 s','150');
-WriteData('16','390, 290','224, 264','11','60 s','150');
+WriteData('1','100, 75','224, 264','3','60 s','55');
+WriteData('2','120, 75','224, 264','4','75 s','60');
+WriteData('3','140, 90','224, 264','5','90 s','70');
+WriteData('4','170, 90','224, 264','6','105 s','80');
+WriteData('5','210, 105','224, 264','7','120 s','95');
+WriteData('6','260, 105','224, 264','8','135 s','110');
+WriteData('7','320, 120','224, 264','9','150 s','130');
+WriteData('8','390, 120','224, 264','10','165 s','150');
 WriteSkillEnd(true);
 </script>
 
@@ -124,7 +116,7 @@ WriteSkillNanites(1);
 <font color=ffcc00><b>Innate Abilities</b></font>
 
 <script>
-WriteSkill('BioChemical&nbsp;Energy', 'biochem', '', 'Rapid nano-combustion of organic material instantly converts up to 50% of target\'s health into energy. Bosses and power armored units are somewhat resistant. Efficiency doubled when used on self. Range increased by 40 per level of Adv. Generator. Base range quadrupled while locked down.<br><font size=-1><i>Energy gain is reduced on larger transfers.</i></font>');
+WriteSkill('BioChemical&nbsp;Energy', 'biochem', '', 'Rapid nano-combustion of organic material instantly converts up to 50% of target\'s health into energy. Bosses and power armored units are somewhat resistant. Efficiency doubled when used on self. Range increased by 40 per level of Adv. Generator. Base range quadrupled while locked down. Shares cooldown with Isolation Beam.<br><font size=-1><i>Energy gain is reduced on larger transfers.</i></font>');
 WriteSkillBegin();
 WriteHeader('Rank', 'Base Range', 'Efficiency', 'Cooldown');
 WriteData('1', '350', '35-66%', '20 s');
@@ -145,23 +137,21 @@ WriteSkillEnd();
 
 <br>
 <script>
+WriteSkill('Isolation Beam', 'isolation', '', 'Renders a single target stunned and increases explosion damage to the target but dramatically increases resistance to all other types of damage. Bosses and power armored units are somewhat resistant. Range increased by 40 per level of Adv. Generator. Base range quadrupled while locked down. Shares cooldown with Biochemical Energy.');
+WriteSkillBegin();
+WriteHeader('Skill Level','Base Stun', 'Damage Reduction', 'Base Range', 'Cooldown');
+WriteData('--', '8 s', '-75%', '350', '20 s');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
 WriteSkill('Mini-Nuke', 'nuke', '', 'Launches a small nuclear missile which explodes when it reaches the targeted location, inflicting massive damage in a huge radius. Frequent nuking may significantly increase radiation levels.');
 WriteSkillBegin();
 WriteHeader('Rank', 'Damage', 'Radius', 'Range', 'Energy');
 WriteData('4', '6000, 3000', '336, 1200', 'unlimited', '600');
 WriteData('7', '6000, 3000', '372, 1400', 'unlimited', '550');
 WriteData('10', '6000, 3000', '372, 1600', 'unlimited', '500');
-WriteSkillEnd(true);
-</script>
-
-<br>
-<script>
-WriteSkill('Gear&nbsp;Mod.', 'gearmod', '', 'Uses circuit boards to apply custom modifications to the targeted comrade\'s personal gear. A unit may be upgraded once per circuit board color.');
-WriteSkillBegin();
-WriteHeader('Circuit Board', 'Bonus', 'Cooldown');
-WriteData('Orange', '+1 armor', '20 s');
-WriteData('Green',  '+8% damage', '20 s');
-WriteData('Purple', '+125 energy', '20 s');
 WriteSkillEnd(true);
 </script>
 

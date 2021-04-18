@@ -956,15 +956,23 @@ function WriteSkillLockdown(showall) {
   WriteSkillBegin();
   WriteHeader('Skill Level','Primary Damage','Attack Speed','Knockback','Delay','Cooldown');
   WriteData('1','+4%','+25%','0','3 s','6 s');
-  WriteData('2','+9%','+25%','25','3 s','6 s');
-  WriteData('3','+14%','+25%','50','3 s','6 s');
-  WriteData('4','+20%','+25%','75','3 s','6 s');
-  WriteData('5','+26%','+25%','100','3 s','6 s');
-  WriteData('6','+33%','+25%','125','3 s','6 s');
-  WriteData('7','+40%','+25%','150','3 s','6 s');
-  WriteData('8','+48%','+25%','175','3 s','6 s');
+  WriteData('2','+10%','+25%','15','3 s','6 s');
+  WriteData('3','+16%','+25%','30','3 s','6 s');
+  WriteData('4','+22%','+25%','45','3 s','6 s');
+  WriteData('5','+28%','+25%','60','3 s','6 s');
+  WriteData('6','+34%','+25%','75','3 s','6 s');
+  WriteData('7','+40%','+25%','90','3 s','6 s');
+  WriteData('8','+46%','+25%','105','3 s','6 s');
+  WriteData('9','+52%','+25%','120','3 s','6 s');
+  WriteData('10','+58%','+25%','135','3 s','6 s');
+  WriteData('11','+64%','+25%','150','3 s','6 s');
+  WriteData('12','+70%','+25%','165','3 s','6 s');
+  WriteData('13','+76%','+25%','180','3 s','6 s');
+  WriteData('14','+82%','+25%','195','3 s','6 s');
+  WriteData('15','+88%','+25%','210','3 s','6 s');
+  WriteData('16','+94%','+25%','225','3 s','6 s');
   if (showall) {
-  WriteData('9','+56%','+25%','200','3 s','6 s');
+    WriteData('17','+100%','+25%','240','3 s','6 s');
   }
   WriteSkillEnd(true);
 }

@@ -123,6 +123,29 @@ WriteSkillEnd(true);
 
 <br>
 <script>
+WriteSkill('Turbodrive', 'turbodrive', '', 'Increases the attack rate, energy regen, damage, and nanites efficiency of the robodog\'s owner. Bonus applied is based on the robodog\'s levels in Turbo, Advanced Generator, Thrash, and Nanites.');
+WriteSkillBegin();
+WriteHeader('Dog Level', 'Duration', 'Max Range');
+WriteData('1','6.0 s','2900');
+WriteData('2','6.5 s','2900');
+WriteData('3','7.0 s','2900');
+WriteData('4','7.5 s','2900');
+WriteData('5','8.0 s','2900');
+WriteData('6','8.5 s','2900');
+WriteData('7','9.0 s','2900');
+WriteData('8','9.5 s','2900');
+WriteData('9','10.0 s','2900');
+WriteSkillBegin2('40%');
+WriteHeader('Ability', 'Bonus per level');
+WriteData('Turbo','+6.25% attack speed');
+WriteData('Adv. Gen','+1 eps');
+WriteData('Thrash','+5% damage');
+WriteData('Nanites','+2% nanite efficiency');
+WriteSkillEnd(true);
+</script>
+
+<br>
+<script>
 WriteSkill('Retrieve&nbsp;Items', 'retrieve', '', 'Teleports all items in the robodog\'s inventory to its master\'s feet.');
 WriteSkillBegin();
 WriteHeader('Items', 'Range', 'Energy', 'Cooldown');
