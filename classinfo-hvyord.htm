@@ -125,7 +125,7 @@ WriteSkillEnd(true);
 
 <br>
 <script>
-WriteSkill('Power&nbsp;Grid', 'reactor', '', 'Allows the officer to siphon energy from the city\'s power grid. Energy regeneration bonus is doubled when partial power is restored and the officer hasn\'t been hit recently. While using power grid, the officer is immune to fireflies.');
+WriteSkill('Power&nbsp;Grid', 'reactor', '', 'Allows the officer to siphon energy from the city\'s power grid. Energy regeneration bonus is doubled when partial power is restored and the officer hasn\'t been hit recently. While using power grid, the officer is immune to fireflies and, if Plasma Shield is active, the skill will periodically taunt all enemies within 150% of Plasma Shield\'s taunt radius.');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'Duration','Energy','Cooldown');
 WriteData('1', '20 s','+20 eps',  '75 s');
@@ -185,14 +185,10 @@ WriteSkillEnd();
 
 <br>
 <script>
-WriteSkill('XLR8', 'xlr8', '', 'Incrementally increases attack speed by accelerating the main firing mechanism, but also generates excess heat. Accelerates hero\'s adjacent mini-droids, too. Moving lowers attack speed bonus and cancels the effect if excessive. Cooldown is determined by duration and rank.');
+WriteSkill('XLR8', 'xlr8', '', 'Incrementally increases attack speed by accelerating the main firing mechanism, but also generates excess heat. Accelerates hero\'s adjacent mini-droids, too. While greater than 200 stacks, the Heavy Ordnance and all nearby minidroids become Phased. Moving lowers attack speed bonus and cancels the effect if excessive. Cooldown is determined by duration and rank.');
 WriteSkillBegin();
-WriteHeader('Stage', 'Attack Spd.', 'Delay','Energy','Cooldown');
-WriteData('1', '+25%', '0.0 s', '0', 'variable');
-WriteData('2', '+50%', '5.0 s', '--', '--');
-WriteData('3', '+100%', '7.5 s', '--', '--');
-WriteData('4', '+200%', '7.5 s', '--', '--');
-WriteData('5', '+400%', '7.5 s', '--', '--');
+WriteHeader('Skill Level', 'Attack Spd.', 'Increment', 'Phase At','Energy','Cooldown');
+WriteData('--', '+1-400%', '+5-26% /s', '200', '0', 'variable');
 WriteSkillEnd(true);
 </script>
 
@@ -203,20 +199,6 @@ WriteSkillBegin();
 WriteHeader('Status', 'Energy','Cooldown');
 WriteData('normal', '500', '1 s');
 WriteData('corroded', '575', '60 s');
-WriteSkillEnd(true);
-</script>
-
-<br>
-<script>
-WriteSkill('Phased&nbsp;Droids', 'phase', '', 'Activates a phase-shifter on the officer\'s nearby mini-droids which prevents them from being targeted or taking damage. Performing any action cancels the effect.');
-WriteSkillBegin();
-WriteHeader('Droids', 'Duration', 'Energy','Cooldown');
-WriteData('0', '--', '0', '--');
-WriteData('1', '20 s', '80', '6 s');
-WriteData('2', '20 s', '120', '6 s');
-WriteData('3', '20 s', '150', '6 s');
-WriteData('4', '20 s', '170', '6 s');
-WriteData('5', '20 s', '180', '6 s');
 WriteSkillEnd(true);
 </script>
 

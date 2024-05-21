@@ -74,6 +74,295 @@ WriteBr();
 <table cellpadding=0 cellspacing=0 border=0><tr><td height=3></td></tr></table>
 
 <script>
+
+    VerHead('1.16.0');
+    VerData('Moving items into the locker no longer costs energy');
+    VerData('Locker size is now based on armor type');
+    VerData('Removed cost for storing items in inventory');
+    VerData('Packrat: No longer reduces locker size');
+    VerData('Kleptomaniac: Now reduces locker size by 1');
+    VerData('Heavy Armor: Sprint cooldown reduced from 150s to 60s');
+    VerData('Plasma Rounds: Slow duration increased by 200%');
+    VerData('Refined Rifle: Every attack now has a chance to cause nearby allies to also attack');
+    VerData('Lockdown: Cooldown increased based on usage duration.');
+    VerData('Cyborg: Phermones radius now slightly decreases on repeated casts');
+    VerData('Demo: Replaced C4 skill with Mortar skill');
+    VerData('Heavy Ordnance: Removed Phase Droids skill');
+    VerData('Heavy Ordnance: XLR8 now phases the HO and droids while above 200 stacks');
+    VerData('Heavy Ordnance: Removed recently damaged penalty from Power Grid');
+    VerData('Heavy Ordnance: Recharge battery will now create a battery item if none found');
+    VerData('Heavy Ordnance: Power gridding with Plasma Shield on now periodically hard taunts');
+    VerData('Maverick: Added Calibration to Mecha Mutt, allowing no penalty for death');
+    VerData('Maverick: Mecha taunt radius no longer increased by Howl');
+    VerData('Psychologist: Replaced Meditation skill with Split Personality skill');
+    VerData('Psychologist: Mind Rot and Mind Slay are now levelable innate skills');
+    VerData('Tactician: All recruited civilians turn into a Cadet');
+    VerData('Tactician: Cadet now receives injuries');
+    VerData('Watchman: Laser Power changed to a 16 point skill');
+    VerData('Watchman: Added upgrade dissipation and upgrade heat subupgrades');
+    VerData('Watchman: Replaced loadout laser dissipation with skill download');
+    VerData('Watchman: Auxiliary generator\'s bonus is now doubled while under 500e');
+    VerData('Reactors no longer beam from phased targets');
+    VerData('Aegis Core: Now works when in a kleptomaniac\'s locker');
+    VerData('Rapid Reloads: Removed aura passive. Now grants passive cooldown reduction to abilities');
+    VerData('Reactors now drain less energy if previously filled');
+    VerData('Reactor explosion chance no longer resets when drained');
+    VerData('L.A.D.: O.T.A. skill now stacks with other O.T.A. auras');
+    VerData('Added LAD trade-in options at the Lab');
+    VerData('Removed LAD gold penalty when selling multiple');
+    VerData('Added Serpent enemy');
+    VerData('Grotesques ensnare ability is now AOE but can be dodged');
+    VerData('Dogs can now track invisible units');
+    VerData('Abomb and Toxic Abom hook skill has been upgraded');
+    VerData('Atomic Zombies no longer explode on death and regen has been reduced');
+    VerData('Reactors in extinction may have additional droids and they activate more randomly');
+    VerData('Red rads now drop red radlets based on how long they\'ve been alive for');
+    VerData('Commandos can now be revived after being mind slayed');
+    VerData('Fixed Open Wounds injury incorrectly adding miss chance');
+    VerData('Fixed broken corpse animations');
+    VerData('Fixed defense mode not giving XP');
+    VerData('Fixed annoying sound issues on beast and grotesques');
+    VerData('Addressed item use crashes (ex: cybernet and mentat)');
+    VerFoot();
+
+    VerHead('1.15.13');
+    VerData('Improved casting indicators for many skills');
+    VerFoot();
+
+
+    VerHead('1.15.12');
+    VerData('Demo: Biochem/Isolation beam range while in lockdown is now always 1400');
+    VerData('Nemesis will no longer randomly die');
+    VerData('Fixed issues with modifier_kill not calling OnDeath events. This affects:');
+    VerData('Pyrotechnician: Firefly now applies vision after death');
+    VerData('Demo: C4 now detonate when timer expires');
+    VerData('Innards now spawn correctly');
+    VerData('Nemesis minidroid now explodes after a duration');
+    VerFoot();
+
+
+    VerHead('1.15.11');
+    VerData('Maverick: Chaingun now has 625 range');
+    VerData('Maverick: Fixed issues if robodog died while holding Aegis Core');
+    VerData('Watchman: Fixed issues when paradox units died');
+    VerData('Fixed Horror minions sometimes not being radiation variants');
+    VerData('Nemesis should now properly die after explosion');
+    VerData('Deaths after Nemesis kill no longer count on stats');
+    VerData('Fixed an issue with the lab region in city');
+    VerFoot();
+
+
+    VerHead('1.15.10');
+    VerData('Fixed some OnDeath events not triggering, like C4 and TNT Abominations');
+    VerData('Fixed issue where officers could lose the ability to gain movespeed properly.');
+    VerData('Fixed issues with some modifiers that applied negative move speed.');
+    VerFoot();
+
+    VerHead('1.15.9');
+    VerData('Fixed Item LaunchLoot issues');
+    VerData('Addressed permanent slow issues from some sources, like Freeze Ray');
+    VerFoot();
+
+
+    VerHead('1.15.8');
+    VerData('Updated all models to new vmdl system.');
+    VerData('Freeze Ray: Added grotestque phase to abilities removed');
+    VerData('Items can no longer be bought while stunned');
+    VerData('Fixed armor not working after');
+    VerData('Heavy Ordnance: Recharge Battery having infinite charges after being revived.');
+    VerData('Riot Shield: fixed use action not taking into account Engineer bonus');
+    VerData('Freeze Ray: Fixed speeding up minibosses instead of slowing them');
+    VerData('Cybernet: fixed buff persisting through death');
+    VerData('Fixed radiation damage potentially causing injuries');
+    VerData('Fixed issue with Nemesis conc rocket perma stunning');
+    VerFoot();
+
+    VerHead('1.15.7');
+    VerData('Maverick: Chrome Retriever can now carry one Hazmat / Conduit');
+    VerData('Automatic Ions from civilian objective will not target red rads if possible');
+    VerData('Extinction mode has been made slightly less difficult');
+    VerData('Added -angle chat command');
+    VerData('Removed Keep Your Friends Close challenge');
+    VerData('Fixed broken settings menu sliders');
+    VerData('Fixed abomination hooks visibility issue when cast in fog of war');
+    VerFoot();
+
+    VerHead('1.15.6');
+    VerData('Fixed localization issues from recent dota patch.');
+
+
+    VerHead('1.15.5');
+    VerData('Added setting for a Radiation Scanner hotkey');
+    VerData('Aegis Core: No longer causes armor penalty or rez sickness');
+    VerData('Freeze Ray: Increased duration on super gargs');
+    VerData('Abomination: Hook no longer affects phased robodogs or phased minidroids');
+    VerData('Addressed item modifiers being applied on some abilities.');
+    VerData('Watchman: Fixed strategian cooldown being reset on respawn.');
+    VerData('Fixed broken injury icons');
+    VerData('Fixed combustion tooltip');
+    VerData('Fixed some pathing issues on city map');
+    VerFoot();
+
+
+    VerHead('1.15.4.1');
+    VerHead('Addressed item modifiers being applied on some abilities.');
+    VerHead('Fixed broken injury icons');
+    VerHead('Fixed combustion tooltip');
+    VerFoot();
+
+
+    VerHead('1.15.4');
+    VerData('Made Nightmare and Extinction more difficult.');
+    VerData('Abomination: Added Hook ability.');
+    VerData('Horror: Added shards ability.');
+    VerData('Commandoes: Added laser sights, concussion grenade, and ion strike abilities.');
+    VerData('Extra Bosses and Faster Enemies challenges now scale based on player count.');
+    VerData('Civilian and Antidoted zombie unit names are now the color of their owner.');
+    VerData('Radiation fragments dropped from enemies no longer have collision.');
+    VerData('Fixed Tyrant reveal modifier being visible.');
+    VerData('Fixed stuck enemies in some rooms on City.');
+    VerFoot();
+
+
+    VerHead('1.15.3');
+    VerHead('Fixed some abilities/items being castable despite not passing requirements.');
+    VerHead('Fixed excessive wave movespeed increase in Extinction.');
+    VerFoot();
+
+
+    VerHead('1.15.2');
+    VerData('Sniper: Epic bonus changed to +15ms per level (from +6% ms)');
+    VerData('Tactician: Endurance aura changed to +4.5ms per level (from +2%)');
+    VerData('Prowler: Changed night bonus to +25ms (from +10% ms)');
+    VerData('Made several challenges more difficult.');
+    VerData('Removed More Uber challenge.');
+    VerData('Fixed an issue with enemy wave system intense phase.');
+    VerData('Fixed incorrect movespeed displayed on hero units.');
+    VerData('Fixed evasion fully working on Horror.');
+    VerData('Fixed an item duplication exploit.');
+    VerData('Fixed stim and gadgeteer tooltips.');
+    VerData('Addressed an issue allowing ammo upgrade to exceed maximum.');
+    VerFoot();
+
+
+    VerHead('1.15.1.1');
+    VerData('Fixed an issue with enemy wave system intense phase.');
+    VerData('Fixed incorrect movespeed displayed on hero units.');
+    VerData('Fixed evasion fully working on Horror.');
+    VerData('Fixed an item duplication exploit.');
+    VerData('Fixed stim and gadgeteer tooltips.');
+    VerFoot();
+
+    VerHead('1.15.1');
+    VerData('ChronoTech notification now includes general location.');
+    VerData('Nemesis will no longer change targets when ioned during personal attack.');
+    VerData('Improved itFollows challenge.');
+    VerData('Hive: Fixed some broken boundary issues.');
+    VerData('Rocket Launcher: Fixed Weaponry max levels for a given level.');
+    VerData('Fixed invisible and super garg AI issues.');
+    VerData('Fixed golem not triggering sleep when attacking officers.');
+    VerData('Fixed some incorrect tooltips.');
+    VerFoot();
+
+
+    VerHead('1.15.0');
+    VerData('Rocket Launcher: Lockdown is now a 16 point skill.');
+    VerData('Demo: Replaced Gear Mod skill with Isolation Beam');
+    VerData('Demo: C4 is now an 8 point skill.');
+    VerData('Demo: C4 now applies sundered debuff and no longer causes knockback.');
+    VerData('Maverick: New Turbodrive ability added to Chrome Retriever');
+    VerData('Maverick: Mecha Mutt now taunts nearby enemies on every basic attack.');
+    VerData('Maverick: Increased cost of clones for Hyper-Thrash on Kamikaze Canine');
+    VerData('Maverick: Increased cooldown of Multi-Thrash on Kamikaze Canine');
+    VerData('Medic: Mend Wounds and Mender now prioritize non-critical health units by percentage');
+    VerData('Sniper: Concussion grenade duration rescaled against priority targets');
+    VerData('LAD: Reduced concussion rockets stun duration');
+    VerData('Riot Shield: Changed active ability to a taunt.');
+    VerData('Energizer: Can now be manually activated with "-b" chat command');
+    VerData('Hive: Reduced purple mutant spawn rate and bonus life');
+    VerData('Nemesis now throws minidroids instead of spawning them at a spot');
+    VerData('Reduced soldier/commandos attack range and tankiness');
+    VerData('Super Mutants smash is now affected by taunt.');
+    VerData('Added five new challenges');
+    VerData('Can now sell items by dragging them onto A.B.M.s.');
+    VerData('Rookies challenge has been removed.');
+    VerData('Lowered Extra Bosses challenge chance to spawn double bosses');
+    VerData('Challenges are now displayed in the officer select screen.');
+    VerData('Reduced difficulty of the Tough Zombies challenge');
+    VerData('Demo: C4 no longer have collision');
+    VerData('HO: Fixed espionage sometimes losing invisibility permanently after power grid');
+    VerData('Chrome Retriever: Fixed not seeing invisible units.');
+    VerData('Kamikaze Canine: Removed collision while in hyper thrash');
+    VerData('LAD: Fixed concussion rockets\' stun not always applying.');
+    VerData('Fixed graveyard Nemesis fight in Extinction not working');
+    VerData('Fixed vests not giving armor when duplicated');
+    VerData('Fixed severe concussion injury not lowering int');
+    VerData('Fixed Jammer aura sometimes getting stuck on Kami and minidroids');
+    VerData('Fixed Recall sometimes teleporting corpse into the lab');
+    VerData('Fixed some issues where taunted units would lose their taunt.');
+    VerData('Fixed blue zombies not casting chain lightning on death');
+    VerData('Fixed minimap icons not disappearing');
+    VerData('Fixed player chat commands being visible');
+    VerData('Fixed temporal field avatars always being red');
+    VerData('Fixed UI glitches on the bottom panel');
+    VerData('Improved performance of plasma rounds');
+    VerFoot();
+
+
+    VerHead('1.14.5');
+    VerData('Demo: C4 duration increased.');
+    VerData('Watchman: Nurse\'s charm now works on mechanical units');
+    VerData('Mutant\'s no longer block explosion damage.');
+    VerData('Locker is now hidden when not selecting an officer.');
+    VerData('Heavy Ordnance: Fixed being able to build a 6th droid.');
+    VerData('Sniper: Fixed Marksman pierce not working while AIM was active.');
+    VerData('Weaponry: Improved plasma rounds damage scaling.');
+    VerData('Fixed Commandos dramatically increasing Nemesis spawn time.');
+    VerFoot();
+
+
+    VerHead('1.14.4');
+    VerData('Weaponry: Now increases plasma rounds damage.');
+    VerData('Watchman: Fixed strategian revive resetting on death');
+    VerData('Fixed an stats issue from the latest Dota patch');
+    VerData('Addressed issues from progress bars');
+    VerFoot();
+
+
+    VerHead('1.14.3');
+    VerData('HO: Recharge battery now indicates remaining charges before being corroded');
+    VerData('HO: Add a self destruct ability to Minidroids');
+    VerData('LAD: Speeds now give +4 agility');
+    VerData('Teleporter Mixup challenge has been removed');
+    VerData('Medic: Corrected splash radius damage when weaponry not matching non-weaponry');
+    VerData('Hive: Fixed a broken room in Hive');
+    VerData('Fixed Temporal Distortion auras not applying');
+    VerData('Fixed NaN showing in leaderboards UI');
+    VerData('Fixed some abilities showing a 0 for energy cost');
+    VerFoot();
+
+
+    VerHead('1.14.2');
+    VerData('Watchman: Paradox units now disappear when the watchman dies.');
+    VerData('Added remaining buff time to Alt-Click info message.');
+    VerData('Fixed an issue causing a permanent absolute movespeed.');
+    VerData('Fixed chaingun damage issues when target evades.');
+    VerData('Fixed Nemesis not dealing 50% damage when target evades.');
+    VerData('Fixed Cadet name being incorrect in alt-click info messages.');
+    VerData('Fixed issue causing government ions to permanently stop.');
+    VerData('Fixed collision issue on Hive map.');
+    VerFoot();
+
+
+    VerHead('1.14.1');
+    VerData('Freeze Ray: Now uses item usability int for refund calculation.');
+    VerData('Added trophy for watchman energy surged');
+    VerData('Reduced the impact of the Fluctuating Radiation challenge');
+    VerData('Fixed broken tooltips on Watchman abilities');
+    VerData('Fixed blue rads spawning on non-Ext in Hive');
+    VerFoot();
+
+
     VerHead('1.14.0');
     VerData('Chaingun: Plasma rounds now costs 1e at all levels; scaling adjusted; slow duration reduced.');
     VerData('Rocket Launcher: Lockdown knockback reduced more on units hit repeatedly.');

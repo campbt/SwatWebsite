@@ -852,28 +852,30 @@ function WriteSkillNanites(Type, Differentiate, unit) {
 }
 
 function WriteSkillRefRif(showall) {
-  WriteSkill('Refined&nbsp;Rifle', 'refrif', '.', 'Increases the damage and range of the assault rifle.');
+  WriteSkill('Refined&nbsp;Rifle', 'refrif', '.', 'Increases the damage of the assault rifle. Gives a chance that nearby allies will fire a bonus shot on a target whenever you hit them.');
   WriteSkillBegin();
-  WriteHeader('Skill Level', 'Damage', 'Range');
-  WriteData('1', '+6', '+15');
-  WriteData('2', '+12', '+30');
-  WriteData('3', '+18', '+45');
-  WriteData('4', '+24', '+60');
-  WriteData('5', '+30', '+75');
-  WriteData('6', '+36', '+90');
-  WriteData('7', '+42', '+105');
-  WriteData('8', '+48', '+120');
+  WriteHeader('Skill Level', 'Damage', 'Range','Bons Chance');
+  WriteData('1', '+6', '+15','3%');
+  WriteData('2', '+12', '+30','6%');
+  WriteData('3', '+18', '+45','9%');
+  WriteData('4', '+24', '+60','12%');
+  WriteData('5', '+30', '+75','15%');
+  WriteData('6', '+36', '+90','18%');
+  WriteData('7', '+42', '+105','21%');
+  WriteData('8', '+48', '+120','24%');
   WriteSkillBegin2();
-  WriteHeader('Skill Level', 'Damage', 'Range');
-  WriteData('9', '+54', '+135');
-  WriteData('10', '+60', '+150');
-  WriteData('11', '+66', '+165');
-  WriteData('12', '+72', '+180');
-  WriteData('13', '+78', '+195');
-  WriteData('14', '+84', '+210');
-  WriteData('15', '+90', '+225');
-  WriteData('16', '+96', '+240');
-  WriteData('17', '+102', '+255');
+  WriteHeader('Skill Level', 'Damage', 'Range','Bonus Chance');
+  WriteData('9', '+54', '+135','27%');
+  WriteData('10', '+60', '+150','30%');
+  WriteData('11', '+66', '+165','33%');
+  WriteData('12', '+72', '+180','36%');
+  WriteData('13', '+78', '+195','39%');
+  WriteData('14', '+84', '+210','42%');
+  WriteData('15', '+90', '+225','45%');
+  WriteData('16', '+96', '+240','48%');
+  if (showall) {
+  WriteData('17', '+102', '+255','51%');
+  }
   WriteSkillEnd();
 }
 
@@ -881,26 +883,26 @@ function WriteSkillPlasRnd(showall) {
   WriteSkill('Plasma&nbsp;Rounds', 'plasrnd', '+', 'This system can be activated to fuse destructive nanites with each round fired. Upon impact, these nanites tear through the target, briefly hindering its movement.');
   WriteSkillBegin();
   WriteHeader('Skill Level', 'Dmg.', 'Atk.&nbsp;Spd.', 'Slow', 'Duration', 'Energy');
-  WriteData('1', '+5', '-1%', '20%','0.25 s','1');
-  WriteData('2', '+8', '-2%',  '22%','0.26 s','1');
-  WriteData('3', '+11', '-3%', '24%','0.27 s','1');
-  WriteData('4', '+14', '-3%', '26%','0.28 s','1');
-  WriteData('5', '+17', '-4%', '28%','0.29 s','1');
-  WriteData('6', '+20', '-4%', '30%','0.30 s','1');
-  WriteData('7', '+23', '-6%', '32%','0.31 s','1');
-  WriteData('8', '+26', '-7%', '34%','0.32 s','1');
+  WriteData('1', '+5', '-1%', '20%','0.75 s','1');
+  WriteData('2', '+8', '-2%',  '22%','0.78 s','1');
+  WriteData('3', '+11', '-3%', '24%','0.81 s','1');
+  WriteData('4', '+14', '-3%', '26%','0.84 s','1');
+  WriteData('5', '+17', '-4%', '28%','0.87 s','1');
+  WriteData('6', '+20', '-4%', '30%','0.90 s','1');
+  WriteData('7', '+23', '-6%', '32%','0.93 s','1');
+  WriteData('8', '+26', '-7%', '34%','0.96 s','1');
   WriteSkillBegin2();
   WriteHeader('Skill Level', 'Dmg.', 'Atk.&nbsp;Spd.', 'Slow', 'Duration', 'Energy');
-  WriteData('9',  '+29', '-8%', '36%','0.33 s','1');
-  WriteData('10', '+32', '-9%', '38%','0.34 s','1');
-  WriteData('11', '+35', '-10%', '40%','0.35 s','1');
-  WriteData('12', '+38', '-12%', '42%','0.36 s','1');
-  WriteData('13', '+41', '-14%', '44%','0.37 s','1');
-  WriteData('14', '+44', '-16%', '46%','0.38 s','1');
-  WriteData('15', '+47', '-18%', '48%','0.39 s','1');
-  WriteData('16', '+50', '-20%', '50%','0.40 s','1');
+  WriteData('9',  '+29', '-8%', '36%','0.99 s','1');
+  WriteData('10', '+32', '-9%', '38%','1.02 s','1');
+  WriteData('11', '+35', '-10%', '40%','1.05 s','1');
+  WriteData('12', '+38', '-12%', '42%','1.08 s','1');
+  WriteData('13', '+41', '-14%', '44%','1.11 s','1');
+  WriteData('14', '+44', '-16%', '46%','1.14 s','1');
+  WriteData('15', '+47', '-18%', '48%','1.17 s','1');
+  WriteData('16', '+50', '-20%', '50%','1.20 s','1');
   if (showall) {
-  WriteData('17', '+53', '-22%', '52%','0.41 s','1');
+  WriteData('17', '+53', '-22%', '52%','1.23 s','1');
   }
   WriteSkillEnd();
 }
@@ -952,9 +954,9 @@ function WriteSkillCrit(showall) {
 }
 
 function WriteSkillLockdown(showall) {
-  WriteSkill('Lock-Down', 'lockdown', 'E', 'Locks the officer in place for extra stability, giving him minor knockback and increased damage and attack speed but prevents movement. The officer will be unable to attack temporarily upon deactivating lockdown.');
+  WriteSkill('Lock-Down', 'lockdown', 'E', 'Locks the officer in place for extra stability, giving him minor knockback and increased damage and attack speed but prevents movement. The officer will be unable to attack temporarily upon deactivating lockdown. Cooldown and deactivation times are based on the number of rockets fired while in lockdown.');
   WriteSkillBegin();
-  WriteHeader('Skill Level','Primary Damage','Attack Speed','Knockback','Delay','Cooldown');
+  WriteHeader('Skill Level','Primary Damage','Attack Speed','Knockback','Delay','Base Cooldown');
   WriteData('1','+4%','+25%','0','3 s','6 s');
   WriteData('2','+10%','+25%','15','3 s','6 s');
   WriteData('3','+16%','+25%','30','3 s','6 s');
@@ -963,6 +965,8 @@ function WriteSkillLockdown(showall) {
   WriteData('6','+34%','+25%','75','3 s','6 s');
   WriteData('7','+40%','+25%','90','3 s','6 s');
   WriteData('8','+46%','+25%','105','3 s','6 s');
+  WriteSkillBegin2();
+  WriteHeader('Skill Level','Primary Damage','Attack Speed','Knockback','Delay','Base Cooldown');
   WriteData('9','+52%','+25%','120','3 s','6 s');
   WriteData('10','+58%','+25%','135','3 s','6 s');
   WriteData('11','+64%','+25%','150','3 s','6 s');
@@ -1021,39 +1025,7 @@ function WriteSkillLeftRightEnd() {
   document.writeln('</td></tr></table>');
 }
 function WriteSkillFocusLaser(showall) {
-    WriteSkillBegin('60%');
-    WriteSkillLeftHead();
-    WriteSkill('Laser Power', 'laserrifle', '.', 'Increases the power of the laser rifle through the choice of a custom upgrade: Focus or Beam. Also decreases energy regen by -0.3 eps per level. This penalty is reduced with improvements in laser dissipation.');
-    WriteSkillRightHead();
-    WriteSkill('Laser Heat', 'laserrifle', '.', 'Lasers are especially effective against bosses, dealing extra damage based on the ammo level of the rifle.');
-    WriteSkillLeftStats();
-    WriteSkillBegin();
-    WriteHeader('Skill Level', 'Energy Regen');
-    WriteData('1','-5%');
-    WriteData('2','-10%');
-    WriteData('3','-15%');
-    WriteData('4','-20%');
-    WriteData('5','-25%');
-    WriteData('6','-30%');
-    WriteData('7','-35%');
-    WriteData('8','-40%');
-    if (showall) {
-    WriteData('9', '-45%');
-    }
-    WriteSkillEnd();
-    WriteSkillRightStats();
-    WriteSkillBegin();
-    WriteHeader('Ammo', 'Damage');
-    WriteData('0', '+15');
-    WriteData('1', '+30');
-    WriteData('2', '+45');
-    WriteData('3', '+60');
-    WriteData('4', '+75');
-    WriteData('5', '+90');
-    WriteData('6', '+105');
-    WriteData('7', '+120');
-    WriteSkillEnd();
-    WriteSkillLeftRightEnd();
+
     WriteSkillBegin('60%');
     WriteSkillLeftHead();
     WriteSkill('Laser Beam', 'laser_beam', '.', 'Improves the laser rifle\'s beam, causing it to deal a higher percentage of damage to targets it passes through.<br><font size=-1>This upgrade is part of the Laser Power ability.');
@@ -1071,9 +1043,6 @@ function WriteSkillFocusLaser(showall) {
     WriteData('6','34%');
     WriteData('7','38%');
     WriteData('8','42%');
-    if (showall) {
-    WriteData('9', '46%');
-    }
     WriteSkillEnd();
     WriteSkillRightStats();
     WriteSkillBegin();
@@ -1087,9 +1056,58 @@ function WriteSkillFocusLaser(showall) {
     WriteData('6','+180');
     WriteData('7','+210');
     WriteData('8','+240');
-    if (showall) {
-    WriteData('9', '+270');
-    }
+    WriteSkillEnd();
+    WriteSkillLeftRightEnd();
+
+    WriteSkillBegin('60%');
+    WriteSkillLeftHead();
+    WriteSkill('Laser Dissipation', 'laser-dissipation', '.', 'Improves the laser rifle\'s dissipation, causing it to shoot farther and wider');
+    WriteSkillRightHead();
+    WriteSkill('Laser Heat', 'laser-heat', '.', 'Causes the laser rifle to apply heat stacks to all targets hit. Heat stacks increase damage of laser attacks. Levels increase max bonus damage that can be dealt to a target. Heat stacks only apply to the direct target for the laser rifle that applied them.');
+    WriteSkillLeftStats();
+    WriteSkillBegin();
+    WriteHeader('Skill Level', 'Range','Width');
+    WriteData('1','+100','+3');
+    WriteData('2','+200','+6');
+    WriteData('3','+300','+9');
+    WriteData('4','+400','+12');
+    WriteData('5','+500','+15');
+    WriteData('6','+600','+18');
+    WriteData('7','+700','+21');
+    WriteData('8','+800','+24');
+    WriteSkillEnd();
+    WriteSkillRightStats();
+    WriteSkillBegin();
+    WriteHeader('Skill Level', 'Damage per stack','Max');
+    WriteData('1','25','60');
+    WriteData('2','50','120');
+    WriteData('3','50','180');
+    WriteData('4','60','240');
+    WriteData('5','60','300');
+    WriteData('6','75','360');
+    WriteData('7','75','420');
+    WriteData('8','80','480');
+    WriteSkillEnd();
+    WriteSkillLeftRightEnd();
+
+    WriteSkillBegin('60%');
+    WriteSkillLeftHead();
+    WriteSkill('Laser Heat', 'laserrifle', '.', 'Lasers are especially effective against bosses, dealing extra damage based on the ammo level of the rifle.');
+    WriteSkillRightHead();
+    WriteSkillLeftStats();
+    WriteSkillBegin();
+    WriteHeader('Ammo', 'Damage');
+    WriteData('0', '+15');
+    WriteData('1', '+30');
+    WriteData('2', '+45');
+    WriteData('3', '+60');
+    WriteData('4', '+75');
+    WriteData('5', '+90');
+    WriteData('6', '+105');
+    WriteData('7', '+120');
+    WriteSkillEnd();
+    WriteSkillRightStats();
+    WriteSkillBegin();
     WriteSkillEnd();
     WriteSkillLeftRightEnd();
 }

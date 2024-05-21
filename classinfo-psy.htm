@@ -139,15 +139,36 @@ WriteSkillNanites(1);
 <font color=ffcc00><b>Innate Abilities</b></font>
 
 <script>
-WriteSkill('Mind&nbsp;Slay', 'mindslay', '', 'Projects a powerful psionic wave towards the target, overwhelming its mind. Normal units are killed; a boss\'s health is divided. Mechanical units are unaffected. The cooldown is determined by the psychologist\'s intelligence and scaled by the target\'s current health and distance. Slain zombies will not reanimate.');
+WriteSkill('Mind&nbsp;Slay', 'mindslay', '', 'Projects a powerful psionic wave towards the target, overwhelming its mind. Normal units are killed; a boss\'s health is divided. Mechanical units are unaffected. The cooldown is determined by the skill level, the psychologist\'s intelligence, and scaled by the target\'s current health and distance. Slain zombies will not reanimate. Levels improve effectiveness against minibosses and bosses, reduce cooldown, and add more slay charges.');
 WriteSkillBegin();
-WriteHeader('Unit Type', 'HP Damage', 'Range', 'Energy', 'Cooldown');
-WriteData('Normal Unit', '-100% hp', 'unlimited', '0', 'variable');
-WriteData('Mini-Boss', '-80% hp', 'unlimited', '0', 'variable');
-WriteData('Boss', '-50% hp', 'unlimited', '0', 'variable');
-WriteData('Godzilla', '-33% hp', 'unlimited', '0', 'variable');
-WriteData('Megazilla', '-25% hp', 'unlimited', '0', 'variable');
-WriteData('Nemesis', '-33% hp', 'unlimited', '0', 'variable');
+WriteHeader('Level', 'Max Charges', 'Range', 'Energy', 'Cooldown');
+WriteData('1', '1', 'unlimited', '0', 'variable');
+WriteData('2', '1', 'unlimited', '0', 'variable');
+WriteData('3', '1', 'unlimited', '0', 'variable');
+WriteData('4', '1', 'unlimited', '0', 'variable');
+WriteData('5', '1', 'unlimited', '0', 'variable');
+WriteData('6', '1', 'unlimited', '0', 'variable');
+WriteData('7', '2', 'unlimited', '0', 'variable');
+WriteData('8', '2', 'unlimited', '0', 'variable');
+WriteSkillBegin2();
+WriteHeader('Level', 'Max Charges', 'Range', 'Energy', 'Cooldown');
+WriteData('9', '2', 'unlimited', '0', 'variable');
+WriteData('10', '2', 'unlimited', '0', 'variable');
+WriteData('11', '2', 'unlimited', '0', 'variable');
+WriteData('12', '3', 'unlimited', '0', 'variable');
+WriteData('13', '3', 'unlimited', '0', 'variable');
+WriteData('14', '3', 'unlimited', '0', 'variable');
+WriteData('15', '3', 'unlimited', '0', 'variable');
+WriteData('16', '4', 'unlimited', '0', 'variable');
+WriteSkillEnd(true);
+WriteSkillBegin();
+WriteHeader('Unit Type', 'HP Damage');
+WriteData('Normal Unit', '-100% hp');
+WriteData('Mini-Boss', '-80% hp');
+WriteData('Boss', '-50% hp');
+WriteData('Godzilla', '-33% hp');
+WriteData('Megazilla', '-25% hp');
+WriteData('Nemesis', '-33% hp');
 WriteSkillEnd(true);
 </script>
 
@@ -155,24 +176,24 @@ WriteSkillEnd(true);
 <script>
 WriteSkill('Mind&nbsp;Rot', 'mindrot', '', 'Rots the minds of zombified targets, immediately removing all their essence, disabling special abilities, reducing armor, and temporarily slowing movement speed and disorienting them. The disorientation duration is determined by the psychologist\'s intelligence.');
 WriteSkillBegin();
-WriteHeader('Hero Level', 'Damage', 'Move Spd.', 'Armor', 'Radius', 'Range', 'Energy', 'Cooldown');
-WriteData('1',  '-2 hps', '-100', '-1', '300', 'unlimited', '0', '30 s');
-WriteData('10', '-2 hps', '-100', '-2', '300', 'unlimited', '0', '25 s');
-WriteData('20', '-2 hps', '-100', '-3', '300', 'unlimited', '0', '20 s');
-WriteData('51', '-2 hps', '-100', '-3', '312', 'unlimited', '0', '19 s');
-WriteData('52', '-2 hps', '-100', '-3', '324', 'unlimited', '0', '18 s');
-WriteData('53', '-2 hps', '-100', '-3', '336', 'unlimited', '0', '17 s');
-WriteData('54', '-2 hps', '-100', '-3', '348', 'unlimited', '0', '16 s');
-WriteData('55', '-2 hps', '-100', '-3', '360', 'unlimited', '0', '15 s');
+WriteHeader('Level', 'Damage', 'Move Spd.', 'Armor', 'Radius', 'Range', 'Energy', 'Cooldown');
+WriteData('1',  '-2 hps', '-30', '-1', '300', 'unlimited', '0', '30 s');
+WriteData('2', '-2 hps', '-40', '-1', '310', 'unlimited', '0', '28 s');
+WriteData('3', '-2 hps', '-50', '-2', '320', 'unlimited', '0', '26 s');
+WriteData('4', '-2 hps', '-60', '-2', '330', 'unlimited', '0', '24 s');
+WriteData('5', '-2 hps', '-70', '-3', '340', 'unlimited', '0', '22 s');
+WriteData('6', '-2 hps', '-80', '-3', '350', 'unlimited', '0', '20 s');
+WriteData('7', '-2 hps', '-90', '-4', '360', 'unlimited', '0', '18 s');
+WriteData('8', '-2 hps', '-100', '-4', '370', 'unlimited', '0', '16 s');
 WriteSkillEnd(true);
 </script>
 
 <br>
 <script>
-WriteSkill('Re-specialize', 'respec', '', 'Abandons the psychologist\'s current specializations, allowing him to study different mental skills. Skill points removed will be unavailable for a short time while the hero\'s mind adjusts. While only skill points spent on focii are reallocated, they don\'t have to be spent on focii again. The delay is dependent on the number of skill points which had been spent on focii.');
+WriteSkill('Split Personality', 'split', '', 'The psychologist\'s mental mastery allows him to split his mind in two, learning different skills in each. Using this skill toggles between the learned skills for each personality. Cooldown on abilities is shared.');
 WriteSkillBegin();
 WriteHeader('Skill Level', 'Energy', 'Cooldown');
-WriteData('--', '0', '3-20 s');
+WriteData('--', '0', '6 s');
 WriteSkillEnd(true);
 </script>
 

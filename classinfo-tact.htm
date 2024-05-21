@@ -17,7 +17,7 @@ WriteSummonedMenu('TACT');
 WriteClassHeaderBegin('Tactician','tact','tac','Group Buffer','The tactician\'s abilities increase the effectiveness of nearby comrades. He can also train a cadet to assist him and utilize powerful satellite Ion Strikes. His intelligence is high.');
 WriteSkillLinks('Weakpoint','weak','Blitz','blitz','Endurance','endur','Refined&nbsp;Rifle','refrif','Nanites','nanites');
 WriteSkillLinks('Pep&nbsp;Talk','pep','Ion&nbsp;Strike','ion','Recruit','recruit','Rad&nbsp;Away','radaway','Sprint','sprint','Frag.&nbsp;Locator','frag');
-WriteSummonedsLinks('tact','Cadet','recruit','Woman','woman');
+WriteSummonedsLinks('tact','Cadet','recruit');
 WriteClassHeaderEnd('tact');
 </script>
 
@@ -73,14 +73,14 @@ WriteData('7','-7','-5.60','625');
 WriteData('8','-8','-6.20','625');
 WriteSkillBegin2('33%');
 WriteHeader('Prioritized<br>Skill Level','Armor','Boss<br>Armor','Radius');
-WriteData('9','-8','-6.75','688');
-WriteData('10','-8','-7.25','757');
-WriteData('11','-8','-7.70','833');
-WriteData('12','-8','-8.10','917');
-WriteData('13','-8','-8.45','1007');
-WriteData('14','-8','-8.75','1104');
-WriteData('15','-8','-9.00','1208');
-WriteData('16','-8','-9.20','1320');
+WriteData('9','-8','-6.20','688');
+WriteData('10','-8','-6.20','757');
+WriteData('11','-8','-6.20','833');
+WriteData('12','-8','-6.20','917');
+WriteData('13','-8','-6.20','1007');
+WriteData('14','-8','-6.20','1104');
+WriteData('15','-8','-6.20','1208');
+WriteData('16','-8','-6.20','1320');
 WriteSkillBegin2('33%');
 WriteHeader('Prioritized<br>Skill Level','Armor','Boss<br>Armor','Radius');
 WriteData('17','-9','-6.75','1320');
@@ -213,7 +213,7 @@ WriteSkillEnd(true);
 
 <br>
 <script>
-WriteSkill('Recruit', 'recruit', '', 'Recruits a civilian to join the team under the hero\'s tutelage. Male recruits will be trained into cadets. Female recruits will follow the hero adoringly. The tactician may only have one recruit at a time.','tact','recruit');
+WriteSkill('Recruit', 'recruit', '', 'Recruits a civilian to join the team under the hero\'s tutelage as a Cadet. The tactician may only have one recruit at a time.','tact','recruit');
 WriteSkillBegin();
 WriteHeader('Skill Level','&nbsp;');
 WriteData('--','&nbsp;');

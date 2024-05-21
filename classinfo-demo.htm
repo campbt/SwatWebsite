@@ -83,17 +83,17 @@ WriteSkillEnd();
 
 <br>
 <script>
-    WriteSkill('Place&nbsp;C4', 'c4', '', 'Uses a small supply of nanites to rapidly construct a remote-triggered explosive. Placing a C4 requires a charge. A charge is added every 6 seconds up to a maximum determined by the skill level. C4 apply a stack of Shattered, increasing explosion damage and knockback.<br><font size=-1>Attacking your C4 will detonate it.');
+    WriteSkill('Mortar', 'mortar', '', 'Uses energy to launch mortars at extreme ranges. Hit enemies are temporarily slowed by 25%. Accuracy is decreased at longer ranges.');
 WriteSkillBegin('60t enemies are temporarily slowed unless damaged.%');
-WriteHeader('Skill Level', 'Damage', 'Radius', 'Max Charges', 'Duration', 'Energy Cost');
-WriteData('1','100, 75','224, 264','3','60 s','55');
-WriteData('2','120, 75','224, 264','4','75 s','60');
-WriteData('3','140, 90','224, 264','5','90 s','70');
-WriteData('4','170, 90','224, 264','6','105 s','80');
-WriteData('5','210, 105','224, 264','7','120 s','95');
-WriteData('6','260, 105','224, 264','8','135 s','110');
-WriteData('7','320, 120','224, 264','9','150 s','130');
-WriteData('8','390, 120','224, 264','10','165 s','150');
+WriteHeader('Skill Level', 'Damage', 'Radius', 'Range', 'Shells', 'Slow', 'Slow Duration', 'Energy', 'Cooldown');
+WriteData('1','250, 150','144, 192','4000','2','-25%','3 s','65','6 s');
+WriteData('2','250, 150','144, 192','4000','3','-25%','3 s','120','6 s');
+WriteData('3','250, 150','144, 192','4000','3','-25%','4 s','120','6 s');
+WriteData('4','250, 150','144, 192','4000','4','-25%','4 s','165','6 s');
+WriteData('5','250, 150','144, 192','4000','4','-25%','5 s','165','6 s');
+WriteData('6','250, 150','144, 192','4000','5','-25%','5 s','200','6 s');
+WriteData('7','250, 150','144, 192','4000','5','-25%','6 s','200','6 s');
+WriteData('8','250, 150','144, 192','4000','6','-25%','6 s','225','6 s');
 WriteSkillEnd(true);
 </script>
 
