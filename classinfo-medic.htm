@@ -114,17 +114,17 @@ WriteSkillEnd();
 
 <br>
 <script>
-WriteSkill('Adrenaline&nbsp;Junkie', 'junkie', '', 'Chance that the medic administers himself an adrenaline shot when using adrenaline on others. Also causes the medic to experience more and longer adrenaline rushes.');
+WriteSkill('Adrenaline&nbsp;Junkie', 'junkie', '', 'Chance that the medic administers himself an adrenaline shot when using adrenaline on others. Also causes the medic to experience more and longer adrenaline rushes, and causes adrenaline to give a chance to trigger extra attacks.');
 WriteSkillBegin();
-WriteHeader('Skill Level', 'Chance');
-WriteData('1', '65%');
-WriteData('2', '70%');
-WriteData('3', '75%');
-WriteData('4', '80%');
-WriteData('5', '85%');
-WriteData('6', '90%');
-WriteData('7', '95%');
-WriteData('8', '100%');
+WriteHeader('Skill Level', 'Junkie Chance', 'Bonus Attack Chance');
+WriteData('1', '65%','0%');
+WriteData('2', '70%','0%');
+WriteData('3', '75%','0%');
+WriteData('4', '80%','0%');
+WriteData('5', '85%','2.5%');
+WriteData('6', '90%','5%');
+WriteData('7', '95%','7.5%');
+WriteData('8', '100%','10%');
 WriteSkillEnd(true);
 </script>
 

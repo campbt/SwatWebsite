@@ -854,25 +854,25 @@ function WriteSkillNanites(Type, Differentiate, unit) {
 function WriteSkillRefRif(showall) {
   WriteSkill('Refined&nbsp;Rifle', 'refrif', '.', 'Increases the damage of the assault rifle. Gives a chance that nearby allies will fire a bonus shot on a target whenever you hit them.');
   WriteSkillBegin();
-  WriteHeader('Skill Level', 'Damage', 'Range','Bons Chance');
-  WriteData('1', '+6', '+15','3%');
-  WriteData('2', '+12', '+30','6%');
-  WriteData('3', '+18', '+45','9%');
-  WriteData('4', '+24', '+60','12%');
-  WriteData('5', '+30', '+75','15%');
-  WriteData('6', '+36', '+90','18%');
-  WriteData('7', '+42', '+105','21%');
-  WriteData('8', '+48', '+120','24%');
+  WriteHeader('Skill Level', 'Damage', 'Bons Chance');
+  WriteData('1', '+6','3%');
+  WriteData('2', '+12','6%');
+  WriteData('3', '+18','9%');
+  WriteData('4', '+24','12%');
+  WriteData('5', '+30','15%');
+  WriteData('6', '+36','18%');
+  WriteData('7', '+42','21%');
+  WriteData('8', '+48','24%');
   WriteSkillBegin2();
-  WriteHeader('Skill Level', 'Damage', 'Range','Bonus Chance');
-  WriteData('9', '+54', '+135','27%');
-  WriteData('10', '+60', '+150','30%');
-  WriteData('11', '+66', '+165','33%');
-  WriteData('12', '+72', '+180','36%');
-  WriteData('13', '+78', '+195','39%');
-  WriteData('14', '+84', '+210','42%');
-  WriteData('15', '+90', '+225','45%');
-  WriteData('16', '+96', '+240','48%');
+  WriteHeader('Skill Level', 'Damage', 'Bonus Chance');
+  WriteData('9', '+54', '27%');
+  WriteData('10', '+60', '30%');
+  WriteData('11', '+66', '33%');
+  WriteData('12', '+72', '36%');
+  WriteData('13', '+78', '39%');
+  WriteData('14', '+84', '42%');
+  WriteData('15', '+90', '45%');
+  WriteData('16', '+96', '48%');
   if (showall) {
   WriteData('17', '+102', '+255','51%');
   }
@@ -1061,9 +1061,9 @@ function WriteSkillFocusLaser(showall) {
 
     WriteSkillBegin('60%');
     WriteSkillLeftHead();
-    WriteSkill('Laser Dissipation', 'laser-dissipation', '.', 'Improves the laser rifle\'s dissipation, causing it to shoot farther and wider');
+    WriteSkill('Laser Dissipation', 'laser-dissipation', '.', 'Improves the laser rifle\'s dissipation, causing it to shoot farther and wider.<br><font size=-1>This upgrade is part of the Laser Power ability.');
     WriteSkillRightHead();
-    WriteSkill('Laser Heat', 'laser-heat', '.', 'Causes the laser rifle to apply heat stacks to all targets hit. Heat stacks increase damage of laser attacks. Levels increase max bonus damage that can be dealt to a target. Heat stacks only apply to the direct target for the laser rifle that applied them.');
+    WriteSkill('Laser Heat', 'laser-heat', '.', 'Causes the laser rifle to apply heat stacks to all targets hit. Heat stacks increase damage of laser attacks. Levels increase max bonus damage that can be dealt to a target. Heat stacks only apply to the direct target for the laser rifle that applied them.<br><font size=-1>This upgrade is part of the Laser Power ability.');
     WriteSkillLeftStats();
     WriteSkillBegin();
     WriteHeader('Skill Level', 'Range','Width');
